@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="BOMCO 3000 HP Land Rig (New Build) — API-Compliant • ICC Rules • 15K BOP • Built to Spec. Total Drilling Supply LLC.">
+<title>BOMCO 3000 HP Land Rig (New Build) | Total Drilling Supply LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --muted: #7A7A7A;
+  --line: #E5E3DC;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+  --warn-bg: #FFF6E5;
+  --warn-line: #F0C674;
+  --warn-ink: #8A4A00;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Top Nav */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy);
+  color: white;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+}
+.topnav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.topnav-brand .logo-mark {
+  width: 28px;
+  height: 28px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.topnav-actions { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+.topnav-actions a.phone { display: flex; align-items: center; gap: 6px; opacity: 0.9; }
+.topnav-actions .cta-btn {
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.topnav-actions .cta-btn:hover { transform: translateY(-1px); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  color: white;
+  padding: 80px 32px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; }
+@media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; gap: 40px; } }
+
+.hero-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.hero .tagline {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 32px; max-width: 540px; }
+.hero-stat { border-left: 2px solid var(--accent); padding-left: 16px; }
+.hero-stat .value {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.hero-stat .label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 6px;
+}
+.hero-stat .sublabel { font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-top: 4px; }
+
+.hero-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  aspect-ratio: 4/5;
+  background: rgba(255,255,255,0.05);
+}
+.hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 24px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Warning callout */
+.callout {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 32px;
+}
+.callout-inner {
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-line);
+  border-radius: 0 6px 6px 0;
+  padding: 22px 28px;
+  font-size: 14px;
+  color: var(--warn-ink);
+}
+.callout-inner strong { display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }
+
+/* Section */
+section.content { padding: 90px 32px; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: 14px;
+}
+.section-title {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 56px;
+}
+
+/* Equipment cards */
+.equip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.equip-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.equip-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(15, 39, 71, 0.08); }
+.equip-card .icon { font-size: 30px; margin-bottom: 16px; }
+.equip-card h3 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+  color: var(--ink);
+}
+.equip-card .spec-list { list-style: none; }
+.equip-card .spec-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  gap: 12px;
+}
+.equip-card .spec-list li:last-child { border-bottom: none; }
+.equip-card .spec-list .lab { color: var(--muted); font-weight: 500; }
+.equip-card .spec-list .val { color: var(--ink); font-weight: 600; text-align: right; }
+
+/* Gallery */
+.gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+.gallery-item {
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--line);
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item .caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 18px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Capabilities */
+.cap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.cap-card {
+  padding: 32px 28px;
+  border-top: 2px solid var(--accent-warm);
+}
+.cap-card .num {
+  font-family: 'Source Serif 4', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-warm);
+  margin-bottom: 12px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.cap-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.cap-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+/* Complete Data Table */
+.data-section { background: var(--card); border-radius: 8px; border: 1px solid var(--line); overflow: hidden; }
+.data-section + .data-section { margin-top: 28px; }
+.data-section h4 {
+  background: var(--navy);
+  color: white;
+  padding: 14px 28px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.data-section table { width: 100%; border-collapse: collapse; }
+.data-section td {
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.data-section tr:last-child td { border-bottom: none; }
+.data-section td:first-child { width: 40%; color: var(--muted); font-weight: 500; }
+.data-section td:last-child { color: var(--ink); font-weight: 500; }
+.data-section tr:nth-child(even) td { background: #FAFAF6; }
+
+/* Description */
+.description {
+  font-family: 'Source Serif 4', serif;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  color: white;
+  padding: 80px 32px;
+  text-align: center;
+}
+.cta-inner { max-width: 760px; margin: 0 auto; }
+.cta h2 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+.cta p { color: rgba(255,255,255,0.75); font-size: 17px; margin-bottom: 40px; }
+.cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.cta-buttons a {
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.cta-buttons a.secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+.cta-buttons a:hover { transform: translateY(-2px); }
+
+/* Footer */
+footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.75);
+  padding: 56px 32px 28px;
+  font-size: 14px;
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+@media (max-width: 720px) { .footer-inner { grid-template-columns: 1fr; } }
+.footer-inner h5 { color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+.footer-inner ul { list-style: none; }
+.footer-inner ul li { margin-bottom: 8px; font-size: 14px; }
+.footer-copyright { max-width: 1200px; margin: 28px auto 0; text-align: center; font-size: 12px; color: rgba(255,255,255,0.5); }
+.footer-copyright span { display: block; margin-top: 6px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#" class="topnav-brand">
+    <span class="logo-mark">T</span>
+    Total Drilling Supply LLC
+  </a>
+  <div class="topnav-actions">
+    <a href="tel:+18606082327" class="phone">📞 1-860-608-2327</a>
+    <a href="#contact" class="cta-btn">Request Quote</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-status">New Build • Quote Available • BOMCO Factory</div>
+      <h1>BOMCO 3000 HP Land Rig (New Build)</h1>
+      <p class="tagline">API-Compliant • ICC Rules • 15K BOP • Built to Spec</p>
+      <div class="hero-stats">
+        
+        <div class="hero-stat">
+          <div class="value">3,000 HP</div>
+          <div class="label">Drawworks</div>
+          <div class="sublabel">BOMCO JC90DB</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">1,500,000 lbs</div>
+          <div class="label">Hook Load</div>
+          <div class="sublabel">6,750 kN, 7×8 reeving</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">48.7 m</div>
+          <div class="label">Mast Height</div>
+          <div class="sublabel">K-type Rotating Lift</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">DQ90BSC</div>
+          <div class="label">Top Drive</div>
+          <div class="sublabel">BPM, 108,000 N·m max, 7500 psi</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpeg" alt="BOMCO 3000 HP Land Rig (New Build)">
+      <div class="hero-image-caption">API-Compliant • ICC Rules • 15K BOP • Built to Spec</div>
+    </div>
+  </div>
+</header>
+
+
+
+<section class="content" style="padding-bottom: 0;">
+  <div class="section-inner">
+    <p class="description">A factory-new 3,000 HP AC-VFD land drilling rig built by BOMCO (Baoji Oilfield Machinery Co., CNPC) to full API specification — 4F, 7K, 8C, and 9A — with a 6,750 kN rated hook load, BPM DQ90BSC top drive, triple 2,400 HP quintuplex mud pumps, and a 13-5/8&quot; 15,000 PSI BOP stack. Designed for 9,000 m well depth in oil- and water-based mud environments, with a complete AC-VFD drive train, five CAT 3512/3512C main generators, and Siemens S7-1500 PLC control. Deliverable FOB Tianjin Port in six to eight months.</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Technical Overview</div>
+    <h2 class="section-title">Key Equipment Specifications</h2>
+    <div class="equip-grid">
+      
+        <div class="equip-card">
+          <div class="icon">🗼</div>
+          <h3>Mast &amp; Substructure</h3>
+          <ul class="spec-list"><li><span class="lab">Mast Model</span><span class="val">JJ675/48.8-K (BOMCO)</span></li><li><span class="lab">Mast Type</span><span class="val">K-type, Rotating Lifting</span></li><li><span class="lab">Clear Height (Crown to Drill Floor)</span><span class="val">48 m (triple stand operation)</span></li><li><span class="lab">Mast Height</span><span class="val">48.7 m</span></li><li><span class="lab">Rated Load</span><span class="val">6,750 kN (1,500,000 lbs)</span></li><li><span class="lab">Monkey Board Heights</span><span class="val">24.5 m / 25.5 m / 26.5 m (80.4 / 83.6 / 87 ft)</span></li><li><span class="lab">Racking Capacity</span><span class="val">2-7/8&quot; drill pipe; 5-7/8&quot; DC 6 stands, 10&quot; DC 2 stands, 14&quot; DC 2 stands</span></li><li><span class="lab">Safety Devices</span><span class="val">Mittermann RG10D escape devices, SALA fall arresters (9 m / 15 m / 39 m / 53 m)</span></li><li><span class="lab">Standard Compliance</span><span class="val">API Spec 4F, PSL1, API monogram</span></li><li><span class="lab">Substructure Model</span><span class="val">DZ675/13.7-S (BOMCO)</span></li><li><span class="lab">Drill Floor Height</span><span class="val">13.7 m</span></li><li><span class="lab">Drill Floor Size</span><span class="val">12.2 m × 14 m</span></li><li><span class="lab">Base Clearance Height</span><span class="val">11.99 m</span></li><li><span class="lab">Total Base Load</span><span class="val">2,400,000 lbs (static: 1,500,000 lbs; setback: 900,000 lbs)</span></li><li><span class="lab">BOP Handling Device</span><span class="val">DZ1200/4 — rated 2×600 kN, API 7K compliant (Baoji Hongxiang)</span></li><li><span class="lab">Skidding System</span><span class="val">Rail-type, 50 m max travel, 10 m well spacing</span></li><li><span class="lab">Zero Discharge Design</span><span class="val">Drill floor mud collection via recovery channels to wellhead and ground recovery tank</span></li><li><span class="lab">Substructure Standard</span><span class="val">API Spec 4F, PSL1, E2&amp;U2 structural safety, API monogram</span></li></ul>
+        </div>
+        <div class="equip-card">
+          <div class="icon">⚙️</div>
+          <h3>Drawworks (BOMCO JC90DB)</h3>
+          <ul class="spec-list"><li><span class="lab">Model</span><span class="val">JC90DB (BOMCO)</span></li><li><span class="lab">Rated Input Power</span><span class="val">3,000 HP</span></li><li><span class="lab">Wire Rope Diameter</span><span class="val">Φ45 mm (1-3/4&quot;)</span></li><li><span class="lab">Maximum Fast Line Pull</span><span class="val">640 kN</span></li><li><span class="lab">Hook Speed</span><span class="val">0 – 1.48 m/s</span></li><li><span class="lab">Gear Configuration</span><span class="val">2+2R AC VFD stepless speed regulation</span></li><li><span class="lab">Drive Motors</span><span class="val">2× Yongji 1,150 kW explosion-proof VFD motors</span></li><li><span class="lab">Gearbox</span><span class="val">NGC two-speed gear reducer, forced oil lubrication</span></li><li><span class="lab">Main Brake</span><span class="val">Hydraulic disc brake (service + parking), air-cooled discs (Renqiu Boke)</span></li><li><span class="lab">Auxiliary Brake</span><span class="val">VFD motor dynamic braking</span></li><li><span class="lab">Drum</span><span class="val">LEBUS grooving, fast line spooler</span></li><li><span class="lab">Auto Driller</span><span class="val">2× 45 kW Nanyang explosion-proof motors — constant WOB, RPM, torque, standpipe pressure</span></li><li><span class="lab">Anti-collision System</span><span class="val">Over-wrap prevention, weighted anti-collision, electronic anti-collision &amp; anti-dropping with monitoring/recording</span></li><li><span class="lab">Standard Compliance</span><span class="val">API Spec 7K</span></li></ul>
+        </div>
+        <div class="equip-card">
+          <div class="icon">🔄</div>
+          <h3>Top Drive (BPM DQ90BSC)</h3>
+          <ul class="spec-list"><li><span class="lab">Model</span><span class="val">DQ90BSC (BPM)</span></li><li><span class="lab">Hook Load Rating</span><span class="val">6,750 kN (1,500,000 lbs)</span></li><li><span class="lab">Working Torque</span><span class="val">72,000 N·m</span></li><li><span class="lab">Maximum Torque</span><span class="val">108,000 N·m</span></li><li><span class="lab">Swivel Working Pressure</span><span class="val">7,500 psi</span></li><li><span class="lab">Control System</span><span class="val">Independent Top Drive VFD E-house</span></li><li><span class="lab">Elevator Links Included</span><span class="val">DH350 (3,150 kN / 4 API 8C PSL2), DH500 (4,500 kN / API 8C PSL2), DH750 (6,750 kN / API 8C PSL2) — all BOMCO</span></li><li><span class="lab">Cables</span><span class="val">Full composite power and control cable set from VFD E-house to top drive and driller&#x27;s cabin</span></li></ul>
+        </div>
+        <div class="equip-card">
+          <div class="icon">💧</div>
+          <h3>Mud Pumps (2,400 HP — Quintuplex)</h3>
+          <ul class="spec-list"><li><span class="lab">Pump Type</span><span class="val">Quintuplex (5-cylinder)</span></li><li><span class="lab">Power Rating</span><span class="val">2,400 HP per pump</span></li><li><span class="lab">Quantity</span><span class="val">3 sets</span></li><li><span class="lab">Working Pressure</span><span class="val">51.7 MPa (7,500 psi)</span></li><li><span class="lab">Drive Motor (each)</span><span class="val">1× 1,800 kW AC VFD, top-mounted, direct drive via pinion and bull gear</span></li><li><span class="lab">Charge Pump</span><span class="val">75 kW (Chengdu Westpetro), with suction filter and bypass</span></li><li><span class="lab">Pulsation Dampeners</span><span class="val">3× discharge pulsation dampeners at 51.7 MPa (7,500 psi)</span></li><li><span class="lab">Safety Valves</span><span class="val">3× shear pin type</span></li><li><span class="lab">High-Pressure Manifold</span><span class="val">Φ140 mm / 69 MPa (4&quot; ID / 10,000 psi), bore 102 mm, wall 19 mm; 4&quot;-1003 hammer unions</span></li><li><span class="lab">Mud Tanks Total Volume</span><span class="val">302 m³ + 12 m³ (1,899 + 75 bbl) — 6 tanks: Shale Shaker, Intermediate, 3× Suction, Mixing</span></li><li><span class="lab">Kelly Hose</span><span class="val">2× 4&quot; / 7,500 psi / 23 m, API Spec 7K FSL0, diesel-mud resistant (Hebei Jingbo)</span></li><li><span class="lab">Mud Type</span><span class="val">Oil-based mud and water-based mud compatible</span></li><li><span class="lab">Vacuum Degasser</span><span class="val">1,200 GPM (272 m³/h) — Westpetro</span></li></ul>
+        </div>
+        <div class="equip-card">
+          <div class="icon">⚡</div>
+          <h3>Power System (50/60 Hz Dual)</h3>
+          <ul class="spec-list"><li><span class="lab">Main Generator Sets (50 Hz)</span><span class="val">5× CAT 3512 or 3512C — 1,310 kW each (with fan) @ 600V/50Hz, PF 0.7, 1,500 rpm, Generator SR4B or SR500, IP23</span></li><li><span class="lab">Auxiliary Generator (50 Hz)</span><span class="val">1× Volvo TAD1651GE — 400 kW @ 400V/50Hz, PF 0.8, 1,500 rpm, electric start, IP23</span></li><li><span class="lab">60 Hz Generator Sets</span><span class="val">3× Volvo TAD1651GE — 400 kW @ 60Hz; 2 working + 1 standby; includes paralleling cabinet, distribution cabinet, MCC house</span></li><li><span class="lab">Rig Total Power</span><span class="val">5×1,200 kW + 1×400 kW (50 Hz) + 3×400 kW (60 Hz)</span></li><li><span class="lab">Main Electrical Voltage</span><span class="val">600V / 50Hz (main equipment); 400V / 50Hz (MCC); 220V / 50Hz (lighting); 480V / 60Hz (3rd-party); 120V / 60Hz (3rd-party lighting)</span></li><li><span class="lab">Drive Mode</span><span class="val">AC–VFD–AC; one-to-one drive for drawworks, rotary table, mud pumps, and top drive</span></li><li><span class="lab">VFD Cabinets (ABB)</span><span class="val">Drawworks 1,600 kW ×2 groups; Rotary Table 1,000 kW ×1; Mud Pump 2,000 kW ×3; Auto Driller 55 kW ×2</span></li><li><span class="lab">Rectifier Cabinets (ABB)</span><span class="val">2× 3,465 kW rectifier cabinets</span></li><li><span class="lab">MCC Cabinets (ABB)</span><span class="val">7 MCC cabinets, No. 1-4 are soft starter cabinets</span></li><li><span class="lab">PLC Control</span><span class="val">Siemens S7-1500 — 2× CPU, cold standby redundancy, industrial PC</span></li><li><span class="lab">Transformer</span><span class="val">Dry-type 1,750 kVA, 600/400V, primary side 2,000A</span></li><li><span class="lab">Generator Houses</span><span class="val">6× houses (10,500×3,000×3,050 mm); air source equipment co-located</span></li><li><span class="lab">Spark Arrestors</span><span class="val">Fitted on all generator sets</span></li><li><span class="lab">Air Compressors</span><span class="val">2× Sullair 37 kW / 5.6 m³/min / 1.0 MPa + 1× Xi&#x27;an Hengli diesel cold-start unit; Sullair HD-12NF refrigerated air dryer</span></li><li><span class="lab">Air Tank Capacity</span><span class="val">2×2.5 m³ (generator house) + 2×2 m³ (substructure), ASME certified</span></li></ul>
+        </div>
+        <div class="equip-card">
+          <div class="icon">🛡</div>
+          <h3>BOP &amp; Pressure Control (15K)</h3>
+          <ul class="spec-list"><li><span class="lab">15K BOP Stack</span><span class="val">13-5/8&quot; × 15,000 psi — Cameron / Hydril / NOV / Axon / Rongsheng double ram preventor; flanged connections with 4× 4-1/16&quot; 15,000 psi side outlets</span></li><li><span class="lab">Shear/Blind Rams</span><span class="val">Shearing bonnets and boosters for 5-1/2&quot; OD 24.70 lb/ft H2S-grade drill pipe; H2S-service blade insert</span></li><li><span class="lab">Pipe Ram Sizes</span><span class="val">5&quot;, 7-5/8&quot;, 7-3/4&quot;, 10-3/4&quot;, 3-1/2&quot;, 5-1/2&quot;, 2-3/8&quot;, 2-7/8&quot;, 4&quot;, 4-1/2&quot;</span></li><li><span class="lab">10K BOP Stack</span><span class="val">21-1/4&quot; × 10,000 psi double ram + single ram preventors; 13-1/2&quot; and 13-5/8&quot; casing rams, 5-1/2&quot; pipe rams, shear blind rams</span></li><li><span class="lab">3K BOP Stack</span><span class="val">26-3/4&quot; × 3,000 psi Rongsheng Type &#x27;U&#x27; double ram preventor; 5-1/2&quot; and 18-5/8&quot; pipe rams, blind rams</span></li><li><span class="lab">Annular Preventors</span><span class="val">21-1/4&quot; × 5,000 psi (studded top, 21-1/4&quot; 10K flanged bottom) + 13-5/8&quot; × 10,000 psi (studded top, 13-5/8&quot; 15K flanged bottom) — Rongsheng; sour gas and OBM compatible</span></li><li><span class="lab">Choke &amp; Kill Manifold</span><span class="val">4× 4-1/16&quot;×15K manual gate valves; 13× 3-1/16&quot;×15K manual gate valves; 2× hydraulic orifice-type choke valves; remote choke control panel on drill floor</span></li><li><span class="lab">BOP Accumulator Unit</span><span class="val">12-station, 3,000 psi WP, electric and air dual power systems, API-16D compliant; rated 0°C to 55°C</span></li><li><span class="lab">BOP Test Pump</span><span class="val">Triplex test pump rated 20,000 psi, diesel engine + air operated, skid-mounted with recorder</span></li><li><span class="lab">Diverter</span><span class="val">Rongsheng, 1,000 psi, 30&quot; flanged bottom; API STD-53 compliant vent line</span></li><li><span class="lab">Well Control Budget</span><span class="val">$4,602,329 (Section 8 total)</span></li></ul>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="content" style="background: #F5F3ED;">
+  <div class="section-inner">
+    <div class="eyebrow">Capabilities</div>
+    <h2 class="section-title">Key Advantages</h2>
+    <div class="cap-grid">
+      
+        <div class="cap-card">
+          <div class="num">01</div>
+          <h3>Full API Standards Compliance</h3>
+          <p>Every major structural component carries the API monogram and is manufactured to current editions: API Spec 4F-2020 (5th Ed.) for mast and substructure; API Spec 7K-2015 (6th Ed.) for drawworks, rotary table, and BOP handling; API Spec 8C-2012 (5th Ed.) for crown block, traveling block, hook, swivel, and elevator links; and API Spec 9A-2020 (27th Ed.) for wire rope. Hazardous area classification follows API RP505-2018.</p>
+        </div>
+        <div class="cap-card">
+          <div class="num">02</div>
+          <h3>9,000 m Rated Drilling Depth</h3>
+          <p>The ZJ90DB package is engineered for deep well work to 9,000 m with a 6,750 kN (1,500,000 lb) rated hook load at 14-line 7×8 reeving, a 48.7 m K-type mast, and triple 2,400 HP quintuplex mud pumps delivering 51.7 MPa (7,500 psi) working pressure. The 37-1/2&quot; rotary table accommodates the full collar and casing program.</p>
+        </div>
+        <div class="cap-card">
+          <div class="num">03</div>
+          <h3>AC-VFD Drive Train with Siemens PLC</h3>
+          <p>All primary loads — drawworks, rotary table, top drive, and mud pumps — are driven one-to-one via AC–VFD–AC with ABB drive cabinets. The control system uses Siemens S7-1500 PLC with dual-CPU cold-standby redundancy. The driller&#x27;s cabin features a touch-screen interface, CCTV integration, and real-time parameter monitoring displayed at three locations (driller, toolpusher, client rep).</p>
+        </div>
+        <div class="cap-card">
+          <div class="num">04</div>
+          <h3>15,000 PSI BOP &amp; Complete Well Control Stack</h3>
+          <p>The well control package spans three pressure ratings: a 13-5/8&quot; 15K stack with shear-blind rams rated for H2S service, a 21-1/4&quot; 10K stack, and a 26-3/4&quot; 3K diverter system. A 12-station API-16D accumulator unit with dual electric/air power and a 20,000 psi triplex BOP test pump complete the assembly. Total well control section value: $4.6M.</p>
+        </div>
+        <div class="cap-card">
+          <div class="num">05</div>
+          <h3>Dual 50/60 Hz Power Architecture</h3>
+          <p>Five CAT 3512/3512C generators at 1,310 kW each supply 600V/50 Hz for main equipment. A Volvo TAD1651GE auxiliary unit serves camp and ancillary loads. Three additional 400 kW Volvo sets operate at 60 Hz, with 2+1 redundancy, to supply PEMEX/third-party equipment via a dedicated MCC house — enabling seamless integration with client-supplied cementing units, solids control, and trailers.</p>
+        </div>
+        <div class="cap-card">
+          <div class="num">06</div>
+          <h3>Turnkey Package with Drill String, Camp &amp; Support</h3>
+          <p>The quotation covers a complete turnkey scope: full drill string (2-7/8&quot; through 5-7/8&quot; S135 and G105 grades, 22,000+ m total), eight-unit camp accommodation (PEMEX and Chinese crews), MSA gas detection and SCBA safety systems, Bomay integrated drilling instrumentation, and BOMCO field service (8 personnel) for installation, commissioning, and 14-day operator training. Packaged FOB Tianjin Port in 6–8 months.</p>
+        </div>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Complete Data</div>
+    <h2 class="section-title">Full Equipment Status</h2>
+    
+        <div class="data-section">
+          <h4>General Specifications</h4>
+          <table><tr><td>Rig Model</td><td>ZJ90DB</td></tr><tr><td>Rig Class</td><td>3,000 HP AC VFD Electric Land Rig</td></tr><tr><td>Rated Hook Load</td><td>6,750 kN (1,500,000 lbs) @ 14 lines</td></tr><tr><td>Reeving System</td><td>7×8</td></tr><tr><td>Wire Rope Diameter</td><td>Φ45 mm (1-3/4&quot;)</td></tr><tr><td>Drawworks Rated Power</td><td>3,000 HP</td></tr><tr><td>Drawworks Gear</td><td>2+2R AC VFD Stepless Speed Regulation</td></tr><tr><td>Hook Speed</td><td>0 – 1.48 m/s</td></tr><tr><td>Rotary Table Bore</td><td>Φ952.5 mm (37-1/2&quot;)</td></tr><tr><td>Mud Pump Qty / Power</td><td>3 sets / 1,800 kW each</td></tr><tr><td>Mast Type</td><td>K-type, Rotating Lifting</td></tr><tr><td>Mast Height</td><td>48.7 m</td></tr><tr><td>Racking Capacity</td><td>2-7/8&quot; drill pipe; 5-7/8&quot; DC 6 stands, 10&quot; DC 2 stands, 14&quot; DC 2 stands</td></tr><tr><td>Drill Floor Height</td><td>13.7 m</td></tr><tr><td>Drill Floor Size</td><td>12.2 m × 14 m</td></tr><tr><td>Base Clearance Height</td><td>11.99 m</td></tr><tr><td>Air Bottle Capacity</td><td>2×2.5 m³ + 2×2 m³ (base buffer tank)</td></tr><tr><td>50 Hz Main Generator Power</td><td>5× 1,200 kW (CAT 3512 / 3512C)</td></tr><tr><td>50 Hz Auxiliary Generator</td><td>1× 400 kW (Volvo TAD1651GE)</td></tr><tr><td>60 Hz Generator Sets</td><td>3× 400 kW (Volvo TAD1651GE)</td></tr><tr><td>Rig Total Power</td><td>5×1,200 kW + 1×400 kW + 3×400 kW</td></tr><tr><td>High-Pressure Manifold</td><td>Φ140 mm / 69 MPa (4&quot; ID / 10,000 psi)</td></tr><tr><td>Mud Tank Total Volume</td><td>302 m³ + 12 m³ (1,899 + 75 bbl)</td></tr><tr><td>Electric Drive Mode</td><td>AC–VFD–AC, one-to-one drive</td></tr><tr><td>Drawworks Motor</td><td>2× 1,150 kW</td></tr><tr><td>Rotary Table Motor</td><td>1× 800 kW</td></tr><tr><td>Mud Pump Motor</td><td>3× 1,800 kW</td></tr><tr><td>Operating Temperature</td><td>-18°C to +50°C</td></tr><tr><td>Operating Humidity</td><td>≤90% at +20°C</td></tr><tr><td>Operating Altitude</td><td>≤3,280 ft (1,000 m)</td></tr><tr><td>Well Depth Capacity</td><td>9,000 m</td></tr><tr><td>Mud Compatibility</td><td>Oil-based mud, water-based mud</td></tr><tr><td>Main API Standards</td><td>API 4F-2020 (5th), 7K-2015 (6th), 8C-2012 (5th), 9A-2020 (27th), RP505-2018</td></tr><tr><td>Explosion-proof Certification</td><td>IECEx / ATEX / UL (Zone 1 &amp; 2); PEMEX standards</td></tr><tr><td>IP Protection — Indoor / Outdoor</td><td>IP20 / IP65 (minimum IP54)</td></tr><tr><td>Nameplate Languages</td><td>English / Spanish / Chinese; metric and imperial units</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Mast &amp; Substructure</h4>
+          <table><tr><td>Mast Model</td><td>JJ675/48.8-K (BOMCO)</td></tr><tr><td>Mast Rated Load</td><td>6,750 kN (1,500,000 lbs)</td></tr><tr><td>Mast Height</td><td>48.7 m (clear crown to drill floor: 48 m)</td></tr><tr><td>Mast Type</td><td>K-type, triple stand operation</td></tr><tr><td>Monkey Board Heights</td><td>24.5 m / 25.5 m / 26.5 m</td></tr><tr><td>Fingerboard</td><td>Suitable for 2-7/8&quot; stands</td></tr><tr><td>Casing Stabbing Board</td><td>Pneumatic, 6 m stroke, fall arrest + emergency stop (Tai&#x27;an Juling 10 kN winch)</td></tr><tr><td>Mast API Standard</td><td>API Spec 4F, PSL1, API monogram</td></tr><tr><td>Escape Devices</td><td>2× Mittermann RG10D (100 m); SALA fall arresters at 53 m, 39 m, 15 m, 9 m</td></tr><tr><td>Substructure Model</td><td>DZ675/13.7-S (BOMCO)</td></tr><tr><td>Drill Floor Height</td><td>13.7 m</td></tr><tr><td>Rotary Table Beam Height from Ground</td><td>11 m</td></tr><tr><td>Total Base Load</td><td>2,400,000 lbs</td></tr><tr><td>Static Load</td><td>1,500,000 lbs</td></tr><tr><td>Setback Load</td><td>900,000 lbs</td></tr><tr><td>Drill Floor Size</td><td>12.2 m × 14 m</td></tr><tr><td>Base Clearance Height</td><td>11.99 m</td></tr><tr><td>Zero Discharge Design</td><td>Mud collection via recovery channels; 2 m³ sewage collection tank</td></tr><tr><td>Skidding System</td><td>Rail-type; 50 m max travel, 10 m well spacing</td></tr><tr><td>BOP Handling Device</td><td>DZ1200/4 — 2×600 kN, API 7K, hydraulic (Baoji Hongxiang)</td></tr><tr><td>Deadline Anchor</td><td>JZG72D — 720 kN, 45 mm rope, forged weldment (JPIM)</td></tr><tr><td>Substructure API Standard</td><td>API Spec 4F, PSL1, E2&amp;U2, API monogram</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Drawworks</h4>
+          <table><tr><td>Model</td><td>JC90DB (BOMCO)</td></tr><tr><td>Rated Power</td><td>3,000 HP</td></tr><tr><td>Wire Rope Diameter</td><td>Φ45 mm (1-3/4&quot;)</td></tr><tr><td>Max Fast Line Pull</td><td>640 kN</td></tr><tr><td>Hook Speed</td><td>0 – 1.48 m/s</td></tr><tr><td>Gear Configuration</td><td>2+2R AC VFD stepless speed regulation</td></tr><tr><td>Drive Motors</td><td>2× Yongji 1,150 kW explosion-proof VFD motors</td></tr><tr><td>Gearbox</td><td>NGC two-speed gear reducer, forced oil lubrication, auto-detection interface</td></tr><tr><td>Main Brake</td><td>Hydraulic disc brake, service + parking, air-cooled (Renqiu Boke)</td></tr><tr><td>Disc Brake HPU</td><td>Air-cooled, imported plunger pump, accumulator set (Renqiu Boke)</td></tr><tr><td>Auxiliary Brake</td><td>VFD motor dynamic braking</td></tr><tr><td>Drum</td><td>LEBUS grooving + fast line spooler</td></tr><tr><td>Auto Driller</td><td>2× 45 kW Nanyang explosion-proof — constant WOB, RPM, torque, standpipe pressure</td></tr><tr><td>Anti-collision</td><td>Over-wrap valve, weighted device, electronic system with monitoring/recording</td></tr><tr><td>API Standard</td><td>API Spec 7K</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Crown / Traveling Block / Rotary Table</h4>
+          <table><tr><td>Crown Block Model</td><td>TC675 (BOMCO)</td></tr><tr><td>Crown Block Rated Load</td><td>6,750 kN (1,500,000 lbs)</td></tr><tr><td>Crown Block Reeving</td><td>7×8 with lead-in sheave</td></tr><tr><td>Crown Block Main Sheaves</td><td>7 pcs × Φ1,524 mm; fast line sheave 1 pc × Φ1,524 mm</td></tr><tr><td>Crown Block API Standard</td><td>API Spec 8C/4F, PSL1, E2&amp;U2, API monogram</td></tr><tr><td>Centralized Lubrication</td><td>Included; lightning rod and aviation obstruction lights</td></tr><tr><td>Traveling Block Model</td><td>YC675 (BOMCO)</td></tr><tr><td>Traveling Block Rated Load</td><td>6,750 kN (1,500,000 lbs)</td></tr><tr><td>Traveling Block Sheaves</td><td>7, for 45 mm rope</td></tr><tr><td>Traveling Block API Standard</td><td>API Spec 8C, PSL1, API monogram; top drive balancing cylinder interface reserved</td></tr><tr><td>Rotary Table Model</td><td>ZP375H (BOMCO)</td></tr><tr><td>Rotary Table Bore</td><td>Φ952.5 mm (37-1/2&quot;)</td></tr><tr><td>Rotary Table Max Static Load</td><td>7,250 kN</td></tr><tr><td>Rotary Table Max Speed</td><td>300 r/min</td></tr><tr><td>Rotary Table Motor</td><td>800 kW explosion-proof (CRRC Yongji), fan-cooled from safe area</td></tr><tr><td>Rotary Table API Standard</td><td>API Spec 7K, API monogram</td></tr><tr><td>Master Bushing</td><td>Split type, pin drive</td></tr><tr><td>Casing Bushing (Solid)</td><td>20&quot; casing</td></tr><tr><td>RT Bushing Inserts</td><td>11-3/4&quot;, 9-5/8&quot;, 2-3/8&quot;</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Swivel / Hook / Top Drive</h4>
+          <table><tr><td>Hook Model</td><td>DG675 (BOMCO)</td></tr><tr><td>Hook Max Static Load</td><td>6,750 kN</td></tr><tr><td>Hook Main Latch Diameter</td><td>Φ228 mm</td></tr><tr><td>Hook Aux Latch Diameter</td><td>Φ148 mm</td></tr><tr><td>Hook API Standard</td><td>API Spec 8C PSL1, API monogram</td></tr><tr><td>Swivel Model</td><td>SL675 (BOMCO)</td></tr><tr><td>Swivel Max Static Load</td><td>6,750 kN</td></tr><tr><td>Swivel Max Speed</td><td>300 r/min</td></tr><tr><td>Swivel Working Pressure</td><td>51.7 MPa (7,500 psi)</td></tr><tr><td>Swivel Stem Diameter</td><td>Φ102 mm</td></tr><tr><td>Swivel API Standard</td><td>API Spec 8C PSL1, API monogram</td></tr><tr><td>Kelly</td><td>5-1/4&quot; Hex Kelly (Shuguang Huayang)</td></tr><tr><td>Kelly Bushing</td><td>Four-pin drive hexagonal roller bushing</td></tr><tr><td>Kelly Cock Valves</td><td>Upper and lower kelly cock valves</td></tr><tr><td>Top Drive Model</td><td>DQ90BSC (BPM)</td></tr><tr><td>Top Drive Hook Load</td><td>6,750 kN (1,500,000 lbs)</td></tr><tr><td>Top Drive Working Torque</td><td>72,000 N·m</td></tr><tr><td>Top Drive Max Torque</td><td>108,000 N·m</td></tr><tr><td>Top Drive Working Pressure</td><td>7,500 psi</td></tr><tr><td>Top Drive Control</td><td>Independent VFD E-house</td></tr><tr><td>Elevator Links DH350</td><td>3,150 kN / 3,800 mm / API 8C PSL2 (BOMCO)</td></tr><tr><td>Elevator Links DH500</td><td>4,500 kN / 4,572 mm / API 8C PSL2 (BOMCO)</td></tr><tr><td>Elevator Links DH750</td><td>6,750 kN / 4,880 mm / API 8C PSL2 (BOMCO)</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Power System</h4>
+          <table><tr><td>Main Generator</td><td>5× CAT 3512 or 3512C, 1,310 kW each (with fan), 600V/50Hz, PF 0.7, 1,500 rpm, IP23 (Caterpillar)</td></tr><tr><td>Aux Generator (50 Hz)</td><td>1× Volvo TAD1651GE, 400 kW, 400V/50Hz, PF 0.8, 1,500 rpm, IP23</td></tr><tr><td>60 Hz Generator Sets</td><td>3× Volvo TAD1651GE, 400 kW, 2 working + 1 standby</td></tr><tr><td>Generator Houses</td><td>6× 10,500×3,000×3,050 mm</td></tr><tr><td>VFD Cabinets</td><td>ABB: Drawworks 1,600 kW ×2; Rotary Table 1,000 kW ×1; Mud Pump 2,000 kW ×3; Auto Driller 55 kW ×2</td></tr><tr><td>Rectifier Cabinets</td><td>2× ABB 3,465 kW</td></tr><tr><td>Braking Units</td><td>ABB: 1,615 kW×2 + 65 kW×2</td></tr><tr><td>MCC Cabinets</td><td>7× ABB (No. 1-4 are soft starters)</td></tr><tr><td>Generator Control Cabinets</td><td>5× (Schneider circuit breakers, synchronizing module, power limiting, 600V busbar)</td></tr><tr><td>PLC</td><td>Siemens S7-1500, 2× CPU cold-standby redundancy, industrial PC</td></tr><tr><td>Transformer</td><td>Dry-type 1,750 kVA, 600/400V, primary 2,000A</td></tr><tr><td>Air Compressors</td><td>2× Sullair 37 kW / 5.6 m³/min / 1.0 MPa</td></tr><tr><td>Cold-Start Compressor</td><td>1× Xi&#x27;an Hengli diesel-engine, 9.3 kW, 1 MPa, 1 m³/min</td></tr><tr><td>Air Dryer</td><td>Sullair HD-12NF refrigerated, 13 m³/min capacity</td></tr><tr><td>Air Tanks</td><td>2×2.5 m³ (generator house) + 2×2 m³ (substructure), ASME certified</td></tr><tr><td>Drilling Instruments</td><td>Martin Decker weight indicator + standpipe gauge; Bomay integrated system (hook load, torque, SPM, rotary speed/torque, flow)</td></tr><tr><td>CCTV</td><td>9-screen display, 9 zoom cameras (4 PTZ) — Yingkou Hengtai</td></tr><tr><td>Intercom</td><td>Explosion-proof phones, speakers, driller &amp; monkey board hands-free — Yingkou Hengtai</td></tr><tr><td>Gas Detection</td><td>MSA fixed H2S/LEL/flame system; 4× Altair 4X portable; 10× Altair 2X H2S portable</td></tr><tr><td>VFD/MCC House</td><td>2-body unit, max 14,000×3,000×3,150 mm per body</td></tr></table>
+        </div>
+        <div class="data-section">
+          <h4>Pricing Highlights</h4>
+          <table><tr><td>Mast (JJ675/48.8-K) — BOMCO</td><td>$689,997</td></tr><tr><td>Substructure (DZ675/13.7-S) — BOMCO</td><td>$1,095,003</td></tr><tr><td>Drawworks (JC90DB) — BOMCO</td><td>$967,501.50</td></tr><tr><td>Crown Block (TC675) — BOMCO</td><td>$712,498.50</td></tr><tr><td>Top Drive (DQ90BSC) — BPM</td><td>$1,612,495.50</td></tr><tr><td>Main Generator Sets (5× CAT 3512/3512C) — Caterpillar</td><td>$3,829,497</td></tr><tr><td>Auxiliary Generator (Volvo TAD1651GE) — Volvo</td><td>$404,995.50</td></tr><tr><td>Air Source System</td><td>$2,199,004.50</td></tr><tr><td>Main Equipment Accessories &amp; Facilities (subtotal)</td><td>$1,079,998.50</td></tr><tr><td>Mud Pump Group (3× quintuplex 2,400 HP) — BOMCO</td><td>$2,159,997</td></tr><tr><td>Mud Tanks &amp; Solids Control System</td><td>$869,998.50</td></tr><tr><td>Well Control Equipment (Section 8)</td><td>$4,602,329</td></tr><tr><td>Drill String (Section 9)</td><td>$3,519,001.50</td></tr><tr><td>Oil/Water Tanks &amp; Functional Houses</td><td>$372,004.50</td></tr><tr><td>Other Accessories &amp; Tools</td><td>$502,498.50</td></tr><tr><td>Camp Houses &amp; 60Hz Electrical System</td><td>$502,498.50</td></tr><tr><td>Safety Equipment &amp; Facilities</td><td>$570,003</td></tr><tr><td>Wellhead/Downhole Tools &amp; Subs</td><td>$138,001.50</td></tr><tr><td>Miscellaneous Equipment (mats, vehicles, etc.)</td><td>$142,495.50</td></tr><tr><td>Others (commissioning, painting, packaging, training)</td><td>$577,500</td></tr><tr><td>Domestic Inland Shipment (BOMCO Yard to Tianjin Port)</td><td>$449,998.50</td></tr><tr><td>TOTAL PRICE — FOB Tianjin Port</td><td>$27,173,717</td></tr></table>
+        </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <h2>Interested in This Rig?</h2>
+    <p>Contact Total Drilling Supply LLC for pricing and to arrange inspection.</p>
+    <div class="cta-buttons">
+      <a href="tel:+18606082327">📞 1-860-608-2327</a>
+      <a href="mailto:bob@2tds.com" class="secondary">✉ bob@2tds.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h5>Total Drilling Supply LLC</h5>
+      <p>Your trusted source for new and used drilling rigs and equipment. Serving the global oil and gas industry with quality assets from leading manufacturers.</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>1-860-608-2327</li>
+        <li>Bob@2tds.com</li>
+        <li>Bob Neundorf, Chairman</li>
+      </ul>
+    </div>
+    <div>
+      <h5>This Rig</h5>
+      <ul>
+        <li>BOMCO 3000 HP Land Rig (New Build)</li>
+        <li>3000 HP</li>
+        <li>New</li>
+        <li>Factory — China (BOMCO/CNPC Baoji)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2026 Total Drilling Supply LLC. All rights reserved.
+    <span>Specifications subject to change. Contact for current availability.</span>
+  </div>
+</footer>
+
+</body>
+</html>
