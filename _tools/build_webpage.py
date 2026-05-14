@@ -1,0 +1,652 @@
+#!/usr/bin/env python3
+"""
+TDS Equipment webpage generator.
+
+Reads equipment_record.json from a PDF extraction output directory and produces
+a deployable static folder (index.html + images/) matching the existing
+tds-1340hp-hh220.netlify.app design language.
+
+Output structure:
+  <output_dir>/<slug>/
+    index.html
+    images/
+      hero.<ext>
+      gallery_01.<ext>, gallery_02.<ext>, ...
+
+Drag the folder onto Netlify and it deploys at <slug>.netlify.app.
+"""
+import argparse
+import html
+import json
+import shutil
+from pathlib import Path
+
+
+HTML_TEMPLATE = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="{name} — {tagline}. Total Drilling Supply LLC.">
+<title>{name} | Total Drilling Supply LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {{
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --muted: #7A7A7A;
+  --line: #E5E3DC;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+  --warn-bg: #FFF6E5;
+  --warn-line: #F0C674;
+  --warn-ink: #8A4A00;
+}}
+* {{ box-sizing: border-box; margin: 0; padding: 0; }}
+html {{ scroll-behavior: smooth; }}
+body {{
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}}
+a {{ color: inherit; text-decoration: none; }}
+
+/* Top Nav */
+.topnav {{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy);
+  color: white;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+}}
+.topnav-brand {{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}}
+.topnav-brand .logo-mark {{
+  width: 28px;
+  height: 28px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}}
+.topnav-actions {{ display: flex; align-items: center; gap: 18px; font-size: 14px; }}
+.topnav-actions a.phone {{ display: flex; align-items: center; gap: 6px; opacity: 0.9; }}
+.topnav-actions .cta-btn {{
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}}
+.topnav-actions .cta-btn:hover {{ transform: translateY(-1px); }}
+
+/* Hero */
+.hero {{
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  color: white;
+  padding: 80px 32px 60px;
+  position: relative;
+  overflow: hidden;
+}}
+.hero-inner {{ max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; }}
+@media (max-width: 900px) {{ .hero-inner {{ grid-template-columns: 1fr; gap: 40px; }} }}
+
+.hero-status {{
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  padding: 6px 14px;
+  border-radius: 20px;
+}}
+.hero h1 {{
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}}
+.hero .tagline {{
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  font-weight: 400;
+}}
+
+.hero-stats {{ display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 32px; max-width: 540px; }}
+.hero-stat {{ border-left: 2px solid var(--accent); padding-left: 16px; }}
+.hero-stat .value {{
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: white;
+}}
+.hero-stat .label {{
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 6px;
+}}
+.hero-stat .sublabel {{ font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-top: 4px; }}
+
+.hero-image {{
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  aspect-ratio: 4/5;
+  background: rgba(255,255,255,0.05);
+}}
+.hero-image img {{ width: 100%; height: 100%; object-fit: cover; display: block; }}
+.hero-image-caption {{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 24px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}}
+
+/* Warning callout */
+.callout {{
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 32px;
+}}
+.callout-inner {{
+  background: var(--warn-bg);
+  border-left: 4px solid var(--warn-line);
+  border-radius: 0 6px 6px 0;
+  padding: 22px 28px;
+  font-size: 14px;
+  color: var(--warn-ink);
+}}
+.callout-inner strong {{ display: block; font-size: 13px; font-weight: 700; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.06em; }}
+
+/* Section */
+section.content {{ padding: 90px 32px; }}
+.section-inner {{ max-width: 1200px; margin: 0 auto; }}
+.eyebrow {{
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: 14px;
+}}
+.section-title {{
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 56px;
+}}
+
+/* Equipment cards */
+.equip-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }}
+.equip-card {{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}}
+.equip-card:hover {{ transform: translateY(-4px); box-shadow: 0 12px 24px rgba(15, 39, 71, 0.08); }}
+.equip-card .icon {{ font-size: 30px; margin-bottom: 16px; }}
+.equip-card h3 {{
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+  color: var(--ink);
+}}
+.equip-card .spec-list {{ list-style: none; }}
+.equip-card .spec-list li {{
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  gap: 12px;
+}}
+.equip-card .spec-list li:last-child {{ border-bottom: none; }}
+.equip-card .spec-list .lab {{ color: var(--muted); font-weight: 500; }}
+.equip-card .spec-list .val {{ color: var(--ink); font-weight: 600; text-align: right; }}
+
+/* Gallery */
+.gallery-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }}
+.gallery-item {{
+  position: relative;
+  aspect-ratio: 4/3;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--line);
+}}
+.gallery-item img {{ width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s; }}
+.gallery-item:hover img {{ transform: scale(1.04); }}
+.gallery-item .caption {{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 14px 18px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.75));
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}}
+
+/* Capabilities */
+.cap-grid {{ display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }}
+.cap-card {{
+  padding: 32px 28px;
+  border-top: 2px solid var(--accent-warm);
+}}
+.cap-card .num {{
+  font-family: 'Source Serif 4', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-warm);
+  margin-bottom: 12px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}}
+.cap-card h3 {{
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+  color: var(--ink);
+}}
+.cap-card p {{ font-size: 14px; color: var(--ink-soft); line-height: 1.6; }}
+
+/* Complete Data Table */
+.data-section {{ background: var(--card); border-radius: 8px; border: 1px solid var(--line); overflow: hidden; }}
+.data-section + .data-section {{ margin-top: 28px; }}
+.data-section h4 {{
+  background: var(--navy);
+  color: white;
+  padding: 14px 28px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}}
+.data-section table {{ width: 100%; border-collapse: collapse; }}
+.data-section td {{
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}}
+.data-section tr:last-child td {{ border-bottom: none; }}
+.data-section td:first-child {{ width: 40%; color: var(--muted); font-weight: 500; }}
+.data-section td:last-child {{ color: var(--ink); font-weight: 500; }}
+.data-section tr:nth-child(even) td {{ background: #FAFAF6; }}
+
+/* Description */
+.description {{
+  font-family: 'Source Serif 4', serif;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: italic;
+}}
+
+/* CTA */
+.cta {{
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  color: white;
+  padding: 80px 32px;
+  text-align: center;
+}}
+.cta-inner {{ max-width: 760px; margin: 0 auto; }}
+.cta h2 {{
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}}
+.cta p {{ color: rgba(255,255,255,0.75); font-size: 17px; margin-bottom: 40px; }}
+.cta-buttons {{ display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }}
+.cta-buttons a {{
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}}
+.cta-buttons a.secondary {{ background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }}
+.cta-buttons a:hover {{ transform: translateY(-2px); }}
+
+/* Footer */
+footer {{
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.75);
+  padding: 56px 32px 28px;
+  font-size: 14px;
+}}
+.footer-inner {{ max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.1); }}
+@media (max-width: 720px) {{ .footer-inner {{ grid-template-columns: 1fr; }} }}
+.footer-inner h5 {{ color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }}
+.footer-inner ul {{ list-style: none; }}
+.footer-inner ul li {{ margin-bottom: 8px; font-size: 14px; }}
+.footer-copyright {{ max-width: 1200px; margin: 28px auto 0; text-align: center; font-size: 12px; color: rgba(255,255,255,0.5); }}
+.footer-copyright span {{ display: block; margin-top: 6px; font-style: italic; }}
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#" class="topnav-brand">
+    <span class="logo-mark">T</span>
+    Total Drilling Supply LLC
+  </a>
+  <div class="topnav-actions">
+    <a href="tel:+18606082327" class="phone">📞 1-860-608-2327</a>
+    <a href="#contact" class="cta-btn">Request Quote</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-status">{status_badge}</div>
+      <h1>{name}</h1>
+      <p class="tagline">{tagline}</p>
+      <div class="hero-stats">
+        {hero_stats_html}
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="{hero_image}" alt="{name}">
+      <div class="hero-image-caption">{hero_caption}</div>
+    </div>
+  </div>
+</header>
+
+{warning_html}
+
+<section class="content" style="padding-bottom: 0;">
+  <div class="section-inner">
+    <p class="description">{description}</p>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Technical Overview</div>
+    <h2 class="section-title">Key Equipment Specifications</h2>
+    <div class="equip-grid">
+      {equip_cards_html}
+    </div>
+  </div>
+</section>
+
+{gallery_section_html}
+
+<section class="content" style="background: #F5F3ED;">
+  <div class="section-inner">
+    <div class="eyebrow">Capabilities</div>
+    <h2 class="section-title">Key Advantages</h2>
+    <div class="cap-grid">
+      {capabilities_html}
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Complete Data</div>
+    <h2 class="section-title">Full Equipment Status</h2>
+    {complete_data_html}
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <h2>Interested in This Rig?</h2>
+    <p>Contact Total Drilling Supply LLC for pricing and to arrange inspection.</p>
+    <div class="cta-buttons">
+      <a href="tel:+18606082327">📞 1-860-608-2327</a>
+      <a href="mailto:bob@2tds.com" class="secondary">✉ bob@2tds.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h5>Total Drilling Supply LLC</h5>
+      <p>Your trusted source for new and used drilling rigs and equipment. Serving the global oil and gas industry with quality assets from leading manufacturers.</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>1-860-608-2327</li>
+        <li>Bob@2tds.com</li>
+        <li>Bob Neundorf, Chairman</li>
+      </ul>
+    </div>
+    <div>
+      <h5>This Rig</h5>
+      <ul>
+        <li>{name}</li>
+        <li>{horsepower} HP</li>
+        <li>{condition}</li>
+        <li>{location}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2026 Total Drilling Supply LLC. All rights reserved.
+    <span>Specifications subject to change. Contact for current availability.</span>
+  </div>
+</footer>
+
+</body>
+</html>
+"""
+
+
+def render_hero_stats(stats):
+    out = []
+    for s in stats:
+        out.append(f'''
+        <div class="hero-stat">
+          <div class="value">{html.escape(str(s["value"]))}</div>
+          <div class="label">{html.escape(s["label"])}</div>
+          <div class="sublabel">{html.escape(s.get("sublabel", ""))}</div>
+        </div>''')
+    return "".join(out)
+
+
+def render_equip_cards(cards):
+    out = []
+    for c in cards:
+        specs_html = "".join(
+            f'<li><span class="lab">{html.escape(s["label"])}</span><span class="val">{html.escape(s["value"])}</span></li>'
+            for s in c["specs"]
+        )
+        out.append(f'''
+        <div class="equip-card">
+          <div class="icon">{c["icon"]}</div>
+          <h3>{html.escape(c["title"])}</h3>
+          <ul class="spec-list">{specs_html}</ul>
+        </div>''')
+    return "".join(out)
+
+
+def render_gallery_section(gallery):
+    if not gallery:
+        return ""
+    items = "".join(
+        f'''<div class="gallery-item">
+          <img src="{g["file"]}" alt="{html.escape(g.get("caption", ""))}">
+          <div class="caption">{html.escape(g.get("caption", ""))}</div>
+        </div>''' for g in gallery
+    )
+    return f'''
+<section class="content" style="padding-top: 0;">
+  <div class="section-inner">
+    <div class="eyebrow">Equipment Gallery</div>
+    <h2 class="section-title">Rig Photos</h2>
+    <div class="gallery-grid">{items}</div>
+  </div>
+</section>'''
+
+
+def render_capabilities(caps):
+    out = []
+    for c in caps:
+        out.append(f'''
+        <div class="cap-card">
+          <div class="num">{html.escape(c["number"])}</div>
+          <h3>{html.escape(c["title"])}</h3>
+          <p>{html.escape(c["body"])}</p>
+        </div>''')
+    return "".join(out)
+
+
+def render_complete_data(sections):
+    out = []
+    for sec in sections:
+        rows_html = "".join(
+            f'<tr><td>{html.escape(r[0])}</td><td>{html.escape(r[1])}</td></tr>'
+            for r in sec["rows"]
+        )
+        out.append(f'''
+        <div class="data-section">
+          <h4>{html.escape(sec["section"])}</h4>
+          <table>{rows_html}</table>
+        </div>''')
+    return "".join(out)
+
+
+def render_warning(record):
+    if record.get("condition") == "New":
+        return ""
+    if "as-is" in (record.get("status_badge", "").lower() + record.get("tagline", "").lower()):
+        return f'''
+<div class="callout">
+  <div class="callout-inner">
+    <strong>⚠ Sold As-Is, Where-Is, Ex-Works</strong>
+    Refurbishment or recertification may be required. Contact TDS for current condition assessment, inspection schedule, and parts/overhaul requirements.
+  </div>
+</div>'''
+    return ""
+
+
+def build_page(record_path: Path, output_root: Path):
+    record = json.loads(record_path.read_text())
+    src_dir = record_path.parent
+
+    slug = record["slug"]
+    out_dir = output_root / slug
+    img_out = out_dir / "images"
+    img_out.mkdir(parents=True, exist_ok=True)
+
+    # Copy hero image (rename to hero.<ext>)
+    hero_src = src_dir / record["hero_image"]
+    hero_ext = hero_src.suffix.lower().lstrip(".")
+    hero_dest_name = f"hero.{hero_ext}"
+    shutil.copy(hero_src, img_out / hero_dest_name)
+    record["hero_image_web"] = f"images/{hero_dest_name}"
+
+    # Copy gallery images
+    gallery_web = []
+    for i, g in enumerate(record.get("gallery_images", []), 1):
+        src = src_dir / g["file"]
+        if not src.exists():
+            continue
+        ext = src.suffix.lower().lstrip(".")
+        dest_name = f"gallery_{i:02d}.{ext}"
+        shutil.copy(src, img_out / dest_name)
+        gallery_web.append({"file": f"images/{dest_name}", "caption": g.get("caption", "")})
+
+    # Hero caption (use status badge as a fallback)
+    hero_caption = record.get("tagline", record["name"])
+
+    html_out = HTML_TEMPLATE.format(
+        name=html.escape(record["name"]),
+        tagline=html.escape(record["tagline"]),
+        status_badge=html.escape(record["status_badge"]),
+        description=html.escape(record["description"]),
+        hero_image=record["hero_image_web"],
+        hero_caption=html.escape(hero_caption),
+        hero_stats_html=render_hero_stats(record["hero_stats"]),
+        equip_cards_html=render_equip_cards(record["equipment_cards"]),
+        gallery_section_html=render_gallery_section(gallery_web),
+        capabilities_html=render_capabilities(record["capabilities"]),
+        complete_data_html=render_complete_data(record["complete_data"]),
+        warning_html=render_warning(record),
+        horsepower=record["horsepower"],
+        condition=html.escape(record.get("condition", "")),
+        location=html.escape(record.get("location", "")),
+    )
+
+    (out_dir / "index.html").write_text(html_out, encoding="utf-8")
+    return out_dir
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--record", required=True)
+    ap.add_argument("--out", required=True)
+    args = ap.parse_args()
+    out = build_page(Path(args.record), Path(args.out))
+    print(f"✓ Built page: {out}")
+
+
+if __name__ == "__main__":
+    main()
