@@ -20,29 +20,234 @@
     "16kXjm0yZDwNtul5-dXLpO-HQFOVeYF18",
     "13qqkWMJmTcAsWAZVBLrL1x_DFaX0jCp-",
     "1O51pKkfs-KLcevqJSwqhA2dI9E14xjx9",
-    "1ev-kpFrq_lb099truVennwomjBLjG68Y"
+    "1ev-kpFrq_lb099truVennwomjBLjG68Y",
+    "17-PnyMWA2TQBsBWI3ddwG374xgFj-gR5",
+    "1nZ1Mp1z434kT1MnT1k0A12IKDPR-Bq-m",
+    "1TmOQ6uSSV1m8ANNXUnrpECaFqOa4uvjx",
+    "1DbrFz-lHx5l1XJvyub7LuFEtNVoX7bZn",
+    "1iw8i9tik9iDu9U6COm8HQ-D0-JgVXFK9",
+    "1z3Jezb_b1IQkgRg4nKdyMQW0zfLLVsrz",
+    "1Dn7oLUVEmt-gvEH0tqoCd8CcSUnIWU2c",
+    "1Zvu232dnhWyAbINSqZ3fPP3eS9CRrWyn",
+    "1qSA5rBIjEWsWsb80GhmY8GjaRFtBy30p",
+    "1Jj0D5tMLnX1n0YOyhIt8qCn_4Yo1woI_"
   ],
   "rigs": {
-    "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {"slug": "nov-ideal-1500hp-walking-rig-209", "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS -NOV IDEAL 1500 HP WALKING RIG 209.pdf"},
-    "1M6OMPCFJaR9cu-RyIwHl2zza9IUNFe0X": {"slug": "nov-ideal-1500hp-walking-rig-210", "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-210/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS - NOV IDEAL 1500 HP WALKING RIG 210.pdf"},
-    "1sycB-SFGheNIS8hivKeOxij4_2321UeB": {"slug": "nov-ideal-1500hp-ac-rig-826", "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-ac-rig-826/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS  -Ideal NOV 1500hp AC Rig 826.pdf"},
-    "1oc9ZjaCsxVEQMDWYp-PXb6JLEO6QDyuQ": {"slug": "md-cowan-1000hp-rig-4-dubai", "url": "https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-4-dubai/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS 1000 hp Rig 4 Dubai Short Spec.pdf"},
-    "1ZcRHmQSkg1zph0vGs97IrRmZ0GW4Eozc": {"slug": null, "status": "skipped", "reason": "Multi-rig catalog - not processed as single rig page", "source_pdf": "TDS NOV Ideal 1500 HP Land Rigs.pdf"},
-    "16jjzpJzG0llsW92F1y8PtzidLwmF-1ps": {"slug": "kurui-2000hp-2014", "url": "https://new.oilrigsnow.com/land-drilling-rigs/kurui-2000hp-2014/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS 2014 Kurui 2000 HP Land Rig photo.pdf"},
-    "1ZX7Fq7CQ8GNjLOY07wJRpfaVycNAwgI4": {"slug": "ksm-550-rig-7-2013", "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-7-2013/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS 2015 KSM 550 Rig 7.pdf"},
-    "1TR1y2bl2jUTXuc9cGyRloKOQCPZNSkXm": {"slug": "ksm-550-rig-6-2005", "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-6-2005/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS 2005 KSM 500 Rig 6.pdf"},
-    "1Du08LeV_wt_yOR6tq7taUqmHpdQaOdHF": {"slug": "ksm-550-rig-5-2005", "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-5-2005/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS 2005 KSM 550 Rig 5.pdf"},
-    "1nsNasIsV0YzVTkv2KjAckc1u-vXzqbUE": {"slug": "basin-2000hp-rig-101", "url": "https://new.oilrigsnow.com/land-drilling-rigs/basin-2000hp-rig-101/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "Basin Drilling Rig 101 01-25.pdf"},
-    "19Dc35gFPRslSxImg5nC0N4dfBZVyGD6e": {"slug": "service-king-sk-1000-2007", "url": "https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk-1000-2007/", "processed_at": "2026-05-14T22:30:00Z", "status": "published", "source_pdf": "TDS SK-1000 Trailer Mounted Drilling Rig.pdf"},
-    "1lUoTrfmocjFZhJH6Tx33zZC2I4S9dhzH": {"slug": "alta-1200hp-rig-12", "url": "https://new.oilrigsnow.com/land-drilling-rigs/alta-1200hp-rig-12/", "processed_at": "2026-05-15T01:55:00Z", "status": "published", "source_pdf": "TDS Alta Super Spec AC 1200HP Rig 12.pdf"},
-    "1XwRelJ3452z3J36uLLw8O9CtXda54d57": {"slug": "crown-duke-ce750-2008", "url": "https://new.oilrigsnow.com/land-drilling-rigs/crown-duke-ce750-2008/", "processed_at": "2026-05-15T01:55:00Z", "status": "published", "source_pdf": "TDS Crown Duke 2008 CE750 Rig.pdf"},
-    "1GrW1wlkcj0MrvbofflPeESJjuJN0h_nh": {"slug": "rig-1000-1500hp-2011", "url": "https://new.oilrigsnow.com/land-drilling-rigs/rig-1000-1500hp-2011/", "processed_at": "2026-05-15T01:55:00Z", "status": "published", "source_pdf": "TDS Rig 1000 Specifications.pdf"},
-    "1EXUAtoI_Z2Z2OSqGtzIFpNJ4e_L4Y-rn": {"slug": "hh-3300hp-dbs-rig", "url": "https://new.oilrigsnow.com/land-drilling-rigs/hh-3300hp-dbs-rig/", "processed_at": "2026-05-15T01:55:00Z", "status": "published", "source_pdf": "TDS - HH 3300 HP AC DBS Drilling Rig Specification Sheet.pdf"},
-    "15WizOPUjQp4oDZD0xEQ87fx_IBVrJdA0": {"slug": "nov-5c-workover-rig", "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-5c-workover-rig/", "processed_at": "2026-05-15T01:55:00Z", "status": "published", "source_pdf": "TDS NOV 5C Workover Rigs with specs.pdf"},
-    "1-rfjamJ5kmMx6X-muk9nO2WZxL8stab5": {"slug": null, "status": "pending_review", "reason": "Filename says Rig 15 but content says Rig 16 — identity mismatch; slug alta-1200hp-rig-16 already exists in repo", "processed_at": "2026-05-15T01:55:00Z", "source_pdf": "TDS Alta Super Spec AC 1200HP Rig 15 (2).pdf"},
-    "16kXjm0yZDwNtul5-dXLpO-HQFOVeYF18": {"slug": null, "status": "pending_review", "reason": "Multi-rig catalog — mentions RIGS L2 and L3 in opening text", "processed_at": "2026-05-15T01:55:00Z", "source_pdf": "TDS Rigs L2-L3 1000HP Land Rigs.pdf"},
-    "13qqkWMJmTcAsWAZVBLrL1x_DFaX0jCp-": {"slug": null, "status": "pending_review", "reason": "Slug oime-2000-hp-rig-16 already exists in repo — RFQ variant of existing page, review before overwriting", "processed_at": "2026-05-15T01:55:00Z", "source_pdf": "TDS OIME 2000HP Rig 16 RFQ GQ26-1015-124.pdf"},
-    "1O51pKkfs-KLcevqJSwqhA2dI9E14xjx9": {"slug": null, "status": "pending_review", "reason": "Photo-only PDF — 1 page, no extractable spec text; insufficient data to build page", "processed_at": "2026-05-15T01:55:00Z", "source_pdf": "TDS NOV 5C Workover Rig.pdf"},
-    "1ev-kpFrq_lb099truVennwomjBLjG68Y": {"slug": null, "status": "pending_review", "reason": "Multi-rig catalog — 7 pages each containing a different workover/well service rig", "processed_at": "2026-05-15T01:55:00Z", "source_pdf": "Workover Rigs and Well Service Rigs (updated).pdf"}
+    "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
+      "slug": "nov-ideal-1500hp-walking-rig-209",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS -NOV IDEAL 1500 HP WALKING RIG 209.pdf"
+    },
+    "1M6OMPCFJaR9cu-RyIwHl2zza9IUNFe0X": {
+      "slug": "nov-ideal-1500hp-walking-rig-210",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-210/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS - NOV IDEAL 1500 HP WALKING RIG 210.pdf"
+    },
+    "1sycB-SFGheNIS8hivKeOxij4_2321UeB": {
+      "slug": "nov-ideal-1500hp-ac-rig-826",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-ac-rig-826/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS  -Ideal NOV 1500hp AC Rig 826.pdf"
+    },
+    "1oc9ZjaCsxVEQMDWYp-PXb6JLEO6QDyuQ": {
+      "slug": "md-cowan-1000hp-rig-4-dubai",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-4-dubai/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS 1000 hp Rig 4 Dubai Short Spec.pdf"
+    },
+    "1ZcRHmQSkg1zph0vGs97IrRmZ0GW4Eozc": {
+      "slug": null,
+      "status": "skipped",
+      "reason": "Multi-rig catalog - not processed as single rig page",
+      "source_pdf": "TDS NOV Ideal 1500 HP Land Rigs.pdf"
+    },
+    "16jjzpJzG0llsW92F1y8PtzidLwmF-1ps": {
+      "slug": "kurui-2000hp-2014",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/kurui-2000hp-2014/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS 2014 Kurui 2000 HP Land Rig photo.pdf"
+    },
+    "1ZX7Fq7CQ8GNjLOY07wJRpfaVycNAwgI4": {
+      "slug": "ksm-550-rig-7-2013",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-7-2013/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS 2015 KSM 550 Rig 7.pdf"
+    },
+    "1TR1y2bl2jUTXuc9cGyRloKOQCPZNSkXm": {
+      "slug": "ksm-550-rig-6-2005",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-6-2005/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS 2005 KSM 500 Rig 6.pdf"
+    },
+    "1Du08LeV_wt_yOR6tq7taUqmHpdQaOdHF": {
+      "slug": "ksm-550-rig-5-2005",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-5-2005/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS 2005 KSM 550 Rig 5.pdf"
+    },
+    "1nsNasIsV0YzVTkv2KjAckc1u-vXzqbUE": {
+      "slug": "basin-2000hp-rig-101",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/basin-2000hp-rig-101/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "Basin Drilling Rig 101 01-25.pdf"
+    },
+    "19Dc35gFPRslSxImg5nC0N4dfBZVyGD6e": {
+      "slug": "service-king-sk-1000-2007",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk-1000-2007/",
+      "processed_at": "2026-05-14T22:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS SK-1000 Trailer Mounted Drilling Rig.pdf"
+    },
+    "1lUoTrfmocjFZhJH6Tx33zZC2I4S9dhzH": {
+      "slug": "alta-1200hp-rig-12",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/alta-1200hp-rig-12/",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "status": "published",
+      "source_pdf": "TDS Alta Super Spec AC 1200HP Rig 12.pdf"
+    },
+    "1XwRelJ3452z3J36uLLw8O9CtXda54d57": {
+      "slug": "crown-duke-ce750-2008",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/crown-duke-ce750-2008/",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "status": "published",
+      "source_pdf": "TDS Crown Duke 2008 CE750 Rig.pdf"
+    },
+    "1GrW1wlkcj0MrvbofflPeESJjuJN0h_nh": {
+      "slug": "rig-1000-1500hp-2011",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/rig-1000-1500hp-2011/",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "status": "published",
+      "source_pdf": "TDS Rig 1000 Specifications.pdf"
+    },
+    "1EXUAtoI_Z2Z2OSqGtzIFpNJ4e_L4Y-rn": {
+      "slug": "hh-3300hp-dbs-rig",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/hh-3300hp-dbs-rig/",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "status": "published",
+      "source_pdf": "TDS - HH 3300 HP AC DBS Drilling Rig Specification Sheet.pdf"
+    },
+    "15WizOPUjQp4oDZD0xEQ87fx_IBVrJdA0": {
+      "slug": "nov-5c-workover-rig",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/nov-5c-workover-rig/",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "status": "published",
+      "source_pdf": "TDS NOV 5C Workover Rigs with specs.pdf"
+    },
+    "1-rfjamJ5kmMx6X-muk9nO2WZxL8stab5": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Filename says Rig 15 but content says Rig 16 \u2014 identity mismatch; slug alta-1200hp-rig-16 already exists in repo",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "source_pdf": "TDS Alta Super Spec AC 1200HP Rig 15 (2).pdf"
+    },
+    "16kXjm0yZDwNtul5-dXLpO-HQFOVeYF18": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Multi-rig catalog \u2014 mentions RIGS L2 and L3 in opening text",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "source_pdf": "TDS Rigs L2-L3 1000HP Land Rigs.pdf"
+    },
+    "13qqkWMJmTcAsWAZVBLrL1x_DFaX0jCp-": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Slug oime-2000-hp-rig-16 already exists in repo \u2014 RFQ variant of existing page, review before overwriting",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "source_pdf": "TDS OIME 2000HP Rig 16 RFQ GQ26-1015-124.pdf"
+    },
+    "1O51pKkfs-KLcevqJSwqhA2dI9E14xjx9": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF \u2014 1 page, no extractable spec text; insufficient data to build page",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "source_pdf": "TDS NOV 5C Workover Rig.pdf"
+    },
+    "1ev-kpFrq_lb099truVennwomjBLjG68Y": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Multi-rig catalog \u2014 7 pages each containing a different workover/well service rig",
+      "processed_at": "2026-05-15T01:55:00Z",
+      "source_pdf": "Workover Rigs and Well Service Rigs (updated).pdf"
+    },
+    "17-PnyMWA2TQBsBWI3ddwG374xgFj-gR5": {
+      "slug": "hh-2000hp-vfd-kuwait",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/hh-2000hp-vfd-kuwait/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS - HH 2000_HP_AC_VFD_Drilling_Rig_Specification_Sheet.pdf"
+    },
+    "1nZ1Mp1z434kT1MnT1k0A12IKDPR-Bq-m": {
+      "slug": "drillmec-2300hp-2013",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2300hp-2013/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS_Drillmec_2300hp_Specs (expanded).pdf"
+    },
+    "1TmOQ6uSSV1m8ANNXUnrpECaFqOa4uvjx": {
+      "slug": "barge-rig-20-1500hp-2002",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/barge-rig-20-1500hp-2002/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS Barge Rig 20.pdf"
+    },
+    "1DbrFz-lHx5l1XJvyub7LuFEtNVoX7bZn": {
+      "slug": "idm-1500hp-rig-7-walking",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/idm-1500hp-rig-7-walking/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS Rig 7 1500 HP Texas.pdf"
+    },
+    "1iw8i9tik9iDu9U6COm8HQ-D0-JgVXFK9": {
+      "slug": "continental-emsco-1500hp-rig-3-2006",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-3-2006/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS Rig 3 1500 HP Texas.pdf"
+    },
+    "1z3Jezb_b1IQkgRg4nKdyMQW0zfLLVsrz": {
+      "slug": "idm-1500hp-rig-5-2007",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/idm-1500hp-rig-5-2007/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS Rig 5 1500 HP Texas.pdf"
+    },
+    "1Dn7oLUVEmt-gvEH0tqoCd8CcSUnIWU2c": {
+      "slug": "dreco-1500hp-rig-24",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/dreco-1500hp-rig-24/",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "status": "published",
+      "source_pdf": "TDS Rig 24 1500 HP.pdf"
+    },
+    "1Zvu232dnhWyAbINSqZ3fPP3eS9CRrWyn": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only album (Rig 403 2200hp Maverick T1000) \u2014 no spec text; pair with single-page cover sheet before publishing",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "source_pdf": "TDS Rig 403 2200hp Maverick T1000.pdf"
+    },
+    "1qSA5rBIjEWsWsb80GhmY8GjaRFtBy30p": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Likely same rig as Drillmec 2300HP (expanded) published this run \u2014 same builder, same service date, same location; review before creating separate page",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "source_pdf": "TDS_Drillmec_Explorer_Spec_Sheet.pdf"
+    },
+    "1Jj0D5tMLnX1n0YOyhIt8qCn_4Yo1woI_": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Single-page photo cover for Rig 403 2200HP AC \u2014 no extractable spec text; combine with Maverick T1000 photo album (also pending review)",
+      "processed_at": "2026-05-15T02:30:00Z",
+      "source_pdf": "TDS Rig 403 2200HP AC Drilling Rig.pdf"
+    }
   }
 }
