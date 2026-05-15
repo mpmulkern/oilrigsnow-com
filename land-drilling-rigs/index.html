@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Land Drilling Rigs for Sale | Total Drilling Supply LLC</title>
+<meta name="description" content="Browse our inventory of land drilling rigs for sale. 550 HP to 3,000 HP — NOV Ideal, BOMCO, KSM, OIME, Drillmec, and more. Contact Bob Neundorf for specs and pricing.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --muted: #7A7A7A;
+  --line: #E5E3DC;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Top Nav */
+.topnav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--navy); color: white;
+  padding: 14px 32px;
+  display: flex; align-items: center; justify-content: space-between;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+}
+.topnav-brand {
+  display: flex; align-items: center; gap: 10px;
+  font-weight: 700; font-size: 14px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+}
+.topnav-brand .logo-mark {
+  width: 28px; height: 28px;
+  background: var(--accent); border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px;
+}
+.topnav-actions { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+.topnav-actions a.phone { display: flex; align-items: center; gap: 6px; opacity: 0.9; }
+.topnav-actions .cta-btn {
+  background: var(--accent); color: var(--navy-deep);
+  padding: 9px 18px; border-radius: 4px;
+  font-weight: 600; font-size: 13px;
+  letter-spacing: 0.04em; text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.topnav-actions .cta-btn:hover { transform: translateY(-1px); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  color: white; padding: 72px 32px 64px;
+  text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 60%, rgba(201,164,92,0.06) 0%, transparent 70%);
+}
+.hero-inner { max-width: 860px; margin: 0 auto; position: relative; }
+.hero-badge {
+  display: inline-block; font-size: 11px; font-weight: 700;
+  letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent);
+  margin-bottom: 20px; border: 1px solid rgba(201,164,92,0.4);
+  padding: 6px 16px; border-radius: 20px;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700; font-size: clamp(36px, 5vw, 56px);
+  line-height: 1.08; letter-spacing: -0.02em; margin-bottom: 18px;
+}
+.hero p {
+  font-size: 18px; color: rgba(255,255,255,0.7);
+  max-width: 600px; margin: 0 auto 32px; line-height: 1.6;
+}
+.hero-count {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 14px; color: rgba(255,255,255,0.6);
+  background: rgba(255,255,255,0.06); padding: 10px 20px;
+  border-radius: 6px; border: 1px solid rgba(255,255,255,0.08);
+}
+.hero-count strong { color: var(--accent); font-size: 22px; font-family: 'Source Serif 4', serif; }
+
+/* Filters */
+.filters {
+  max-width: 1240px; margin: 0 auto;
+  padding: 28px 32px 0;
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 16px;
+}
+.filter-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.filter-btn {
+  background: var(--card); border: 1px solid var(--line);
+  padding: 8px 16px; border-radius: 6px;
+  font-size: 13px; font-weight: 600; color: var(--ink-soft);
+  cursor: pointer; transition: all 0.2s;
+  font-family: inherit;
+}
+.filter-btn:hover { border-color: var(--accent); color: var(--ink); }
+.filter-btn.active {
+  background: var(--navy); color: white;
+  border-color: var(--navy);
+}
+.sort-select {
+  background: var(--card); border: 1px solid var(--line);
+  padding: 8px 14px; border-radius: 6px;
+  font-size: 13px; font-weight: 500; color: var(--ink-soft);
+  cursor: pointer; font-family: inherit;
+}
+.result-count { font-size: 13px; color: var(--muted); font-weight: 500; }
+
+/* Grid */
+.rig-grid {
+  max-width: 1240px; margin: 0 auto;
+  padding: 28px 32px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 24px;
+}
+@media (max-width: 480px) {
+  .rig-grid { grid-template-columns: 1fr; padding: 20px 16px 60px; }
+  .filters { padding: 20px 16px 0; }
+  .hero { padding: 48px 20px 40px; }
+}
+
+/* Card */
+.rig-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex; flex-direction: column;
+}
+.rig-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(15, 39, 71, 0.1);
+}
+.rig-card-image {
+  position: relative; aspect-ratio: 16/10;
+  background: linear-gradient(135deg, #1a2a3a, #0f2747);
+  overflow: hidden;
+}
+.rig-card-image img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform 0.5s;
+}
+.rig-card:hover .rig-card-image img { transform: scale(1.04); }
+.rig-card-image .card-badge {
+  position: absolute; top: 14px; left: 14px;
+  background: rgba(15,39,71,0.85); backdrop-filter: blur(8px);
+  color: var(--accent); font-size: 10px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 5px 12px; border-radius: 4px;
+}
+.rig-card-image .hp-badge {
+  position: absolute; bottom: 14px; right: 14px;
+  background: var(--accent); color: var(--navy-deep);
+  font-size: 13px; font-weight: 700; letter-spacing: 0.02em;
+  padding: 6px 14px; border-radius: 4px;
+}
+
+.rig-card-body { padding: 22px 24px 20px; flex: 1; display: flex; flex-direction: column; }
+.rig-card-body h3 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700; font-size: 20px; line-height: 1.2;
+  letter-spacing: -0.01em; margin-bottom: 8px; color: var(--ink);
+}
+.rig-card-body .card-tagline {
+  font-size: 13px; color: var(--muted); line-height: 1.5;
+  margin-bottom: 18px; flex: 1;
+}
+
+.card-stats {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 0; border-top: 1px solid var(--line);
+  margin: 0 -24px -20px; padding: 0;
+}
+.card-stat {
+  padding: 14px 20px;
+  border-bottom: none;
+}
+.card-stat:nth-child(1) { border-right: 1px solid var(--line); }
+.card-stat:nth-child(2) { }
+.card-stat .cs-val {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700; font-size: 16px; color: var(--ink);
+  line-height: 1.2;
+}
+.card-stat .cs-lab {
+  font-size: 10px; font-weight: 600;
+  letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--muted); margin-top: 3px;
+}
+
+.rig-card-footer {
+  padding: 0 24px 20px;
+  display: flex; align-items: center; justify-content: space-between;
+}
+.view-link {
+  font-size: 13px; font-weight: 600; color: var(--accent-warm);
+  letter-spacing: 0.02em;
+  display: flex; align-items: center; gap: 6px;
+  transition: gap 0.2s;
+}
+.rig-card:hover .view-link { gap: 10px; }
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  color: white; padding: 80px 32px; text-align: center;
+}
+.cta-inner { max-width: 760px; margin: 0 auto; }
+.cta h2 {
+  font-family: 'Source Serif 4', serif; font-weight: 700;
+  font-size: clamp(30px, 4vw, 42px); letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+.cta p { color: rgba(255,255,255,0.75); font-size: 17px; margin-bottom: 40px; }
+.cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.cta-buttons a {
+  background: var(--accent); color: var(--navy-deep);
+  padding: 16px 32px; border-radius: 4px;
+  font-weight: 700; font-size: 14px;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.cta-buttons a.secondary {
+  background: transparent; color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.cta-buttons a:hover { transform: translateY(-2px); }
+
+/* Footer */
+footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.75);
+  padding: 56px 32px 28px; font-size: 14px;
+}
+.footer-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: 2fr 1fr 1fr;
+  gap: 40px; padding-bottom: 32px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+@media (max-width: 720px) { .footer-inner { grid-template-columns: 1fr; } }
+.footer-inner h5 {
+  color: white; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px;
+}
+.footer-inner ul { list-style: none; }
+.footer-inner ul li { margin-bottom: 8px; font-size: 14px; }
+.footer-copyright {
+  max-width: 1200px; margin: 28px auto 0;
+  text-align: center; font-size: 12px; color: rgba(255,255,255,0.5);
+}
+
+/* No results */
+.no-results {
+  grid-column: 1 / -1; text-align: center; padding: 60px 20px;
+  color: var(--muted); font-size: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Nav -->
+<nav class="topnav">
+  <a href="/" class="topnav-brand">
+    <span class="logo-mark">T</span>
+    Total Drilling Supply LLC
+  </a>
+  <div class="topnav-actions">
+    <a href="tel:+18606082327" class="phone">&#x1F4DE; 1-860-608-2327</a>
+    <a href="mailto:bob@2tds.com" class="cta-btn">Request Quote</a>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-badge">Equipment Inventory</div>
+    <h1>Land Drilling Rigs</h1>
+    <p>New and used land drilling rigs from 550 HP to 3,000 HP. NOV Ideal, BOMCO, KSM, OIME, Drillmec, and more. All rigs inspected and documented by Total Drilling Supply.</p>
+    <div class="hero-count">
+      <strong>12</strong> rigs currently listed
+    </div>
+  </div>
+</section>
+
+<!-- Filters -->
+<div class="filters">
+  <div class="filter-group">
+    <button class="filter-btn active" data-filter="all">All Rigs</button>
+    <button class="filter-btn" data-filter="hp-500-1000">500-1,000 HP</button>
+    <button class="filter-btn" data-filter="hp-1000-1500">1,000-1,500 HP</button>
+    <button class="filter-btn" data-filter="hp-1500-2000">1,500-2,000 HP</button>
+    <button class="filter-btn" data-filter="hp-2000-plus">2,000+ HP</button>
+  </div>
+  <span class="result-count" id="resultCount">Showing 12 rigs</span>
+</div>
+
+<!-- Grid -->
+<div class="rig-grid" id="rigGrid">
+</div>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="cta-inner">
+    <h2>Looking for Something Specific?</h2>
+    <p>We have access to rigs beyond what's listed here. Tell us what you need and we'll find it.</p>
+    <div class="cta-buttons">
+      <a href="mailto:bob@2tds.com?subject=Rig%20Inquiry">Email Bob Neundorf</a>
+      <a href="tel:+18606082327" class="secondary">Call 1-860-608-2327</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h5>Total Drilling Supply LLC</h5>
+      <p>International equipment brokerage specializing in land drilling rigs, workover rigs, and oilfield equipment. Serving the global energy industry.</p>
+      <p style="margin-top: 12px;">Bob Neundorf, Chairman</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>bob@2tds.com</li>
+        <li>1-860-608-2327</li>
+        <li>144 New Road</li>
+        <li>Thompson, CT 06277</li>
+      </ul>
+    </div>
+    <div>
+      <h5>Equipment</h5>
+      <ul>
+        <li><a href="/land-drilling-rigs/">Land Drilling Rigs</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    Total Drilling Supply LLC. All rights reserved.
+  </div>
+</footer>
+
+<script>
+const RIGS = [
+  {
+    slug: "bomco-3000-hp-land-rig",
+    title: "BOMCO 3000 HP Land Rig",
+    subtitle: "New Build",
+    hero_image: "bomco-3000-hp-land-rig/images/hero.jpeg",
+    tagline: "API-Compliant • ICC Rules • 15K BOP • Built to Spec",
+    badge: "New Build",
+    hp: 3000,
+    hp_display: "3,000 HP",
+    stat1_val: "1,500,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "48.7 m", stat2_lab: "Mast Height",
+    manufacturer: "BOMCO"
+  },
+  {
+    slug: "basin-2000hp-rig-101",
+    title: "Basin 2000HP Walking Rig #101",
+    subtitle: "",
+    hero_image: "basin-2000hp-rig-101/images/hero.jpeg",
+    tagline: "2,000 HP Walking Rig • CANRIG AC Top Drive • 1M lb Hook Load",
+    badge: "For Sale",
+    hp: 2000,
+    hp_display: "2,000 HP",
+    stat1_val: "1,000,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "500 Ton", stat2_lab: "Top Drive",
+    manufacturer: "Basin"
+  },
+  {
+    slug: "oime-2000-hp-rig-16",
+    title: "OIME 2000 HP Rig #16",
+    subtitle: "",
+    hero_image: "oime-2000-hp-rig-16/images/hero.jpeg",
+    tagline: "Box-on-Box Substructure • DSI Cantilever Mast • NOV TDS-11 Top Drive",
+    badge: "For Sale",
+    hp: 2000,
+    hp_display: "2,000 HP",
+    stat1_val: "1,000,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "150 ft", stat2_lab: "Mast Height",
+    manufacturer: "OIME"
+  },
+  {
+    slug: "kurui-2000hp-2014",
+    title: "Kurui 2000HP Land Rig",
+    subtitle: "2014",
+    hero_image: "kurui-2000hp-2014/images/hero.jpeg",
+    tagline: "Kurui 2000HP • 2014 Build • Full-Height Mast",
+    badge: "For Sale",
+    hp: 2000,
+    hp_display: "2,000 HP",
+    stat1_val: "2014", stat1_lab: "Year Built",
+    stat2_val: "Land Rig", stat2_lab: "Class",
+    manufacturer: "Kurui"
+  },
+  {
+    slug: "nov-ideal-1500hp-walking-rig-209",
+    title: "NOV Ideal 1500HP Walking Rig #209",
+    subtitle: "",
+    hero_image: "nov-ideal-1500hp-walking-rig-209/images/hero.jpeg",
+    tagline: "Walking System • SCR Electric • Refurbished • Houston TX",
+    badge: "For Sale",
+    hp: 1500,
+    hp_display: "1,500 HP",
+    stat1_val: "750,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "500 Ton", stat2_lab: "Top Drive",
+    manufacturer: "NOV"
+  },
+  {
+    slug: "nov-ideal-1500hp-walking-rig-210",
+    title: "NOV Ideal 1500HP Walking Rig #210",
+    subtitle: "",
+    hero_image: "nov-ideal-1500hp-walking-rig-210/images/hero.jpeg",
+    tagline: "Walking System • SCR Electric • Refurbished • Houston TX",
+    badge: "For Sale",
+    hp: 1500,
+    hp_display: "1,500 HP",
+    stat1_val: "750,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "500 Ton", stat2_lab: "Top Drive",
+    manufacturer: "NOV"
+  },
+  {
+    slug: "nov-ideal-1500hp-ac-rig-826",
+    title: "NOV Ideal 1500HP AC Rig #826",
+    subtitle: "",
+    hero_image: "nov-ideal-1500hp-ac-rig-826/images/hero.png",
+    tagline: "AC VFD Drilling System • 1,500 HP • 18,000 ft Depth Rating",
+    badge: "For Sale",
+    hp: 1500,
+    hp_display: "1,500 HP",
+    stat1_val: "720,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "VFD", stat2_lab: "Power System",
+    manufacturer: "NOV"
+  },
+  {
+    slug: "md-cowan-1000hp-rig-4-dubai",
+    title: "MD Cowan 1000HP Super Single Rig #4",
+    subtitle: "Dubai",
+    hero_image: "md-cowan-1000hp-rig-4-dubai/images/hero.jpeg",
+    tagline: "Super Single • AC-SCR-DC • Dubai Located • Ready for Mobilisation",
+    badge: "Dubai",
+    hp: 1000,
+    hp_display: "1,000 HP",
+    stat1_val: "550,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "12,000 ft", stat2_lab: "Depth Rating",
+    manufacturer: "MD Cowan"
+  },
+  {
+    slug: "service-king-sk-1000-2007",
+    title: "Service King SK-1000",
+    subtitle: "2007",
+    hero_image: "service-king-sk-1000-2007/images/hero.jpeg",
+    tagline: "SK-1000 Trailer-Mounted • 1,000 HP • Hydraulic Top Drive • Fully Kitted",
+    badge: "For Sale",
+    hp: 1000,
+    hp_display: "1,000 HP",
+    stat1_val: "450,000 lbs", stat1_lab: "Hook Load",
+    stat2_val: "5-Axle", stat2_lab: "Carrier",
+    manufacturer: "Service King"
+  },
+  {
+    slug: "ksm-550-rig-5-2005",
+    title: "KSM 550 Rig #5",
+    subtitle: "2005",
+    hero_image: "ksm-550-rig-5-2005/images/hero.jpeg",
+    tagline: "KSM 550 Trailer-Mounted • 2005 • Complete Package",
+    badge: "For Sale",
+    hp: 550,
+    hp_display: "550 HP",
+    stat1_val: "Trailer-Mounted", stat1_lab: "Configuration",
+    stat2_val: "2005", stat2_lab: "Year Built",
+    manufacturer: "KSM"
+  },
+  {
+    slug: "ksm-550-rig-6-2005",
+    title: "KSM 550 Rig #6",
+    subtitle: "2005",
+    hero_image: "ksm-550-rig-6-2005/images/hero.png",
+    tagline: "KSM 550 Trailer-Mounted • 2005 • Complete Package",
+    badge: "For Sale",
+    hp: 550,
+    hp_display: "550 HP",
+    stat1_val: "Trailer-Mounted", stat1_lab: "Configuration",
+    stat2_val: "2005", stat2_lab: "Year Built",
+    manufacturer: "KSM"
+  },
+  {
+    slug: "ksm-550-rig-7-2013",
+    title: "KSM 550 Rig #7",
+    subtitle: "2013",
+    hero_image: "ksm-550-rig-7-2013/images/hero.jpeg",
+    tagline: "KSM 550 Trailer-Mounted • 2013 • Later Build • Complete Package",
+    badge: "For Sale",
+    hp: 550,
+    hp_display: "550 HP",
+    stat1_val: "Trailer-Mounted", stat1_lab: "Configuration",
+    stat2_val: "2013", stat2_lab: "Year Built",
+    manufacturer: "KSM"
+  }
+];
+
+function getHpRange(hp) {
+  if (hp <= 1000) return 'hp-500-1000';
+  if (hp <= 1500) return 'hp-1000-1500';
+  if (hp <= 2000) return 'hp-1500-2000';
+  return 'hp-2000-plus';
+}
+
+function renderCards(filter) {
+  const grid = document.getElementById('rigGrid');
+  const filtered = filter === 'all' ? RIGS : RIGS.filter(r => getHpRange(r.hp) === filter);
+
+  if (filtered.length === 0) {
+    grid.innerHTML = '<div class="no-results">No rigs match this filter. <br>Contact us for rigs not yet listed.</div>';
+    document.getElementById('resultCount').textContent = 'No rigs found';
+    return;
+  }
+
+  grid.innerHTML = filtered.map(r => `
+    <a href="${r.slug}/" class="rig-card">
+      <div class="rig-card-image">
+        <img src="${r.hero_image}" alt="${r.title}" loading="lazy"
+             onerror="this.style.display='none'">
+        <span class="card-badge">${r.badge}</span>
+        <span class="hp-badge">${r.hp_display}</span>
+      </div>
+      <div class="rig-card-body">
+        <h3>${r.title}${r.subtitle ? ' <span style="font-weight:400;color:var(--muted);font-size:16px">(${r.subtitle})</span>' : ''}</h3>
+        <p class="card-tagline">${r.tagline}</p>
+        <div class="card-stats">
+          <div class="card-stat">
+            <div class="cs-val">${r.stat1_val}</div>
+            <div class="cs-lab">${r.stat1_lab}</div>
+          </div>
+          <div class="card-stat">
+            <div class="cs-val">${r.stat2_val}</div>
+            <div class="cs-lab">${r.stat2_lab}</div>
+          </div>
+        </div>
+      </div>
+    </a>
+  `).join('');
+
+  document.getElementById('resultCount').textContent =
+    `Showing ${filtered.length} rig${filtered.length !== 1 ? 's' : ''}`;
+}
+
+// Filter buttons
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    renderCards(btn.dataset.filter);
+  });
+});
+
+// Initial render
+renderCards('all');
+</script>
+</body>
+</html>
