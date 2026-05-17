@@ -1,0 +1,706 @@
+[
+  {
+    "slug": "alta-1200hp-rig-12",
+    "title": "Alta Super Spec AC 1200HP Drilling Rig 12",
+    "manufacturer": "Alta",
+    "model": "Super Spec AC 1200HP Drilling Rig 12",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "Used",
+    "location": "Odessa, Texas",
+    "status": "Available",
+    "tagline": "Super Spec 1200 AC Rig — Walking-Ready, Odessa TX",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/alta-1200hp-rig-12/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,200",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "alta-1200hp-rig-16",
+    "title": "Alta Super Spec AC 1200HP Rig 16",
+    "manufacturer": "Alta",
+    "model": "Super Spec AC 1200HP Rig 16",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "Used",
+    "location": "Reynoldsville, PA / Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "Super-spec AC walking rig with walking catwalk — 28 wells, low hours, ready to work.",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/alta-1200hp-rig-16/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1200",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "barge-rig-20-1500hp-2002",
+    "title": "Barge Rig 20 – 1500 HP Inland Barge",
+    "manufacturer": "Unknown",
+    "model": "Barge Rig 20 – 1500 HP Inland Barge",
+    "horsepower": 1500,
+    "year": 2002,
+    "condition": "Used",
+    "location": "Louisiana, USA",
+    "status": "Available",
+    "tagline": "1500 HP inland barge rig with full well history — Louisiana Gulf Coast",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/barge-rig-20-1500hp-2002/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "basin-2000hp-rig-101",
+    "title": "Basin Drilling 2000HP Walking Rig #101",
+    "manufacturer": "Basin",
+    "model": "Drilling 2000HP Walking Rig #101",
+    "horsepower": 2000,
+    "year": 2000,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "2,000 HP Walking Rig - CANRIG AC Top Drive - 1M lb Hook Load - For Sale",
+    "status_badge": "For Sale - Land Rig - 2,000 HP",
+    "hero_image": "land-drilling-rigs/basin-2000hp-rig-101/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "2,000 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "bomco-3000-hp-land-rig",
+    "title": "BOMCO 3000 HP Land Rig (New Build)",
+    "manufacturer": "Bomco",
+    "model": "3000 HP Land Rig (New Build)",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "New",
+    "location": "Factory — China (BOMCO/CNPC Baoji)",
+    "status": "Available",
+    "tagline": "API-Compliant • ICC Rules • 15K BOP • Built to Spec",
+    "status_badge": "New Build • Quote Available • BOMCO Factory",
+    "hero_image": "land-drilling-rigs/bomco-3000-hp-land-rig/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "3,000 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "cardwell-375hp-rig-320",
+    "title": "Cardwell 375 HP Workover Rig 320",
+    "manufacturer": "Cardwell",
+    "model": "375 HP Workover Rig 320",
+    "horsepower": 375,
+    "year": null,
+    "condition": "Used",
+    "location": "Latin America",
+    "status": "Available",
+    "tagline": "Compact Cardwell 375 HP workover rig with telescopic mast, Gardner Denver mud pump, and full 111 m³ mud system — ready for well intervention.",
+    "status_badge": "Available — Contact for Details",
+    "hero_image": "land-drilling-rigs/cardwell-375hp-rig-320/images/hero.png",
+    "key_stats": [
+      {
+        "value": "375 HP",
+        "label": "Drawworks Input"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "continental-emsco-1500hp-rig-2-2005",
+    "title": "Continental EMSCO 1500HP Rig 2",
+    "manufacturer": "Continental Emsco",
+    "model": "Continental EMSCO 1500HP Rig 2",
+    "horsepower": 1500,
+    "year": 2005,
+    "condition": "Used",
+    "location": "Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "CAT IV 2025 Certified • Corpus Christi TX • Ready to Deploy",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-2-2005/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1500 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "continental-emsco-1500hp-rig-3-2006",
+    "title": "Continental EMSCO 1500 HP Rig 3",
+    "manufacturer": "Continental Emsco",
+    "model": "Continental EMSCO 1500 HP Rig 3",
+    "horsepower": 1500,
+    "year": 2006,
+    "condition": "Used",
+    "location": "Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "CAT IV 2025 certified Continental EMSCO 1500 HP SCR rig — Corpus Christi TX",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-3-2006/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "crown-duke-ce750-2008",
+    "title": "Stewart & Stevenson (Crown Duke) 2008 CE750 Drill Rig",
+    "manufacturer": "Crown Duke",
+    "model": "Stewart & Stevenson (Crown Duke) 2008 CE750 Drill Rig",
+    "horsepower": 750,
+    "year": 2008,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "2008 Stewart & Stevenson CE750 — Carrier-Mounted, $3M",
+    "status_badge": "Price: $3M",
+    "hero_image": "land-drilling-rigs/crown-duke-ce750-2008/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "$3M",
+        "label": "Asking Price"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "davis-1000hp-rig-102",
+    "title": "Davis 1000HP Land Rig 102",
+    "manufacturer": "Davis",
+    "model": "1000HP Land Rig 102",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "1000HP Land Rig — Davis Drawworks • Dual Cat D-3512 Mud Pumps",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/davis-1000hp-rig-102/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1000 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "dreco-1500hp-rig-24",
+    "title": "Dreco Cantilever Triple 1500 HP Rig 24",
+    "manufacturer": "DRECO",
+    "model": "Dreco Cantilever Triple 1500 HP Rig 24",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "Dreco Cantilever Triple 1500 HP land rig with Varco top drive and Gardner Denver mud pumps",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/dreco-1500hp-rig-24/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "drillmec-2300hp-2013",
+    "title": "Drillmec 2300 HP Land Rig",
+    "manufacturer": "Drillmec",
+    "model": "2300 HP Land Rig",
+    "horsepower": 2300,
+    "year": 2013,
+    "condition": "Used",
+    "location": "Cameron, TX, USA",
+    "status": "Available",
+    "tagline": "2026-certified 2300 HP Drillmec land rig — Cameron TX, ready to work",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/drillmec-2300hp-2013/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "2,300",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "hh-2000hp-vfd-kuwait",
+    "title": "HH 2000 HP AC VFD Drilling Rig",
+    "manufacturer": "HH",
+    "model": "2000 HP AC VFD Drilling Rig",
+    "horsepower": 2000,
+    "year": 2000,
+    "condition": "Used",
+    "location": "Kuwait",
+    "status": "Available",
+    "tagline": "Deep-reach AC VFD land rig engineered for Kuwait desert operations",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/hh-2000hp-vfd-kuwait/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "2,000",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "hh-3300hp-dbs-rig",
+    "title": "3300HP AC DBS Drilling Rig — Kuwait Desert Operations",
+    "manufacturer": "HH",
+    "model": "3300HP AC DBS Drilling Rig — Kuwait Desert Operations",
+    "horsepower": 3300,
+    "year": null,
+    "condition": "Used",
+    "location": "Kuwait",
+    "status": "Available",
+    "tagline": "3300HP AC DBS Drilling Rig — Ultra-Deep Desert Spec, Kuwait",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/hh-3300hp-dbs-rig/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "3,300",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "ideco-1200hp-rig-1-walking-2003",
+    "title": "IDECO E-1200 1200HP Walking Rig 1",
+    "manufacturer": "IDECO",
+    "model": "E-1200 1200HP Walking Rig 1",
+    "horsepower": 1200,
+    "year": 2003,
+    "condition": "Used",
+    "location": "Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "CAT IV 2025 Certified • IDECO 1200HP Walking Rig • Corpus Christi TX",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/ideco-1200hp-rig-1-walking-2003/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1200 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "idm-1500hp-rig-5-2007",
+    "title": "IDM-1500 Rig 5 – 1500 HP SCR Drilling Rig",
+    "manufacturer": "IDM",
+    "model": "IDM-1500 Rig 5 – 1500 HP SCR Drilling Rig",
+    "horsepower": 1500,
+    "year": 2007,
+    "condition": "Used",
+    "location": "Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "CAT IV 2025 certified IDM-1500 SCR rig — Corpus Christi TX, $7.5M",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/idm-1500hp-rig-5-2007/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "idm-1500hp-rig-7-walking",
+    "title": "IDM DC-1500 Rig 7 – 1500 HP SCR Walking Rig",
+    "manufacturer": "IDM",
+    "model": "DC-1500 Rig 7 – 1500 HP SCR Walking Rig",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Used",
+    "location": "Corpus Christi, TX",
+    "status": "Available",
+    "tagline": "CAT IV 2025 certified 1500 HP SCR walking rig — Corpus Christi TX, $7.5M",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/idm-1500hp-rig-7-walking/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "ksm-550-rig-5-2005",
+    "title": "KSM 550 Rig #5 (2005)",
+    "manufacturer": "KSM",
+    "model": "550 Rig #5 (2005)",
+    "horsepower": 550,
+    "year": 2005,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "KSM 550 Trailer-Mounted Rig • 2005 • Complete Package • Available Now",
+    "status_badge": "For Sale • Land Rig • KSM Package",
+    "hero_image": "land-drilling-rigs/ksm-550-rig-5-2005/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "KSM 550",
+        "label": "Rig Model"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "ksm-550-rig-6-2005",
+    "title": "KSM 550 Rig #6 (2005)",
+    "manufacturer": "KSM",
+    "model": "550 Rig #6 (2005)",
+    "horsepower": 550,
+    "year": 2005,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "KSM 550 Trailer-Mounted Rig • 2005 • Complete Package • Available Now",
+    "status_badge": "For Sale • Land Rig • KSM Package",
+    "hero_image": "land-drilling-rigs/ksm-550-rig-6-2005/images/hero.png",
+    "key_stats": [
+      {
+        "value": "KSM 550",
+        "label": "Rig Model"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "ksm-550-rig-7-2013",
+    "title": "KSM 550 Rig #7 (2013)",
+    "manufacturer": "KSM",
+    "model": "550 Rig #7 (2013)",
+    "horsepower": 550,
+    "year": 2013,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "KSM 550 Trailer-Mounted Rig • 2013 • Later Build • Complete Package",
+    "status_badge": "For Sale • Land Rig • KSM Package",
+    "hero_image": "land-drilling-rigs/ksm-550-rig-7-2013/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "KSM 550",
+        "label": "Rig Model"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "kurui-2000hp-2014",
+    "title": "Kurui 2000HP Land Rig (2014)",
+    "manufacturer": "Kurui",
+    "model": "2000HP Land Rig (2014)",
+    "horsepower": 2000,
+    "year": 2000,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "Kurui 2000HP Land Rig • 2014 Build • Full-Height Mast • Available Now",
+    "status_badge": "For Sale • Land Rig • 2014 Build",
+    "hero_image": "land-drilling-rigs/kurui-2000hp-2014/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "2,000 HP",
+        "label": "Rated Power"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "md-cowan-1000hp-rig-4-dubai",
+    "title": "MD Cowan 1000HP Super Single Rig #4 (Dubai)",
+    "manufacturer": "MD Cowan",
+    "model": "1000HP Super Single Rig #4 (Dubai)",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "Used",
+    "location": "Dubai",
+    "status": "For Sale",
+    "tagline": "Super Single - AC-SCR-DC - Dubai Located - Ready for Mobilisation",
+    "status_badge": "For Sale - Land Rig - Dubai",
+    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-4-dubai/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,000 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "mid-continent-1500hp-rig-17",
+    "title": "TDS Drilling Rig 17 — 1,500 HP",
+    "manufacturer": "Mid-Continent",
+    "model": "TDS Drilling Rig 17 — 1,500 HP",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Used",
+    "location": "USA",
+    "status": "Available",
+    "tagline": "Fully equipped 1,500 HP AC SCR land rig with triple mud pumps and Canrig top drive — ready for demanding operations.",
+    "status_badge": "Available — Contact for Details",
+    "hero_image": "land-drilling-rigs/mid-continent-1500hp-rig-17/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500 HP",
+        "label": "Drawworks Power"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "national-80ue-1200hp-rig-14",
+    "title": "National 80UE 1200HP Drilling Rig 14",
+    "manufacturer": "National",
+    "model": "80UE 1200HP Drilling Rig 14",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "National 80UE 1200HP • Certified 2024 • Available for Sale or Lease",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/national-80ue-1200hp-rig-14/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1200 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "nov-5c-workover-rig",
+    "title": "NOV 5C 104' 250K Mobile Workover Rig — Certified Refurbished",
+    "manufacturer": "NOV",
+    "model": "5C 104' 250K Mobile Workover Rig — Certified Refurbished",
+    "horsepower": 500,
+    "year": null,
+    "condition": "Certified Refurbished",
+    "location": "",
+    "status": "Available",
+    "tagline": "NOV 5C 104' 250K Mobile Workover Rig — Certified Refurbished, Tier III",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/nov-5c-workover-rig/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "250K",
+        "label": "Hookload"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "nov-ideal-1500hp-ac-rig-826",
+    "title": "NOV Ideal 1500HP AC Rig #826",
+    "manufacturer": "NOV",
+    "model": "Ideal 1500HP AC Rig #826",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "AC VFD Drilling System • 1,500 HP • 18,000 ft Depth Rating • Available Now",
+    "status_badge": "For Sale • Land Rig • Available",
+    "hero_image": "land-drilling-rigs/nov-ideal-1500hp-ac-rig-826/images/hero.png",
+    "key_stats": [
+      {
+        "value": "1,500 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "nov-ideal-1500hp-walking-rig-209",
+    "title": "NOV Ideal 1500HP Walking Rig #209",
+    "manufacturer": "NOV",
+    "model": "Ideal 1500HP Walking Rig #209",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Refurbished",
+    "location": "Houston, TX",
+    "status": "For Sale",
+    "tagline": "Walking Drilling System • SCR Electric • Refurbished • Houston TX",
+    "status_badge": "For Sale • Land Rig • Houston, TX",
+    "hero_image": "land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "nov-ideal-1500hp-walking-rig-210",
+    "title": "NOV Ideal 1500HP Walking Rig #210",
+    "manufacturer": "NOV",
+    "model": "Ideal 1500HP Walking Rig #210",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Refurbished",
+    "location": "Houston, TX",
+    "status": "For Sale",
+    "tagline": "Walking Drilling System • SCR Electric • Refurbished • Houston TX",
+    "status_badge": "For Sale • Land Rig • Houston, TX",
+    "hero_image": "land-drilling-rigs/nov-ideal-1500hp-walking-rig-210/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "oime-2000-hp-rig-16",
+    "title": "OIME 2000 HP Rig #16",
+    "manufacturer": "OIME",
+    "model": "2000 HP Rig #16",
+    "horsepower": 2000,
+    "year": 2000,
+    "condition": "Used",
+    "location": "Houston, TX",
+    "status": "Available",
+    "tagline": "Box-on-Box Substructure • DSI Cantilever Mast • NOV TDS-11 Top Drive",
+    "status_badge": "For Sale • Available • Houston, TX",
+    "hero_image": "land-drilling-rigs/oime-2000-hp-rig-16/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "2,000 HP",
+        "label": "Drawworks"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "rig-1000-1500hp-2011",
+    "title": "Drilling Rig 1000 — 1500HP AC 600K Cantilever Triple with Walking Package",
+    "manufacturer": "Unknown",
+    "model": "Drilling Rig 1000 — 1500HP AC 600K Cantilever Triple with Walking Package",
+    "horsepower": 1500,
+    "year": 2011,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "1500HP AC 600K Cantilever Triple — 2011 Build with Walking System",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/rig-1000-1500hp-2011/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,500",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "service-king-sk-1000-2007",
+    "title": "Service King SK-1000 Trailer-Mounted Drilling Rig (2007)",
+    "manufacturer": "Service King",
+    "model": "SK-1000 Trailer-Mounted Drilling Rig (2007)",
+    "horsepower": 1000,
+    "year": 2007,
+    "condition": "Used",
+    "location": "",
+    "status": "For Sale",
+    "tagline": "SK-1000 Trailer-Mounted • 1,000 HP • Hydraulic Top Drive • Fully Kitted",
+    "status_badge": "For Sale • Land Rig • Trailer-Mounted",
+    "hero_image": "land-drilling-rigs/service-king-sk-1000-2007/images/hero.jpeg",
+    "key_stats": [
+      {
+        "value": "1,000 HP",
+        "label": "Rated HP"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  },
+  {
+    "slug": "tds-1200hp-rig-l1",
+    "title": "TDS 1200HP Land Rig L1",
+    "manufacturer": "TDS",
+    "model": "1200HP Land Rig L1",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "Available",
+    "tagline": "Category IV certified 1200HP land rig with TESCO top drive — ready for immediate deployment.",
+    "status_badge": "Available",
+    "hero_image": "land-drilling-rigs/tds-1200hp-rig-l1/images/hero.png",
+    "key_stats": [
+      {
+        "value": "1200",
+        "label": "Horsepower"
+      }
+    ],
+    "category": "Land Rig",
+    "price_status": "POA"
+  }
+]
