@@ -48,7 +48,17 @@
     "1WN1t6EZ4XfyKwazaz0QTHkVoc2d1Wlxu",
     "1n6l5qG8-0Kqkkhp7fXwlTWTkOX7aXjJp",
     "1BtMwOxB1pjgLLPX1KccHEnhiwIlYAMG0",
-    "1dXpXd_DFjK_45DgE5cgQ-gnhpnupIItJ"
+    "1dXpXd_DFjK_45DgE5cgQ-gnhpnupIItJ",
+    "1dClpDDylLov0EleXdpM7hmsYiP6P21Hf",
+    "19KRzInIgY5kqty9iB1JB8HvFlrPf67Ws",
+    "1SkJDvIPg7CoUXfnrT-3J3todIJCg0Otc",
+    "1ngD5O8ljs9ljmsrtjY8xYwPjCEk2mSfW",
+    "1aqrrp0Z5QhGyeQD96MI8XIchqmq2rXDM",
+    "1Hl8tNQgKBFP5eqOETNnvj7xBKgKBgPaQ",
+    "1NRM0fWYP846jDs7X5QA4BanmmsxdjPHa",
+    "1R8TOhQfnu9wn2_m4jk-5_F09LdVDRvFm",
+    "102hKUyaxFljBesissxyoPI7UDBoOc2tq",
+    "1T2ngSDJaFVIaE1s_WMfQaCPRkDp56zV"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -398,6 +408,76 @@
       "status": "pending_review",
       "reason": "Not a rig \u2014 BOP equipment list. Excluded from rig catalog.",
       "source_pdf": "TDS M Blowout Preventers Available.pdf"
+    },
+    "1dClpDDylLov0EleXdpM7hmsYiP6P21Hf": {
+      "slug": "national-d1000e-1000hp-rig-15",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/national-d1000e-1000hp-rig-15/",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "status": "published",
+      "source_pdf": "TDS RIG 15_1000 hp_Revised 5.12.23.pdf"
+    },
+    "19KRzInIgY5kqty9iB1JB8HvFlrPf67Ws": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF \u2014 7 pages all branding headers, no extractable spec text. Needs spec sheet.",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TORL AK 1200 HP Land Rig.pdf"
+    },
+    "1SkJDvIPg7CoUXfnrT-3J3todIJCg0Otc": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF \u2014 2 pages, 'Equipment List' heading but specs embedded in images only.",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS X2 2000 HP Land Rig in Iraq.pdf"
+    },
+    "1ngD5O8ljs9ljmsrtjY8xYwPjCEk2mSfW": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Duplicate filename \u2014 'TDS Alta Super Spec AC 1200HP Rig 12.pdf' already published as alta-1200hp-rig-12 (orig_id: 1lUoTrfmocjFZhJH6Tx33zZC2I4S9dhzH).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS Alta Super Spec AC 1200HP Rig 12.pdf"
+    },
+    "1aqrrp0Z5QhGyeQD96MI8XIchqmq2rXDM": {
+      "slug": null,
+      "status": "skipped",
+      "reason": "Multi-rig overview \u2014 'X3 2010 Land rigs Iraq HH 1,500 HP Rigs Overview'.",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "X3 2010 Land rigs Iraq HH 1^J500 HP Rigs Overview.pdf"
+    },
+    "1Hl8tNQgKBFP5eqOETNnvj7xBKgKBgPaQ": {
+      "slug": null,
+      "status": "skipped",
+      "reason": "Non-rig document \u2014 invoice (TOTAL DRILLING SUPPLY INVOICE 101).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TOTAL DRILLING SUPPLY INVOICE 101 (1).pdf"
+    },
+    "1NRM0fWYP846jDs7X5QA4BanmmsxdjPHa": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Filename matches already-published rig 'TDS Rig 5 1500 HP Texas.pdf' (slug: idm-1500hp-rig-5-2007).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS Rig 5 1500 HP Texas.pdf"
+    },
+    "1R8TOhQfnu9wn2_m4jk-5_F09LdVDRvFm": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Filename matches already-published rig 'TDS Rig 7 1500 HP Texas.pdf' (slug: idm-1500hp-rig-7-walking).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS Rig 7 1500 HP Texas.pdf"
+    },
+    "102hKUyaxFljBesissxyoPI7UDBoOc2tq": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Filename matches already-published rig 'TDS Rig 3 1500 HP Texas.pdf' (slug: continental-emsco-1500hp-rig-3-2006).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS Rig 3 1500 HP Texas.pdf"
+    },
+    "1T2ngSDJaFVIaE1s_WMfQaCPRkDp56zV": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Filename matches already-published rig 'TDS Rig 2 1500 HP Texas.pdf' (slug: continental-emsco-1500hp-rig-2-2005).",
+      "processed_at": "2026-05-17T22:23:00Z",
+      "source_pdf": "TDS Rig 2 1500 HP Texas.pdf"
     }
   }
 }
