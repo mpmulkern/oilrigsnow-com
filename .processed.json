@@ -58,7 +58,12 @@
     "1NRM0fWYP846jDs7X5QA4BanmmsxdjPHa",
     "1R8TOhQfnu9wn2_m4jk-5_F09LdVDRvFm",
     "102hKUyaxFljBesissxyoPI7UDBoOc2tq",
-    "1T2ngSDJaFVIaE1s_WMfQaCPRkDp56zV"
+    "1T2ngSDJaFVIaE1s_WMfQaCPRkDp56zV",
+    "1Z6emXN6bBEMdBnIEHX3K7sTBMt25Beg0",
+    "1k_yyqOQQW9CtT3Oc7TCU3y1-YbGCxbET",
+    "14jM3UqAAODBK4gS-KdqNbul7CoqW9wTa",
+    "1_uSlqtAWL3GX29-1lkN1UxRDzmgO6lxj",
+    "16lFGSuyngQ3KHa0bkr8u1tP2mPi3AR8l"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -478,6 +483,41 @@
       "reason": "Filename matches already-published rig 'TDS Rig 2 1500 HP Texas.pdf' (slug: continental-emsco-1500hp-rig-2-2005).",
       "processed_at": "2026-05-17T22:23:00Z",
       "source_pdf": "TDS Rig 2 1500 HP Texas.pdf"
+    },
+    "1Z6emXN6bBEMdBnIEHX3K7sTBMt25Beg0": {
+      "slug": "drillmec-2000hp-rig-66",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-rig-66/",
+      "processed_at": "2026-05-18T09:33:00Z",
+      "status": "published",
+      "source_pdf": "TDS - Drillmec 2000 hp Rig 66.pdf"
+    },
+    "1k_yyqOQQW9CtT3Oc7TCU3y1-YbGCxbET": {
+      "slug": "service-king-sk675hp-workover",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk675hp-workover/",
+      "processed_at": "2026-05-18T09:33:00Z",
+      "status": "published",
+      "source_pdf": "TDS  675hp SK-675 workover rig.pdf"
+    },
+    "14jM3UqAAODBK4gS-KdqNbul7CoqW9wTa": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF - 1 page, header text only (1500 HP Gardner Denver 1100-E), no spec data.",
+      "processed_at": "2026-05-18T09:33:00Z",
+      "source_pdf": "TDS 1500 HP Gardner Denver 1100E Rig 312.pdf"
+    },
+    "1_uSlqtAWL3GX29-1lkN1UxRDzmgO6lxj": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF - 1 page, header text only (1000 HP NOV D1000E Rig 404), no spec data.",
+      "processed_at": "2026-05-18T09:33:00Z",
+      "source_pdf": "TDS 1000 HP NOV D1000E Rig 404.pdf"
+    },
+    "16lFGSuyngQ3KHa0bkr8u1tP2mPi3AR8l": {
+      "slug": null,
+      "status": "pending_review",
+      "reason": "Photo-only PDF - 1 page, header text only (1000 HP NOV D-1000UE Rig 406), no spec data.",
+      "processed_at": "2026-05-18T09:33:00Z",
+      "source_pdf": "TDS 1000 HP NOV D1000UE Rig 406.pdf"
     }
   }
 }
