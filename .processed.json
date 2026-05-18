@@ -63,7 +63,12 @@
     "1k_yyqOQQW9CtT3Oc7TCU3y1-YbGCxbET",
     "14jM3UqAAODBK4gS-KdqNbul7CoqW9wTa",
     "1_uSlqtAWL3GX29-1lkN1UxRDzmgO6lxj",
-    "16lFGSuyngQ3KHa0bkr8u1tP2mPi3AR8l"
+    "16lFGSuyngQ3KHa0bkr8u1tP2mPi3AR8l",
+    "1f7P8u_wG6aYYRZ7dUGD7lkXeR-93dOx_",
+    "1CLcN26ldpEW9JE-_8h2xLf7lkFwA8lzF",
+    "1Wba1KYdvLwgVzysp-3_iFBDYmEJtaEdk",
+    "1RSd1jc5mOYY_XtA0cSt1d4dE9g36V69q",
+    "1z59DS6D5ZDM-z4pxNBO3_cPAJyMoeV9F"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -518,6 +523,41 @@
       "reason": "Photo-only PDF - 1 page, header text only (1000 HP NOV D-1000UE Rig 406), no spec data.",
       "processed_at": "2026-05-18T09:33:00Z",
       "source_pdf": "TDS 1000 HP NOV D1000UE Rig 406.pdf"
+    },
+    "1f7P8u_wG6aYYRZ7dUGD7lkXeR-93dOx_": {
+      "slug": "brewster-n4a-750hp-rig-1",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/brewster-n4a-750hp-rig-1/",
+      "processed_at": "2026-05-18T14:03:36Z",
+      "status": "published",
+      "source_pdf": "TDS BREWSTER N4-A 750 HP Drilling Rig 1.pdf"
+    },
+    "1CLcN26ldpEW9JE-_8h2xLf7lkFwA8lzF": {
+      "slug": "brewster-n4a-750hp-rig-6",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/brewster-n4a-750hp-rig-6/",
+      "processed_at": "2026-05-18T14:03:36Z",
+      "status": "published",
+      "source_pdf": "TDS BREWSTER N4-A 750 HP Drilling Rig 6.pdf"
+    },
+    "1Wba1KYdvLwgVzysp-3_iFBDYmEJtaEdk": {
+      "slug": "cardwell-kb-rig-8-1969",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/cardwell-kb-rig-8-1969/",
+      "processed_at": "2026-05-18T14:03:36Z",
+      "status": "published",
+      "source_pdf": "TDS Cardwell KB Rig 8.pdf"
+    },
+    "1RSd1jc5mOYY_XtA0cSt1d4dE9g36V69q": {
+      "slug": "davis-1500e-rig-11",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/davis-1500e-rig-11/",
+      "processed_at": "2026-05-18T14:03:36Z",
+      "status": "published",
+      "source_pdf": "TDS Davis 1500E Drilling Rig 11.pdf"
+    },
+    "1z59DS6D5ZDM-z4pxNBO3_cPAJyMoeV9F": {
+      "slug": "drillmec-hh220-1340hp-2015",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-hh220-1340hp-2015/",
+      "processed_at": "2026-05-18T14:03:36Z",
+      "status": "published",
+      "source_pdf": "TDS 2015 HH220 1340HP Drillmec Rig.pdf"
     }
   }
 }
