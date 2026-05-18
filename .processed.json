@@ -98,7 +98,23 @@
     "1ldh3UlhX5qi38ab52dyDqcMQUBEkJsZo",
     "1vDOOSoW-24zjcL9TRxU5JL_F6EPN83hn",
     "1BieTqMaDY-PK-q4S4Zxzk58OeP5igJWp",
-    "1NGNQGZP9vfraGhYes_bmqsfAIl1c5rSS"
+    "1NGNQGZP9vfraGhYes_bmqsfAIl1c5rSS",
+    "1jH0vvP3T8un-ZK8fglIlI5RfjOcvNev4",
+    "1hwD-yMvOZEBpIV2M1LnAQ2j-SGeD6_av",
+    "1v_cRu0dnN-JDdFHH956DPt9dHuXh6zxn",
+    "1gzD3V6-RJhGX5XV1SA9pRiW527I8upR9",
+    "1OMDb8iEeuG69ZMYD_rV74TBOwnL1tgJE",
+    "1IWU8jYnPggz8Skqt23VbpwGZy5Wm-1Kx",
+    "18PEjEVx7MtbppJjIKZLd0o8mb6IAZNI0",
+    "1OEkIbg-21D6yqV3y1Plx7EYxI2FF3Gaz",
+    "1QGr0Nhd3JAZv_9Bm92LRhJSqejxt9xgQ",
+    "1mLM4MFVXrXlIcKJtqhaMdPyIln03K45i",
+    "1uyQUFhzv3tt2GzA7eaEWMwZVJj1nTAhm",
+    "1u2dSHeQX1-0mVUuCqXTCRahbz58lEhh2",
+    "1biFby25Jvwj5QI0NP8A-LedksnS71D2h",
+    "1wUosYROr6dFHgIiON8uo83Sb2G_jgz1l",
+    "1asx3owEZxByTZZhI1wXrsl6TiKI-BqVU",
+    "1uyIdw365x0QNO1zzBDmL-kEsYxSgUctz"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -785,6 +801,105 @@
       "status": "pending_review",
       "reason": "duplicate: bomco-1500hp-land-rig already in repo (non-updated version, prefer existing)",
       "source_pdf": "TDS 1500 HP BOMCO Land Rig.pdf"
+    },
+    "1jH0vvP3T8un-ZK8fglIlI5RfjOcvNev4": {
+      "slug": "ide-2000hp-rig-4",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ide-2000hp-rig-4/",
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "published",
+      "source_pdf": "TDS IDE 2000HP Rig 4.pdf"
+    },
+    "1hwD-yMvOZEBpIV2M1LnAQ2j-SGeD6_av": {
+      "slug": "nov-ideal-1500hp-rig-106-2019",
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "No usable rig photos in PDF (KCA DEUTAG logo + layout artifacts only). Add photos manually before publishing.",
+      "source_pdf": "TDS - NOV Ideal 1500 HP Rig 106 (2019).pdf"
+    },
+    "1v_cRu0dnN-JDdFHH956DPt9dHuXh6zxn": {
+      "slug": "nov-ideal-1500hp-rig-105-2019",
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "No usable rig photos in PDF (KCA DEUTAG logo + layout artifacts only). Add photos manually before publishing.",
+      "source_pdf": "TDS - NOV Ideal 1500 HP Rig 105 (2019).pdf"
+    },
+    "1gzD3V6-RJhGX5XV1SA9pRiW527I8upR9": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Slug collision: bomco-3000hp-land-rig already exists in repo. Verify if this is a different rig.",
+      "source_pdf": "TDS 3000 HP BOMCO Land Rig.pdf"
+    },
+    "1OMDb8iEeuG69ZMYD_rV74TBOwnL1tgJE": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Slug collision: bomco-2000hp-land-rig already exists in repo.",
+      "source_pdf": "TDS 2000 HP BOMCO Land Rig.pdf"
+    },
+    "1IWU8jYnPggz8Skqt23VbpwGZy5Wm-1Kx": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Duplicate: nov-ideal-1500hp-walking-rig-209 already published.",
+      "source_pdf": "TDS -NOV IDEAL 1500 HP WALKING RIG 209.pdf"
+    },
+    "18PEjEVx7MtbppJjIKZLd0o8mb6IAZNI0": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Duplicate: nov-ideal-1500hp-walking-rig-210 already published.",
+      "source_pdf": "TDS - NOV IDEAL 1500 HP WALKING RIG 210.pdf"
+    },
+    "1OEkIbg-21D6yqV3y1Plx7EYxI2FF3Gaz": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Duplicate: nov-ideal-1500hp-ac-rig-826 already published.",
+      "source_pdf": "TDS -Ideal NOV 1500hp AC Rig 826.pdf"
+    },
+    "1QGr0Nhd3JAZv_9Bm92LRhJSqejxt9xgQ": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Duplicate: md-cowan-1000hp-rig-4-dubai already published.",
+      "source_pdf": "TDS 1000 hp Rig 4 Dubai Short Spec.pdf"
+    },
+    "1mLM4MFVXrXlIcKJtqhaMdPyIln03K45i": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Duplicate: ksm-550-rig-7-2013 already published (text says 2013 KSM 550 despite 2015 filename).",
+      "source_pdf": "TDS 2015 KSM 550 Rig 7.pdf"
+    },
+    "1uyQUFhzv3tt2GzA7eaEWMwZVJj1nTAhm": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Multi-rig fleet catalog (63MB) \u2014 not a single rig spec.",
+      "source_pdf": "TDS Current Rig Fleet (12-2025).pdf"
+    },
+    "1u2dSHeQX1-0mVUuCqXTCRahbz58lEhh2": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Prohibited TDS NOV Ideal 1500HP Land Rigs catalog (multi-rig overview).",
+      "source_pdf": "TDS NOV Ideal 1500 HP Land Rigs.pdf"
+    },
+    "1biFby25Jvwj5QI0NP8A-LedksnS71D2h": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Cover page only \u2014 no spec data.",
+      "source_pdf": "750 HP Drilling Iaq Cover Page.pdf"
+    },
+    "1wUosYROr6dFHgIiON8uo83Sb2G_jgz1l": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "6-rig package document \u2014 multi-rig, cannot publish as single listing.",
+      "source_pdf": "Lease to Own 6 Rig Package.pdf"
+    },
+    "1asx3owEZxByTZZhI1wXrsl6TiKI-BqVU": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Lease agreement (Schedule A) not an equipment spec sheet.",
+      "source_pdf": "750 HP Drilling Rig 6 Schedule A Lease.pdf"
+    },
+    "1uyIdw365x0QNO1zzBDmL-kEsYxSgUctz": {
+      "processed_at": "2026-05-18T19:52:02Z",
+      "status": "pending_review",
+      "reason": "Lease agreement (Schedule A) not an equipment spec sheet.",
+      "source_pdf": "750 HP Drilling Rig 1 Schedule A Lease.pdf"
     }
   }
 }
