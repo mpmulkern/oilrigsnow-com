@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Policy | Oil Rigs Now</title>
+<meta name="description" content="Cookie Policy for Oil Rigs Now, LLC — how we use cookies on oilrigsnow.com.">
+<link rel="canonical" href="https://oilrigsnow.com/cookies/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --text: #E8E6E1;
+  --text-muted: #A0A0A0;
+  --surface: #101C2E;
+  --surface-light: #162236;
+  --border: rgba(201,164,92,0.15);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: var(--navy-deep); color: var(--text); line-height: 1.7; font-size: 16px; }
+h1, h2, h3, h4 { font-family: 'Source Serif 4', serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* Skip Link */
+.skip-link {
+  position: absolute; top: -100px; left: 1rem; z-index: 9999;
+  background: var(--accent); color: var(--navy-deep); padding: 0.5rem 1rem;
+  border-radius: 4px; font-weight: 600; font-size: 0.9rem;
+  transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+/* Language Bar */
+.lang-bar {
+  background: var(--navy-deep); border-bottom: 1px solid var(--border);
+  padding: 0.4rem 2rem; display: flex; align-items: center; gap: 1rem;
+  font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap;
+}
+.lang-bar span { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: var(--accent); }
+.lang-btn {
+  background: none; border: 1px solid transparent; color: var(--text-muted);
+  padding: 0.2rem 0.55rem; border-radius: 3px; cursor: pointer; font-size: 0.78rem;
+  font-family: 'Inter', sans-serif; letter-spacing: 0.05em; transition: all 0.2s;
+}
+.lang-btn:hover { border-color: var(--accent); color: var(--accent); }
+.lang-btn.active { background: var(--accent); color: var(--navy-deep); border-color: var(--accent); font-weight: 600; }
+
+/* Sticky Nav */
+.site-nav {
+  position: sticky; top: 0; z-index: 1000;
+  background: rgba(8,26,51,0.97); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem; display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo { font-family: 'Source Serif 4', serif; font-size: 1.35rem; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; }
+.nav-logo span { color: var(--text); }
+.nav-links { display: flex; align-items: center; gap: 0.25rem; }
+.nav-links a {
+  color: var(--text-muted); padding: 0.4rem 0.75rem; border-radius: 4px;
+  font-size: 0.88rem; font-weight: 500; transition: all 0.2s;
+}
+.nav-links a:hover { color: var(--accent); background: rgba(201,164,92,0.08); text-decoration: none; }
+.nav-phone { font-size: 0.88rem; color: var(--accent); font-weight: 600; border: 1px solid var(--border); padding: 0.35rem 0.85rem; border-radius: 4px; }
+.nav-phone:hover { background: rgba(201,164,92,0.1); text-decoration: none; }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1a3556 100%);
+  border-bottom: 1px solid var(--border); padding: 4rem 2rem 3.5rem;
+  text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 70% 50%, rgba(201,164,92,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block; background: rgba(201,164,92,0.12); border: 1px solid rgba(201,164,92,0.3);
+  color: var(--accent); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 2rem; margin-bottom: 1.25rem;
+}
+.hero h1 { font-size: clamp(1.9rem, 4vw, 2.75rem); font-weight: 700; color: var(--text); margin-bottom: 0.75rem; line-height: 1.2; }
+.hero-sub { color: var(--text-muted); font-size: 1.05rem; max-width: 560px; margin: 0 auto 1rem; }
+.hero-meta { font-size: 0.82rem; color: var(--text-muted); }
+.hero-meta strong { color: var(--accent); }
+
+/* Layout */
+.page-wrap { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem 4rem; display: grid; grid-template-columns: 220px 1fr; gap: 3rem; align-items: start; }
+@media (max-width: 768px) { .page-wrap { grid-template-columns: 1fr; padding: 2rem 1.25rem; } }
+
+/* TOC */
+.toc {
+  position: sticky; top: 84px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.25rem; font-size: 0.84rem;
+}
+.toc-title { font-family: 'Source Serif 4', serif; font-size: 0.9rem; font-weight: 600; color: var(--accent); margin-bottom: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.toc ol { list-style: none; counter-reset: toc; }
+.toc li { counter-increment: toc; margin-bottom: 0.35rem; display: flex; gap: 0.45rem; align-items: baseline; }
+.toc li::before { content: counter(toc) '.'; color: var(--accent); font-size: 0.78rem; font-weight: 700; min-width: 1.2rem; }
+.toc a { color: var(--text-muted); line-height: 1.4; display: block; transition: color 0.2s; }
+.toc a:hover { color: var(--accent); text-decoration: none; }
+@media (max-width: 768px) { .toc { position: static; } }
+
+/* Content */
+.content section { margin-bottom: 3rem; }
+.content h2 {
+  font-size: 1.45rem; font-weight: 700; color: var(--text);
+  margin-bottom: 1rem; padding-bottom: 0.6rem;
+  border-bottom: 1px solid var(--border);
+}
+.content h2 .section-num { color: var(--accent); margin-right: 0.5rem; font-size: 1rem; }
+.content h3 { font-size: 1.1rem; color: var(--accent); margin: 1.5rem 0 0.6rem; font-weight: 600; }
+.content p { margin-bottom: 1rem; color: var(--text); }
+.content ul, .content ol { margin: 0.75rem 0 1rem 1.5rem; }
+.content li { margin-bottom: 0.45rem; color: var(--text); }
+
+/* Cookie Table */
+.cookie-table-wrap { overflow-x: auto; margin: 1.25rem 0; border-radius: 8px; border: 1px solid var(--border); }
+.cookie-table { width: 100%; border-collapse: collapse; font-size: 0.86rem; }
+.cookie-table thead { background: var(--surface); }
+.cookie-table th {
+  padding: 0.75rem 1rem; text-align: left; color: var(--accent);
+  font-weight: 600; letter-spacing: 0.04em; font-size: 0.82rem;
+  border-bottom: 1px solid var(--border); white-space: nowrap;
+}
+.cookie-table td { padding: 0.7rem 1rem; border-bottom: 1px solid rgba(201,164,92,0.07); vertical-align: top; }
+.cookie-table tr:last-child td { border-bottom: none; }
+.cookie-table tr:nth-child(even) { background: rgba(22,34,54,0.4); }
+.cookie-table tr:hover { background: rgba(201,164,92,0.04); }
+.badge {
+  display: inline-block; padding: 0.15rem 0.55rem; border-radius: 3px; font-size: 0.76rem;
+  font-weight: 600; letter-spacing: 0.04em; white-space: nowrap;
+}
+.badge-essential { background: rgba(201,164,92,0.15); color: var(--accent); }
+.badge-analytics { background: rgba(184,71,42,0.15); color: #e07a5f; }
+.badge-functional { background: rgba(15,39,71,0.6); color: #7eb8d4; border: 1px solid rgba(126,184,212,0.2); }
+
+/* Info Box */
+.info-box {
+  background: var(--surface-light); border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; font-size: 0.93rem;
+}
+.info-box p { margin-bottom: 0; }
+.info-box strong { color: var(--accent); }
+
+/* Browser links */
+.browser-list { list-style: none; margin: 0.75rem 0 1rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem; }
+.browser-list li { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 0.55rem 0.85rem; }
+.browser-list li a { color: var(--accent); font-weight: 500; font-size: 0.9rem; }
+
+/* Contact box */
+.contact-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 1.25rem 1.5rem; margin-top: 1rem;
+}
+.contact-box p { margin-bottom: 0.4rem; }
+.contact-box a { color: var(--accent); font-weight: 500; }
+
+/* Cookie Banner */
+#cookie-banner {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 9998;
+  background: var(--navy); border-top: 2px solid var(--accent);
+  padding: 1.1rem 2rem; flex-wrap: wrap; align-items: center;
+  gap: 1rem; justify-content: space-between;
+}
+.cookie-text { font-size: 0.88rem; color: var(--text-muted); max-width: 700px; }
+.cookie-text a { color: var(--accent); }
+.cookie-actions { display: flex; gap: 0.75rem; flex-shrink: 0; }
+.btn-accept {
+  background: var(--accent); color: var(--navy-deep); padding: 0.5rem 1.35rem;
+  border: none; border-radius: 4px; font-weight: 700; font-size: 0.88rem;
+  cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.2s;
+}
+.btn-accept:hover { opacity: 0.88; }
+.btn-reject {
+  background: transparent; color: var(--text-muted); padding: 0.5rem 1rem;
+  border: 1px solid rgba(160,160,160,0.3); border-radius: 4px; font-size: 0.88rem;
+  cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.2s;
+}
+.btn-reject:hover { border-color: var(--text-muted); color: var(--text); }
+
+/* Footer */
+.site-footer { background: var(--navy-deep); border-top: 1px solid var(--border); padding: 3rem 2rem 2rem; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; }
+@media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; } }
+.footer-brand .f-logo { font-family: 'Source Serif 4', serif; font-size: 1.2rem; color: var(--accent); font-weight: 700; margin-bottom: 0.75rem; }
+.footer-brand p { font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.4rem; }
+.footer-col h4 { font-family: 'Source Serif 4', serif; font-size: 0.9rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.85rem; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.4rem; }
+.footer-col a { color: var(--text-muted); font-size: 0.85rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--accent); text-decoration: none; }
+.footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid var(--border); padding-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+.footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+.footer-bottom a { color: var(--text-muted); font-size: 0.8rem; }
+.footer-bottom a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<!-- Language Bar -->
+<div class="lang-bar" role="navigation" aria-label="Language selection">
+  <span>Translate:</span>
+  <button class="lang-btn active" onclick="setLang('en')" aria-label="English">EN</button>
+  <button class="lang-btn" onclick="setLang('es')" aria-label="Spanish">ES</button>
+  <button class="lang-btn" onclick="setLang('fr')" aria-label="French">FR</button>
+  <button class="lang-btn" onclick="setLang('ar')" aria-label="Arabic">AR</button>
+  <button class="lang-btn" onclick="setLang('pt')" aria-label="Portuguese">PT</button>
+  <button class="lang-btn" onclick="setLang('ru')" aria-label="Russian">RU</button>
+  <button class="lang-btn" onclick="setLang('zh')" aria-label="Chinese">ZH</button>
+</div>
+
+<!-- Sticky Nav -->
+<header>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="/" class="nav-logo" aria-label="Oil Rigs Now — Home">Oil Rigs <span>Now</span></a>
+  <div class="nav-links" role="list">
+    <a href="/" role="listitem">Home</a>
+    <a href="/land-rigs/" role="listitem">Land Rigs</a>
+    <a href="/about/" role="listitem">About</a>
+    <a href="/quote/" role="listitem">Get a Quote</a>
+  </div>
+  <a href="tel:7135650747" class="nav-phone" aria-label="Call us at 713-565-0747">713-565-0747</a>
+</nav>
+</header>
+
+<!-- Hero -->
+<div class="hero" role="banner">
+  <div class="hero-badge">Legal</div>
+  <h1>Cookie Policy</h1>
+  <p class="hero-sub">How Oil Rigs Now uses cookies and similar technologies on oilrigsnow.com</p>
+  <p class="hero-meta">Effective: <strong>May 1, 2026</strong> &nbsp;|&nbsp; Last Updated: <strong>May 2026</strong></p>
+</div>
+
+<!-- Main Content -->
+<main id="main">
+<div class="page-wrap">
+
+  <!-- TOC -->
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#what-are-cookies">What Are Cookies</a></li>
+      <li><a href="#why-we-use">Why We Use Cookies</a></li>
+      <li><a href="#cookie-table">Cookies We Use</a></li>
+      <li><a href="#categories">Cookie Categories</a></li>
+      <li><a href="#manage">Managing Cookies</a></li>
+      <li><a href="#withdraw">Withdrawing Consent</a></li>
+      <li><a href="#consent-banner">Consent Banner</a></li>
+      <li><a href="#legal-basis">Legal Basis</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- Content -->
+  <div class="content">
+
+    <section id="what-are-cookies">
+      <h2><span class="section-num">1.</span> What Are Cookies?</h2>
+      <p>Cookies are small text files placed on your device (computer, tablet, or smartphone) by websites you visit. They are widely used to make websites work efficiently, to improve user experience, and to provide reporting information to site operators.</p>
+      <p>Cookies may be "session cookies," which are deleted when you close your browser, or "persistent cookies," which remain on your device for a set period or until you delete them. Cookies set by the website operator are called "first-party cookies"; those set by third-party services are called "third-party cookies."</p>
+      <p>In addition to cookies, we may use similar tracking technologies such as pixel tags (also called web beacons or clear GIFs), which help us understand how visitors interact with our site. References to "cookies" in this Policy encompass all such technologies unless stated otherwise.</p>
+    </section>
+
+    <section id="why-we-use">
+      <h2><span class="section-num">2.</span> Why We Use Cookies</h2>
+      <p>Oil Rigs Now, LLC uses cookies for several legitimate purposes:</p>
+      <ul>
+        <li><strong>Essential operation:</strong> Certain cookies are necessary for the website to function. Without them, key features such as security protections, language preferences, and page navigation would not work.</li>
+        <li><strong>Performance and analytics:</strong> We use aggregate, anonymized data to understand how visitors find and use our site — which pages are most popular, how long visitors stay, and how they navigate between sections. This helps us improve our content and the overall user experience.</li>
+        <li><strong>AI chat functionality:</strong> When you use the AI chat assistant on oilrigsnow.com, session-scoped cookies allow the AI to maintain context within a single conversation.</li>
+        <li><strong>Remembering your preferences:</strong> Cookies allow us to remember choices you make (such as your preferred language) so you do not need to set them again on your next visit.</li>
+      </ul>
+      <p>We do not use cookies for targeted advertising, remarketing, or selling your data to third parties. We do not operate any behavioral advertising or third-party social media tracking on this site.</p>
+    </section>
+
+    <section id="cookie-table">
+      <h2><span class="section-num">3.</span> Cookies We Use</h2>
+      <p>The following table lists the specific cookies placed on your device when you visit oilrigsnow.com. This list is current as of the effective date of this Policy and is updated as we add or remove cookies.</p>
+
+      <div class="cookie-table-wrap">
+        <table class="cookie-table" role="table" aria-label="List of cookies used on oilrigsnow.com">
+          <thead>
+            <tr>
+              <th scope="col">Cookie Name</th>
+              <th scope="col">Type</th>
+              <th scope="col">Purpose</th>
+              <th scope="col">Duration</th>
+              <th scope="col">Provider</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>lang_pref</code></td>
+              <td><span class="badge badge-essential">Essential</span></td>
+              <td>Stores the visitor's preferred display language so that language selection persists across pages and return visits.</td>
+              <td>Persistent (1 year)</td>
+              <td>Oil Rigs Now (ORN)</td>
+            </tr>
+            <tr>
+              <td><code>cookie_consent</code></td>
+              <td><span class="badge badge-essential">Essential</span></td>
+              <td>Records whether the visitor has acknowledged and accepted the cookie consent notice. Used to suppress the consent banner on return visits.</td>
+              <td>1 Year</td>
+              <td>Oil Rigs Now (ORN)</td>
+            </tr>
+            <tr>
+              <td><code>_cf_bm</code></td>
+              <td><span class="badge badge-essential">Essential</span></td>
+              <td>Set by Cloudflare's Bot Management service to distinguish between legitimate human users and automated bots, protecting the site against malicious traffic and ensuring performance.</td>
+              <td>30 Minutes</td>
+              <td>Cloudflare, Inc.</td>
+            </tr>
+            <tr>
+              <td>Analytics cookies (Cloudflare Web Analytics)</td>
+              <td><span class="badge badge-analytics">Analytics</span></td>
+              <td>Collects aggregate, anonymized data about page views, referrers, device types, and visit duration to help us understand how the site is used. No personal identifiers are collected. Data is not shared with third-party advertisers.</td>
+              <td>Up to 1 Year</td>
+              <td>Cloudflare, Inc.</td>
+            </tr>
+            <tr>
+              <td><code>ai_chat_session</code></td>
+              <td><span class="badge badge-functional">Functional</span></td>
+              <td>Maintains conversational context for the AI chat assistant during a single browser session, allowing the AI to reference earlier messages within the same conversation.</td>
+              <td>Session (deleted on browser close)</td>
+              <td>AI Provider / ORN</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p>We will update this table whenever we add new cookies or change the purpose of existing ones. Check this page periodically for updates.</p>
+    </section>
+
+    <section id="categories">
+      <h2><span class="section-num">4.</span> Cookie Categories</h2>
+
+      <h3>Essential Cookies (Always Active)</h3>
+      <p>Essential cookies are strictly necessary for the website to function and cannot be disabled without severely impacting site functionality. They include cookies that enable security features (such as bot protection), store your consent decision, and remember your language preference. We do not require your consent to set essential cookies, as they are necessary to deliver a service you have requested. However, you may instruct your browser to block them — please be aware that some parts of the site may then not function correctly.</p>
+
+      <h3>Analytics Cookies (Consent Required)</h3>
+      <p>Analytics cookies help us understand how visitors interact with oilrigsnow.com. We use Cloudflare Web Analytics, which is a privacy-first analytics solution that does not use fingerprinting and does not track individual visitors across sites or sessions. Data collected is aggregated and anonymized. These cookies are only set after you have accepted the cookie consent banner. You may decline these cookies without affecting your ability to use the site.</p>
+
+      <h3>AI Chat Cookies (Consent Required)</h3>
+      <p>The AI chat assistant on oilrigsnow.com uses a session cookie to maintain conversational context. This cookie is scoped to your current browser session and is deleted when you close your browser. It does not track your behavior across other websites or persist beyond the current chat session. These cookies are set when you open the chat widget, and you may decline them. Declining AI chat cookies means the chat assistant may not retain context between individual messages in the same conversation.</p>
+    </section>
+
+    <section id="manage">
+      <h2><span class="section-num">5.</span> Managing Cookies via Browser Settings</h2>
+      <p>Most web browsers allow you to control cookies through their settings. You can typically block or delete cookies, or receive a warning before a cookie is stored. Please note that disabling cookies may affect the functionality of this and other websites you visit.</p>
+      <p>To manage cookies in your browser, follow the instructions at the links below:</p>
+      <ul class="browser-list">
+        <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener noreferrer">Google Chrome</a></li>
+        <li><a href="https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer" target="_blank" rel="noopener noreferrer">Mozilla Firefox</a></li>
+        <li><a href="https://support.apple.com/guide/safari/manage-cookies-sfri11471" target="_blank" rel="noopener noreferrer">Apple Safari</a></li>
+        <li><a href="https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge" target="_blank" rel="noopener noreferrer">Microsoft Edge</a></li>
+      </ul>
+      <p>For mobile browsers, consult the settings of your device or browser application. Instructions vary by operating system version and browser release. You can also use browser extensions such as Privacy Badger or uBlock Origin to manage cookies across all sites you visit.</p>
+
+      <div class="info-box">
+        <p><strong>Note on Opt-Out Tools:</strong> Certain industry opt-out tools (such as the NAI opt-out page at optout.networkadvertising.org) may not apply to the analytics solution we use, as Cloudflare Web Analytics is not a member of the NAI. Our analytics do not support behavioral targeting or cross-site tracking.</p>
+      </div>
+    </section>
+
+    <section id="withdraw">
+      <h2><span class="section-num">6.</span> Withdrawing Your Consent</h2>
+      <p>You may withdraw your consent to non-essential cookies at any time. To do so, click <strong>"Cookie Settings"</strong> in the footer of any page on oilrigsnow.com. This will reset your cookie consent preference and display the consent banner again, allowing you to make new selections.</p>
+      <p>Withdrawing consent does not affect the lawfulness of any cookie processing that occurred before you withdrew your consent. Essential cookies will continue to function regardless of your consent choice, as they are required for the site to operate.</p>
+      <p>If you have withdrawn consent and wish to ensure all non-essential cookies have been removed from your device, you should also clear your browser's cookie storage for oilrigsnow.com using the browser settings described in Section 5 above.</p>
+    </section>
+
+    <section id="consent-banner">
+      <h2><span class="section-num">7.</span> About the Cookie Consent Banner</h2>
+      <p>When you visit oilrigsnow.com for the first time, or after clearing your browser cookies, a cookie consent banner is displayed at the bottom of the page. This banner:</p>
+      <ul>
+        <li>Informs you that we use cookies and describes the categories of cookies in use.</li>
+        <li>Provides a link to this Cookie Policy for full details.</li>
+        <li>Offers you the ability to accept all cookies (including analytics and AI chat cookies) or decline non-essential cookies.</li>
+        <li>Sets the <code>cookie_consent</code> cookie to record your decision so the banner is not shown again for 12 months.</li>
+      </ul>
+      <p>The banner is implemented using localStorage rather than an additional cookie, minimizing the footprint of the consent mechanism itself. Essential cookies (including the Cloudflare bot management cookie) may be set before you interact with the banner, as they are strictly necessary for secure site delivery.</p>
+      <p>If you neither accept nor decline — for example, if you close the banner without clicking either button — we treat your session as not having consented to non-essential cookies, and we do not set analytics or AI chat cookies until you explicitly accept.</p>
+    </section>
+
+    <section id="legal-basis">
+      <h2><span class="section-num">8.</span> Legal Basis for Cookie Use</h2>
+      <p>Where the General Data Protection Regulation (GDPR) or the UK GDPR applies to visitors from the European Economic Area or the United Kingdom, our legal basis for setting cookies is as follows:</p>
+      <ul>
+        <li><strong>Essential cookies:</strong> Set on the basis of <em>legitimate interests</em> (Article 6(1)(f) GDPR) — specifically, our interest in delivering a secure, functional website — and, where applicable, as strictly necessary for a service you have requested.</li>
+        <li><strong>Analytics and functional cookies:</strong> Set on the basis of <em>consent</em> (Article 6(1)(a) GDPR), provided through the cookie consent banner in accordance with Article 7 GDPR and the ePrivacy Directive (2002/58/EC, as amended).</li>
+      </ul>
+      <p>For visitors from California, this Policy is supplemented by our Privacy Policy, which addresses your rights under the California Consumer Privacy Act (CCPA) and California Privacy Rights Act (CPRA).</p>
+      <p>We store your consent record (the <code>cookie_consent</code> value) for 12 months in accordance with our obligation to demonstrate consent under GDPR Article 7(1). You have the right to withdraw your consent at any time as described in Section 6.</p>
+    </section>
+
+    <section id="contact">
+      <h2><span class="section-num">9.</span> Questions About This Policy</h2>
+      <p>If you have questions about how we use cookies, wish to exercise a data subject right, or have concerns about our cookie practices, please contact us:</p>
+      <div class="contact-box">
+        <p><strong>Oil Rigs Now, LLC</strong> — a division of Total Drilling Supply LLC (TDS)</p>
+        <p>Houston, TX 77040</p>
+        <p>Email: <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a></p>
+        <p>Phone: <a href="tel:7135650747">713-565-0747</a></p>
+        <p>When contacting us about cookies, please include "Cookie Policy Inquiry" in the subject line of your email.</p>
+      </div>
+      <p style="margin-top:1.25rem;">We will respond to all substantive cookie-related inquiries within 10 business days. For data subject rights requests under GDPR (e.g., right to erasure, right to access), response timelines are governed by our Privacy Policy and applicable law.</p>
+    </section>
+
+  </div><!-- /.content -->
+</div><!-- /.page-wrap -->
+</main>
+
+<!-- Footer -->
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="f-logo">Oil Rigs Now</div>
+      <p>A division of Total Drilling Supply LLC (TDS)</p>
+      <p>Houston, TX 77040</p>
+      <p><a href="tel:7135650747">713-565-0747</a></p>
+      <p><a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a></p>
+      <p style="margin-top:0.5rem;">President: Michael Mulkern</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/land-rigs/">Land Rigs</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/quote/">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/terms/">Terms of Service</a></li>
+        <li><a href="/cookies/" aria-current="page">Cookie Policy</a></li>
+        <li><a href="/disclaimer/">Disclaimer</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="/ai-chat-terms/">AI Chat Disclosure</a></li>
+        <li><a href="/compliance/">Compliance Notice</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Oil Rigs Now, LLC — a division of Total Drilling Supply LLC. All rights reserved.</p>
+    <a href="/cookies/" aria-label="Manage cookie settings">Cookie Settings</a>
+  </div>
+</footer>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <p class="cookie-text">
+    We use essential cookies to operate this site, and optional analytics and AI chat cookies to improve your experience.
+    See our <a href="/cookies/">Cookie Policy</a> for details.
+  </p>
+  <div class="cookie-actions">
+    <button class="btn-reject" onclick="rejectCookies()" aria-label="Decline non-essential cookies">Decline</button>
+    <button class="btn-accept" onclick="acceptCookies()" aria-label="Accept all cookies">Accept All</button>
+  </div>
+</div>
+
+<script>
+function acceptCookies(){localStorage.setItem('cookie_consent','accepted');document.getElementById('cookie-banner').style.display='none';}
+function rejectCookies(){localStorage.setItem('cookie_consent','declined');document.getElementById('cookie-banner').style.display='none';}
+if(!localStorage.getItem('cookie_consent')){document.getElementById('cookie-banner').style.display='flex';}
+function setLang(lang){localStorage.setItem('orn_lang',lang);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active');if(lang==='ar'){document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');}else{document.documentElement.removeAttribute('dir');document.documentElement.setAttribute('lang',lang);}}
+const sl=localStorage.getItem('orn_lang');if(sl&&sl!=='en'){const b=document.querySelector('[onclick="setLang(\''+sl+'\')"]');if(b){document.querySelectorAll('.lang-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');}if(sl==='ar'){document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');}else{document.documentElement.setAttribute('lang',sl);}}
+</script>
+</body>
+</html>

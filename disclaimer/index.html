@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Equipment & Information Disclaimer | Oil Rigs Now</title>
+<meta name="description" content="Important disclaimers regarding equipment specifications, pricing, availability, and information accuracy on oilrigsnow.com.">
+<link rel="canonical" href="https://oilrigsnow.com/disclaimer/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --text: #E8E6E1;
+  --text-muted: #A0A0A0;
+  --surface: #101C2E;
+  --surface-light: #162236;
+  --border: rgba(201,164,92,0.15);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Inter', sans-serif; background: var(--navy-deep); color: var(--text); line-height: 1.7; font-size: 16px; }
+h1, h2, h3, h4 { font-family: 'Source Serif 4', serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.skip-link {
+  position: absolute; top: -100px; left: 1rem; z-index: 9999;
+  background: var(--accent); color: var(--navy-deep); padding: 0.5rem 1rem;
+  border-radius: 4px; font-weight: 600; font-size: 0.9rem; transition: top 0.2s;
+}
+.skip-link:focus { top: 1rem; }
+
+.lang-bar {
+  background: var(--navy-deep); border-bottom: 1px solid var(--border);
+  padding: 0.4rem 2rem; display: flex; align-items: center; gap: 1rem;
+  font-size: 0.78rem; color: var(--text-muted); flex-wrap: wrap;
+}
+.lang-bar span { text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; color: var(--accent); }
+.lang-btn {
+  background: none; border: 1px solid transparent; color: var(--text-muted);
+  padding: 0.2rem 0.55rem; border-radius: 3px; cursor: pointer; font-size: 0.78rem;
+  font-family: 'Inter', sans-serif; letter-spacing: 0.05em; transition: all 0.2s;
+}
+.lang-btn:hover { border-color: var(--accent); color: var(--accent); }
+.lang-btn.active { background: var(--accent); color: var(--navy-deep); border-color: var(--accent); font-weight: 600; }
+
+.site-nav {
+  position: sticky; top: 0; z-index: 1000;
+  background: rgba(8,26,51,0.97); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 2rem; display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.nav-logo { font-family: 'Source Serif 4', serif; font-size: 1.35rem; font-weight: 700; color: var(--accent); letter-spacing: -0.01em; }
+.nav-logo span { color: var(--text); }
+.nav-links { display: flex; align-items: center; gap: 0.25rem; }
+.nav-links a { color: var(--text-muted); padding: 0.4rem 0.75rem; border-radius: 4px; font-size: 0.88rem; font-weight: 500; transition: all 0.2s; }
+.nav-links a:hover { color: var(--accent); background: rgba(201,164,92,0.08); text-decoration: none; }
+.nav-phone { font-size: 0.88rem; color: var(--accent); font-weight: 600; border: 1px solid var(--border); padding: 0.35rem 0.85rem; border-radius: 4px; }
+.nav-phone:hover { background: rgba(201,164,92,0.1); text-decoration: none; }
+
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 60%, #1a3556 100%);
+  border-bottom: 1px solid var(--border); padding: 4rem 2rem 3.5rem;
+  text-align: center; position: relative; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: radial-gradient(ellipse at 30% 50%, rgba(184,71,42,0.06) 0%, transparent 70%);
+  pointer-events: none;
+}
+.hero-badge {
+  display: inline-block; background: rgba(201,164,92,0.12); border: 1px solid rgba(201,164,92,0.3);
+  color: var(--accent); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+  text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 2rem; margin-bottom: 1.25rem;
+}
+.hero h1 { font-size: clamp(1.9rem, 4vw, 2.75rem); font-weight: 700; color: var(--text); margin-bottom: 0.75rem; line-height: 1.2; }
+.hero-sub { color: var(--text-muted); font-size: 1.05rem; max-width: 580px; margin: 0 auto 1rem; }
+.hero-meta { font-size: 0.82rem; color: var(--text-muted); }
+.hero-meta strong { color: var(--accent); }
+
+.page-wrap { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem 4rem; display: grid; grid-template-columns: 220px 1fr; gap: 3rem; align-items: start; }
+@media (max-width: 768px) { .page-wrap { grid-template-columns: 1fr; padding: 2rem 1.25rem; } }
+
+.toc {
+  position: sticky; top: 84px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 8px; padding: 1.25rem; font-size: 0.84rem;
+}
+.toc-title { font-family: 'Source Serif 4', serif; font-size: 0.9rem; font-weight: 600; color: var(--accent); margin-bottom: 0.85rem; text-transform: uppercase; letter-spacing: 0.06em; }
+.toc ol { list-style: none; counter-reset: toc; }
+.toc li { counter-increment: toc; margin-bottom: 0.35rem; display: flex; gap: 0.45rem; align-items: baseline; }
+.toc li::before { content: counter(toc) '.'; color: var(--accent); font-size: 0.78rem; font-weight: 700; min-width: 1.2rem; }
+.toc a { color: var(--text-muted); line-height: 1.4; display: block; transition: color 0.2s; }
+.toc a:hover { color: var(--accent); text-decoration: none; }
+@media (max-width: 768px) { .toc { position: static; } }
+
+.content section { margin-bottom: 3rem; }
+.content h2 { font-size: 1.45rem; font-weight: 700; color: var(--text); margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); }
+.content h2 .section-num { color: var(--accent); margin-right: 0.5rem; font-size: 1rem; }
+.content h3 { font-size: 1.1rem; color: var(--accent); margin: 1.5rem 0 0.6rem; font-weight: 600; }
+.content p { margin-bottom: 1rem; color: var(--text); }
+.content ul, .content ol { margin: 0.75rem 0 1rem 1.5rem; }
+.content li { margin-bottom: 0.45rem; color: var(--text); }
+
+.warning-box {
+  background: rgba(184,71,42,0.1); border: 1px solid rgba(184,71,42,0.3);
+  border-left: 4px solid var(--accent-warm); border-radius: 0 8px 8px 0;
+  padding: 1.1rem 1.35rem; margin: 1.5rem 0;
+}
+.warning-box p { margin-bottom: 0; font-size: 0.93rem; }
+.warning-box strong { color: #e07a5f; }
+
+.info-box {
+  background: var(--surface-light); border-left: 3px solid var(--accent);
+  border-radius: 0 6px 6px 0; padding: 1rem 1.25rem; margin: 1.25rem 0; font-size: 0.93rem;
+}
+.info-box p { margin-bottom: 0; }
+.info-box strong { color: var(--accent); }
+
+.contact-box {
+  background: var(--surface); border: 1px solid var(--border); border-radius: 8px;
+  padding: 1.25rem 1.5rem; margin-top: 1rem;
+}
+.contact-box p { margin-bottom: 0.4rem; }
+.contact-box a { color: var(--accent); font-weight: 500; }
+
+#cookie-banner {
+  display: none; position: fixed; bottom: 0; left: 0; right: 0; z-index: 9998;
+  background: var(--navy); border-top: 2px solid var(--accent);
+  padding: 1.1rem 2rem; flex-wrap: wrap; align-items: center;
+  gap: 1rem; justify-content: space-between;
+}
+.cookie-text { font-size: 0.88rem; color: var(--text-muted); max-width: 700px; }
+.cookie-text a { color: var(--accent); }
+.cookie-actions { display: flex; gap: 0.75rem; flex-shrink: 0; }
+.btn-accept { background: var(--accent); color: var(--navy-deep); padding: 0.5rem 1.35rem; border: none; border-radius: 4px; font-weight: 700; font-size: 0.88rem; cursor: pointer; font-family: 'Inter', sans-serif; transition: opacity 0.2s; }
+.btn-accept:hover { opacity: 0.88; }
+.btn-reject { background: transparent; color: var(--text-muted); padding: 0.5rem 1rem; border: 1px solid rgba(160,160,160,0.3); border-radius: 4px; font-size: 0.88rem; cursor: pointer; font-family: 'Inter', sans-serif; transition: all 0.2s; }
+.btn-reject:hover { border-color: var(--text-muted); color: var(--text); }
+
+.site-footer { background: var(--navy-deep); border-top: 1px solid var(--border); padding: 3rem 2rem 2rem; }
+.footer-grid { max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 2.5rem; margin-bottom: 2rem; }
+@media (max-width: 700px) { .footer-grid { grid-template-columns: 1fr; gap: 1.75rem; } }
+.footer-brand .f-logo { font-family: 'Source Serif 4', serif; font-size: 1.2rem; color: var(--accent); font-weight: 700; margin-bottom: 0.75rem; }
+.footer-brand p { font-size: 0.84rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 0.4rem; }
+.footer-col h4 { font-family: 'Source Serif 4', serif; font-size: 0.9rem; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.07em; margin-bottom: 0.85rem; }
+.footer-col ul { list-style: none; }
+.footer-col li { margin-bottom: 0.4rem; }
+.footer-col a { color: var(--text-muted); font-size: 0.85rem; transition: color 0.2s; }
+.footer-col a:hover { color: var(--accent); text-decoration: none; }
+.footer-bottom { max-width: 1100px; margin: 0 auto; border-top: 1px solid var(--border); padding-top: 1.25rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
+.footer-bottom p { font-size: 0.8rem; color: var(--text-muted); }
+.footer-bottom a { color: var(--text-muted); font-size: 0.8rem; }
+.footer-bottom a:hover { color: var(--accent); }
+</style>
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<div class="lang-bar" role="navigation" aria-label="Language selection">
+  <span>Translate:</span>
+  <button class="lang-btn active" onclick="setLang('en')" aria-label="English">EN</button>
+  <button class="lang-btn" onclick="setLang('es')" aria-label="Spanish">ES</button>
+  <button class="lang-btn" onclick="setLang('fr')" aria-label="French">FR</button>
+  <button class="lang-btn" onclick="setLang('ar')" aria-label="Arabic">AR</button>
+  <button class="lang-btn" onclick="setLang('pt')" aria-label="Portuguese">PT</button>
+  <button class="lang-btn" onclick="setLang('ru')" aria-label="Russian">RU</button>
+  <button class="lang-btn" onclick="setLang('zh')" aria-label="Chinese">ZH</button>
+</div>
+
+<header>
+<nav class="site-nav" aria-label="Primary navigation">
+  <a href="/" class="nav-logo" aria-label="Oil Rigs Now — Home">Oil Rigs <span>Now</span></a>
+  <div class="nav-links" role="list">
+    <a href="/" role="listitem">Home</a>
+    <a href="/land-rigs/" role="listitem">Land Rigs</a>
+    <a href="/about/" role="listitem">About</a>
+    <a href="/quote/" role="listitem">Get a Quote</a>
+  </div>
+  <a href="tel:7135650747" class="nav-phone" aria-label="Call us at 713-565-0747">713-565-0747</a>
+</nav>
+</header>
+
+<div class="hero" role="banner">
+  <div class="hero-badge">Legal</div>
+  <h1>Equipment &amp; Information Disclaimer</h1>
+  <p class="hero-sub">Important limitations on the information, specifications, and representations provided on this website</p>
+  <p class="hero-meta">Effective: <strong>May 1, 2026</strong> &nbsp;|&nbsp; Last Updated: <strong>May 2026</strong></p>
+</div>
+
+<main id="main">
+<div class="page-wrap">
+
+  <nav class="toc" aria-label="Table of contents">
+    <div class="toc-title">Contents</div>
+    <ol>
+      <li><a href="#general">General Disclaimer</a></li>
+      <li><a href="#specs">Equipment Specifications</a></li>
+      <li><a href="#photos">Photography &amp; Media</a></li>
+      <li><a href="#pricing">Pricing &amp; POA</a></li>
+      <li><a href="#availability">Equipment Availability</a></li>
+      <li><a href="#technical">Technical Data</a></li>
+      <li><a href="#role">ORN's Role</a></li>
+      <li><a href="#liability">Limitation of Liability</a></li>
+      <li><a href="#ai-chat">AI Chat Responses</a></li>
+    </ol>
+  </nav>
+
+  <div class="content">
+
+    <div class="warning-box">
+      <p><strong>Please read carefully.</strong> By accessing or using oilrigsnow.com, you acknowledge that you have read and understood this Disclaimer and agree to be bound by its terms. If you do not agree, please discontinue use of this website.</p>
+    </div>
+
+    <section id="general">
+      <h2><span class="section-num">1.</span> General Disclaimer</h2>
+      <p>Oil Rigs Now, LLC — a division of Total Drilling Supply LLC ("ORN," "we," "us," or "our") — provides this website, oilrigsnow.com (the "Site"), for general informational and commercial purposes related to oilfield equipment brokerage. The information on this Site is provided in good faith and to the best of our knowledge at the time of publication. However, ORN makes no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of any information, product, listing, or related graphic on the Site for any purpose.</p>
+      <p>This Disclaimer supplements and should be read together with our <a href="/terms/">Terms of Service</a> and <a href="/privacy/">Privacy Policy</a>. In the event of any conflict between this Disclaimer and the Terms of Service, the Terms of Service shall govern.</p>
+    </section>
+
+    <section id="specs">
+      <h2><span class="section-num">2.</span> Equipment Specifications — Informational Only</h2>
+      <p>All equipment specifications, technical data, descriptions, dimensions, weight ratings, hook load capacities, drawworks ratings, mud pump specifications, mast heights, derrick ratings, and any other technical information published on this Site are provided for informational purposes only. They do not constitute warranties, guarantees, or representations of any kind regarding the actual condition, capability, or performance of any piece of equipment.</p>
+      <p>Specifications listed on this Site are derived from one or more of the following sources: original manufacturer documentation, seller-provided data sheets, prior inspection reports, equipment name plates, or industry reference databases. None of these sources independently guarantees the current accuracy of the data.</p>
+      <p>ORN strongly recommends that all prospective buyers conduct their own independent technical due diligence — including physical inspection by qualified oilfield equipment engineers or inspectors — before relying on any specification for purchase, engineering, or operational decisions.</p>
+    </section>
+
+    <section id="photos">
+      <h2><span class="section-num">3.</span> Photography and Media</h2>
+      <p>Photographs, videos, diagrams, and other visual media displayed on this Site may not accurately reflect the current condition, configuration, completeness, or appearance of any specific piece of equipment listed for sale. Visual media may include:</p>
+      <ul>
+        <li>Archive or reference photos taken at a prior date, which may not reflect modifications, wear, or reconditioning that has occurred since the photo was taken.</li>
+        <li>Stock or representative images used to illustrate an equipment type or configuration rather than the specific unit available.</li>
+        <li>Photos of similar equipment used where current equipment-specific photography is unavailable.</li>
+        <li>Images that may not show all components, missing parts, damage, or modifications present on the actual unit.</li>
+      </ul>
+      <p>Where photographs are intended to represent the specific unit offered, this will be noted in the listing. Even so, physical inspection remains the only reliable means of assessing current equipment condition. Do not make purchasing decisions based solely on photographic representations.</p>
+    </section>
+
+    <section id="pricing">
+      <h2><span class="section-num">4.</span> Pricing, POA, and Market Values</h2>
+      <p>Any price, asking price, estimated value, or indicative valuation appearing on this Site is subject to change without notice and without obligation. Where a price is marked "POA" (Price On Application), this indicates that the price is available upon inquiry and is subject to negotiation — it does not constitute a firm offer, binding quote, or commitment by ORN or the equipment owner to sell at any particular price.</p>
+      <p>Stated prices are indicative only and may reflect asking prices set by equipment owners, third-party sellers, or market estimates. Final pricing for any transaction is subject to negotiation, due diligence findings, current market conditions, applicable taxes, export costs, freight, inspection fees, and other transaction-specific factors. ORN expressly disclaims any liability for decisions made in reliance on any price information appearing on this Site.</p>
+      <div class="info-box">
+        <p><strong>Note:</strong> All pricing on this Site is in U.S. Dollars (USD) unless otherwise stated. Currency conversions, where provided, are approximate and are based on exchange rates at the time of publication, which may have changed.</p>
+      </div>
+    </section>
+
+    <section id="availability">
+      <h2><span class="section-num">5.</span> Equipment Availability — Subject to Prior Sale</h2>
+      <p>Equipment listings on this Site are subject to prior sale, withdrawal from the market, or change of status without notice. The appearance of any equipment on this Site does not guarantee that the equipment is currently available for purchase, inspection, or delivery. Oilfield equipment markets move quickly; listings are updated as promptly as possible but may not reflect real-time availability.</p>
+      <p>ORN does not guarantee that any equipment will remain available for the time period between your inquiry and any proposed transaction closing. Prospective buyers are advised to confirm current availability directly with an ORN representative before commencing due diligence or incurring costs in connection with a potential purchase.</p>
+    </section>
+
+    <section id="technical">
+      <h2><span class="section-num">6.</span> Technical Specifications and Independent Verification</h2>
+      <p>Horsepower (HP) ratings, year of manufacture, rotary table capacity, derrick height, mast ratings, rig component model numbers, and all other technical specifications appearing in listings are based on one or more of the following: manufacturer's original data, seller representations, equipment name plates, or prior inspection documentation. These sources may not reflect post-manufacture modifications, refurbishments, component replacements, or changes resulting from operational use or damage.</p>
+      <p>Independent verification of all technical specifications by a qualified, licensed petroleum engineer, drilling engineer, or certified equipment inspector is strongly recommended before any purchase decision. ORN does not represent that any independent inspection will necessarily confirm the specifications listed on this Site. Any variance between listed specifications and inspection findings should be addressed directly with the equipment seller.</p>
+    </section>
+
+    <section id="role">
+      <h2><span class="section-num">7.</span> ORN's Role as Consultant and Broker</h2>
+      <p>Oil Rigs Now, LLC acts in the capacity of an equipment consultant and broker. In many transactions, ORN facilitates introductions between buyers and sellers, provides market knowledge, and assists with the logistics of due diligence and deal structuring. ORN is not the seller of record in all cases and does not necessarily hold title to or possession of equipment listed on this Site.</p>
+      <p>In its capacity as a broker or agent, ORN does not make representations or warranties on behalf of equipment sellers beyond those set forth in any written representation letter or purchase agreement executed between the parties. Any warranty or guarantee regarding equipment condition, title, or fitness for purpose must be negotiated directly with the selling party and documented in the governing transaction agreement.</p>
+      <p>ORN endeavors to work only with reputable equipment sellers and to present accurate information, but the ultimate responsibility for verifying all aspects of any transaction rests with the buyer.</p>
+    </section>
+
+    <section id="liability">
+      <h2><span class="section-num">8.</span> Limitation of Liability</h2>
+      <p>To the fullest extent permitted by applicable law, ORN, its officers, directors, employees, agents, affiliates (including Total Drilling Supply LLC), and successors shall not be liable for any direct, indirect, incidental, consequential, special, exemplary, or punitive damages arising out of or in connection with:</p>
+      <ul>
+        <li>Any reliance placed on information, specifications, pricing, or other content appearing on this Site.</li>
+        <li>Any purchase, sale, lease, or other transaction entered into based on information obtained from this Site or communications with ORN representatives.</li>
+        <li>Any inaccuracy, error, or omission in equipment specifications, pricing, availability, or condition descriptions.</li>
+        <li>The inability to use or access this Site, or any delay in doing so.</li>
+        <li>Any third-party content, links, or services accessed through this Site.</li>
+      </ul>
+      <p>This limitation of liability applies regardless of whether the claim is based in contract, tort (including negligence), strict liability, or any other legal theory, and regardless of whether ORN has been advised of the possibility of such damages. Some jurisdictions do not allow the exclusion of certain warranties or limitation of liability for consequential damages; in such jurisdictions, ORN's liability is limited to the greatest extent permitted by law.</p>
+    </section>
+
+    <section id="ai-chat">
+      <h2><span class="section-num">9.</span> AI Chat Responses</h2>
+      <p>The AI-powered chat assistant available on this Site is designed to answer general questions about oilfield equipment, ORN's inventory, and drilling terminology. Responses generated by the AI chat assistant do not constitute professional engineering advice, legal advice, financial advice, or any other form of regulated professional service. They should not be relied upon as the basis for any purchasing decision, engineering design, operational plan, or other consequential action.</p>
+      <p>AI-generated responses may contain inaccuracies, outdated information, or errors. Any specifications, prices, or availability information mentioned in AI chat responses must be independently confirmed in writing by an ORN human representative before being relied upon. For full terms governing the AI chat feature, please see our <a href="/ai-chat-terms/">AI Chat Disclosure &amp; Terms</a>.</p>
+
+      <div class="contact-box">
+        <p><strong>Questions about this Disclaimer?</strong></p>
+        <p>Oil Rigs Now, LLC — a division of Total Drilling Supply LLC</p>
+        <p>Email: <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a></p>
+        <p>Phone: <a href="tel:7135650747">713-565-0747</a></p>
+        <p>Houston, TX 77040</p>
+      </div>
+    </section>
+
+  </div>
+</div>
+</main>
+
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="f-logo">Oil Rigs Now</div>
+      <p>A division of Total Drilling Supply LLC (TDS)</p>
+      <p>Houston, TX 77040</p>
+      <p><a href="tel:7135650747">713-565-0747</a></p>
+      <p><a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a></p>
+      <p style="margin-top:0.5rem;">President: Michael Mulkern</p>
+    </div>
+    <div class="footer-col">
+      <h4>Site Links</h4>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/land-rigs/">Land Rigs</a></li>
+        <li><a href="/about/">About</a></li>
+        <li><a href="/quote/">Get a Quote</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/terms/">Terms of Service</a></li>
+        <li><a href="/cookies/">Cookie Policy</a></li>
+        <li><a href="/disclaimer/" aria-current="page">Disclaimer</a></li>
+        <li><a href="/accessibility/">Accessibility</a></li>
+        <li><a href="/ai-chat-terms/">AI Chat Disclosure</a></li>
+        <li><a href="/compliance/">Compliance Notice</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Oil Rigs Now, LLC — a division of Total Drilling Supply LLC. All rights reserved.</p>
+    <a href="/cookies/">Cookie Settings</a>
+  </div>
+</footer>
+
+<div id="cookie-banner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <p class="cookie-text">We use essential cookies to operate this site, and optional analytics and AI chat cookies to improve your experience. See our <a href="/cookies/">Cookie Policy</a> for details.</p>
+  <div class="cookie-actions">
+    <button class="btn-reject" onclick="rejectCookies()">Decline</button>
+    <button class="btn-accept" onclick="acceptCookies()">Accept All</button>
+  </div>
+</div>
+
+<script>
+function acceptCookies(){localStorage.setItem('cookie_consent','accepted');document.getElementById('cookie-banner').style.display='none';}
+function rejectCookies(){localStorage.setItem('cookie_consent','declined');document.getElementById('cookie-banner').style.display='none';}
+if(!localStorage.getItem('cookie_consent')){document.getElementById('cookie-banner').style.display='flex';}
+function setLang(lang){localStorage.setItem('orn_lang',lang);document.querySelectorAll('.lang-btn').forEach(b=>b.classList.remove('active'));event.target.classList.add('active');if(lang==='ar'){document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');}else{document.documentElement.removeAttribute('dir');document.documentElement.setAttribute('lang',lang);}}
+const sl=localStorage.getItem('orn_lang');if(sl&&sl!=='en'){const b=document.querySelector('[onclick="setLang(\''+sl+'\')"]');if(b){document.querySelectorAll('.lang-btn').forEach(x=>x.classList.remove('active'));b.classList.add('active');}if(sl==='ar'){document.documentElement.setAttribute('dir','rtl');document.documentElement.setAttribute('lang','ar');}else{document.documentElement.setAttribute('lang',sl);}}
+</script>
+</body>
+</html>
