@@ -194,7 +194,17 @@
     "1tmiHymB4wwaLE3yAoOFw0lrMB5snzMWd",
     "15BekkxJUurrQwquGYdI4v6ej_wbRfND9",
     "1q0DMDmLGjr3Vhi1mkSF4SeB6qYud_YmW",
-    "1MScXSROBEvB7twvX_ui9F8YZt3NbJ6t2"
+    "1MScXSROBEvB7twvX_ui9F8YZt3NbJ6t2",
+    "19Vih4nickFyc5fVVpHZ2v93dlW-aA1y_",
+    "18lK2G_diiVFgh0cW2iIasdgSfTlSIFKV",
+    "1lIsz-sQS2WLG2HTTnGDGSQ-3bE6T_4O2",
+    "1d2eq74jDfgplQyR8cokJ6PfZOd9bso3B",
+    "1oBIRlC9JPgEAfWg833qzs-IiEkdAoijV",
+    "1KMO5tDzxwE_dxi4yey2A5GqIKuBeFgFU",
+    "1K0BdRIoQx-EcNVjNy9p-InzVhHMvB5CK",
+    "1vwfOmNsZyC0OMr0w5nt42VSzq7s_D2z9",
+    "1v6isvn4ZbMB-icrphX9-G8QG969x85hG",
+    "1JyvwhjPDhU1hTuRtPt16FYxeVPXtFOzQ"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1475,6 +1485,66 @@
       "processed_at": "2026-05-19T06:06:15Z",
       "status": "pending_review",
       "reason": "Multi-rig overview catalog \u2014 do not publish as single listing"
+    },
+    "19Vih4nickFyc5fVVpHZ2v93dlW-aA1y_": {
+      "slug": "tds-1500hp-f-rig-17",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/tds-1500hp-f-rig-17/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "18lK2G_diiVFgh0cW2iIasdgSfTlSIFKV": {
+      "slug": "oilwell-760e-1200hp-rig-123",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/oilwell-760e-1200hp-rig-123/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1lIsz-sQS2WLG2HTTnGDGSQ-3bE6T_4O2": {
+      "slug": "crow-energy-ce1000-1000hp-rig-117",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/crow-energy-ce1000-1000hp-rig-117/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1d2eq74jDfgplQyR8cokJ6PfZOd9bso3B": {
+      "slug": "tesco-1000hp-rig-107",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/tesco-1000hp-rig-107/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1oBIRlC9JPgEAfWg833qzs-IiEkdAoijV": {
+      "slug": "national-110ue-1500hp-rig-1450",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/national-110ue-1500hp-rig-1450/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1KMO5tDzxwE_dxi4yey2A5GqIKuBeFgFU": {
+      "slug": "national-110ue-1500hp-rig-1441",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/national-110ue-1500hp-rig-1441/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1K0BdRIoQx-EcNVjNy9p-InzVhHMvB5CK": {
+      "slug": "oilwell-840e-1500hp-rig-1428",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/oilwell-840e-1500hp-rig-1428/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1vwfOmNsZyC0OMr0w5nt42VSzq7s_D2z9": {
+      "slug": "dreco-emsco-2000hp-rig-425-1981",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/dreco-emsco-2000hp-rig-425-1981/",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "published"
+    },
+    "1v6isvn4ZbMB-icrphX9-G8QG969x85hG": {
+      "slug": "ges-1600hp-ac-vfd-rig-9",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "pending_review",
+      "reason": "Near-duplicate of ges-quicksilver-1600hp-ac-vfd-rig-9 already in repo \u2014 same GES Quicksilver 1600HP Rig 9"
+    },
+    "1JyvwhjPDhU1hTuRtPt16FYxeVPXtFOzQ": {
+      "slug": "tds-1600-ac-vfd-land-rig",
+      "processed_at": "2026-05-19T06:33:41.337447Z",
+      "status": "pending_review",
+      "reason": "Garbled scanned PDF \u2014 156 images, no readable text. Manual review required."
     }
   }
 }
