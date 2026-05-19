@@ -220,7 +220,8 @@
     "1cnNrVRxGfcztgJoRjpPVF54DCS_mfodJ",
     "1YXYUcPG-dftp8qytiTvSYKynPHsodQve",
     "1xV2ZArKyLBrmhFdBGRuXWCmZ-_8c5fL4",
-    "188fwovwJ4XRLApLUaO-zq8u0RgzwnzMY"
+    "188fwovwJ4XRLApLUaO-zq8u0RgzwnzMY",
+    "1yRjUD6IOA0-dIzZS5qq_CVbD8wqHUZyc"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1673,6 +1674,12 @@
       "status": "pending_review",
       "reason": "No rig photos \u2014 inventory sheet only. Hero image required before publishing.",
       "source_pdf": "TDS Rig-38 Rig Inventory.pdf"
+    },
+    "1yRjUD6IOA0-dIzZS5qq_CVbD8wqHUZyc": {
+      "slug": "drillmec-2000hp-t-412-2008",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-t-412-2008/",
+      "processed_at": "2026-05-19T17:43:49Z",
+      "status": "published"
     }
   }
 }
