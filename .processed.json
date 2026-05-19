@@ -142,7 +142,17 @@
     "1kwpolHzpC8e_tyKCK3aF24O13jmPhl8j",
     "1j6I3yskJmF_rWRU6ZEYMqiSa3DBhh9eN",
     "1CfaO4Dw9Vp37XDqY-J2MVIqlFZwOgm2v",
-    "19Yztg0qWmWnsXEHxGIp4FXg_0ZDBEOt1"
+    "19Yztg0qWmWnsXEHxGIp4FXg_0ZDBEOt1",
+    "1K7GSBXvE2m9Nh10AyB9RgMy6yNhYTu62",
+    "1SX5J_S-tQQVxfR8BNLyiwDq7P2fwdOTn",
+    "1Bk8BAgvTsR7KwNAB01EyFGmYmn9ynUts",
+    "1LZbXvmZ8B4aAugBxawcFuZCuq05roiQE",
+    "1jBk_bu3kbU6XdLrfILN4aud6-y_kTsq6",
+    "1sjrM7oLhNFPB1yYuSiLnMWVDDwx5R9fz",
+    "1ZiMBKdaxvDRM0sjPy74_I85AL377OA87",
+    "13CJRMvVtuLj5PH7gOYLR2spvoELd5CcC",
+    "193hJGDfoYTccRqog9y2xGz_eUnKX3Mc2",
+    "1o1ymOHSwebXfP_2MD6QgFIrOHAWuTbJ9"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1094,6 +1104,66 @@
       "status": "pending_review",
       "reason": "photo-only PDF + possible update of drillmec-2300hp-2013",
       "processed_at": "2026-05-18T22:56:17.349509Z"
+    },
+    "1K7GSBXvE2m9Nh10AyB9RgMy6yNhYTu62": {
+      "slug": "ges-1600hp-ac-rig-161",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ges-1600hp-ac-rig-161/",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00",
+      "status": "published"
+    },
+    "1SX5J_S-tQQVxfR8BNLyiwDq7P2fwdOTn": {
+      "slug": "ingersoll-rand-2550-1500hp-rig-107",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/ingersoll-rand-2550-1500hp-rig-107/",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00",
+      "status": "published"
+    },
+    "1Bk8BAgvTsR7KwNAB01EyFGmYmn9ynUts": {
+      "slug": "bomco-2000hp-rig-264-2006",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/bomco-2000hp-rig-264-2006/",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00",
+      "status": "published"
+    },
+    "1LZbXvmZ8B4aAugBxawcFuZCuq05roiQE": {
+      "slug": "drillmec-hh300fa-1500hp-2011",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-hh300fa-1500hp-2011/",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00",
+      "status": "published"
+    },
+    "1jBk_bu3kbU6XdLrfILN4aud6-y_kTsq6": {
+      "status": "pending_review",
+      "reason": "Update version \u2014 brewster-n4a-750hp-rig-1 already published",
+      "source_pdf": "TDS BREWSTER N4-A 750 HP Drilling Rig 1 (update).pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
+    },
+    "1sjrM7oLhNFPB1yYuSiLnMWVDDwx5R9fz": {
+      "status": "pending_review",
+      "reason": "Update version \u2014 brewster-n4a-750hp-rig-6 already published",
+      "source_pdf": "TDS BREWSTER N4-A 750 HP Drilling Rig 6 (update).pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
+    },
+    "1ZiMBKdaxvDRM0sjPy74_I85AL377OA87": {
+      "status": "pending_review",
+      "reason": "Update version \u2014 national-d1000e-1000hp-rig-15 already published",
+      "source_pdf": "TDS D1000E 1000 HP Drilling Rig 15 (update).pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
+    },
+    "13CJRMvVtuLj5PH7gOYLR2spvoELd5CcC": {
+      "status": "pending_review",
+      "reason": "Update version \u2014 national-80ue-1200hp-rig-14 already published",
+      "source_pdf": "TDS National 80 UE 1200 HP Drilling Rig 14 (update).pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
+    },
+    "193hJGDfoYTccRqog9y2xGz_eUnKX3Mc2": {
+      "status": "pending_review",
+      "reason": "Barge rig (offshore) \u2014 category review needed before publishing",
+      "source_pdf": "TDS 3000 HP Barge Rig 76B.pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
+    },
+    "1o1ymOHSwebXfP_2MD6QgFIrOHAWuTbJ9": {
+      "status": "pending_review",
+      "reason": "Supporting document (Schedule A) \u2014 not a standalone rig listing",
+      "source_pdf": "TDS National 80 UE 1200 HP Drilling Rig 14 Schedule A.pdf",
+      "processed_at": "2026-05-19T03:29:08.203144+00:00"
     }
   }
 }
