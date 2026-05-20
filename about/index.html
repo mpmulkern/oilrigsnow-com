@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Land drilling rigs for sale and lease. 500 HP to 3,000+ HP. NOV, Drillmec, BOMCO, Honghua, IDM, National, Continental Emsco. New and used. Houston-based independent brokerage.">
+  <meta name="description" content="Oil Rigs Now is an independent commercial brokerage founded by Michael P. Mulkern in 2011. We assist suppliers with equipment promotion, buyer sourcing, transaction coordination, and commercial documentation in the global drilling industry.">
   <meta name="robots" content="index, follow">
-  <title>Land Drilling Rigs for Sale | New & Used 500-3000+ HP | Oil Rigs Now</title>
+  <title>About Oil Rigs Now | Independent Brokerage for Drilling Equipment</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -1244,59 +1244,28 @@
     .hero__actions  { animation-delay: 0.35s; }
     .hero__stats    { animation-delay: 0.45s; }
   
-    /* Browse page filter + dynamic grid */
-    .filter-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 2rem;
+    /* Prose block (long-form text on About / legal-ish pages) */
+    .prose-block {
+      max-width: 56rem;
+      margin: 0 auto;
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      line-height: 1.8;
+      color: var(--text);
     }
-    .filter-btn {
-      font-family: inherit;
-      font-size: 0.875rem;
-      font-weight: 500;
-      padding: 0.5rem 1.25rem;
-      border: 1px solid var(--border);
-      border-radius: 9999px;
-      background: var(--surface);
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: color var(--transition), border-color var(--transition), background var(--transition);
+    .prose-block p {
+      margin-bottom: 1.25rem;
     }
-    .filter-btn:hover {
+    .prose-block p:last-child {
+      margin-bottom: 0;
+    }
+    .prose-block strong {
       color: var(--accent);
-      border-color: var(--border-hover);
-    }
-    .filter-btn.active {
-      color: var(--navy-deep);
-      background: var(--accent);
-      border-color: var(--accent);
       font-weight: 600;
     }
-    .rig-loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      color: var(--text-muted);
-      padding: 4rem 0;
+    .prose-block em {
+      color: var(--accent);
       font-style: italic;
-    }
-    .rigs-count {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      text-align: center;
-    }
-
-    /* Extra category badge variants for browse page */
-    .badge--offshore {
-      background: rgba(56, 130, 198, 0.15);
-      color: #6BA9D6;
-      border: 1px solid rgba(56, 130, 198, 0.3);
-    }
-    .badge--workover {
-      background: rgba(184, 71, 42, 0.15);
-      color: #E67852;
-      border: 1px solid rgba(184, 71, 42, 0.35);
     }
 </style>
 </head>
@@ -1329,11 +1298,11 @@
 
       <ul class="nav-links" role="list">
         <li><a href="/" class="nav-links__item">Home</a></li>
-        <li><a href="/land-drilling-rigs/" class="nav-links__item active" aria-current="page">Land Rigs</a></li>
+        <li><a href="/land-drilling-rigs/" class="nav-links__item">Land Rigs</a></li>
         <li><a href="/mobile-workover-rigs/" class="nav-links__item">Mobile &amp; Workover</a></li>
         <li><a href="/offshore-rigs/" class="nav-links__item">Offshore</a></li>
         <li><a href="/oilfield-equipment/" class="nav-links__item">Equipment</a></li>
-        <li><a href="/about/" class="nav-links__item">About</a></li>
+        <li><a href="/about/" class="nav-links__item active" aria-current="page">About</a></li>
         <li><a href="/quote/" class="nav-links__item">Quote / RFQ</a></li>
       </ul>
 
@@ -1357,11 +1326,11 @@
     <!-- Mobile nav -->
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
       <a href="/" class="mobile-nav__item">Home</a>
-      <a href="/land-drilling-rigs/" class="mobile-nav__item active" aria-current="page">Land Rigs</a>
+      <a href="/land-drilling-rigs/" class="mobile-nav__item">Land Rigs</a>
       <a href="/mobile-workover-rigs/" class="mobile-nav__item">Mobile &amp; Workover</a>
       <a href="/offshore-rigs/" class="mobile-nav__item">Offshore</a>
       <a href="/oilfield-equipment/" class="mobile-nav__item">Equipment</a>
-      <a href="/about/" class="mobile-nav__item">About</a>
+      <a href="/about/" class="mobile-nav__item active" aria-current="page">About</a>
       <a href="/quote/" class="mobile-nav__item">Quote / RFQ</a>
       <a href="tel:+17135650747" class="mobile-nav__item mobile-nav__phone" aria-label="Call us at 713-565-0747">&#128222; 713-565-0747</a>
     </nav>
@@ -1371,91 +1340,127 @@
   <main id="main-content">
 
     <!-- ===== HERO ===== -->
-    <section class="hero category-hero" aria-labelledby="hero-heading">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__grid-overlay" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__glow-bottom" aria-hidden="true"></div>
       <div class="hero__inner">
-        <p class="hero__eyebrow">Inventory &nbsp;&bull;&nbsp; Land Drilling Rigs</p>
+        <p class="hero__eyebrow">About &nbsp;&bull;&nbsp; Houston, TX &nbsp;&bull;&nbsp; Est. 2011</p>
         <h1 class="hero__headline" id="hero-heading">
-          Land Drilling <em>Rigs</em>
+          Independent commercial<br>
+          <em>brokerage</em> for the drilling industry
         </h1>
         <p class="hero__subhead">
-          New and used land drilling rigs from 500&nbsp;HP to 3,000+&nbsp;HP. NOV, Drillmec, BOMCO, Honghua, IDM, IDS Gemini, National, Continental Emsco, and more. Located across North America, the Middle East, and beyond.
+          Oil Rigs Now is an independent commercial brokerage and marketing company that assists with equipment promotion, buyer sourcing, transaction coordination, and commercial documentation support for industry suppliers.
         </p>
         <div class="hero__actions">
           <a href="/quote/" class="btn btn--primary btn--lg">Request a Quote</a>
-          <a href="#inventory" class="btn btn--ghost btn--lg">Browse Inventory</a>
+          <a href="/contact/" class="btn btn--ghost btn--lg">Contact Us</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== FILTERS ===== -->
-    <section class="section section--dark" id="inventory" aria-labelledby="inventory-heading">
+    <!-- ===== WHO WE ARE ===== -->
+    <section class="section section--dark" aria-labelledby="who-heading">
       <div class="section__inner">
         <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Current Inventory</p>
-          <h2 class="section__title" id="inventory-heading">Available <em>Equipment</em></h2>
-          <p class="section__subtitle">Filter by category, horsepower range, or condition. All units independently sourced from our supplier network.</p>
+          <p class="section__eyebrow" aria-hidden="true">Who We Are</p>
+          <h2 class="section__title" id="who-heading">A focused <em>brokerage</em>, not a manufacturer or operator</h2>
         </header>
 
-        <div class="filter-bar" role="group" aria-label="Filter inventory by category">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" data-filter="Land Drilling" aria-pressed="false">Land Drilling</button>
-          <button class="filter-btn" data-filter="Mobile &amp; Workover" aria-pressed="false">Mobile &amp; Workover</button>
-          <button class="filter-btn" data-filter="Offshore" aria-pressed="false">Offshore</button>
-        </div>
-
-        <div id="rig-grid" class="rigs-grid" role="list" aria-live="polite" aria-busy="true">
-          <p class="rig-loading">Loading inventory&hellip;</p>
-        </div>
-
-        <div class="rigs-footer">
-          <p class="rigs-count" id="rig-count" aria-live="polite"></p>
+        <div class="prose-block">
+          <p>
+            Oil Rigs Now, LLC (ORN) is an independent commercial brokerage and marketing
+            company headquartered in Houston, Texas. We work as the commercial bridge
+            between equipment suppliers and qualified buyers in the global drilling industry.
+          </p>
+          <p>
+            ORN consults on the sale and sourcing of new and used land drilling rigs,
+            mobile drilling rigs, mobile and workover rigs, offshore rigs and vessels,
+            and oilfield equipment from suppliers across the USA, Canada, Europe, the
+            Middle East, and Asia. We also assist in placing drilling rig equipment and
+            parts, tubular goods, oil and gas production equipment, oilfield tanks, and
+            oil field services.
+          </p>
+          <p>
+            For buyers, we help structure financing introductions where appropriate.
+            For suppliers, we provide promotion, buyer sourcing, transaction coordination,
+            and commercial documentation support.
+          </p>
         </div>
       </div>
     </section>
 
-    <!-- ===== EQUIPMENT TYPES ===== -->
-    <section class="section section--mid" aria-labelledby="types-heading">
+    <!-- ===== WHAT WE DO ===== -->
+    <section class="section section--mid" aria-labelledby="services-heading">
       <div class="section__inner">
         <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Specifications</p>
-          <h2 class="section__title" id="types-heading">Rig <em>Configurations</em> We Source</h2>
+          <p class="section__eyebrow" aria-hidden="true">What We Do</p>
+          <h2 class="section__title" id="services-heading">Four lines of <em>service</em></h2>
+          <p class="section__subtitle">Each engagement is structured around the supplier&rsquo;s needs &mdash; promotion, sourcing, coordination, or documentation.</p>
         </header>
 
         <div class="features-grid">
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9981;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128202;</div>
             <div>
-              <h3 class="feature-block__title">AC VFD Rigs</h3>
-              <p class="feature-block__desc">Modern AC variable-frequency-drive systems with full drilling automation. 1500&nbsp;HP to 3000+&nbsp;HP. Suitable for unconventional plays.</p>
+              <h3 class="feature-block__title">Equipment Promotion</h3>
+              <p class="feature-block__desc">We market available rigs and equipment to qualified buyers through our global network and digital channels.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128205;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#127760;</div>
             <div>
-              <h3 class="feature-block__title">Walking Rigs</h3>
-              <p class="feature-block__desc">Pad-drilling rigs with walking systems for unconventional plays. NOV Ideal walking, Alta Super Spec, Basin walking configurations.</p>
+              <h3 class="feature-block__title">Buyer Sourcing</h3>
+              <p class="feature-block__desc">For suppliers with equipment to move, we identify and qualify counterparties across North America, the Middle East, Latin America, Asia, and Africa.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9881;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#129309;</div>
             <div>
-              <h3 class="feature-block__title">SCR Conventional</h3>
-              <p class="feature-block__desc">Silicon-controlled rectifier rigs from 1,200 to 2,300&nbsp;HP. Continental Emsco, Mid-Continent, National 80UE/110UE, IDECO E-1200.</p>
+              <h3 class="feature-block__title">Transaction Coordination</h3>
+              <p class="feature-block__desc">Inspection scheduling, technical clarifications, contract negotiations, logistics and delivery &mdash; coordinated end-to-end.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128175;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128203;</div>
             <div>
-              <h3 class="feature-block__title">New Builds</h3>
-              <p class="feature-block__desc">Factory-direct relationships with BOMCO/CNPC, Honghua, and other manufacturers. Custom-spec new builds available.</p>
+              <h3 class="feature-block__title">Documentation Support</h3>
+              <p class="feature-block__desc">NCNDAs, LOIs, MSAs, asset purchase agreements, and bills of sale &mdash; we coordinate the commercial paperwork that closes deals.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== LEADERSHIP / Michael Mulkern ===== -->
+    <section class="section section--dark" aria-labelledby="leadership-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow" aria-hidden="true">Leadership</p>
+          <h2 class="section__title" id="leadership-heading">Michael P. <em>Mulkern</em></h2>
+          <p class="section__subtitle">President &mdash; Oil Rigs Now, LLC. B.S., M.A., P.G. Houston, Texas.</p>
+        </header>
+
+        <div class="prose-block">
+          <p>
+            Michael started his career in oil and gas exploration in 1975 with Phillips
+            Petroleum in Oklahoma. He went on to work for several companies including
+            BP/Sohio, Marathon Oil, and Apache Corp. on oil and gas exploration and
+            development projects around the world &mdash; participating in many new oil and
+            gas discoveries on projects in over 50 countries.
+          </p>
+          <p>
+            In 2001, Michael moved into consulting and private enterprise. Oil Rigs
+            Now was formed in 2011 with a clear mission: build a &ldquo;go-to&rdquo; destination
+            for buying or selling high-quality oil drilling rigs and related equipment.
+          </p>
+          <p>
+            That mission still guides everything we do today.
+          </p>
         </div>
       </div>
     </section>
@@ -1464,25 +1469,29 @@
     <section class="contact-cta" aria-labelledby="contact-heading">
       <div class="contact-cta__glow" aria-hidden="true"></div>
       <div class="contact-cta__inner">
-        <h2 class="contact-cta__headline" id="contact-heading">Looking for a specific rig?</h2>
-        <p class="contact-cta__sub">Tell us the horsepower, condition, region, and timing. We&rsquo;ll surface matching units from our supplier network.</p>
+        <h2 class="contact-cta__headline" id="contact-heading">Have a rig to move or source?</h2>
+        <p class="contact-cta__sub">Reach our Houston team. Whether you&rsquo;re a supplier with equipment to place or a buyer looking for specific rigs &mdash; we&rsquo;ll route the conversation quickly.</p>
 
         <div class="contact-info-row" role="list" aria-label="Contact information">
           <div class="contact-info-item" role="listitem">
             <span class="contact-info-item__icon" aria-hidden="true">&#128222;</span>
             <span class="contact-info-item__text">
-              <a href="tel:+17135650747" class="contact-info-item__link">713-565-0747</a>
+              <a href="tel:+17135650747" class="contact-info-item__link" aria-label="Call us at 713-565-0747">713-565-0747</a>
             </span>
           </div>
           <div class="contact-info-item" role="listitem">
             <span class="contact-info-item__icon" aria-hidden="true">&#9993;</span>
             <span class="contact-info-item__text">
-              <a href="mailto:info@oilrigsnow.com" class="contact-info-item__link">info@oilrigsnow.com</a>
+              <a href="mailto:info@oilrigsnow.com" class="contact-info-item__link" aria-label="Email us at info@oilrigsnow.com">info@oilrigsnow.com</a>
             </span>
+          </div>
+          <div class="contact-info-item" role="listitem">
+            <span class="contact-info-item__icon" aria-hidden="true">&#128205;</span>
+            <span class="contact-info-item__text contact-info-item__link">Houston, TX 77040</span>
           </div>
         </div>
 
-        <a href="/quote/" class="btn btn--primary btn--lg">Submit RFQ</a>
+        <a href="/quote/" class="btn btn--primary btn--lg" aria-label="Request a quote">Request a Quote</a>
       </div>
     </section>
 
@@ -1720,87 +1729,6 @@
     })();
   </script>
 
-
-
-  <script>
-    (function () {
-      'use strict';
-      var grid = document.getElementById('rig-grid');
-      var countEl = document.getElementById('rig-count');
-      var filterBtns = document.querySelectorAll('.filter-btn');
-      var rigs = [];
-      var currentFilter = 'all';
-
-      function escapeHtml(s) {
-        return String(s || '').replace(/[&<>"']/g, function (c) {
-          return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
-        });
-      }
-
-      function categoryClass(cat) {
-        if (cat === 'Offshore') return 'badge--offshore';
-        if (cat === 'Mobile & Workover') return 'badge--workover';
-        return 'badge--available';
-      }
-
-      function renderCard(rig) {
-        var hp = rig.horsepower ? rig.horsepower.toLocaleString() + ' HP' : '';
-        var cat = rig.category || 'Land Drilling';
-        return '<a href="/land-drilling-rigs/' + escapeHtml(rig.slug) + '/" class="rig-card" role="listitem" aria-label="' + escapeHtml(rig.title) + '">' +
-          '<div class="rig-card__top">' +
-            '<div class="rig-card__badges">' +
-              (hp ? '<span class="badge badge--hp">' + escapeHtml(hp) + '</span>' : '') +
-              '<span class="badge ' + categoryClass(cat) + '">' + escapeHtml(cat) + '</span>' +
-            '</div>' +
-            '<div class="rig-card__icon" aria-hidden="true">&#9881;</div>' +
-          '</div>' +
-          '<h3 class="rig-card__title">' + escapeHtml(rig.title) + '</h3>' +
-          '<p class="rig-card__tagline">' + escapeHtml(rig.tagline || '') + '</p>' +
-          '<div class="rig-card__footer">' +
-            '<span class="rig-card__link-label">View Details</span>' +
-            '<span class="rig-card__arrow" aria-hidden="true">&#8594;</span>' +
-          '</div>' +
-        '</a>';
-      }
-
-      function render() {
-        var filtered = currentFilter === 'all' ? rigs : rigs.filter(function (r) {
-          return r.category === currentFilter;
-        });
-        if (filtered.length === 0) {
-          grid.innerHTML = '<p class="rig-loading">No rigs match the current filter.</p>';
-        } else {
-          grid.innerHTML = filtered.map(renderCard).join('');
-        }
-        grid.setAttribute('aria-busy', 'false');
-        countEl.textContent = 'Showing ' + filtered.length + ' of ' + rigs.length + ' rigs';
-      }
-
-      filterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          filterBtns.forEach(function (b) {
-            b.classList.remove('active');
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-pressed', 'true');
-          currentFilter = btn.getAttribute('data-filter');
-          render();
-        });
-      });
-
-      fetch('/rigs.json', { cache: 'no-cache' })
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          rigs = data;
-          render();
-        })
-        .catch(function (err) {
-          grid.innerHTML = '<p class="rig-loading">Unable to load inventory. Please try again or contact us at 713-565-0747.</p>';
-          console.error(err);
-        });
-    })();
-  </script>
 
 </body>
 </html>

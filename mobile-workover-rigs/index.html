@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Land drilling rigs for sale and lease. 500 HP to 3,000+ HP. NOV, Drillmec, BOMCO, Honghua, IDM, National, Continental Emsco. New and used. Houston-based independent brokerage.">
+  <meta name="description" content="Truck-mounted, trailer-mounted, and carrier-mounted workover and well-service rigs. Cardwell, NOV, Service King, FRANKS, Skytop Brewster, Drillmec HH-series, Cabot 750.">
   <meta name="robots" content="index, follow">
-  <title>Land Drilling Rigs for Sale | New & Used 500-3000+ HP | Oil Rigs Now</title>
+  <title>Mobile & Workover Rigs | Oil Rigs Now</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -1244,59 +1244,44 @@
     .hero__actions  { animation-delay: 0.35s; }
     .hero__stats    { animation-delay: 0.45s; }
   
-    /* Browse page filter + dynamic grid */
-    .filter-bar {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 2rem;
+    /* Image gallery (used on category landing pages) */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+      gap: 1.25rem;
     }
-    .filter-btn {
-      font-family: inherit;
-      font-size: 0.875rem;
-      font-weight: 500;
-      padding: 0.5rem 1.25rem;
-      border: 1px solid var(--border);
-      border-radius: 9999px;
+    .gallery-item {
       background: var(--surface);
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: color var(--transition), border-color var(--transition), background var(--transition);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      transition: border-color var(--transition), transform var(--transition);
     }
-    .filter-btn:hover {
-      color: var(--accent);
+    .gallery-item:hover {
       border-color: var(--border-hover);
+      transform: translateY(-0.125rem);
     }
-    .filter-btn.active {
-      color: var(--navy-deep);
-      background: var(--accent);
-      border-color: var(--accent);
-      font-weight: 600;
+    .gallery-item img {
+      width: 100%;
+      height: 11rem;
+      object-fit: cover;
+      object-position: center;
+      background: var(--navy-deep);
     }
-    .rig-loading {
-      grid-column: 1 / -1;
-      text-align: center;
+    .gallery-item figcaption {
+      padding: 0.75rem 1rem;
+      font-size: 0.8125rem;
+      line-height: 1.5;
       color: var(--text-muted);
-      padding: 4rem 0;
-      font-style: italic;
+      border-top: 1px solid var(--border);
     }
-    .rigs-count {
-      color: var(--text-muted);
-      font-size: 0.875rem;
-      text-align: center;
+    /* CTA variant of rig-card (used on category pages) */
+    .rig-card--cta {
+      background: linear-gradient(160deg, var(--surface), var(--surface-light));
+      border: 1px dashed var(--border-hover);
     }
-
-    /* Extra category badge variants for browse page */
-    .badge--offshore {
-      background: rgba(56, 130, 198, 0.15);
-      color: #6BA9D6;
-      border: 1px solid rgba(56, 130, 198, 0.3);
-    }
-    .badge--workover {
-      background: rgba(184, 71, 42, 0.15);
-      color: #E67852;
-      border: 1px solid rgba(184, 71, 42, 0.35);
+    .rig-card--cta:hover {
+      border-style: solid;
     }
 </style>
 </head>
@@ -1329,8 +1314,8 @@
 
       <ul class="nav-links" role="list">
         <li><a href="/" class="nav-links__item">Home</a></li>
-        <li><a href="/land-drilling-rigs/" class="nav-links__item active" aria-current="page">Land Rigs</a></li>
-        <li><a href="/mobile-workover-rigs/" class="nav-links__item">Mobile &amp; Workover</a></li>
+        <li><a href="/land-drilling-rigs/" class="nav-links__item">Land Rigs</a></li>
+        <li><a href="/mobile-workover-rigs/" class="nav-links__item active" aria-current="page">Mobile &amp; Workover</a></li>
         <li><a href="/offshore-rigs/" class="nav-links__item">Offshore</a></li>
         <li><a href="/oilfield-equipment/" class="nav-links__item">Equipment</a></li>
         <li><a href="/about/" class="nav-links__item">About</a></li>
@@ -1357,8 +1342,8 @@
     <!-- Mobile nav -->
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
       <a href="/" class="mobile-nav__item">Home</a>
-      <a href="/land-drilling-rigs/" class="mobile-nav__item active" aria-current="page">Land Rigs</a>
-      <a href="/mobile-workover-rigs/" class="mobile-nav__item">Mobile &amp; Workover</a>
+      <a href="/land-drilling-rigs/" class="mobile-nav__item">Land Rigs</a>
+      <a href="/mobile-workover-rigs/" class="mobile-nav__item active" aria-current="page">Mobile &amp; Workover</a>
       <a href="/offshore-rigs/" class="mobile-nav__item">Offshore</a>
       <a href="/oilfield-equipment/" class="mobile-nav__item">Equipment</a>
       <a href="/about/" class="mobile-nav__item">About</a>
@@ -1376,86 +1361,184 @@
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__glow-bottom" aria-hidden="true"></div>
       <div class="hero__inner">
-        <p class="hero__eyebrow">Inventory &nbsp;&bull;&nbsp; Land Drilling Rigs</p>
+        <p class="hero__eyebrow">Category &nbsp;&bull;&nbsp; Mobile &amp; Workover</p>
         <h1 class="hero__headline" id="hero-heading">
-          Land Drilling <em>Rigs</em>
+          Mobile &amp; Workover <em>Rigs</em>
         </h1>
         <p class="hero__subhead">
-          New and used land drilling rigs from 500&nbsp;HP to 3,000+&nbsp;HP. NOV, Drillmec, BOMCO, Honghua, IDM, IDS Gemini, National, Continental Emsco, and more. Located across North America, the Middle East, and beyond.
+          Truck-mounted, trailer-mounted, and carrier-mounted rigs for well intervention, completion, plug &amp; abandonment, and shallow drilling. Available units range from 200&nbsp;HP service rigs to 1,500&nbsp;HP hydraulic workover packages.
         </p>
         <div class="hero__actions">
           <a href="/quote/" class="btn btn--primary btn--lg">Request a Quote</a>
-          <a href="#inventory" class="btn btn--ghost btn--lg">Browse Inventory</a>
+          <a href="#available" class="btn btn--ghost btn--lg">View Available Units</a>
         </div>
       </div>
     </section>
 
-    <!-- ===== FILTERS ===== -->
-    <section class="section section--dark" id="inventory" aria-labelledby="inventory-heading">
+    <!-- ===== TYPES ===== -->
+    <section class="section section--dark" aria-labelledby="types-heading">
       <div class="section__inner">
         <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Current Inventory</p>
-          <h2 class="section__title" id="inventory-heading">Available <em>Equipment</em></h2>
-          <p class="section__subtitle">Filter by category, horsepower range, or condition. All units independently sourced from our supplier network.</p>
-        </header>
-
-        <div class="filter-bar" role="group" aria-label="Filter inventory by category">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" data-filter="Land Drilling" aria-pressed="false">Land Drilling</button>
-          <button class="filter-btn" data-filter="Mobile &amp; Workover" aria-pressed="false">Mobile &amp; Workover</button>
-          <button class="filter-btn" data-filter="Offshore" aria-pressed="false">Offshore</button>
-        </div>
-
-        <div id="rig-grid" class="rigs-grid" role="list" aria-live="polite" aria-busy="true">
-          <p class="rig-loading">Loading inventory&hellip;</p>
-        </div>
-
-        <div class="rigs-footer">
-          <p class="rigs-count" id="rig-count" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== EQUIPMENT TYPES ===== -->
-    <section class="section section--mid" aria-labelledby="types-heading">
-      <div class="section__inner">
-        <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Specifications</p>
-          <h2 class="section__title" id="types-heading">Rig <em>Configurations</em> We Source</h2>
+          <p class="section__eyebrow" aria-hidden="true">Equipment Types</p>
+          <h2 class="section__title" id="types-heading">What We <em>Source</em></h2>
         </header>
 
         <div class="features-grid">
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9981;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128679;</div>
             <div>
-              <h3 class="feature-block__title">AC VFD Rigs</h3>
-              <p class="feature-block__desc">Modern AC variable-frequency-drive systems with full drilling automation. 1500&nbsp;HP to 3000+&nbsp;HP. Suitable for unconventional plays.</p>
+              <h3 class="feature-block__title">Workover Rigs</h3>
+              <p class="feature-block__desc">Cardwell, NOV, Service King, FRANKS, Skytop Brewster, HOPPER &mdash; carrier-mounted well service units from 200 HP to 750+ HP.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128205;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128666;</div>
             <div>
-              <h3 class="feature-block__title">Walking Rigs</h3>
-              <p class="feature-block__desc">Pad-drilling rigs with walking systems for unconventional plays. NOV Ideal walking, Alta Super Spec, Basin walking configurations.</p>
+              <h3 class="feature-block__title">Truck-Mounted Drilling</h3>
+              <p class="feature-block__desc">XJ750, ZJ40, ZJ30 Chinese-built truck-mounted drilling rigs from 750 HP to 1000 HP for rapid deployment.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9881;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128736;</div>
             <div>
-              <h3 class="feature-block__title">SCR Conventional</h3>
-              <p class="feature-block__desc">Silicon-controlled rectifier rigs from 1,200 to 2,300&nbsp;HP. Continental Emsco, Mid-Continent, National 80UE/110UE, IDECO E-1200.</p>
+              <h3 class="feature-block__title">Hydraulic Workover</h3>
+              <p class="feature-block__desc">Drillmec HH220, HH300FA, MR8000 and similar hydraulic workover packages for completion and intervention.</p>
             </div>
           </div>
 
           <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128175;</div>
+            <div class="feature-block__icon" aria-hidden="true">&#128663;</div>
             <div>
-              <h3 class="feature-block__title">New Builds</h3>
-              <p class="feature-block__desc">Factory-direct relationships with BOMCO/CNPC, Honghua, and other manufacturers. Custom-spec new builds available.</p>
+              <h3 class="feature-block__title">Mobile Drilling</h3>
+              <p class="feature-block__desc">Cabot 750, Crown Duke CE750, KSM 550, Service King SK-1000 carrier and trailer rigs for shallow-to-medium-depth wells.</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== AVAILABLE UNITS ===== -->
+    <section class="section section--mid" id="available" aria-labelledby="available-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow" aria-hidden="true">Inventory</p>
+          <h2 class="section__title" id="available-heading">Currently <em>Available</em></h2>
+          <p class="section__subtitle">A selection of available units. Contact us for the full current list, including units not yet listed online.</p>
+        </header>
+
+        <div class="rigs-grid" role="list">
+
+          <a href="/land-drilling-rigs/nov-5c-workover-rig/" class="rig-card" role="listitem" aria-label="NOV 5C Mobile Workover Rig">
+            <div class="rig-card__top">
+              <div class="rig-card__badges">
+                <span class="badge badge--hp" aria-label="250K hookload">250K Hookload</span>
+                <span class="badge badge--available" aria-label="Status: Available">Available</span>
+              </div>
+              <div class="rig-card__icon" aria-hidden="true">&#128679;</div>
+            </div>
+            <h3 class="rig-card__title">NOV 5C 104ft 250K Mobile Workover Rig</h3>
+            <p class="rig-card__tagline">Certified Refurbished, Tier III. 250,000 lb hookload mobile workover unit ready for deployment.</p>
+            <div class="rig-card__footer">
+              <span class="rig-card__link-label">View Details</span>
+              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
+            </div>
+          </a>
+
+          <a href="/land-drilling-rigs/cardwell-375hp-rig-320/" class="rig-card" role="listitem" aria-label="Cardwell 375 HP Workover Rig 320">
+            <div class="rig-card__top">
+              <div class="rig-card__badges">
+                <span class="badge badge--hp" aria-label="375 horsepower">375 HP</span>
+                <span class="badge badge--available" aria-label="Status: Available">Available</span>
+              </div>
+              <div class="rig-card__icon" aria-hidden="true">&#128679;</div>
+            </div>
+            <h3 class="rig-card__title">Cardwell 375 HP Workover Rig 320</h3>
+            <p class="rig-card__tagline">Compact 375 HP workover rig with telescopic mast, Gardner Denver mud pump, full 111&nbsp;m&sup3; mud system. Latin America.</p>
+            <div class="rig-card__footer">
+              <span class="rig-card__link-label">View Details</span>
+              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
+            </div>
+          </a>
+
+          <a href="/quote/" class="rig-card rig-card--cta" role="listitem" aria-label="Request information on additional units">
+            <div class="rig-card__top">
+              <div class="rig-card__badges">
+                <span class="badge badge--inquiry">More Available</span>
+              </div>
+              <div class="rig-card__icon" aria-hidden="true">&#9889;</div>
+            </div>
+            <h3 class="rig-card__title">More units on request</h3>
+            <p class="rig-card__tagline">Service King SK775, Drillmec HH-series, ZJ30, FRANKS service units, and more &mdash; ask us for the latest availability.</p>
+            <div class="rig-card__footer">
+              <span class="rig-card__link-label">Request a Quote</span>
+              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section section--dark" aria-labelledby="gallery-heading">
+      <div class="section__inner">
+        <header class="section__header">
+          <p class="section__eyebrow" aria-hidden="true">Gallery</p>
+          <h2 class="section__title" id="gallery-heading">Reference <em>Imagery</em></h2>
+          <p class="section__subtitle">A selection of representative units we&rsquo;ve sourced or marketed. For current available inventory, contact our team.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/cabot-750-mobile-drilling-rig-banner.png" alt="Cabot 750 Mobile Drilling Rig &mdash; currently stacked, North Africa" loading="lazy">
+            <figcaption>Cabot 750 Mobile Drilling Rig &mdash; currently stacked, North Africa</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/xj750-truck-mounted-workover-rig.png" alt="XJ750 Chinese truck-mounted workover/drilling rig" loading="lazy">
+            <figcaption>XJ750 Chinese truck-mounted workover/drilling rig</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/zj40-1000hp-truck-mounted-rig-view1.png" alt="ZJ40 1000 HP Chinese truck-mounted drilling rig" loading="lazy">
+            <figcaption>ZJ40 1000 HP Chinese truck-mounted drilling rig</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/hopper-rta-750-carrier-rig.jpg" alt="HOPPER RTA 750 carrier-mounted rig &mdash; CAT-3408 powered, 120ft 450K mast" loading="lazy">
+            <figcaption>HOPPER RTA 750 carrier-mounted rig &mdash; CAT-3408 powered, 120ft 450K mast</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/skytop-brewster-rr400-well-service-unit.jpg" alt="Skytop Brewster RR-400 carrier-mounted well service unit" loading="lazy">
+            <figcaption>Skytop Brewster RR-400 carrier-mounted well service unit</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/cardwell-km250-dd-well-service-unit.jpg" alt="CARDWELL Km-250 direct-drive well service unit" loading="lazy">
+            <figcaption>CARDWELL Km-250 direct-drive well service unit</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/franks-1287-160-dtd-ht-well-service-unit.jpg" alt="FRANKS 1287-160-DTD-HT direct-drive well service unit" loading="lazy">
+            <figcaption>FRANKS 1287-160-DTD-HT direct-drive well service unit</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/franks-658-dd-well-service-unit.jpg" alt="FRANKS 658 direct-drive unit on FRANKS Cruiser carrier" loading="lazy">
+            <figcaption>FRANKS 658 direct-drive unit on FRANKS Cruiser carrier</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/franks-200-dd-well-service-unit.jpg" alt="FRANKS 200 direct-drive well service unit, 71ft mast" loading="lazy">
+            <figcaption>FRANKS 200 direct-drive well service unit, 71ft mast</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/franks-38x10-dd-parmac-well-service-unit.jpg" alt="FRANKS 38x10 direct-drive unit with PARMAC 15in brake" loading="lazy">
+            <figcaption>FRANKS 38x10 direct-drive unit with PARMAC 15in brake</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/ingersoll-rand-600-trailer-rig.jpg" alt="Ingersoll Rand 600 trailer-mounted rig &mdash; rebuilt 2012" loading="lazy">
+            <figcaption>Ingersoll Rand 600 trailer-mounted rig &mdash; rebuilt 2012</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="/images/mobile-workover/corsair-crane-carrier-w3284c.jpg" alt="Corsair Crane Carrier W3284C with Detroit diesel" loading="lazy">
+            <figcaption>Corsair Crane Carrier W3284C with Detroit diesel</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -1464,8 +1547,8 @@
     <section class="contact-cta" aria-labelledby="contact-heading">
       <div class="contact-cta__glow" aria-hidden="true"></div>
       <div class="contact-cta__inner">
-        <h2 class="contact-cta__headline" id="contact-heading">Looking for a specific rig?</h2>
-        <p class="contact-cta__sub">Tell us the horsepower, condition, region, and timing. We&rsquo;ll surface matching units from our supplier network.</p>
+        <h2 class="contact-cta__headline" id="contact-heading">Need a workover rig?</h2>
+        <p class="contact-cta__sub">Tell us your hookload requirement, target region, and timing. We&rsquo;ll respond with available options.</p>
 
         <div class="contact-info-row" role="list" aria-label="Contact information">
           <div class="contact-info-item" role="listitem">
@@ -1720,87 +1803,6 @@
     })();
   </script>
 
-
-
-  <script>
-    (function () {
-      'use strict';
-      var grid = document.getElementById('rig-grid');
-      var countEl = document.getElementById('rig-count');
-      var filterBtns = document.querySelectorAll('.filter-btn');
-      var rigs = [];
-      var currentFilter = 'all';
-
-      function escapeHtml(s) {
-        return String(s || '').replace(/[&<>"']/g, function (c) {
-          return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
-        });
-      }
-
-      function categoryClass(cat) {
-        if (cat === 'Offshore') return 'badge--offshore';
-        if (cat === 'Mobile & Workover') return 'badge--workover';
-        return 'badge--available';
-      }
-
-      function renderCard(rig) {
-        var hp = rig.horsepower ? rig.horsepower.toLocaleString() + ' HP' : '';
-        var cat = rig.category || 'Land Drilling';
-        return '<a href="/land-drilling-rigs/' + escapeHtml(rig.slug) + '/" class="rig-card" role="listitem" aria-label="' + escapeHtml(rig.title) + '">' +
-          '<div class="rig-card__top">' +
-            '<div class="rig-card__badges">' +
-              (hp ? '<span class="badge badge--hp">' + escapeHtml(hp) + '</span>' : '') +
-              '<span class="badge ' + categoryClass(cat) + '">' + escapeHtml(cat) + '</span>' +
-            '</div>' +
-            '<div class="rig-card__icon" aria-hidden="true">&#9881;</div>' +
-          '</div>' +
-          '<h3 class="rig-card__title">' + escapeHtml(rig.title) + '</h3>' +
-          '<p class="rig-card__tagline">' + escapeHtml(rig.tagline || '') + '</p>' +
-          '<div class="rig-card__footer">' +
-            '<span class="rig-card__link-label">View Details</span>' +
-            '<span class="rig-card__arrow" aria-hidden="true">&#8594;</span>' +
-          '</div>' +
-        '</a>';
-      }
-
-      function render() {
-        var filtered = currentFilter === 'all' ? rigs : rigs.filter(function (r) {
-          return r.category === currentFilter;
-        });
-        if (filtered.length === 0) {
-          grid.innerHTML = '<p class="rig-loading">No rigs match the current filter.</p>';
-        } else {
-          grid.innerHTML = filtered.map(renderCard).join('');
-        }
-        grid.setAttribute('aria-busy', 'false');
-        countEl.textContent = 'Showing ' + filtered.length + ' of ' + rigs.length + ' rigs';
-      }
-
-      filterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          filterBtns.forEach(function (b) {
-            b.classList.remove('active');
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-pressed', 'true');
-          currentFilter = btn.getAttribute('data-filter');
-          render();
-        });
-      });
-
-      fetch('/rigs.json', { cache: 'no-cache' })
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          rigs = data;
-          render();
-        })
-        .catch(function (err) {
-          grid.innerHTML = '<p class="rig-loading">Unable to load inventory. Please try again or contact us at 713-565-0747.</p>';
-          console.error(err);
-        });
-    })();
-  </script>
 
 </body>
 </html>

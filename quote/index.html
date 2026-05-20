@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Land drilling rigs for sale and lease. 500 HP to 3,000+ HP. NOV, Drillmec, BOMCO, Honghua, IDM, National, Continental Emsco. New and used. Houston-based independent brokerage.">
+  <meta name="description" content="Submit an RFQ for drilling rigs, mobile workover units, offshore equipment, or oilfield equipment. Houston-based independent brokerage with a global supplier network.">
   <meta name="robots" content="index, follow">
-  <title>Land Drilling Rigs for Sale | New & Used 500-3000+ HP | Oil Rigs Now</title>
+  <title>Request a Quote / RFQ | Oil Rigs Now</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -1244,59 +1244,109 @@
     .hero__actions  { animation-delay: 0.35s; }
     .hero__stats    { animation-delay: 0.45s; }
   
-    /* Browse page filter + dynamic grid */
-    .filter-bar {
+    /* Quote / RFQ form */
+    .quote-form {
+      max-width: 56rem;
+      margin: 0 auto;
       display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 2rem;
+      flex-direction: column;
+      gap: 2rem;
     }
-    .filter-btn {
-      font-family: inherit;
+    .form-fieldset {
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem;
+      background: var(--surface);
+    }
+    .form-legend {
+      font-family: var(--font-serif);
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding: 0 0.625rem;
+      letter-spacing: 0.01em;
+    }
+    .form-field {
+      display: flex;
+      flex-direction: column;
+      gap: 0.375rem;
+      margin-bottom: 1rem;
+    }
+    .form-field:last-child {
+      margin-bottom: 0;
+    }
+    .form-label {
       font-size: 0.875rem;
       font-weight: 500;
-      padding: 0.5rem 1.25rem;
+      color: var(--text);
+    }
+    .form-grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 640px) {
+      .form-grid-2 {
+        grid-template-columns: 1fr;
+      }
+    }
+    .form-field input,
+    .form-field select,
+    .form-field textarea {
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.625rem 0.75rem;
       border: 1px solid var(--border);
-      border-radius: 9999px;
-      background: var(--surface);
-      color: var(--text-muted);
-      cursor: pointer;
-      transition: color var(--transition), border-color var(--transition), background var(--transition);
+      border-radius: var(--radius);
+      background: var(--navy-deep);
+      color: var(--text);
+      transition: border-color var(--transition);
+      min-height: 2.5rem;
     }
-    .filter-btn:hover {
-      color: var(--accent);
-      border-color: var(--border-hover);
-    }
-    .filter-btn.active {
-      color: var(--navy-deep);
-      background: var(--accent);
+    .form-field input:focus,
+    .form-field select:focus,
+    .form-field textarea:focus {
       border-color: var(--accent);
-      font-weight: 600;
+      outline: 0.125rem solid rgba(201, 164, 92, 0.3);
+      outline-offset: 0;
     }
-    .rig-loading {
-      grid-column: 1 / -1;
-      text-align: center;
-      color: var(--text-muted);
-      padding: 4rem 0;
-      font-style: italic;
+    .form-field textarea {
+      resize: vertical;
+      min-height: 8rem;
     }
-    .rigs-count {
-      color: var(--text-muted);
+    .form-radio-row {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      padding-top: 0.5rem;
+    }
+    .form-radio {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-size: 0.9375rem;
+    }
+    .form-radio input {
+      accent-color: var(--accent);
+      width: 1.125rem;
+      height: 1.125rem;
+    }
+    .form-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      padding-top: 1rem;
+    }
+    .form-hint {
       font-size: 0.875rem;
+      color: var(--text-muted);
       text-align: center;
     }
-
-    /* Extra category badge variants for browse page */
-    .badge--offshore {
-      background: rgba(56, 130, 198, 0.15);
-      color: #6BA9D6;
-      border: 1px solid rgba(56, 130, 198, 0.3);
-    }
-    .badge--workover {
-      background: rgba(184, 71, 42, 0.15);
-      color: #E67852;
-      border: 1px solid rgba(184, 71, 42, 0.35);
+    .form-hint a {
+      color: var(--accent);
     }
 </style>
 </head>
@@ -1329,12 +1379,12 @@
 
       <ul class="nav-links" role="list">
         <li><a href="/" class="nav-links__item">Home</a></li>
-        <li><a href="/land-drilling-rigs/" class="nav-links__item active" aria-current="page">Land Rigs</a></li>
+        <li><a href="/land-drilling-rigs/" class="nav-links__item">Land Rigs</a></li>
         <li><a href="/mobile-workover-rigs/" class="nav-links__item">Mobile &amp; Workover</a></li>
         <li><a href="/offshore-rigs/" class="nav-links__item">Offshore</a></li>
         <li><a href="/oilfield-equipment/" class="nav-links__item">Equipment</a></li>
         <li><a href="/about/" class="nav-links__item">About</a></li>
-        <li><a href="/quote/" class="nav-links__item">Quote / RFQ</a></li>
+        <li><a href="/quote/" class="nav-links__item active" aria-current="page">Quote / RFQ</a></li>
       </ul>
 
       <div class="nav-cta">
@@ -1357,12 +1407,12 @@
     <!-- Mobile nav -->
     <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation" aria-hidden="true">
       <a href="/" class="mobile-nav__item">Home</a>
-      <a href="/land-drilling-rigs/" class="mobile-nav__item active" aria-current="page">Land Rigs</a>
+      <a href="/land-drilling-rigs/" class="mobile-nav__item">Land Rigs</a>
       <a href="/mobile-workover-rigs/" class="mobile-nav__item">Mobile &amp; Workover</a>
       <a href="/offshore-rigs/" class="mobile-nav__item">Offshore</a>
       <a href="/oilfield-equipment/" class="mobile-nav__item">Equipment</a>
       <a href="/about/" class="mobile-nav__item">About</a>
-      <a href="/quote/" class="mobile-nav__item">Quote / RFQ</a>
+      <a href="/quote/" class="mobile-nav__item active" aria-current="page">Quote / RFQ</a>
       <a href="tel:+17135650747" class="mobile-nav__item mobile-nav__phone" aria-label="Call us at 713-565-0747">&#128222; 713-565-0747</a>
     </nav>
   </header>
@@ -1371,118 +1421,170 @@
   <main id="main-content">
 
     <!-- ===== HERO ===== -->
-    <section class="hero category-hero" aria-labelledby="hero-heading">
+    <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__grid-overlay" aria-hidden="true"></div>
       <div class="hero__glow" aria-hidden="true"></div>
       <div class="hero__glow-bottom" aria-hidden="true"></div>
       <div class="hero__inner">
-        <p class="hero__eyebrow">Inventory &nbsp;&bull;&nbsp; Land Drilling Rigs</p>
+        <p class="hero__eyebrow">Quote &nbsp;&bull;&nbsp; RFQ &nbsp;&bull;&nbsp; Inquiry</p>
         <h1 class="hero__headline" id="hero-heading">
-          Land Drilling <em>Rigs</em>
+          Tell us what you&rsquo;re looking for &mdash;<br>
+          <em>or what you have to sell</em>
         </h1>
         <p class="hero__subhead">
-          New and used land drilling rigs from 500&nbsp;HP to 3,000+&nbsp;HP. NOV, Drillmec, BOMCO, Honghua, IDM, IDS Gemini, National, Continental Emsco, and more. Located across North America, the Middle East, and beyond.
+          Whether you&rsquo;re sourcing a specific rig type or you have equipment to place, send us the details. We&rsquo;ll respond within one business day from our Houston office.
         </p>
-        <div class="hero__actions">
-          <a href="/quote/" class="btn btn--primary btn--lg">Request a Quote</a>
-          <a href="#inventory" class="btn btn--ghost btn--lg">Browse Inventory</a>
-        </div>
       </div>
     </section>
 
-    <!-- ===== FILTERS ===== -->
-    <section class="section section--dark" id="inventory" aria-labelledby="inventory-heading">
+    <!-- ===== RFQ FORM ===== -->
+    <section class="section section--dark" aria-labelledby="form-heading">
       <div class="section__inner">
         <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Current Inventory</p>
-          <h2 class="section__title" id="inventory-heading">Available <em>Equipment</em></h2>
-          <p class="section__subtitle">Filter by category, horsepower range, or condition. All units independently sourced from our supplier network.</p>
+          <p class="section__eyebrow" aria-hidden="true">Request</p>
+          <h2 class="section__title" id="form-heading">Submit your <em>RFQ</em></h2>
+          <p class="section__subtitle">All fields marked with an asterisk are required. For sensitive transactions, an NCNDA can be sent on request.</p>
         </header>
 
-        <div class="filter-bar" role="group" aria-label="Filter inventory by category">
-          <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
-          <button class="filter-btn" data-filter="Land Drilling" aria-pressed="false">Land Drilling</button>
-          <button class="filter-btn" data-filter="Mobile &amp; Workover" aria-pressed="false">Mobile &amp; Workover</button>
-          <button class="filter-btn" data-filter="Offshore" aria-pressed="false">Offshore</button>
-        </div>
+        <form class="quote-form" action="mailto:info@oilrigsnow.com" method="post" enctype="text/plain" aria-labelledby="form-heading">
 
-        <div id="rig-grid" class="rigs-grid" role="list" aria-live="polite" aria-busy="true">
-          <p class="rig-loading">Loading inventory&hellip;</p>
-        </div>
-
-        <div class="rigs-footer">
-          <p class="rigs-count" id="rig-count" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== EQUIPMENT TYPES ===== -->
-    <section class="section section--mid" aria-labelledby="types-heading">
-      <div class="section__inner">
-        <header class="section__header">
-          <p class="section__eyebrow" aria-hidden="true">Specifications</p>
-          <h2 class="section__title" id="types-heading">Rig <em>Configurations</em> We Source</h2>
-        </header>
-
-        <div class="features-grid">
-          <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9981;</div>
-            <div>
-              <h3 class="feature-block__title">AC VFD Rigs</h3>
-              <p class="feature-block__desc">Modern AC variable-frequency-drive systems with full drilling automation. 1500&nbsp;HP to 3000+&nbsp;HP. Suitable for unconventional plays.</p>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Inquiry Type</legend>
+            <div class="form-radio-row">
+              <label class="form-radio">
+                <input type="radio" name="inquiry_type" value="buying" required>
+                <span>I&rsquo;m buying</span>
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="inquiry_type" value="selling">
+                <span>I have equipment to sell</span>
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="inquiry_type" value="both">
+                <span>Both / general inquiry</span>
+              </label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128205;</div>
-            <div>
-              <h3 class="feature-block__title">Walking Rigs</h3>
-              <p class="feature-block__desc">Pad-drilling rigs with walking systems for unconventional plays. NOV Ideal walking, Alta Super Spec, Basin walking configurations.</p>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Equipment</legend>
+
+            <div class="form-grid-2">
+              <label class="form-field">
+                <span class="form-label">Equipment category *</span>
+                <select name="equipment_category" required>
+                  <option value="">Select &hellip;</option>
+                  <option value="land-drilling">Land Drilling Rig</option>
+                  <option value="mobile-workover">Mobile / Workover Rig</option>
+                  <option value="offshore-jackup">Offshore &mdash; Jack-up</option>
+                  <option value="offshore-semisub">Offshore &mdash; Semi-Submersible</option>
+                  <option value="offshore-drillship">Offshore &mdash; Drillship</option>
+                  <option value="offshore-barge">Offshore &mdash; Inland Barge</option>
+                  <option value="oilfield-equipment">Oilfield Equipment / Parts</option>
+                  <option value="tanks">Tanks</option>
+                  <option value="other">Other</option>
+                </select>
+              </label>
+
+              <label class="form-field">
+                <span class="form-label">Horsepower / capacity (if known)</span>
+                <input type="text" name="capacity" placeholder="e.g. 1500 HP, 250K hookload">
+              </label>
             </div>
-          </div>
 
-          <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#9881;</div>
-            <div>
-              <h3 class="feature-block__title">SCR Conventional</h3>
-              <p class="feature-block__desc">Silicon-controlled rectifier rigs from 1,200 to 2,300&nbsp;HP. Continental Emsco, Mid-Continent, National 80UE/110UE, IDECO E-1200.</p>
+            <div class="form-grid-2">
+              <label class="form-field">
+                <span class="form-label">Condition preference</span>
+                <select name="condition">
+                  <option value="">No preference</option>
+                  <option value="new">New build</option>
+                  <option value="used">Used</option>
+                  <option value="refurbished">Certified Refurbished</option>
+                </select>
+              </label>
+
+              <label class="form-field">
+                <span class="form-label">Quantity</span>
+                <input type="text" name="quantity" placeholder="e.g. 1 rig, fleet of 4">
+              </label>
             </div>
-          </div>
+          </fieldset>
 
-          <div class="feature-block">
-            <div class="feature-block__icon" aria-hidden="true">&#128175;</div>
-            <div>
-              <h3 class="feature-block__title">New Builds</h3>
-              <p class="feature-block__desc">Factory-direct relationships with BOMCO/CNPC, Honghua, and other manufacturers. Custom-spec new builds available.</p>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Logistics</legend>
+
+            <div class="form-grid-2">
+              <label class="form-field">
+                <span class="form-label">Operating region / location</span>
+                <input type="text" name="region" placeholder="e.g. Permian Basin, Middle East, West Africa">
+              </label>
+
+              <label class="form-field">
+                <span class="form-label">Target timeframe</span>
+                <select name="timeframe">
+                  <option value="">Flexible</option>
+                  <option value="immediate">Immediate (under 30 days)</option>
+                  <option value="quarter">This quarter</option>
+                  <option value="6mo">Within 6 months</option>
+                  <option value="12mo">Within 12 months</option>
+                  <option value="exploring">Just exploring</option>
+                </select>
+              </label>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- ===== CONTACT CTA ===== -->
-    <section class="contact-cta" aria-labelledby="contact-heading">
-      <div class="contact-cta__glow" aria-hidden="true"></div>
-      <div class="contact-cta__inner">
-        <h2 class="contact-cta__headline" id="contact-heading">Looking for a specific rig?</h2>
-        <p class="contact-cta__sub">Tell us the horsepower, condition, region, and timing. We&rsquo;ll surface matching units from our supplier network.</p>
+            <label class="form-field">
+              <span class="form-label">Budget or price expectation (optional)</span>
+              <input type="text" name="budget" placeholder="USD range, &ldquo;market&rdquo;, or leave blank">
+            </label>
+          </fieldset>
 
-        <div class="contact-info-row" role="list" aria-label="Contact information">
-          <div class="contact-info-item" role="listitem">
-            <span class="contact-info-item__icon" aria-hidden="true">&#128222;</span>
-            <span class="contact-info-item__text">
-              <a href="tel:+17135650747" class="contact-info-item__link">713-565-0747</a>
-            </span>
-          </div>
-          <div class="contact-info-item" role="listitem">
-            <span class="contact-info-item__icon" aria-hidden="true">&#9993;</span>
-            <span class="contact-info-item__text">
-              <a href="mailto:info@oilrigsnow.com" class="contact-info-item__link">info@oilrigsnow.com</a>
-            </span>
-          </div>
-        </div>
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Contact</legend>
 
-        <a href="/quote/" class="btn btn--primary btn--lg">Submit RFQ</a>
+            <div class="form-grid-2">
+              <label class="form-field">
+                <span class="form-label">Full name *</span>
+                <input type="text" name="name" required>
+              </label>
+
+              <label class="form-field">
+                <span class="form-label">Company *</span>
+                <input type="text" name="company" required>
+              </label>
+            </div>
+
+            <div class="form-grid-2">
+              <label class="form-field">
+                <span class="form-label">Email *</span>
+                <input type="email" name="email" required>
+              </label>
+
+              <label class="form-field">
+                <span class="form-label">Phone</span>
+                <input type="tel" name="phone" placeholder="Include country code">
+              </label>
+            </div>
+
+            <label class="form-field">
+              <span class="form-label">Country / region</span>
+              <input type="text" name="country">
+            </label>
+          </fieldset>
+
+          <fieldset class="form-fieldset">
+            <legend class="form-legend">Details</legend>
+            <label class="form-field">
+              <span class="form-label">Message / specifications *</span>
+              <textarea name="message" rows="6" required placeholder="Spec requirements, deal context, anything else we should know"></textarea>
+            </label>
+          </fieldset>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn--primary btn--lg">Submit RFQ</button>
+            <p class="form-hint">Or email <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a> directly. Phone: <a href="tel:+17135650747">713-565-0747</a>.</p>
+          </div>
+
+        </form>
       </div>
     </section>
 
@@ -1720,87 +1822,6 @@
     })();
   </script>
 
-
-
-  <script>
-    (function () {
-      'use strict';
-      var grid = document.getElementById('rig-grid');
-      var countEl = document.getElementById('rig-count');
-      var filterBtns = document.querySelectorAll('.filter-btn');
-      var rigs = [];
-      var currentFilter = 'all';
-
-      function escapeHtml(s) {
-        return String(s || '').replace(/[&<>"']/g, function (c) {
-          return { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[c];
-        });
-      }
-
-      function categoryClass(cat) {
-        if (cat === 'Offshore') return 'badge--offshore';
-        if (cat === 'Mobile & Workover') return 'badge--workover';
-        return 'badge--available';
-      }
-
-      function renderCard(rig) {
-        var hp = rig.horsepower ? rig.horsepower.toLocaleString() + ' HP' : '';
-        var cat = rig.category || 'Land Drilling';
-        return '<a href="/land-drilling-rigs/' + escapeHtml(rig.slug) + '/" class="rig-card" role="listitem" aria-label="' + escapeHtml(rig.title) + '">' +
-          '<div class="rig-card__top">' +
-            '<div class="rig-card__badges">' +
-              (hp ? '<span class="badge badge--hp">' + escapeHtml(hp) + '</span>' : '') +
-              '<span class="badge ' + categoryClass(cat) + '">' + escapeHtml(cat) + '</span>' +
-            '</div>' +
-            '<div class="rig-card__icon" aria-hidden="true">&#9881;</div>' +
-          '</div>' +
-          '<h3 class="rig-card__title">' + escapeHtml(rig.title) + '</h3>' +
-          '<p class="rig-card__tagline">' + escapeHtml(rig.tagline || '') + '</p>' +
-          '<div class="rig-card__footer">' +
-            '<span class="rig-card__link-label">View Details</span>' +
-            '<span class="rig-card__arrow" aria-hidden="true">&#8594;</span>' +
-          '</div>' +
-        '</a>';
-      }
-
-      function render() {
-        var filtered = currentFilter === 'all' ? rigs : rigs.filter(function (r) {
-          return r.category === currentFilter;
-        });
-        if (filtered.length === 0) {
-          grid.innerHTML = '<p class="rig-loading">No rigs match the current filter.</p>';
-        } else {
-          grid.innerHTML = filtered.map(renderCard).join('');
-        }
-        grid.setAttribute('aria-busy', 'false');
-        countEl.textContent = 'Showing ' + filtered.length + ' of ' + rigs.length + ' rigs';
-      }
-
-      filterBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          filterBtns.forEach(function (b) {
-            b.classList.remove('active');
-            b.setAttribute('aria-pressed', 'false');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-pressed', 'true');
-          currentFilter = btn.getAttribute('data-filter');
-          render();
-        });
-      });
-
-      fetch('/rigs.json', { cache: 'no-cache' })
-        .then(function (r) { return r.json(); })
-        .then(function (data) {
-          rigs = data;
-          render();
-        })
-        .catch(function (err) {
-          grid.innerHTML = '<p class="rig-loading">Unable to load inventory. Please try again or contact us at 713-565-0747.</p>';
-          console.error(err);
-        });
-    })();
-  </script>
 
 </body>
 </html>
