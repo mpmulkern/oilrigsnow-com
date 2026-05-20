@@ -246,7 +246,17 @@
     "1nGDa9CQdQNlw6FridnZiZhQujHYwXLOr",
     "1JN5NCj9pWmYSsBt11Yxus0we_eEebKbZ",
     "1CJkhD-_L2zoOBmeBw7qeIJJi7aJeRO1k",
-    "1VoN375jB_h2DPn_gdfEzlP0kmTlV29Vt"
+    "1VoN375jB_h2DPn_gdfEzlP0kmTlV29Vt",
+    "1aZq0KxJjYH4d7_e7MCJjuKBHOXhWx1Z3",
+    "1ZR3Fc9nZduEXlO_P3w2qPe_s0O43z3K4",
+    "1WSgdtOO8cAmcXVT0qWVSGHA2QxVrSH-X",
+    "1OikM068I0SoSoaQPjUZxFnqHMOU1hR-d",
+    "1_89p1mZBqbIPddxFNd96RKuVbXX0ARJV",
+    "1m3XhZy9irTUqwFWi_lonwuS7--ByvLW5",
+    "1qwF2Z-Ru_R8AekJbyrdwehrIi8BXJjNh",
+    "1G8ecIORBfk--fWf7F_JkPtVCKAQZPeh2",
+    "1WDwN5EyYY8WhjLTwP4XoLtAnOeYjJbjG",
+    "1Gnu5iJtuyE1HK9LwXhuelSUButf2LcaI"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1853,6 +1863,86 @@
       "source_pdf": "TDS SK801 3000 hp-Specs-Performance-Photos-Videos.pdf",
       "status": "published",
       "processed_date": "2026-05-20"
+    },
+    "TDS 2014 CJ70 JUR (492' WD).pdf": {
+      "file_id": "1aZq0KxJjYH4d7_e7MCJjuKBHOXhWx1Z3",
+      "source_pdf": "TDS 2014 CJ70 JUR (492' WD).pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ70 492' WD, built 2014) \u2014 no offshore-rigs/ section in repo yet",
+      "url": null
+    },
+    "TDS 350ft 2009 CJ50 JUR warm stacked ready 10-2025.pdf": {
+      "file_id": "1ZR3Fc9nZduEXlO_P3w2qPe_s0O43z3K4",
+      "source_pdf": "TDS 350ft 2009 CJ50 JUR warm stacked ready 10-2025.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD, 2009) \u2014 spec variant 10-2025, no offshore-rigs/ section in repo",
+      "url": null
+    },
+    "TDS 350ft 2009 CJ50 JUR warm stacked ready 9-2025.pdf": {
+      "file_id": "1WSgdtOO8cAmcXVT0qWVSGHA2QxVrSH-X",
+      "source_pdf": "TDS 350ft 2009 CJ50 JUR warm stacked ready 9-2025.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD, 2009) \u2014 spec variant 9-2025, no offshore-rigs/ section in repo",
+      "url": null
+    },
+    "TDS 350ft upgraded 2021 CJ50 JUR warm stacked ready 8-2025.pdf": {
+      "file_id": "1OikM068I0SoSoaQPjUZxFnqHMOU1hR-d",
+      "source_pdf": "TDS 350ft upgraded 2021 CJ50 JUR warm stacked ready 8-2025.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD, upgraded 2008/2011/2021) \u2014 8-2025 spec, no offshore-rigs/ section",
+      "url": null
+    },
+    "TDS 350ft 2009 CJ50 JUR warm stacked.pdf": {
+      "file_id": "1_89p1mZBqbIPddxFNd96RKuVbXX0ARJV",
+      "source_pdf": "TDS 350ft 2009 CJ50 JUR warm stacked.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD, 2009 warm stacked) \u2014 base spec, no offshore-rigs/ section",
+      "url": null
+    },
+    "TDS 350ft JUR warm stacked ready 10-2025  ship.pdf": {
+      "file_id": "1m3XhZy9irTUqwFWi_lonwuS7--ByvLW5",
+      "source_pdf": "TDS 350ft JUR warm stacked ready 10-2025  ship.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD) \u2014 ship-spec variant 10-2025, no offshore-rigs/ section",
+      "url": null
+    },
+    "TDS 350ft JUR warm stacked ready 9-2025  ship.pdf": {
+      "file_id": "1qwF2Z-Ru_R8AekJbyrdwehrIi8BXJjNh",
+      "source_pdf": "TDS 350ft JUR warm stacked ready 9-2025  ship.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD) \u2014 ship-spec variant 9-2025, no offshore-rigs/ section",
+      "url": null
+    },
+    "TDS 350ft JUR warm stacked ready 8-2025  ship.pdf": {
+      "file_id": "1G8ecIORBfk--fWf7F_JkPtVCKAQZPeh2",
+      "source_pdf": "TDS 350ft JUR warm stacked ready 8-2025  ship.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore jackup (CJ50 350' WD, upgraded 2021) \u2014 ship-spec 8-2025, no offshore-rigs/ section",
+      "url": null
+    },
+    "TDS 2000HP AC-VFD 2020.pdf": {
+      "file_id": "1WDwN5EyYY8WhjLTwP4XoLtAnOeYjJbjG",
+      "source_pdf": "TDS 2000HP AC-VFD 2020.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Potential dup of existing published unknown-2000hp-ac-vfd-2020 \u2014 different Drive file ID, near-identical spec",
+      "url": null
+    },
+    "TDS Rigs 601-602 2200 HP.pdf": {
+      "file_id": "1Gnu5iJtuyE1HK9LwXhuelSUButf2LcaI",
+      "source_pdf": "TDS Rigs 601-602 2200 HP.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Multi-rig catalog (Rigs 601 and 602 combined) \u2014 cannot auto-publish, needs manual split",
+      "url": null
     }
   }
 }
