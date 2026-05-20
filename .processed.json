@@ -237,7 +237,16 @@
     "1eyCyfT6P2Hb_-1T4qWDuSMcwYD5tBrzv",
     "1RV0BvRnUVqYmbvpEdQZZbGWFmJKGC6Jm",
     "11njHAJ2E9LMoJ9bcM-FW8pZ06RBK-dq1",
-    "1tiAgOIKVW_M_O4-C920IPpoDY6_onmX1"
+    "1tiAgOIKVW_M_O4-C920IPpoDY6_onmX1",
+    "1dFb75ZWGvVLtduiHmVc9LmP8mgK7NdwM",
+    "1efXbptKYvRisrBMaRxkyoYn8etUjTxmT",
+    "1zWPZbUjWnnBirDv7dEv4q3fcfLGqwUo8",
+    "1-xaX9gtWs13cxSW2dkZdp4y3lmsZCZoQ",
+    "1E37BSEypEUxCyTWdN9xK8Myf49mQ8c51",
+    "1nGDa9CQdQNlw6FridnZiZhQujHYwXLOr",
+    "1JN5NCj9pWmYSsBt11Yxus0we_eEebKbZ",
+    "1CJkhD-_L2zoOBmeBw7qeIJJi7aJeRO1k",
+    "1VoN375jB_h2DPn_gdfEzlP0kmTlV29Vt"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1790,6 +1799,60 @@
       "processed_date": "2026-05-20",
       "reason": "",
       "url": "https://new.oilrigsnow.com/land-drilling-rigs/loadcraft-1000hp-2014/"
+    },
+    "loadcraft-1000hp-lci-1000-br": {
+      "file_id": "1dFb75ZWGvVLtduiHmVc9LmP8mgK7NdwM",
+      "source_pdf": "TDS LOADCRAFT LCI 1000 HP (BR) Rig.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "unknown-2000hp-ac-vfd-2020": {
+      "file_id": "1efXbptKYvRisrBMaRxkyoYn8etUjTxmT",
+      "source_pdf": "TDS 2000 HP AC VFD 2020.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "hh-2000hp-ac-vfd-2016": {
+      "file_id": "1zWPZbUjWnnBirDv7dEv4q3fcfLGqwUo8",
+      "source_pdf": "TDS 2000 HP AC VFD 2016.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "national-3000hp-1625m-texas": {
+      "file_id": "1-xaX9gtWs13cxSW2dkZdp4y3lmsZCZoQ",
+      "source_pdf": "TDS - National 1625M - 3000HP.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "national-2000hp-1320ue": {
+      "file_id": "1E37BSEypEUxCyTWdN9xK8Myf49mQ8c51",
+      "source_pdf": "TDS - 2000 HP National 1320 UE (IN).pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "oilwell-2000hp-e2000": {
+      "file_id": "1nGDa9CQdQNlw6FridnZiZhQujHYwXLOr",
+      "source_pdf": "TDS Oilwell 2000E.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "hp-flexrig-1500hp-flex4s": {
+      "file_id": "1JN5NCj9pWmYSsBt11Yxus0we_eEebKbZ",
+      "source_pdf": "TDS H&P 1500 HP AC VFD rig.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "lti-3000hp-ac-2009": {
+      "file_id": "1CJkhD-_L2zoOBmeBw7qeIJJi7aJeRO1k",
+      "source_pdf": "TDS_LTI-3000hp Specs.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
+    },
+    "drillmec-3000hp-sk801": {
+      "file_id": "1VoN375jB_h2DPn_gdfEzlP0kmTlV29Vt",
+      "source_pdf": "TDS SK801 3000 hp-Specs-Performance-Photos-Videos.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20"
     }
   }
 }
