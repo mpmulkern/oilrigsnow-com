@@ -1,0 +1,353 @@
+{
+  "name": "2016 Sixth Generation Ultra-Deepwater Semisubmersible",
+  "slug": "tds-6g-semisub-2016",
+  "category": "Offshore Semisub",
+  "manufacturer": "Moss / NOV",
+  "model": "Moss CS60E",
+  "year": 2016,
+  "condition": "Used",
+  "location": "Available",
+  "horsepower": 5750,
+  "status": "Available",
+  "price_status": "POA",
+  "price_usd": null,
+  "source_pdf": "TDS 2016 6G Semisub.pdf",
+  "hero_stats": [
+    {
+      "value": "9,840 ft",
+      "label": "Water Depth",
+      "sublabel": "Outfitted (3,000 m)"
+    },
+    {
+      "value": "35,000 ft",
+      "label": "Drilling Depth",
+      "sublabel": "Rated capacity"
+    },
+    {
+      "value": "1,000 ST",
+      "label": "Hook Load",
+      "sublabel": "NOV 210 ft bottleneck derrick"
+    },
+    {
+      "value": "180 people",
+      "label": "Accommodation",
+      "sublabel": "DP + moored capable"
+    }
+  ],
+  "tagline": "6th-generation DP/moored ultra-deepwater semisub, 9,840 ft WD, 5,750 HP drawworks, 8x azimuth thrusters.",
+  "status_badge": "Available",
+  "description": "A sixth-generation ultra-deepwater semisubmersible on the Moss CS60E design, delivered in 2016. Rated to 9,840 ft water depth with DP and mooring capability, the rig features a 5,750 HP NOV SSGD drawworks, NOV TDX-1000 1,000-ton top drive, four 2,200 HP mud pumps at 7,500 psi, and eight 4,800 kW Thrustmaster azimuth thrusters. DnV classified with 180-person accommodation and a triple-pit segregated mud system for simultaneous handling of WBM, NAF, and brine.",
+  "equipment_cards": [
+    {
+      "icon": "\ud83d\uddfc",
+      "title": "Derrick & Hoisting",
+      "specs": [
+        {
+          "label": "Derrick",
+          "value": "NOV SDBN Bottleneck, 210 ft high"
+        },
+        {
+          "label": "Base",
+          "value": "50 ft \u00d7 52 ft"
+        },
+        {
+          "label": "Hook Load",
+          "value": "1,000 ST"
+        },
+        {
+          "label": "Drawworks",
+          "value": "NOV SSGD \u2014 5,750 HP"
+        },
+        {
+          "label": "Top Drive",
+          "value": "NOV TDX-1000, 1,000 ST, 2,000 HP"
+        },
+        {
+          "label": "Compensator",
+          "value": "NOV CMC-H-1000-25, 500 ST @ 25 ft stroke"
+        }
+      ]
+    },
+    {
+      "icon": "\ud83c\udf0a",
+      "title": "Subsea & BOP",
+      "specs": [
+        {
+          "label": "BOP",
+          "value": "NOV Class 8, 18-3/4\" 15,000 psi (2A/6R)"
+        },
+        {
+          "label": "C&K Manifold",
+          "value": "3-1/16\" 15,000 psi"
+        },
+        {
+          "label": "Marine Riser",
+          "value": "NOV FT-H 21\", 75 ft/joint"
+        },
+        {
+          "label": "Tensioners",
+          "value": "16x 225-kip NOV, 3,600 kips total"
+        },
+        {
+          "label": "Moonpool",
+          "value": "95 ft \u00d7 29.5 ft"
+        },
+        {
+          "label": "XT Carts",
+          "value": "4x 100 MT"
+        }
+      ]
+    },
+    {
+      "icon": "\ud83d\udca7",
+      "title": "Mud System",
+      "specs": [
+        {
+          "label": "Mud Pumps",
+          "value": "4x NOV 14-P-220"
+        },
+        {
+          "label": "Pump Rating",
+          "value": "2,200 HP, 7,500 psi each"
+        },
+        {
+          "label": "Shale Shakers",
+          "value": "6x NOV VSM Multisizers"
+        },
+        {
+          "label": "Liquid Mud",
+          "value": "15,051 bbl (triple-pit segregated)"
+        },
+        {
+          "label": "Drill Water",
+          "value": "12,674 bbl"
+        },
+        {
+          "label": "Fuel",
+          "value": "28,411 bbl"
+        }
+      ]
+    },
+    {
+      "icon": "\u2693",
+      "title": "DP & Station Keeping",
+      "specs": [
+        {
+          "label": "Thrusters",
+          "value": "8x Thrustmaster 4,800 kW azimuth"
+        },
+        {
+          "label": "DP System",
+          "value": "Kongsberg K-POS, K-Chief, K-Safe"
+        },
+        {
+          "label": "Mooring",
+          "value": "8x Rolls-Royce winches, 450 MT rated"
+        },
+        {
+          "label": "Chain",
+          "value": "84mm NV R5 \u2014 Stevpris Mk6 18MT anchors"
+        },
+        {
+          "label": "Transit Speed",
+          "value": "Up to 10 knots"
+        },
+        {
+          "label": "Cranes",
+          "value": "2x Seatrax S-108, 100 MT @ 42 ft"
+        }
+      ]
+    }
+  ],
+  "capabilities": [
+    {
+      "number": "01",
+      "title": "9,840 ft Rated DP Platform",
+      "body": "Kongsberg K-POS DP system with 8x 4,800 kW Thrustmaster azimuth thrusters enables full dynamic positioning to 9,840 ft water depth \u2014 or switch to 8-point Rolls-Royce mooring for extended campaigns."
+    },
+    {
+      "number": "02",
+      "title": "5,750 HP Drawworks",
+      "body": "The NOV SSGD drawworks delivers 5,750 HP for efficient tripping on ultra-deep wells. Paired with the NOV TDX-1000 top drive (1,000 ST, 91,000 ft-lbs at 115 rpm) and passive/active heave compensation."
+    },
+    {
+      "number": "03",
+      "title": "Triple-Pit Segregated Mud System",
+      "body": "Simultaneously handles three fluid types \u2014 WBM, NAF, and brine \u2014 with 15,051 bbl total liquid mud storage, 6x NOV VSM Multisizer shakers, and four 2,200 HP mud pumps at 7,500 psi."
+    },
+    {
+      "number": "04",
+      "title": "6th-Gen Dual-Derrick-Ready Design",
+      "body": "2x NOV HR IV Rackers, 2x NOV MPT Iron Roughnecks, and a powered mousehole enable efficient dual-activity operations, maximizing time on bottom in ultra-deepwater environments."
+    }
+  ],
+  "complete_data": [
+    {
+      "section": "General",
+      "rows": [
+        [
+          "Design",
+          "Moss CS60E"
+        ],
+        [
+          "Year Entered Service",
+          "2016"
+        ],
+        [
+          "Classification",
+          "DnV +A1, DYNPOS-AUTRO, BIS, E0"
+        ],
+        [
+          "Main Deck",
+          "315 ft \u00d7 255 ft"
+        ],
+        [
+          "Draft (Drilling)",
+          "77 ft"
+        ],
+        [
+          "Displacement",
+          "68,375 MT"
+        ],
+        [
+          "Variable Deck Load",
+          "7,500 MT drilling"
+        ],
+        [
+          "Water Depth",
+          "9,840 ft (3,000 m) outfitted"
+        ],
+        [
+          "Drilling Depth",
+          "35,000 ft"
+        ],
+        [
+          "Accommodation",
+          "180 persons"
+        ]
+      ]
+    },
+    {
+      "section": "Drilling Equipment",
+      "rows": [
+        [
+          "Derrick",
+          "NOV SDBN Bottleneck, 210 ft, 1,000 ST"
+        ],
+        [
+          "Drawworks",
+          "NOV SSGD, 5,750 HP"
+        ],
+        [
+          "Top Drive",
+          "NOV TDX-1000, 1,000 ST, 2,000 HP"
+        ],
+        [
+          "Rotary Table",
+          "NOV RST 60-1/2\" hydraulic, 1,134 MT"
+        ],
+        [
+          "Mud Pumps",
+          "4x NOV 14-P-220, 2,200 HP, 7,500 psi"
+        ],
+        [
+          "Shale Shakers",
+          "6x NOV VSM Multisizers"
+        ]
+      ]
+    },
+    {
+      "section": "Subsea",
+      "rows": [
+        [
+          "BOP",
+          "NOV Class 8 18-3/4\" 15,000 psi (2A/6R)"
+        ],
+        [
+          "Tensioners",
+          "16x 225-kip, 3,600 kips total"
+        ],
+        [
+          "Marine Riser",
+          "NOV FT-H 21\", 75 ft/joint"
+        ],
+        [
+          "Moonpool",
+          "95 ft \u00d7 29.5 ft"
+        ]
+      ]
+    },
+    {
+      "section": "Storage",
+      "rows": [
+        [
+          "Liquid Mud",
+          "15,051 bbl (triple-pit)"
+        ],
+        [
+          "Fuel",
+          "28,411 bbl"
+        ],
+        [
+          "Drill Water",
+          "12,674 bbl"
+        ],
+        [
+          "Potable Water",
+          "5,516 bbl"
+        ],
+        [
+          "Bulk Cement",
+          "15,891 ft\u00b3"
+        ]
+      ]
+    },
+    {
+      "section": "Power & DP",
+      "rows": [
+        [
+          "Main Power",
+          "8x Himsen diesel, 6,120 kW each"
+        ],
+        [
+          "Total Power",
+          "48,960 kW"
+        ],
+        [
+          "Thrusters",
+          "8x Thrustmaster 4,800 kW azimuth"
+        ],
+        [
+          "DP",
+          "Kongsberg K-POS"
+        ]
+      ]
+    }
+  ],
+  "hero_image": "images/img_001.jpeg",
+  "gallery_images": [
+    {
+      "file": "images/img_002.png",
+      "caption": ""
+    },
+    {
+      "file": "images/img_003.png",
+      "caption": ""
+    },
+    {
+      "file": "images/img_004.jpeg",
+      "caption": ""
+    },
+    {
+      "file": "images/img_005.jpeg",
+      "caption": ""
+    },
+    {
+      "file": "images/img_006.jpeg",
+      "caption": ""
+    }
+  ],
+  "notes_for_user_review": [
+    "Offshore semisub \u2014 verify current status and location before listing."
+  ]
+}

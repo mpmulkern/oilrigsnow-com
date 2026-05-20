@@ -221,7 +221,16 @@
     "1YXYUcPG-dftp8qytiTvSYKynPHsodQve",
     "1xV2ZArKyLBrmhFdBGRuXWCmZ-_8c5fL4",
     "188fwovwJ4XRLApLUaO-zq8u0RgzwnzMY",
-    "1yRjUD6IOA0-dIzZS5qq_CVbD8wqHUZyc"
+    "1yRjUD6IOA0-dIzZS5qq_CVbD8wqHUZyc",
+    "1iMuA2HmFu-x0ADmxAfNBMFX_Zw3YOC0x",
+    "1KSTWzHLa9JONMvasm4hWW1IoSCDwaHWP",
+    "10YwNqteJqv6qBqVT782Ml7gn2TRbOzP-",
+    "1iLGvzVDqbtCdJ1hlUSw-eTPmJknlTx8g",
+    "15n3aoDgQ8mIk1WUQhYE2UPL_STuKTWE2",
+    "1yPXfSUoCQ79EzSR8VJo7MKctVseRKOms",
+    "1HKOLkRanHlYgS0sp9d1ZPXpfwiS7ThzQ",
+    "11q6oNEhKLPpSP7t848dmlUguOPEC-0rp",
+    "1fgdAOdZPMRo4SI9JCi2OV92gQUo0gxz0"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1680,6 +1689,44 @@
       "url": "https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-t-412-2008/",
       "processed_at": "2026-05-19T17:43:49Z",
       "status": "published"
+    },
+    "1iMuA2HmFu-x0ADmxAfNBMFX_Zw3YOC0x": {
+      "status": "pending_review",
+      "reason": "slug drillmec-2000hp-t-412-2008 already exists in repo"
+    },
+    "1KSTWzHLa9JONMvasm4hWW1IoSCDwaHWP": {
+      "status": "pending_review",
+      "reason": "equipment (CAT engines), not a rig"
+    },
+    "10YwNqteJqv6qBqVT782Ml7gn2TRbOzP-": {
+      "status": "pending_review",
+      "reason": "photo-only companion to CAT engines"
+    },
+    "1iLGvzVDqbtCdJ1hlUSw-eTPmJknlTx8g": {
+      "status": "pending_review",
+      "reason": "multi-rig catalog (COSL1/3/7)"
+    },
+    "15n3aoDgQ8mIk1WUQhYE2UPL_STuKTWE2": {
+      "status": "pending_review",
+      "reason": "photo-only liftboat PDF"
+    },
+    "1yPXfSUoCQ79EzSR8VJo7MKctVseRKOms": {
+      "status": "published",
+      "slug": "tds-5g-semisub-2009",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/tds-5g-semisub-2009/"
+    },
+    "1HKOLkRanHlYgS0sp9d1ZPXpfwiS7ThzQ": {
+      "status": "published",
+      "slug": "tds-6g-semisub-2016",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/tds-6g-semisub-2016/"
+    },
+    "11q6oNEhKLPpSP7t848dmlUguOPEC-0rp": {
+      "status": "pending_review",
+      "reason": "photo-only jackup PDF"
+    },
+    "1fgdAOdZPMRo4SI9JCi2OV92gQUo0gxz0": {
+      "status": "pending_review",
+      "reason": "photo-only jackup PDF"
     }
   }
 }
