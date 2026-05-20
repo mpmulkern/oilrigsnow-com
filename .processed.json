@@ -230,7 +230,14 @@
     "1yPXfSUoCQ79EzSR8VJo7MKctVseRKOms",
     "1HKOLkRanHlYgS0sp9d1ZPXpfwiS7ThzQ",
     "11q6oNEhKLPpSP7t848dmlUguOPEC-0rp",
-    "1fgdAOdZPMRo4SI9JCi2OV92gQUo0gxz0"
+    "1fgdAOdZPMRo4SI9JCi2OV92gQUo0gxz0",
+    "1iNKJCNyzTjKaTeQ1bjmnxHPU-03U-hPy",
+    "1h_IezV2NURL89iQgFMNLMd_kDYj9-rvJ",
+    "1mOnB-DPTdpO04ERo8mp7XJpKBgT_Kqha",
+    "1eyCyfT6P2Hb_-1T4qWDuSMcwYD5tBrzv",
+    "1RV0BvRnUVqYmbvpEdQZZbGWFmJKGC6Jm",
+    "11njHAJ2E9LMoJ9bcM-FW8pZ06RBK-dq1",
+    "1tiAgOIKVW_M_O4-C920IPpoDY6_onmX1"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -1727,6 +1734,62 @@
     "1fgdAOdZPMRo4SI9JCi2OV92gQUo0gxz0": {
       "status": "pending_review",
       "reason": "photo-only jackup PDF"
+    },
+    "TDS - 250' Liftboat.pdf": {
+      "file_id": "1iNKJCNyzTjKaTeQ1bjmnxHPU-03U-hPy",
+      "source_pdf": "TDS - 250' Liftboat.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore/marine liftboat \u2014 not a land drilling rig",
+      "url": null
+    },
+    "Super M2 2015.pdf": {
+      "file_id": "1h_IezV2NURL89iQgFMNLMd_kDYj9-rvJ",
+      "source_pdf": "Super M2 2015.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore 300ft jackup (Gulf Driller V, Bluewhale Offshore)",
+      "url": null
+    },
+    "Super M2 2016.pdf": {
+      "file_id": "1mOnB-DPTdpO04ERo8mp7XJpKBgT_Kqha",
+      "source_pdf": "Super M2 2016.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore 300ft jackup (Gulf Driller IV, Bluewhale Offshore)",
+      "url": null
+    },
+    "TDS Jackup 400' WD JU3000N.pdf": {
+      "file_id": "1eyCyfT6P2Hb_-1T4qWDuSMcwYD5tBrzv",
+      "source_pdf": "TDS Jackup 400' WD JU3000N.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Offshore 400ft jackup \u2014 1-page spec, thin content",
+      "url": null
+    },
+    "TDS 3600 HP Specs.pdf": {
+      "file_id": "1RV0BvRnUVqYmbvpEdQZZbGWFmJKGC6Jm",
+      "source_pdf": "TDS 3600 HP Specs.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Photo-only PDF (no extractable text) + slug collision with ac-3600hp-land-drilling-rig",
+      "url": null
+    },
+    "TDS Ideal NOV 1500hp spec.pdf": {
+      "file_id": "11njHAJ2E9LMoJ9bcM-FW8pZ06RBK-dq1",
+      "source_pdf": "TDS Ideal NOV 1500hp spec.pdf",
+      "status": "pending_review",
+      "processed_date": "2026-05-20",
+      "reason": "Slug collision \u2014 nov-ideal-1500hp-ac-rig-826 already published",
+      "url": null
+    },
+    "loadcraft-1000hp-2014": {
+      "file_id": "1tiAgOIKVW_M_O4-C920IPpoDY6_onmX1",
+      "source_pdf": "TDS 2014 LCI 1000.pdf",
+      "status": "published",
+      "processed_date": "2026-05-20",
+      "reason": "",
+      "url": "https://new.oilrigsnow.com/land-drilling-rigs/loadcraft-1000hp-2014/"
     }
   }
 }
