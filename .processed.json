@@ -266,7 +266,10 @@
     "1ghiIo7Q0toRsRFR_jVZ9BdSfxGaZ7CxP",
     "1KoZsz4dZ-3xFnMETq6rGudlXX84CPonZ",
     "1PDCk02Iw61bHgtIN4k0LY9pLr_Obf3E4",
-    "140zhnHJ97fSQ4pYCQGjR7nEeEckCFZ-S"
+    "140zhnHJ97fSQ4pYCQGjR7nEeEckCFZ-S",
+    "1jbXFwBolz_UtyCa7_BjpfAXJnGIqBsZL",
+    "1TE62PhMl1UMmzsgYoo94PPnjCrTAp3vj",
+    "12vk5btCa_Z80nd-s81BwaNiJyaqacUNW"
   ],
   "rigs": {
     "1aXwNhU2TIFwHVXmC8REDhf7sOVBngi1z": {
@@ -2024,5 +2027,25 @@
       "source_pdf": "TDS 2015 JU2000E JUR.pdf",
       "processed_at": "2026-05-20T19:19:55Z"
     }
-  }
+  },
+  "pending_review": [
+    {
+      "file_id": "1jbXFwBolz_UtyCa7_BjpfAXJnGIqBsZL",
+      "name": "TDS JU-2000E.pdf",
+      "status": "pending_review",
+      "reason": "Jackup/offshore rig \u2014 not a land rig; possible duplicate of ju2000e-highlander-400ft-2015"
+    },
+    {
+      "file_id": "1TE62PhMl1UMmzsgYoo94PPnjCrTAp3vj",
+      "name": "TDS JU-2000E Jackup.pdf",
+      "status": "pending_review",
+      "reason": "Jackup/offshore rig (Friede Goldman 2000E, 2015); possible duplicate of ju2000e-highlander-400ft-2015"
+    },
+    {
+      "file_id": "12vk5btCa_Z80nd-s81BwaNiJyaqacUNW",
+      "name": "TDS_LTI-3000hp.pdf",
+      "status": "pending_review",
+      "reason": "Slug collision with existing lti-3000hp-ac-2009; PDF is an invoice doc with specs on pages 2+"
+    }
+  ]
 }
