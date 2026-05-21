@@ -2,143 +2,770 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://new.oilrigsnow.com/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/about/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/contact/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/quote/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/mobile-workover-rigs/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/offshore-rigs/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/oilfield-equipment/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/privacy/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/terms/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/cookies/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/accessibility/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/ai-chat-terms/</loc>
-  </url>
-  <url>
-    <loc>https://new.oilrigsnow.com/compliance/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/disclaimer/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/accessibility/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/ai-chat-terms/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/compliance/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/alta-1200hp-rig-12/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/alta-1200hp-rig-16/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/barge-rig-20-1500hp-2002/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/basin-2000hp-rig-101/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/bomco-3000-hp-land-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/cardwell-375hp-rig-320/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-2-2005/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-3-2006/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/crown-duke-ce750-2008/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/davis-1000hp-rig-102/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/dreco-1500hp-rig-24/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2300hp-2013/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/hh-2000hp-vfd-kuwait/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/hh-3300hp-dbs-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/ideco-1200hp-rig-1-walking-2003/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/idm-1500hp-rig-5-2007/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/idm-1500hp-rig-7-walking/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-5-2005/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-6-2005/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-7-2013/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/kurui-2000hp-2014/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-4-dubai/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/mid-continent-1500hp-rig-17/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-80ue-1200hp-rig-14/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-5c-workover-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-ac-rig-826/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-walking-rig-210/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/oime-2000-hp-rig-16/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/rig-1000-1500hp-2011/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk-1000-2007/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://new.oilrigsnow.com/land-drilling-rigs/tds-1200hp-rig-l1/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/tds-5g-semisub-2009/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/tds-6g-semisub-2016/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ac-3600hp-land-drilling-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ac-vfd-3000hp-land-rig-new/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/alta-gemini-1500hp-rig-14-2012/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/atlantic-7-jackup-300ft-2000hp/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/barge-2000hp-rig-54b/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/barge-3000hp-rig-72b/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bomco-1500hp-land-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bomco-2000hp-land-rig/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bomco-2000hp-rig-264-2006/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/brewster-n4a-750hp-rig-1/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/brewster-n4a-750hp-rig-6/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bucyrus-erie-36l-cable-tool/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bucyrus-erie-60l-cable-tool/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/bw-hyduke-600p-rig-4/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/cardwell-375hp-workover-rig-318/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/cardwell-375hp-workover-rig-323/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/cardwell-kb-rig-8-1969/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-20/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-24/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/continental-emsco-1500hp-rig-26/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/cooper-lt-350hp-rig-1/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/crow-energy-ce1000-1000hp-rig-117/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/davis-1500e-rig-11/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/dreco-emsco-2000hp-rig-425-1981/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-rig-65/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-rig-66/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-2000hp-t-412-2008/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-3000hp-sk801/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-hh220-1340hp-2015/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-hh300fa-1500hp-2011/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/drillmec-mr8000-1000hp-2011/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/emsco-2000hp-rig-425-1978/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/gardner-denver-3000hp-rig-273/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/gemini-alta-1200hp-rig-15/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ges-1600hp-ac-rig-161/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ges-1600hp-rig-163/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ges-quicksilver-1600hp-ac-vfd-rig-9/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/gw-903te-1500hp-2015/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/hh-2000hp-ac-vfd-2016/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/hp-flexrig-1500hp-flex4s/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/hri-1000e-1000hp-rig-7-2008/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ide-2000hp-rig-4/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ids-gemini-1500hp-rig-11-2011/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ids-gemini-1500hp-rig-13-2012/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ids-gemini-1500hp-rig-17/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ids-gemini-2000hp-rig-18/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ingersoll-rand-2550-1500hp-rig-107/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ju2000e-highlander-400ft-2015/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ksm-550-rig-2-2006/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/loadcraft-1000hp-2014/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/loadcraft-1000hp-lci-1000-br/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/lti-3000hp-ac-2009/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-3/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-4/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/md-cowan-1000hp-rig-5/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-110u-1500hp-rig-6-2024/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-110ue-1500hp-rig-1441/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-110ue-1500hp-rig-1450/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-1625de-3000hp-rig-16/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-2000hp-1320ue/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-3000hp-1625m-texas/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-d1000e-1000hp-rig-15/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/national-oilwell-e2000hp-odessa-1990/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-ideal-1500hp-rig-10-2011/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-national-110ue-1500hp-rig-2/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/nov-national-110ue-1500hp-rig-7/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ocean-greatwhite-semisub-9840ft-2016/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/ocean-onyx-semisub-6000ft-2020/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/oilwell-2000hp-e2000/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/oilwell-760e-1200hp-rig-123/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/oilwell-840e-1500hp-rig-1428/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/oime-2000hp-rig-16/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/pac-rim-3000hp-rig-90/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/rof-t750-2200hp-rig-602/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk1000-trailer-2012/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk675hp-workover/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk775-workover-rig-12/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk775-workover-rig-5/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk775hp-workover/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/service-king-sk775hp-workover-new/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/tds-1500hp-acvfd-rig-19/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/tds-1500hp-f-rig-17/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/tesco-1000hp-rig-107/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/unknown-2000hp-ac-vfd-2020/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://new.oilrigsnow.com/land-drilling-rigs/zj30-750hp-workover-rig-iraq/</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
