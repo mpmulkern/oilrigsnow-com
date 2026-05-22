@@ -1422,6 +1422,105 @@
       outline-offset: 2px;
     }
     .search-bar__clear.visible { display: block; }
+
+    /* ── HP Range Filter ── */
+    .hp-filter {
+      margin-bottom: 1.25rem;
+      max-width: 520px;
+    }
+    .hp-filter__header {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+      margin-bottom: 0.75rem;
+    }
+    .hp-filter__title {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .hp-filter__range-label {
+      font-size: 0.8125rem;
+      color: var(--accent);
+      font-weight: 500;
+    }
+    .hp-filter__reset {
+      margin-left: auto;
+      background: none;
+      border: 1px solid rgba(201,164,92,0.3);
+      border-radius: 4px;
+      color: var(--text-muted);
+      font-size: 0.6875rem;
+      padding: 0.2rem 0.55rem;
+      cursor: pointer;
+      font-family: 'Inter', sans-serif;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    .hp-filter__reset:hover { color: var(--accent); border-color: var(--accent); }
+    .hp-filter__reset:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+    .hp-slider-wrap {
+      position: relative;
+      height: 28px;
+      display: flex;
+      align-items: center;
+    }
+    .hp-track {
+      position: absolute;
+      left: 0; right: 0;
+      height: 4px;
+      border-radius: 2px;
+      background: rgba(255,255,255,0.1);
+      pointer-events: none;
+    }
+    .hp-track__fill {
+      position: absolute;
+      top: 0; height: 100%;
+      border-radius: 2px;
+      background: var(--accent);
+      pointer-events: none;
+    }
+    .hp-slider-wrap input[type="range"] {
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      margin: 0;
+      -webkit-appearance: none;
+      appearance: none;
+      background: transparent;
+      pointer-events: none;
+      outline: none;
+    }
+    .hp-slider-wrap input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #0a1624;
+      cursor: pointer;
+      pointer-events: all;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      transition: transform 0.1s, box-shadow 0.1s;
+    }
+    .hp-slider-wrap input[type="range"]::-webkit-slider-thumb:hover {
+      transform: scale(1.25);
+      box-shadow: 0 2px 8px rgba(201,164,92,0.4);
+    }
+    .hp-slider-wrap input[type="range"]:focus::-webkit-slider-thumb {
+      transform: scale(1.15);
+      box-shadow: 0 0 0 3px rgba(201,164,92,0.3);
+    }
+    .hp-slider-wrap input[type="range"]::-moz-range-thumb {
+      width: 18px; height: 18px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 2px solid #0a1624;
+      cursor: pointer;
+      pointer-events: all;
+    }
+    #hp-min-input { z-index: 3; }
+    #hp-max-input { z-index: 4; }
 </style>
 </head>
 <body>
@@ -1538,6 +1637,19 @@
               aria-label="Search rigs"
             >
             <button class="search-bar__clear" id="search-clear" aria-label="Clear search" type="button">&#10005;</button>
+          </div>
+        </div>
+
+        <div class="hp-filter" id="hp-filter" hidden aria-label="Filter by horsepower range">
+          <div class="hp-filter__header">
+            <span class="hp-filter__title">HP Range</span>
+            <span class="hp-filter__range-label" id="hp-range-label" aria-live="polite">Any</span>
+            <button class="hp-filter__reset" id="hp-reset" hidden type="button" aria-label="Reset horsepower filter">Reset</button>
+          </div>
+          <div class="hp-slider-wrap" role="group" aria-label="Horsepower range slider">
+            <div class="hp-track"><div class="hp-track__fill" id="hp-track-fill"></div></div>
+            <input type="range" id="hp-min-input" min="0" max="5000" value="0" step="100" aria-label="Minimum horsepower">
+            <input type="range" id="hp-max-input" min="0" max="5000" value="5000" step="100" aria-label="Maximum horsepower">
           </div>
         </div>
 
@@ -1872,9 +1984,16 @@
       var filterBtns = document.querySelectorAll('.filter-btn');
       var searchEl = document.getElementById('rig-search');
       var clearBtn = document.getElementById('search-clear');
+      var hpFilterEl = document.getElementById('hp-filter');
+      var hpMinInput = document.getElementById('hp-min-input');
+      var hpMaxInput = document.getElementById('hp-max-input');
+      var hpRangeLabelEl = document.getElementById('hp-range-label');
+      var hpResetBtn = document.getElementById('hp-reset');
+      var hpTrackFill = document.getElementById('hp-track-fill');
       var rigs = [];
       var currentFilter = 'all';
       var currentQuery = '';
+      var hpMin = 0, hpMax = 99999, hpDataMin = 0, hpDataMax = 99999;
 
       function escapeHtml(s) {
         return String(s || '').replace(/[&<>"']/g, function (c) {
@@ -1920,10 +2039,18 @@
                    (r.model || '').toLowerCase().indexOf(q) !== -1;
           });
         }
+        // HP range filter (rigs without HP data always pass through)
+        var hpActive = hpMin !== hpDataMin || hpMax !== hpDataMax;
+        if (hpActive) {
+          filtered = filtered.filter(function (r) {
+            if (!r.horsepower) return true;
+            return r.horsepower >= hpMin && r.horsepower <= hpMax;
+          });
+        }
         if (filtered.length === 0) {
           var msg = currentQuery
-            ? 'No rigs match &ldquo;' + escapeHtml(currentQuery) + '&rdquo;. Try a different search or clear the filter.'
-            : 'No rigs match the current filter.';
+            ? 'No rigs match &ldquo;' + escapeHtml(currentQuery) + '&rdquo;. Try a different search or clear the filters.'
+            : 'No rigs match the current filters.';
           grid.innerHTML = '<p class="rig-loading">' + msg + '</p>';
         } else {
           grid.innerHTML = filtered.map(renderCard).join('');
@@ -1963,10 +2090,67 @@
         render();
       });
 
+      function fmtHp(n) { return n.toLocaleString() + ' HP'; }
+
+      function updateHpUI() {
+        var range = hpDataMax - hpDataMin;
+        if (range <= 0) return;
+        var leftPct = ((hpMin - hpDataMin) / range * 100).toFixed(2);
+        var widthPct = ((hpMax - hpMin) / range * 100).toFixed(2);
+        hpTrackFill.style.left = leftPct + '%';
+        hpTrackFill.style.width = widthPct + '%';
+        var isDefault = hpMin === hpDataMin && hpMax === hpDataMax;
+        hpRangeLabelEl.textContent = isDefault ? 'Any' : fmtHp(hpMin) + ' – ' + fmtHp(hpMax);
+        hpResetBtn.hidden = isDefault;
+      }
+
+      hpMinInput.addEventListener('input', function () {
+        var val = parseInt(this.value, 10);
+        var step = parseInt(this.step, 10) || 100;
+        if (val >= hpMax) { val = hpMax - step; this.value = val; }
+        hpMin = val;
+        updateHpUI();
+        render();
+      });
+
+      hpMaxInput.addEventListener('input', function () {
+        var val = parseInt(this.value, 10);
+        var step = parseInt(this.step, 10) || 100;
+        if (val <= hpMin) { val = hpMin + step; this.value = val; }
+        hpMax = val;
+        updateHpUI();
+        render();
+      });
+
+      hpResetBtn.addEventListener('click', function () {
+        hpMin = hpDataMin;
+        hpMax = hpDataMax;
+        hpMinInput.value = hpDataMin;
+        hpMaxInput.value = hpDataMax;
+        updateHpUI();
+        render();
+      });
+
       fetch('/rigs.json', { cache: 'no-cache' })
         .then(function (r) { return r.json(); })
         .then(function (data) {
           rigs = data;
+          // Initialise HP slider range from actual data
+          var hpVals = data.filter(function (r) { return r.horsepower; }).map(function (r) { return r.horsepower; });
+          if (hpVals.length > 0) {
+            hpDataMin = Math.floor(Math.min.apply(null, hpVals) / 100) * 100;
+            hpDataMax = Math.ceil(Math.max.apply(null, hpVals) / 100) * 100;
+            hpMin = hpDataMin;
+            hpMax = hpDataMax;
+            var step = hpDataMax - hpDataMin > 3000 ? 250 : 100;
+            [hpMinInput, hpMaxInput].forEach(function (el) {
+              el.min = hpDataMin; el.max = hpDataMax; el.step = step;
+            });
+            hpMinInput.value = hpDataMin;
+            hpMaxInput.value = hpDataMax;
+            hpFilterEl.hidden = false;
+            updateHpUI();
+          }
           render();
         })
         .catch(function (err) {
