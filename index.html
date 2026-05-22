@@ -1401,9 +1401,9 @@
           <a href="/quote/" class="btn btn--ghost btn--lg">Request a Quote</a>
         </div>
         <div class="hero__stats" aria-label="Company highlights">
-          <div class="stat" data-target="30">
-            <span class="stat__number" aria-label="30 or more rigs listed">
-              <span class="stat__count" data-target="30">30</span>+
+          <div class="stat" id="stat-rigs">
+            <span class="stat__number" id="stat-rigs-number" aria-label="Rigs listed">
+              <span class="stat__count" id="stat-rigs-count">—</span>
             </span>
             <span class="stat__label">Rigs Listed</span>
           </div>
@@ -1430,104 +1430,8 @@
           <p class="section__subtitle">Inspect our current inventory of land drilling rigs and oilfield equipment. All units independently verified and available for immediate inquiry.</p>
         </header>
 
-        <div class="rigs-grid" role="list">
-
-          <a href="/land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/" class="rig-card" role="listitem" aria-label="NOV Ideal 1500 HP Walking Rig 209 — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="1500 horsepower">1,500 HP</span>
-                <span class="badge badge--available" aria-label="Status: Available">Available</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#9981;</div>
-            </div>
-            <h3 class="rig-card__title">NOV Ideal 1500 HP Walking Rig 209</h3>
-            <p class="rig-card__tagline">VFD-equipped walking rig, full drillstring included. Ideal for unconventional plays requiring pad drilling mobility.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
-          <a href="/land-drilling-rigs/drillmec-2300hp-land-rig-2013/" class="rig-card" role="listitem" aria-label="Drillmec 2300 HP Land Rig 2013 — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="2300 horsepower">2,300 HP</span>
-                <span class="badge badge--available" aria-label="Status: Available">Available</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#9881;</div>
-            </div>
-            <h3 class="rig-card__title">Drillmec 2300 HP Land Rig 2013</h3>
-            <p class="rig-card__tagline">Italian-manufactured 2013 build. Hydraulic top drive, full AC/VFD system. Excellent condition with low rig hours.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
-          <a href="/land-drilling-rigs/bomco-3000hp-land-rig/" class="rig-card" role="listitem" aria-label="BOMCO 3000 HP Land Rig — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="3000 horsepower">3,000 HP</span>
-                <span class="badge badge--inquiry" aria-label="Status: Inquiry Required">Inquiry</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#128295;</div>
-            </div>
-            <h3 class="rig-card__title">BOMCO 3000 HP Land Rig</h3>
-            <p class="rig-card__tagline">Heavy-duty Chinese-built rig. 3,000 HP drawworks, high-capacity mud system. Suitable for deep gas exploration to 25,000 ft+.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
-          <a href="/land-drilling-rigs/hh-2000hp-vfd-rig-kuwait/" class="rig-card" role="listitem" aria-label="HH 2000 HP VFD Rig Kuwait — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="2000 horsepower">2,000 HP</span>
-                <span class="badge badge--available" aria-label="Status: Available">Available</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#9881;</div>
-            </div>
-            <h3 class="rig-card__title">HH 2000 HP VFD Rig — Kuwait</h3>
-            <p class="rig-card__tagline">Honghua-manufactured VFD rig, recently released from Kuwait operations. Full AC drive, top drive, and ancillary equipment included.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
-          <a href="/land-drilling-rigs/continental-emsco-1500hp-rig-2/" class="rig-card" role="listitem" aria-label="Continental Emsco 1500 HP Rig 2 — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="1500 horsepower">1,500 HP</span>
-                <span class="badge badge--available" aria-label="Status: Available">Available</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#9981;</div>
-            </div>
-            <h3 class="rig-card__title">Continental Emsco 1500 HP Rig 2</h3>
-            <p class="rig-card__tagline">Classic American-built Emsco rig in operational condition. Suitable for mid-depth land drilling with conventional drive package.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
-          <a href="/land-drilling-rigs/alta-1200hp-rig-12/" class="rig-card" role="listitem" aria-label="Alta 1200 HP Rig 12 — view details">
-            <div class="rig-card__top">
-              <div class="rig-card__badges">
-                <span class="badge badge--hp" aria-label="1200 horsepower">1,200 HP</span>
-                <span class="badge badge--available" aria-label="Status: Available">Available</span>
-              </div>
-              <div class="rig-card__icon" aria-hidden="true">&#128262;</div>
-            </div>
-            <h3 class="rig-card__title">Alta 1200 HP Rig 12</h3>
-            <p class="rig-card__tagline">Compact, highly mobile 1,200 HP rig. Ideal for shallow to mid-depth wells. Fast rig-up, reduced surface footprint.</p>
-            <div class="rig-card__footer">
-              <span class="rig-card__link-label">View Details</span>
-              <span class="rig-card__arrow" aria-hidden="true">&#8594;</span>
-            </div>
-          </a>
-
+        <div class="rigs-grid" id="featured-grid" role="list" aria-live="polite" aria-busy="true">
+          <p class="rig-loading" style="grid-column:1/-1;text-align:center;padding:2rem 0;">Loading inventory&hellip;</p>
         </div>
 
         <div class="rigs-footer">
@@ -1887,6 +1791,94 @@
       if (declineBtn) {
         declineBtn.addEventListener('click', function () { dismissBanner(false); });
       }
+
+      // ---- Dynamic featured rigs + live rig count ----
+      var featuredGrid = document.getElementById('featured-grid');
+      var rigCountEl = document.getElementById('stat-rigs-count');
+      var rigNumberEl = document.getElementById('stat-rigs-number');
+
+      function escHtml(s) {
+        return String(s || '').replace(/[&<>"']/g, function (c) {
+          return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+        });
+      }
+
+      function catBadgeClass(cat) {
+        if (cat === 'Offshore') return 'badge--offshore';
+        if (cat === 'Mobile & Workover') return 'badge--workover';
+        return 'badge--available';
+      }
+
+      function renderFeaturedCard(rig) {
+        var hp = rig.horsepower ? rig.horsepower.toLocaleString() + ' HP' : '';
+        var cat = rig.category || 'Land Drilling';
+        return '<a href="/land-drilling-rigs/' + escHtml(rig.slug) + '/" class="rig-card" role="listitem" aria-label="' + escHtml(rig.title) + ' — view details">' +
+          '<div class="rig-card__top">' +
+            '<div class="rig-card__badges">' +
+              (hp ? '<span class="badge badge--hp" aria-label="' + escHtml(hp) + '">' + escHtml(hp) + '</span>' : '') +
+              '<span class="badge ' + catBadgeClass(cat) + '">' + escHtml(cat) + '</span>' +
+            '</div>' +
+            '<div class="rig-card__icon" aria-hidden="true">&#9881;</div>' +
+          '</div>' +
+          '<h3 class="rig-card__title">' + escHtml(rig.title) + '</h3>' +
+          '<p class="rig-card__tagline">' + escHtml(rig.tagline || '') + '</p>' +
+          '<div class="rig-card__footer">' +
+            '<span class="rig-card__link-label">View Details</span>' +
+            '<span class="rig-card__arrow" aria-hidden="true">&#8594;</span>' +
+          '</div>' +
+        '</a>';
+      }
+
+      fetch('/rigs.json', { cache: 'no-cache' })
+        .then(function (r) { return r.json(); })
+        .then(function (data) {
+          // Update rig count stat (animate from 0)
+          var total = data.length;
+          if (rigCountEl && rigNumberEl) {
+            rigNumberEl.setAttribute('aria-label', total + ' rigs listed');
+            rigNumberEl.innerHTML = '<span class="stat__count" id="stat-rigs-count">0</span>+';
+            var freshCountEl = document.getElementById('stat-rigs-count');
+            if (freshCountEl) animateCounter(freshCountEl, total, 1400);
+          }
+
+          // Pick 6 featured rigs: top 3 by HP from land, top 1 from mobile/workover, top 1 from offshore, then fill from land
+          var land = data.filter(function (r) { return r.category === 'Land Drilling' && r.horsepower; })
+                         .sort(function (a, b) { return b.horsepower - a.horsepower; });
+          var mobile = data.filter(function (r) { return r.category === 'Mobile & Workover' && r.horsepower; })
+                           .sort(function (a, b) { return b.horsepower - a.horsepower; });
+          var offshore = data.filter(function (r) { return r.category === 'Offshore'; });
+
+          var featured = [];
+          var usedSlugs = {};
+          function addUniq(arr, n) {
+            var added = 0;
+            for (var i = 0; i < arr.length && added < n; i++) {
+              if (!usedSlugs[arr[i].slug]) {
+                usedSlugs[arr[i].slug] = true;
+                featured.push(arr[i]);
+                added++;
+              }
+            }
+          }
+          // 1 offshore, 1 mobile, 4 land (highest HP)
+          addUniq(offshore, 1);
+          addUniq(mobile, 1);
+          addUniq(land, 4);
+          // Pad with any remaining if we got fewer than 6
+          if (featured.length < 6) addUniq(land.concat(mobile).concat(offshore), 6 - featured.length);
+
+          if (featuredGrid) {
+            featuredGrid.setAttribute('aria-busy', 'false');
+            featuredGrid.innerHTML = featured.map(renderFeaturedCard).join('');
+          }
+        })
+        .catch(function (err) {
+          if (featuredGrid) {
+            featuredGrid.setAttribute('aria-busy', 'false');
+            featuredGrid.innerHTML = '<p class="rig-loading" style="grid-column:1/-1;text-align:center;">Unable to load inventory. <a href="/land-drilling-rigs/" style="color:var(--accent)">Browse all rigs &rarr;</a></p>';
+          }
+          console.error('rigs.json fetch error:', err);
+        });
 
     })();
   </script>
