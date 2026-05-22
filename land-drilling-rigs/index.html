@@ -1365,6 +1365,63 @@
       color: #E67852;
       border: 1px solid rgba(184, 71, 42, 0.35);
     }
+
+    /* ── Search bar ── */
+    .search-bar-wrap {
+      margin-bottom: 1.25rem;
+    }
+    .search-bar {
+      position: relative;
+      max-width: 520px;
+    }
+    .search-bar__icon {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      pointer-events: none;
+      font-size: 1rem;
+    }
+    .search-bar__input {
+      width: 100%;
+      padding: 0.75rem 2.75rem 0.75rem 2.75rem;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.9375rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+      box-sizing: border-box;
+    }
+    .search-bar__input::placeholder { color: var(--text-muted); }
+    .search-bar__input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(201,164,92,0.18);
+    }
+    .search-bar__clear {
+      position: absolute;
+      right: 0.75rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 1.1rem;
+      padding: 0.25rem;
+      line-height: 1;
+      display: none;
+      border-radius: 3px;
+    }
+    .search-bar__clear:hover { color: var(--text); }
+    .search-bar__clear:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+    .search-bar__clear.visible { display: block; }
 </style>
 </head>
 <body>
@@ -1465,6 +1522,24 @@
           <h2 class="section__title" id="inventory-heading">Available <em>Equipment</em></h2>
           <p class="section__subtitle">Filter by category, horsepower range, or condition. All units independently sourced from our supplier network.</p>
         </header>
+
+        <div class="search-bar-wrap">
+          <div class="search-bar">
+            <span class="search-bar__icon" aria-hidden="true">&#128269;</span>
+            <label for="rig-search" class="sr-only">Search rigs by name, manufacturer, or model</label>
+            <input
+              type="search"
+              id="rig-search"
+              class="search-bar__input"
+              placeholder="Search by name, manufacturer, or model&hellip;"
+              autocomplete="off"
+              spellcheck="false"
+              aria-controls="rig-grid"
+              aria-label="Search rigs"
+            >
+            <button class="search-bar__clear" id="search-clear" aria-label="Clear search" type="button">&#10005;</button>
+          </div>
+        </div>
 
         <div class="filter-bar" role="group" aria-label="Filter inventory by category">
           <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
@@ -1795,8 +1870,11 @@
       var grid = document.getElementById('rig-grid');
       var countEl = document.getElementById('rig-count');
       var filterBtns = document.querySelectorAll('.filter-btn');
+      var searchEl = document.getElementById('rig-search');
+      var clearBtn = document.getElementById('search-clear');
       var rigs = [];
       var currentFilter = 'all';
+      var currentQuery = '';
 
       function escapeHtml(s) {
         return String(s || '').replace(/[&<>"']/g, function (c) {
@@ -1834,8 +1912,19 @@
         var filtered = currentFilter === 'all' ? rigs : rigs.filter(function (r) {
           return r.category === currentFilter;
         });
+        if (currentQuery) {
+          var q = currentQuery.toLowerCase();
+          filtered = filtered.filter(function (r) {
+            return (r.title || '').toLowerCase().indexOf(q) !== -1 ||
+                   (r.manufacturer || '').toLowerCase().indexOf(q) !== -1 ||
+                   (r.model || '').toLowerCase().indexOf(q) !== -1;
+          });
+        }
         if (filtered.length === 0) {
-          grid.innerHTML = '<p class="rig-loading">No rigs match the current filter.</p>';
+          var msg = currentQuery
+            ? 'No rigs match &ldquo;' + escapeHtml(currentQuery) + '&rdquo;. Try a different search or clear the filter.'
+            : 'No rigs match the current filter.';
+          grid.innerHTML = '<p class="rig-loading">' + msg + '</p>';
         } else {
           grid.innerHTML = filtered.map(renderCard).join('');
         }
@@ -1854,6 +1943,24 @@
           currentFilter = btn.getAttribute('data-filter');
           render();
         });
+      });
+
+      var searchDebounce;
+      searchEl.addEventListener('input', function () {
+        clearTimeout(searchDebounce);
+        searchDebounce = setTimeout(function () {
+          currentQuery = searchEl.value.trim();
+          clearBtn.classList.toggle('visible', currentQuery.length > 0);
+          render();
+        }, 200);
+      });
+
+      clearBtn.addEventListener('click', function () {
+        searchEl.value = '';
+        currentQuery = '';
+        clearBtn.classList.remove('visible');
+        searchEl.focus();
+        render();
       });
 
       fetch('/rigs.json', { cache: 'no-cache' })
