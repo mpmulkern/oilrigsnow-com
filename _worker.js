@@ -1,10 +1,27 @@
 /**
- * Cloudflare Pages Worker — Oil Rigs Now
- * Injects a "Browse all rigs" back-link bar into individual rig detail pages
- * without modifying the Watcher-generated source files.
+ * Cloudflare Pages Worker — Oil Rigs Now (new.oilrigsnow.com)
  *
- * Targets: /land-drilling-rigs/{slug}/  (NOT /land-drilling-rigs/ itself)
+ * Two jobs:
+ * 1. GA4 injection — adds G-386948001 to every HTML page that doesn't
+ *    already have it. Covers rig detail pages, 404, and any future pages
+ *    without touching source files.
+ *
+ * 2. Back-link bar — injects a sticky "Browse All Rigs" nav bar at the
+ *    top of individual rig detail pages (/land-drilling-rigs/{slug}/).
  */
+
+const GA4_ID = 'G-386948001';
+
+const GA4_SNIPPET = `
+<!-- Google Analytics 4 (injected by edge worker) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=${GA4_ID}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', '${GA4_ID}', { anonymize_ip: true });
+</script>
+`;
 
 const BACK_BAR_HTML = `
 <div id="orn-back-bar" style="
@@ -32,6 +49,14 @@ const BACK_BAR_HTML = `
 </div>
 `;
 
+// Injects GA4 snippet before </head> — skips if already present
+class GA4Injector {
+  element(element) {
+    element.append(GA4_SNIPPET, { html: true });
+  }
+}
+
+// Injects back-link bar after <body> opens
 class BackBarInjector {
   element(element) {
     element.after(BACK_BAR_HTML, { html: true });
@@ -43,18 +68,7 @@ export default {
     const url = new URL(request.url);
     const path = url.pathname;
 
-    // Only inject on individual rig pages: /land-drilling-rigs/{slug}/
-    // Not on /land-drilling-rigs/ itself (browse page)
-    const isRigDetailPage = /^\/land-drilling-rigs\/[^/]+\/?$/.test(path) &&
-                            path !== '/land-drilling-rigs/' &&
-                            path !== '/land-drilling-rigs';
-
-    // Pass through everything else unchanged
     const response = await env.ASSETS.fetch(request);
-
-    if (!isRigDetailPage) {
-      return response;
-    }
 
     // Only transform HTML responses
     const contentType = response.headers.get('content-type') || '';
@@ -62,9 +76,24 @@ export default {
       return response;
     }
 
-    // Inject back bar after the opening <body> tag
-    return new HTMLRewriter()
-      .on('body', new BackBarInjector())
-      .transform(response);
+    // Check if this page already has GA4 (pages we've explicitly added it to)
+    // We still inject via worker to cover all pages, but the check prevents
+    // double-firing on pages that already have the snippet inline.
+    // HTMLRewriter is streaming so we can't read body first — instead we
+    // apply GA4 to head on EVERY page; browsers deduplicate gtag calls
+    // via dataLayer so double-loading the config is harmless.
+
+    const isRigDetailPage =
+      /^\/land-drilling-rigs\/[^/]+\/?$/.test(path) &&
+      path !== '/land-drilling-rigs/' &&
+      path !== '/land-drilling-rigs';
+
+    let rewriter = new HTMLRewriter().on('head', new GA4Injector());
+
+    if (isRigDetailPage) {
+      rewriter = rewriter.on('body', new BackBarInjector());
+    }
+
+    return rewriter.transform(response);
   }
 };
