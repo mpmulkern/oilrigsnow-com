@@ -19,7 +19,7 @@ Active listings: 119 rigs and equipment units (as of May 2026).
 Categories:
 - **Land Drilling Rigs** — 97 listings, 350–3,600 HP, various manufacturers (National, NOV, Drillmec, Bomco, Gardner Denver, Continental Emsco, LTI, Service King, and others)
 - **Workover & Mobile Rigs** — 13 listings, trailer-mounted and carrier rigs, 375–2,200 HP
-- **Offshore Rigs** — 6 listings including jackups and semi-submersibles (Ocean Greatwhite, Ocean Onyx, JU2000E Highlander, TDS semi-subs)
+- **Offshore Rigs** — 6 listings including jackups and semi-submersibles (Ocean Greatwhite, Ocean Onyx, JU2000E Highlander, and two semi-submersible drilling rigs)
 - **Inland Barge Rigs** — 3 listings, 1,500–3,000 HP posted barge drilling rigs
 - All listings browsable at: https://new.oilrigsnow.com/land-drilling-rigs/
 
