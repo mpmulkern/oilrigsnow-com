@@ -459,6 +459,21 @@
     .status-badge.for-sale { background: rgba(201,164,92,0.2); color: var(--accent); border: 1px solid rgba(201,164,92,0.4); }
     .status-badge.other { background: rgba(160,160,160,0.15); color: var(--text-muted); border: 1px solid rgba(160,160,160,0.3); }
 
+    .cat-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .cat-badge.barge    { background: rgba(59,130,246,0.25); color: #60a5fa; border: 1px solid rgba(59,130,246,0.4); }
+    .cat-badge.offshore { background: rgba(20,184,166,0.2);  color: #2dd4bf; border: 1px solid rgba(20,184,166,0.4); }
+    .cat-badge.workover { background: rgba(168,85,247,0.2);  color: #c084fc; border: 1px solid rgba(168,85,247,0.4); }
+
     .card-body {
       padding: 16px 18px;
       flex: 1;
@@ -1063,10 +1078,17 @@
         ? `<img class="card-image" src="${imgSrc}" alt="${title}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/rig-placeholder.svg';">`
         : `<img class="card-image" src="/images/rig-placeholder.svg" alt="No photo available for ${title}" loading="lazy">`;
 
+      // Category badge (only for non-land rigs)
+      const catLabels = { barge: 'Barge Rig', offshore: 'Offshore', workover: 'Workover' };
+      const catBadge = catLabels[rig.category]
+        ? `<span class="cat-badge ${rig.category}" aria-label="Category: ${catLabels[rig.category]}">${catLabels[rig.category]}</span>`
+        : '';
+
       return `
         <a class="rig-card" href="${href}" aria-label="${title}">
           <div class="card-image-wrap">
             ${imgHtml}
+            ${catBadge}
             ${statusLabel ? `<span class="status-badge ${statusClass}" aria-label="Status: ${statusLabel}">${statusLabel}</span>` : ''}
           </div>
           <div class="card-body">
@@ -1131,7 +1153,7 @@
         // Category
         const matchesCategory = !category ||
           (category === 'workover'  ? rig.category === 'workover' :
-           category === 'offshore'  ? ['offshore', 'barge'].includes(rig.category) :
+           category === 'offshore'  ? rig.category === 'offshore' :
            category === 'barge'     ? rig.category === 'barge' :
            category === 'land'      ? rig.category === 'land' :
            true);
