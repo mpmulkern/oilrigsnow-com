@@ -781,11 +781,71 @@
       outline: 2px solid var(--accent);
       outline-offset: 2px;
     }
-  </style>
+  
+    /* ── Language Bar ─────────────────────────────────────────────────── */
+    .lang-bar {
+      background: var(--navy-deep);
+      border-bottom: 1px solid rgba(201,164,92,0.1);
+      padding: 0 40px;
+    }
+    .lang-bar__inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      height: 36px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .lang-bar__inner::-webkit-scrollbar { display: none; }
+    .lang-bar__label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-right: 8px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .lang-bar__btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 12px;
+      font-family: inherit;
+      font-weight: 500;
+      padding: 4px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: color 0.15s, background 0.15s;
+    }
+    .lang-bar__btn:hover { color: var(--text); background: rgba(255,255,255,0.05); }
+    .lang-bar__btn.active { color: var(--accent); font-weight: 600; background: rgba(201,164,92,0.08); }
+    .lang-bar__btn:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+    @media(max-width:768px){ .lang-bar { padding: 0 16px; } }
+    </style>
 </head>
 <body>
 
   <!-- Skip Navigation -->
+  <!-- ── Language Bar ─────────────────────────────────────────────────── -->
+  <div class="lang-bar" role="navigation" aria-label="Language selection">
+    <div class="lang-bar__inner">
+      <span class="lang-bar__label" aria-hidden="true">Translate</span>
+      <button class="lang-bar__btn active" aria-current="true" data-lang="en" aria-label="English — currently selected">English</button>
+      <button class="lang-bar__btn" data-lang="es" aria-label="Español">Español</button>
+      <button class="lang-bar__btn" data-lang="fr" aria-label="Français">Français</button>
+      <button class="lang-bar__btn" data-lang="ar" aria-label="العربية" dir="rtl">العربية</button>
+      <button class="lang-bar__btn" data-lang="pt" aria-label="Português">Português</button>
+      <button class="lang-bar__btn" data-lang="ru" aria-label="Русский">Русский</button>
+      <button class="lang-bar__btn" data-lang="zh" aria-label="中文">中文</button>
+    </div>
+  </div>
+
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
   <!-- ── Header ─────────────────────────────────────────────────────── -->
@@ -796,7 +856,11 @@
       <nav class="site-nav" aria-label="Main navigation">
         <a href="/" class="nav-link">Home</a>
         <a href="/land-drilling-rigs/" class="nav-link active" aria-current="page">Land Rigs</a>
+        <a href="/mobile-workover-rigs/" class="nav-link">Mobile &amp; Workover</a>
+        <a href="/offshore-rigs/" class="nav-link">Offshore</a>
+        <a href="/oilfield-equipment/" class="nav-link">Equipment</a>
         <a href="/about/" class="nav-link">About</a>
+        <a href="/quote/" class="nav-link">Quote / RFQ</a>
       </nav>
 
       <a href="tel:7135650747" class="nav-cta" aria-label="Call us at 713-565-0747">
