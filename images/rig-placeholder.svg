@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <defs>
+    <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#081A33"/>
+      <stop offset="60%" stop-color="#0F2747"/>
+      <stop offset="100%" stop-color="#162236"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#C9A45C" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C9A45C" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Sky background -->
+  <rect width="800" height="450" fill="url(#sky)"/>
+  <!-- Horizon glow -->
+  <ellipse cx="400" cy="380" rx="300" ry="80" fill="url(#glow)" opacity="0.5"/>
+  <!-- Derrick tower silhouette -->
+  <g fill="#020D1A" opacity="0.9">
+    <!-- Main tower legs -->
+    <polygon points="360,50 370,360 430,360 440,50" fill="#0a1525"/>
+    <polygon points="355,50 440,50 420,80 375,80" fill="#0a1525"/>
+    <!-- Cross braces -->
+    <rect x="368" y="100" width="64" height="4" fill="#061020"/>
+    <rect x="368" y="150" width="64" height="4" fill="#061020"/>
+    <rect x="368" y="200" width="64" height="4" fill="#061020"/>
+    <rect x="368" y="250" width="64" height="4" fill="#061020"/>
+    <rect x="368" y="300" width="64" height="4" fill="#061020"/>
+    <!-- Crown at top -->
+    <rect x="355" y="44" width="90" height="10" fill="#0a1525"/>
+    <rect x="370" y="34" width="60" height="12" fill="#0a1525"/>
+    <rect x="382" y="20" width="36" height="16" fill="#0a1525"/>
+    <rect x="393" y="8" width="14" height="14" fill="#0a1525"/>
+    <!-- Substructure base -->
+    <rect x="320" y="355" width="160" height="30" rx="2" fill="#0a1525"/>
+    <rect x="300" y="380" width="200" height="20" rx="2" fill="#0a1525"/>
+    <!-- Drawworks house -->
+    <rect x="390" y="320" width="80" height="40" fill="#061020"/>
+    <!-- Mud tank -->
+    <rect x="300" y="350" width="60" height="30" rx="3" fill="#08172a"/>
+    <!-- Pipe rack -->
+    <rect x="250" y="370" width="40" height="12" rx="2" fill="#0a1525"/>
+    <rect x="250" y="385" width="40" height="8" rx="2" fill="#0a1525"/>
+  </g>
+  <!-- Ground line -->
+  <rect x="0" y="395" width="800" height="55" fill="#050f1e"/>
+  <!-- Accent line -->
+  <rect x="0" y="393" width="800" height="2" fill="#C9A45C" opacity="0.2"/>
+  <!-- Photo unavailable text -->
+  <text x="400" y="430" font-family="Arial, sans-serif" font-size="13" fill="#4a6080" text-anchor="middle" letter-spacing="2">NO PHOTO AVAILABLE</text>
+</svg>

@@ -1060,8 +1060,8 @@
       ].filter(Boolean).join('');
 
       const imgHtml = imgSrc
-        ? `<img class="card-image" src="${imgSrc}" alt="${title}" loading="lazy" decoding="async">`
-        : `<div class="card-image-placeholder" aria-label="No image available">⚙</div>`;
+        ? `<img class="card-image" src="${imgSrc}" alt="${title}" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='/images/rig-placeholder.svg';">`
+        : `<img class="card-image" src="/images/rig-placeholder.svg" alt="No photo available for ${title}" loading="lazy">`;
 
       return `
         <a class="rig-card" href="${href}" aria-label="${title}">
