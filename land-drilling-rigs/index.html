@@ -951,7 +951,7 @@
         </nav>
         <div class="page-title-row">
           <div>
-            <h1 class="page-title">Drilling Rigs &amp; Equipment</h1>
+            <h1 class="page-title"><span data-i18n="browse.title">Drilling Rigs &amp; Equipment</span></h1>
             <p class="page-subtitle">Browse our global inventory of land drilling rigs, offshore rigs, workover units, and oilfield equipment.</p>
           </div>
           <div
@@ -976,7 +976,7 @@
             type="search"
             id="search-input"
             class="search-input"
-            placeholder="Search rigs..."
+            placeholder="Search rigs..." data-i18n-placeholder="browse.search"
             aria-label="Search rigs"
             autocomplete="off"
           >
@@ -984,9 +984,9 @@
 
         <!-- Category -->
         <div class="filter-group">
-          <label class="filter-label" for="category-select">Category</label>
+          <label class="filter-label" for="category-select"><span data-i18n="browse.cat_label">Category</span></label>
           <select id="category-select" class="filter-select" aria-label="Filter by category">
-            <option value="">All Categories</option>
+            <option value=""><span data-i18n="browse.all_cat">All Categories</span></option>
             <option value="land">Land Rigs</option>
             <option value="workover">Workover / Mobile</option>
             <option value="offshore">Offshore / Marine</option>
@@ -996,7 +996,7 @@
 
         <!-- HP Range -->
         <div class="filter-group">
-          <label class="filter-label">HP Range</label>
+          <label class="filter-label"><span data-i18n="browse.hp_label">HP Range</span></label>
           <div class="hp-range-wrap">
             <input
               type="number"
@@ -1413,5 +1413,7 @@
     loadRigs();
   </script>
 
+
+  <script src="/i18n/translations.js"></script>
 </body>
 </html>
