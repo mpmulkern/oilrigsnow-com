@@ -1,707 +1,1713 @@
 [
   {
+    "slug": "ac-3600hp-land-drilling-rig",
+    "title": "3600 HP AC Land Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3600,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "High-horsepower 3600 HP AC land drilling rig \u2014 two units available, variable frequency drive.",
+    "hero_image": "land-drilling-rigs/ac-3600hp-land-drilling-rig/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ac-vfd-3000hp-land-rig-new",
+    "title": "3000HP AC/VFD Drive Land Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "new",
+    "status_badge": "New",
+    "tagline": "New 3000HP AC/VFD Land Rig \u2014 Full commercial specification with pricing",
+    "hero_image": "land-drilling-rigs/ac-vfd-3000hp-land-rig-new/images/hero.jpeg",
+    "category": "land"
+  },
+  {
     "slug": "alta-1200hp-rig-12",
     "title": "Alta Super Spec AC 1200HP Drilling Rig 12",
-    "manufacturer": "Alta",
-    "model": "Super Spec AC 1200HP Drilling Rig 12",
+    "manufacturer": "",
+    "model": "GEMINI 134&#x27; Telescoping",
     "horsepower": 1200,
     "year": null,
-    "condition": "Used",
-    "location": "Odessa, Texas",
-    "status": "Available",
-    "tagline": "Super Spec 1200 AC Rig — Walking-Ready, Odessa TX",
+    "condition": "",
+    "location": "",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Super Spec 1200 AC Rig \u2014 Walking-Ready, Odessa TX",
     "hero_image": "land-drilling-rigs/alta-1200hp-rig-12/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,200",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "alta-1200hp-rig-16",
     "title": "Alta Super Spec AC 1200HP Rig 16",
-    "manufacturer": "Alta",
-    "model": "Super Spec AC 1200HP Rig 16",
+    "manufacturer": "Canrig",
+    "model": "Alta Rig AC 1200HP",
     "horsepower": 1200,
     "year": null,
-    "condition": "Used",
-    "location": "Reynoldsville, PA / Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "Super-spec AC walking rig with walking catwalk — 28 wells, low hours, ready to work.",
+    "condition": "",
+    "location": "Reynoldsville, PA and Corpus Christi, TX",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Super-spec AC walking rig with walking catwalk \u2014 28 wells, low hours, ready to work.",
     "hero_image": "land-drilling-rigs/alta-1200hp-rig-16/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1200",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "alta-gemini-1500hp-rig-14-2012",
+    "title": "ALTA Gemini 750 1500HP Drilling Rig 14",
+    "manufacturer": "ALTA",
+    "model": "3\u00d7 Weatherford MP-16",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "AC-driven Gemini 750 Series \u2014 upgraded 1500HP rig with full component hours logged",
+    "hero_image": "land-drilling-rigs/alta-gemini-1500hp-rig-14-2012/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "atlantic-7-jackup-300ft-2000hp",
+    "title": "Atlantic 7 Jackup Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "300ft WD Self-Elevating Jackup Drilling Rig",
+    "hero_image": "land-drilling-rigs/atlantic-7-jackup-300ft-2000hp/images/hero.jpeg",
+    "category": "offshore"
+  },
+  {
+    "slug": "barge-2000hp-rig-54b",
+    "title": "2000 HP Posted Barge Drilling Rig 54B",
+    "manufacturer": "",
+    "model": "Oilwell E-2000",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "2000 HP Posted Barge Rig \u2014 25,000 ft Rated, CanRig Top Drive",
+    "hero_image": "land-drilling-rigs/barge-2000hp-rig-54b/images/hero.jpeg",
+    "category": "barge"
+  },
+  {
+    "slug": "barge-3000hp-rig-72b",
+    "title": "3000 HP Posted Barge Drilling Rig 72B",
+    "manufacturer": "",
+    "model": "Oilwell E-3000",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "3000 HP Posted Barge Rig \u2014 25,000 ft Rated, CanRig 650T Top Drive",
+    "hero_image": "land-drilling-rigs/barge-3000hp-rig-72b/images/hero.jpeg",
+    "category": "barge"
   },
   {
     "slug": "barge-rig-20-1500hp-2002",
-    "title": "Barge Rig 20 – 1500 HP Inland Barge",
-    "manufacturer": "Unknown",
-    "model": "Barge Rig 20 – 1500 HP Inland Barge",
+    "title": "Barge Rig 20 \u2013 1500 HP Inland Barge",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1500,
-    "year": 2002,
-    "condition": "Used",
-    "location": "Louisiana, USA",
-    "status": "Available",
-    "tagline": "1500 HP inland barge rig with full well history — Louisiana Gulf Coast",
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "1500 HP inland barge rig with full well history \u2014 Louisiana Gulf Coast",
     "hero_image": "land-drilling-rigs/barge-rig-20-1500hp-2002/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
+    "category": "barge"
   },
   {
     "slug": "basin-2000hp-rig-101",
     "title": "Basin Drilling 2000HP Walking Rig #101",
-    "manufacturer": "Basin",
-    "model": "Drilling 2000HP Walking Rig #101",
+    "manufacturer": "Basin Drilling",
+    "model": "Gardner Denver 1500-E",
     "horsepower": 2000,
-    "year": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "for sale - land rig - 2,000 hp",
+    "status_badge": "For Sale - Land Rig - 2,000 HP",
+    "tagline": "2,000 HP Walking Rig - CANRIG AC Top Drive - 1M lb Hook Load - For Sale",
+    "hero_image": "land-drilling-rigs/basin-2000hp-rig-101/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "bomco-1500hp-land-rig",
+    "title": "1500 HP BOMCO Land Rig",
+    "manufacturer": "",
+    "model": "BOMCO JJ350/45-K, API 4F 5th, PSL 1, E2/U2 Level",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Heavy-duty BOMCO 1500 HP land rig \u2014 new build with full API 4F certified mast and 10K BOP package.",
+    "hero_image": "land-drilling-rigs/bomco-1500hp-land-rig/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "bomco-2000hp-land-rig",
+    "title": "2000 HP BOMCO Land Rig",
+    "manufacturer": "",
+    "model": "BOMCO JJ450/46-K, API 4F, PSL 1, E2/U2 Level",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "High-capacity BOMCO 2000 HP land rig \u2014 new build to KOC specification with 2,200 HP pumps and 15K BOP package.",
+    "hero_image": "land-drilling-rigs/bomco-2000hp-land-rig/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "bomco-2000hp-rig-264-2006",
+    "title": "Bomco 2000 HP AC Land Rig 264 (2006)",
+    "manufacturer": "",
+    "model": "Bomco DZ450/10.5-X Swing Lift",
+    "horsepower": 2000,
+    "year": 2006,
     "condition": "Used",
     "location": "",
-    "status": "For Sale",
-    "tagline": "2,000 HP Walking Rig - CANRIG AC Top Drive - 1M lb Hook Load - For Sale",
-    "status_badge": "For Sale - Land Rig - 2,000 HP",
-    "hero_image": "land-drilling-rigs/basin-2000hp-rig-101/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Full AC 2,000 HP Bomco land rig with NOV TDS-11SA top drive and 4-genset power package \u2014 built 2006.",
+    "hero_image": "land-drilling-rigs/bomco-2000hp-rig-264-2006/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "bomco-3000-hp-land-rig",
     "title": "BOMCO 3000 HP Land Rig (New Build)",
-    "manufacturer": "Bomco",
-    "model": "3000 HP Land Rig (New Build)",
+    "manufacturer": "",
+    "model": "DQ90BSC (BPM)",
     "horsepower": 3000,
     "year": null,
-    "condition": "New",
-    "location": "Factory — China (BOMCO/CNPC Baoji)",
-    "status": "Available",
-    "tagline": "API-Compliant • ICC Rules • 15K BOP • Built to Spec",
-    "status_badge": "New Build • Quote Available • BOMCO Factory",
+    "condition": "",
+    "location": "",
+    "status": "new build \u2022 quote available \u2022 bomco factory",
+    "status_badge": "New Build \u2022 Quote Available \u2022 BOMCO Factory",
+    "tagline": "API-Compliant \u2022 ICC Rules \u2022 15K BOP \u2022 Built to Spec",
     "hero_image": "land-drilling-rigs/bomco-3000-hp-land-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "brewster-n4a-750hp-rig-1",
+    "title": "Brewster N4-A 750HP Drilling Rig 1",
+    "manufacturer": "",
+    "model": "Brewster N4-A",
+    "horsepower": 750,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "lease-to-own",
+    "status_badge": "Lease-to-Own",
+    "tagline": "Brewster N4-A 750HP \u2014 certified 2024, lease-to-own, two F-1000 triplex pumps",
+    "hero_image": "land-drilling-rigs/brewster-n4a-750hp-rig-1/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "brewster-n4a-750hp-rig-6",
+    "title": "Brewster N4-A 750 HP Drilling Rig 6",
+    "manufacturer": "",
+    "model": "Brewster N4-A",
+    "horsepower": 750,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Certified 2024 Brewster N4-A \u2014 750 HP trailer-mounted rig available to buy or lease",
+    "hero_image": "land-drilling-rigs/brewster-n4a-750hp-rig-6/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "bucyrus-erie-36l-cable-tool",
+    "title": "Bucyrus Erie 36L Cable Tool Drill Rig",
+    "manufacturer": "Bucyrus Erie",
+    "model": "36L",
+    "horsepower": 0,
+    "year": null,
+    "condition": "Used",
+    "location": "Midwest, USA",
+    "status": "available \u2014 $160,000",
+    "status_badge": "Available \u2014 $160,000",
+    "tagline": "Bucyrus Erie 36L Cable Tool \u2014 4-Axle Crane Carrier, Ready to Work",
+    "hero_image": "land-drilling-rigs/bucyrus-erie-36l-cable-tool/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "bucyrus-erie-60l-cable-tool",
+    "title": "Bucyrus Erie 60L Cable Tool Drill Rig",
+    "manufacturer": "Bucyrus Erie",
+    "model": "Sterling Truck",
+    "horsepower": 0,
+    "year": 1999,
+    "condition": "Used",
+    "location": "East Coast, USA",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Bucyrus Erie 60L Cable Tool Drill Rig \u2014 Truck-Mounted, Ready to Work",
+    "hero_image": "land-drilling-rigs/bucyrus-erie-60l-cable-tool/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "bw-hyduke-600p-rig-4",
+    "title": "Bw Hyduke 600P Rig 4",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/bw-hyduke-600p-rig-4/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "cardwell-375hp-rig-320",
     "title": "Cardwell 375 HP Workover Rig 320",
-    "manufacturer": "Cardwell",
-    "model": "375 HP Workover Rig 320",
+    "manufacturer": "Ideco",
+    "model": "Gardner Denver PAHAJ",
     "horsepower": 375,
     "year": null,
-    "condition": "Used",
-    "location": "Latin America",
-    "status": "Available",
-    "tagline": "Compact Cardwell 375 HP workover rig with telescopic mast, Gardner Denver mud pump, and full 111 m³ mud system — ready for well intervention.",
-    "status_badge": "Available — Contact for Details",
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 contact for details",
+    "status_badge": "Available \u2014 Contact for Details",
+    "tagline": "Compact Cardwell 375 HP workover rig with telescopic mast, Gardner Denver mud pump, and full 111 m\u00b3 mud system \u2014 ready for well intervention.",
     "hero_image": "land-drilling-rigs/cardwell-375hp-rig-320/images/hero.png",
-    "key_stats": [
-      {
-        "value": "375 HP",
-        "label": "Drawworks Input"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
+    "category": "workover"
+  },
+  {
+    "slug": "cardwell-375hp-workover-rig-318",
+    "title": "Cardwell 375 HP Workover Rig 318",
+    "manufacturer": "Gardner Denver",
+    "model": "PAHAJ 8-4 1/2&quot; x 8&quot;",
+    "horsepower": 375,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Cardwell KB-200-C 375 HP Telescopic Workover Unit",
+    "hero_image": "land-drilling-rigs/cardwell-375hp-workover-rig-318/images/hero.png",
+    "category": "workover"
+  },
+  {
+    "slug": "cardwell-375hp-workover-rig-323",
+    "title": "Cardwell 375 HP Workover Rig 323",
+    "manufacturer": "Cardwell",
+    "model": "KB-200-C",
+    "horsepower": 375,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Cardwell KB-200-C 375 HP Telescopic Workover Unit",
+    "hero_image": "land-drilling-rigs/cardwell-375hp-workover-rig-323/images/hero.png",
+    "category": "workover"
+  },
+  {
+    "slug": "cardwell-kb-rig-8-1969",
+    "title": "1969 Cardwell KB Single/Double Rig 8",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "1969 Cardwell KB single/double carrier rig with freshly rebuilt engine and drawworks (2018).",
+    "hero_image": "land-drilling-rigs/cardwell-kb-rig-8-1969/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "continental-emsco-1500hp-rig-2-2005",
-    "title": "Continental EMSCO 1500HP Rig 2",
-    "manufacturer": "Continental Emsco",
-    "model": "Continental EMSCO 1500HP Rig 2",
+    "title": "Continental Emsco 1500Hp Rig 2 2005",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1500,
-    "year": 2005,
-    "condition": "Used",
-    "location": "Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "CAT IV 2025 Certified • Corpus Christi TX • Ready to Deploy",
-    "status_badge": "Available",
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
     "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-2-2005/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1500 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "continental-emsco-1500hp-rig-20",
+    "title": "Continental Emsco C1 1500 HP Drilling Rig 20",
+    "manufacturer": "",
+    "model": "Continental Emsco C1",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "1500 HP Continental Emsco C1 land rig with DSI 142-ft mast rated to 1,000,000 lb hook load \u2014 complete with Canrig 1250AC top drive and full solids-control package.",
+    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-20/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "continental-emsco-1500hp-rig-24",
+    "title": "Continental Emsco C1 1500 HP Drilling Rig 24",
+    "manufacturer": "",
+    "model": "Continental Emsco C1",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "1500 HP Continental Emsco C1 land rig with 30-ft substructure and 1,000,000 lb hook-load mast \u2014 equipped with Canrig 1250AC top drive and 7,500 PSI dual mud pump system.",
+    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-24/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "continental-emsco-1500hp-rig-26",
+    "title": "Continental Emsco C1 1500 HP Drilling Rig 26",
+    "manufacturer": "DSI",
+    "model": "Continental Emsco C1",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "1500 HP Continental Emsco C1 SCR electric land rig with DSI 142-ft mast \u2014 fully equipped with Canrig top drive, catwalk, and complete solids-control package.",
+    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-26/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "continental-emsco-1500hp-rig-3-2006",
     "title": "Continental EMSCO 1500 HP Rig 3",
-    "manufacturer": "Continental Emsco",
-    "model": "Continental EMSCO 1500 HP Rig 3",
+    "manufacturer": "Continental EMSCO",
+    "model": "C-1 (Asset DW014)",
     "horsepower": 1500,
-    "year": 2006,
-    "condition": "Used",
+    "year": null,
+    "condition": "",
     "location": "Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "CAT IV 2025 certified Continental EMSCO 1500 HP SCR rig — Corpus Christi TX",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "CAT IV 2025 certified Continental EMSCO 1500 HP SCR rig \u2014 Corpus Christi TX",
     "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-3-2006/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "cooper-lt-350hp-rig-1",
+    "title": "Cooper LT 350",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 350,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Cooper LT 350 \u2014 Compact trailer-mounted drilling rig available through TDS",
+    "hero_image": "land-drilling-rigs/cooper-lt-350hp-rig-1/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "crow-energy-ce1000-1000hp-rig-117",
+    "title": "Crow Energy CE 1000 DD \u2013 1000 HP Drilling Rig 117",
+    "manufacturer": "",
+    "model": "Tesco 250 EMI-450",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Compact Crow Energy CE 1000 double rig with Tesco 250-ton top drive, 118-ft mast and 400,000 lb hook load.",
+    "hero_image": "land-drilling-rigs/crow-energy-ce1000-1000hp-rig-117/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "crown-duke-ce750-2008",
-    "title": "Stewart & Stevenson (Crown Duke) 2008 CE750 Drill Rig",
-    "manufacturer": "Crown Duke",
-    "model": "Stewart & Stevenson (Crown Duke) 2008 CE750 Drill Rig",
-    "horsepower": 750,
-    "year": 2008,
-    "condition": "Used",
+    "title": "Stewart &amp; Stevenson (Crown Duke) 2008 CE750 Drill Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 665,
+    "year": null,
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "2008 Stewart & Stevenson CE750 — Carrier-Mounted, $3M",
+    "status": "price: $3m",
     "status_badge": "Price: $3M",
+    "tagline": "2008 Stewart &amp; Stevenson CE750 \u2014 Carrier-Mounted, $3M",
     "hero_image": "land-drilling-rigs/crown-duke-ce750-2008/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "$3M",
-        "label": "Asking Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "davis-1000hp-rig-102",
-    "title": "Davis 1000HP Land Rig 102",
-    "manufacturer": "Davis",
-    "model": "1000HP Land Rig 102",
+    "title": "Davis 1000Hp Rig 102",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1000,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "1000HP Land Rig — Davis Drawworks • Dual Cat D-3512 Mud Pumps",
-    "status_badge": "Available",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
     "hero_image": "land-drilling-rigs/davis-1000hp-rig-102/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1000 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "davis-1500e-rig-11",
+    "title": "Davis 1500E Drilling Rig 11",
+    "manufacturer": "",
+    "model": "Davis 1500-E (National 110 UE copy)",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "used / available",
+    "status_badge": "Used / Available",
+    "tagline": "1,500 HP Davis 1500-E SCR rig with walking system, 350-ton top drive, and triple Cat 3512C power.",
+    "hero_image": "land-drilling-rigs/davis-1500e-rig-11/images/hero.png",
+    "category": "land"
   },
   {
     "slug": "dreco-1500hp-rig-24",
     "title": "Dreco Cantilever Triple 1500 HP Rig 24",
-    "manufacturer": "DRECO",
-    "model": "Dreco Cantilever Triple 1500 HP Rig 24",
+    "manufacturer": "",
+    "model": "Gardner Denver Maverick (x2)",
     "horsepower": 1500,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "Dreco Cantilever Triple 1500 HP land rig with Varco top drive and Gardner Denver mud pumps",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Dreco Cantilever Triple 1500 HP land rig with Varco top drive and Gardner Denver mud pumps",
     "hero_image": "land-drilling-rigs/dreco-1500hp-rig-24/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "dreco-emsco-2000hp-rig-425-1981",
+    "title": "Dreco / Emsco C-2 2000 HP Triple Electric Land Drilling Rig 425",
+    "manufacturer": "",
+    "model": "Dreco",
+    "horsepower": 2000,
+    "year": 1981,
+    "condition": "",
+    "location": "Georgia, USA",
+    "status": "available \u2013 stacked",
+    "status_badge": "Available \u2013 Stacked",
+    "tagline": "2000 HP Dreco/Emsco triple electric rig with NOV TDS-11SA top drive, refurbished 2014, stacked in Georgia.",
+    "hero_image": "land-drilling-rigs/dreco-emsco-2000hp-rig-425-1981/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-2000hp-rig-65",
+    "title": "Drillmec 2000Hp Rig 65",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/drillmec-2000hp-rig-65/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-2000hp-rig-66",
+    "title": "Drillmec 2000 HP Land Rig 66",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u00b7 poa",
+    "status_badge": "Available \u00b7 POA",
+    "tagline": "Full-spec 2,000 HP Drillmec triple with Tesco top drive, VFD power, and complete camp.",
+    "hero_image": "land-drilling-rigs/drillmec-2000hp-rig-66/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-2000hp-t-412-2008",
+    "title": "T-412 2000 HP Electrical DC Heli-Portable Drilling Rig",
+    "manufacturer": "",
+    "model": "Derrick Hyperpool",
+    "horsepower": 2000,
+    "year": 2008,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Heli-portable 2000 HP DC drilling rig built for remote access, featuring a Varco top drive, National 1320-UE drawworks, and triple LEWCO mud pumps.",
+    "hero_image": "land-drilling-rigs/drillmec-2000hp-t-412-2008/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "drillmec-2300hp-2013",
     "title": "Drillmec 2300 HP Land Rig",
-    "manufacturer": "Drillmec",
-    "model": "2300 HP Land Rig",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 2300,
-    "year": 2013,
-    "condition": "Used",
+    "year": null,
+    "condition": "",
     "location": "Cameron, TX, USA",
-    "status": "Available",
-    "tagline": "2026-certified 2300 HP Drillmec land rig — Cameron TX, ready to work",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "2026-certified 2300 HP Drillmec land rig \u2014 Cameron TX, ready to work",
     "hero_image": "land-drilling-rigs/drillmec-2300hp-2013/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,300",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-3000hp-sk801",
+    "title": "DRILLMEC SK801 3000HP Land Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "DRILLMEC SK801 3000HP \u2014 Italian-engineered land rig built for wells to 7,000m with full API compliance.",
+    "hero_image": "land-drilling-rigs/drillmec-3000hp-sk801/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-hh220-1340hp-2015",
+    "title": "2015 Drillmec HH220 1340 HP Land Rig",
+    "manufacturer": "Drillmec",
+    "model": "HH220",
+    "horsepower": 1340,
+    "year": 2015,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "2015 Drillmec HH220 1340 HP SCR \u2014 recertified telescopic mast land rig, 440,000 lb hook load",
+    "hero_image": "land-drilling-rigs/drillmec-hh220-1340hp-2015/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-hh300fa-1500hp-2011",
+    "title": "Drillmec HH-300FA 1500 HP Ram Rig (2011)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": 2011,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Drillmec HH-300FA hydraulic single-lift ram rig \u2014 1,500 HP, recertified 2022, with full pipe handling automation.",
+    "hero_image": "land-drilling-rigs/drillmec-hh300fa-1500hp-2011/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "drillmec-mr8000-1000hp-2011",
+    "title": "2011 Drillmec MR-8000 1000HP Land Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "used / available",
+    "status_badge": "Used / Available",
+    "tagline": "2011 Drillmec MR-8000 semitrailer-mounted mechanical rig with 440,000 lb hook load and dual 1000 HP mud pumps.",
+    "hero_image": "land-drilling-rigs/drillmec-mr8000-1000hp-2011/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "emsco-2000hp-rig-425-1978",
+    "title": "Emsco 2000Hp Rig 425 1978",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/emsco-2000hp-rig-425-1978/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "gardner-denver-3000hp-rig-273",
+    "title": "Gardner Denver 3000 HP Land Rig 273 (GD-3000E)",
+    "manufacturer": "Gardner Denver",
+    "model": "GD-3000E",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Gardner Denver GD-3000E 3000 HP Land Rig \u2014 Rig 273",
+    "hero_image": "land-drilling-rigs/gardner-denver-3000hp-rig-273/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "gemini-alta-1200hp-rig-15",
+    "title": "Gemini Alta 1200Hp Rig 15",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/gemini-alta-1200hp-rig-15/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ges-1600hp-ac-rig-161",
+    "title": "GES 1600 HP AC Drilling Rig 161",
+    "manufacturer": "Bomco 1600 HP",
+    "model": "Canrig 1035-AC-500",
+    "horsepower": 1600,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "AC drive GES 1600 HP land rig with hydraulic skidding system and full solids-control package.",
+    "hero_image": "land-drilling-rigs/ges-1600hp-ac-rig-161/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "ges-1600hp-rig-163",
+    "title": "GES 1600 HP AC-VFD Drilling Rig 163",
+    "manufacturer": "NOV",
+    "model": "TDS-11SA",
+    "horsepower": 1600,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "GES 1600 HP AC-VFD Electric Walking Rig \u2014 Rig 163",
+    "hero_image": "land-drilling-rigs/ges-1600hp-rig-163/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "ges-quicksilver-1600hp-ac-vfd-rig-9",
+    "title": "Ges Quicksilver 1600Hp Ac Vfd Rig 9",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1600,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/ges-quicksilver-1600hp-ac-vfd-rig-9/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "gw-903te-1500hp-2015",
+    "title": "Gw 903Te 1500Hp 2015",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/gw-903te-1500hp-2015/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "hh-2000hp-ac-vfd-2016",
+    "title": "HH 2000HP AC/VFD Land Drilling Rig (2016)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "2000HP Honghua AC/VFD land rig \u2014 Chinese-built modern drive technology for demanding deep-well programs.",
+    "hero_image": "land-drilling-rigs/hh-2000hp-ac-vfd-2016/images/hero.png",
+    "category": "land"
   },
   {
     "slug": "hh-2000hp-vfd-kuwait",
     "title": "HH 2000 HP AC VFD Drilling Rig",
-    "manufacturer": "HH",
-    "model": "2000 HP AC VFD Drilling Rig",
+    "manufacturer": "",
+    "model": "DZ450/10.668-G",
     "horsepower": 2000,
-    "year": 2000,
-    "condition": "Used",
+    "year": null,
+    "condition": "",
     "location": "Kuwait",
-    "status": "Available",
-    "tagline": "Deep-reach AC VFD land rig engineered for Kuwait desert operations",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Deep-reach AC VFD land rig engineered for Kuwait desert operations",
     "hero_image": "land-drilling-rigs/hh-2000hp-vfd-kuwait/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "hh-3300hp-dbs-rig",
-    "title": "3300HP AC DBS Drilling Rig — Kuwait Desert Operations",
-    "manufacturer": "HH",
-    "model": "3300HP AC DBS Drilling Rig — Kuwait Desert Operations",
+    "title": "3300HP AC DBS Drilling Rig \u2014 Kuwait Desert Operations",
+    "manufacturer": "",
+    "model": "JC90DB",
     "horsepower": 3300,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "Kuwait",
-    "status": "Available",
-    "tagline": "3300HP AC DBS Drilling Rig — Ultra-Deep Desert Spec, Kuwait",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "3300HP AC DBS Drilling Rig \u2014 Ultra-Deep Desert Spec, Kuwait",
     "hero_image": "land-drilling-rigs/hh-3300hp-dbs-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,300",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "hp-flexrig-1500hp-flex4s",
+    "title": "H&amp;P FlexRig Flex4S++ 1500HP AC/VFD (Rig 330)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "H&amp;P FlexRig 4S++ 1500HP AC/VFD \u2014 advanced super-spec flex rig with integrated top drive and regenerative braking.",
+    "hero_image": "land-drilling-rigs/hp-flexrig-1500hp-flex4s/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "hri-1000e-1000hp-rig-7-2008",
+    "title": "HRI 1000E 1000 HP Workover-Drilling Rig 7",
+    "manufacturer": "Drilling Structures International, Inc.",
+    "model": "HRI-1000E",
+    "horsepower": 1000,
+    "year": 2008,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "2008 DSI HRI-1000E 1000 HP diesel-electric trailer-mounted workover/drilling rig \u2014 API 4F Cat IV certified, 425,000 lb hook load, complete inventory package.",
+    "hero_image": "land-drilling-rigs/hri-1000e-1000hp-rig-7-2008/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "ide-2000hp-rig-4",
+    "title": "IDE 2000HP Land Rig 4",
+    "manufacturer": "CANRIG",
+    "model": "1250AC-681",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Heavy-duty 2000HP DC land rig with CANRIG top drive and Weatherford triplex pumps",
+    "hero_image": "land-drilling-rigs/ide-2000hp-rig-4/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "ideco-1200hp-rig-1-walking-2003",
-    "title": "IDECO E-1200 1200HP Walking Rig 1",
-    "manufacturer": "IDECO",
-    "model": "E-1200 1200HP Walking Rig 1",
+    "title": "Ideco 1200Hp Rig 1 Walking 2003",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1200,
-    "year": 2003,
-    "condition": "Used",
-    "location": "Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "CAT IV 2025 Certified • IDECO 1200HP Walking Rig • Corpus Christi TX",
-    "status_badge": "Available",
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
     "hero_image": "land-drilling-rigs/ideco-1200hp-rig-1-walking-2003/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1200 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "idm-1500hp-rig-5-2007",
-    "title": "IDM-1500 Rig 5 – 1500 HP SCR Drilling Rig",
-    "manufacturer": "IDM",
-    "model": "IDM-1500 Rig 5 – 1500 HP SCR Drilling Rig",
+    "title": "IDM-1500 Rig 5 \u2013 1500 HP SCR Drilling Rig",
+    "manufacturer": "",
+    "model": "IDM-1500 (Asset DW005)",
     "horsepower": 1500,
-    "year": 2007,
-    "condition": "Used",
+    "year": null,
+    "condition": "",
     "location": "Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "CAT IV 2025 certified IDM-1500 SCR rig — Corpus Christi TX, $7.5M",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "CAT IV 2025 certified IDM-1500 SCR rig \u2014 Corpus Christi TX, $7.5M",
     "hero_image": "land-drilling-rigs/idm-1500hp-rig-5-2007/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "idm-1500hp-rig-7-walking",
-    "title": "IDM DC-1500 Rig 7 – 1500 HP SCR Walking Rig",
-    "manufacturer": "IDM",
-    "model": "DC-1500 Rig 7 – 1500 HP SCR Walking Rig",
+    "title": "IDM DC-1500 Rig 7 \u2013 1500 HP SCR Walking Rig",
+    "manufacturer": "Orion",
+    "model": "IDM DC-1500 (Asset DW012)",
     "horsepower": 1500,
     "year": null,
-    "condition": "Used",
-    "location": "Corpus Christi, TX",
-    "status": "Available",
-    "tagline": "CAT IV 2025 certified 1500 HP SCR walking rig — Corpus Christi TX, $7.5M",
+    "condition": "",
+    "location": "",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "CAT IV 2025 certified 1500 HP SCR walking rig \u2014 Corpus Christi TX, $7.5M",
     "hero_image": "land-drilling-rigs/idm-1500hp-rig-7-walking/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "ids-gemini-1500hp-rig-11-2011",
+    "title": "IDS Gemini 750 1500HP Drilling Rig 11 (Leo)",
+    "manufacturer": "IDS",
+    "model": "Canrig 1035AC",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Gemini 750 Series AC rig \u2014 commissioned 2011, upgraded 1500HP/750K in 2016 with Canrig top drive",
+    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-11-2011/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ids-gemini-1500hp-rig-13-2012",
+    "title": "IDS Gemini 750 1500HP Drilling Rig 13",
+    "manufacturer": "IDS",
+    "model": "3\u00d7 Bomco F-1600",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Gemini 750 Series AC rig \u2014 commissioned March 2012, upgraded 1500HP/750K in 2016",
+    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-13-2012/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ids-gemini-1500hp-rig-17",
+    "title": "IDS Gemini 750 1500HP Drilling Rig 17",
+    "manufacturer": "IDS AC",
+    "model": "Canrig 350-ton AC",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Gemini 750 AC Series \u2014 hydraulic mast, Canrig Rockit top drive, 12-line rig-up",
+    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-17/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ids-gemini-2000hp-rig-18",
+    "title": "Ids Gemini 2000Hp Rig 18",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/ids-gemini-2000hp-rig-18/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ingersoll-rand-2550-1500hp-rig-107",
+    "title": "1500 HP Land Rig 107 (Ingersoll-Rand 2550)",
+    "manufacturer": "",
+    "model": "Gardner Denver PZK-10 Triplex",
+    "horsepower": 1500,
+    "year": 2006,
+    "condition": "Used",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Proven 1,500 HP SCR land rig with IR 2550 drawworks and Lee C. Moore free-standing beam-leg mast.",
+    "hero_image": "land-drilling-rigs/ingersoll-rand-2550-1500hp-rig-107/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "ju2000e-highlander-400ft-2015",
+    "title": "Highlander (JU-2000E)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": 2015,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "2015 Friede Goldman JU-2000E Jackup \u2014 400ft Water Depth, Jurong-Built",
+    "hero_image": "land-drilling-rigs/ju2000e-highlander-400ft-2015/images/hero.jpeg",
+    "category": "offshore"
+  },
+  {
+    "slug": "ksm-550-rig-2-2006",
+    "title": "Ksm 550 Rig 2 2006",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/ksm-550-rig-2-2006/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "ksm-550-rig-5-2005",
     "title": "KSM 550 Rig #5 (2005)",
     "manufacturer": "KSM",
-    "model": "550 Rig #5 (2005)",
-    "horsepower": 550,
+    "model": "550",
+    "horsepower": 0,
     "year": 2005,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "For Sale",
-    "tagline": "KSM 550 Trailer-Mounted Rig • 2005 • Complete Package • Available Now",
-    "status_badge": "For Sale • Land Rig • KSM Package",
+    "status": "for sale \u2022 land rig \u2022 ksm package",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 KSM Package",
+    "tagline": "KSM 550 Trailer-Mounted Rig \u2022 2005 \u2022 Complete Package \u2022 Available Now",
     "hero_image": "land-drilling-rigs/ksm-550-rig-5-2005/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "KSM 550",
-        "label": "Rig Model"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "ksm-550-rig-6-2005",
     "title": "KSM 550 Rig #6 (2005)",
     "manufacturer": "KSM",
-    "model": "550 Rig #6 (2005)",
-    "horsepower": 550,
+    "model": "550 (note: source filename says 500 \u2014 confirmed 550)",
+    "horsepower": 0,
     "year": 2005,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "For Sale",
-    "tagline": "KSM 550 Trailer-Mounted Rig • 2005 • Complete Package • Available Now",
-    "status_badge": "For Sale • Land Rig • KSM Package",
+    "status": "for sale \u2022 land rig \u2022 ksm package",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 KSM Package",
+    "tagline": "KSM 550 Trailer-Mounted Rig \u2022 2005 \u2022 Complete Package \u2022 Available Now",
     "hero_image": "land-drilling-rigs/ksm-550-rig-6-2005/images/hero.png",
-    "key_stats": [
-      {
-        "value": "KSM 550",
-        "label": "Rig Model"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "ksm-550-rig-7-2013",
     "title": "KSM 550 Rig #7 (2013)",
     "manufacturer": "KSM",
-    "model": "550 Rig #7 (2013)",
-    "horsepower": 550,
+    "model": "550",
+    "horsepower": 0,
     "year": 2013,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "For Sale",
-    "tagline": "KSM 550 Trailer-Mounted Rig • 2013 • Later Build • Complete Package",
-    "status_badge": "For Sale • Land Rig • KSM Package",
+    "status": "for sale \u2022 land rig \u2022 ksm package",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 KSM Package",
+    "tagline": "KSM 550 Trailer-Mounted Rig \u2022 2013 \u2022 Later Build \u2022 Complete Package",
     "hero_image": "land-drilling-rigs/ksm-550-rig-7-2013/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "KSM 550",
-        "label": "Rig Model"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "kurui-2000hp-2014",
     "title": "Kurui 2000HP Land Rig (2014)",
     "manufacturer": "Kurui",
-    "model": "2000HP Land Rig (2014)",
+    "model": "",
     "horsepower": 2000,
-    "year": 2000,
-    "condition": "Used",
+    "year": 2014,
+    "condition": "",
     "location": "",
-    "status": "For Sale",
-    "tagline": "Kurui 2000HP Land Rig • 2014 Build • Full-Height Mast • Available Now",
-    "status_badge": "For Sale • Land Rig • 2014 Build",
+    "status": "for sale \u2022 land rig \u2022 2014 build",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 2014 Build",
+    "tagline": "Kurui 2000HP Land Rig \u2022 2014 Build \u2022 Full-Height Mast \u2022 Available Now",
     "hero_image": "land-drilling-rigs/kurui-2000hp-2014/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Rated Power"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "loadcraft-1000hp-2014",
+    "title": "2014 Loadcraft 1000 HP Land Drilling Rig",
+    "manufacturer": "Loadcraft",
+    "model": "3\u00d7 MZ-9",
+    "horsepower": 1000,
+    "year": 2014,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "Compact 1,000 HP mechanical rig with hydraulic top drive, triple 1,000 HP pump spread, and full BOPs \u2014 field-ready, US-based.",
+    "hero_image": "land-drilling-rigs/loadcraft-1000hp-2014/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "loadcraft-1000hp-lci-1000-br",
+    "title": "LOADCRAFT LCI-1000 1000HP Carrier Rig (Brazil)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "1000HP carrier-mounted drilling rig \u2014 mobile platform built for Latin American field operations.",
+    "hero_image": "land-drilling-rigs/loadcraft-1000hp-lci-1000-br/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "lti-3000hp-ac-2009",
+    "title": "LTI 3000HP AC Land Drilling Rig (2009/Upgraded 2015)",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "LTI 3000HP AC rig \u2014 25,000ft depth-rated with 1.7M lb hook load, upgraded 2015.",
+    "hero_image": "land-drilling-rigs/lti-3000hp-ac-2009/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "md-cowan-1000hp-rig-3",
+    "title": "MD Cowan Super Single 1000HP Drilling Rig 3",
+    "manufacturer": "IDS",
+    "model": "Venture Tech XK-250",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "MD Cowan Super Single AC-SCR-DC \u2014 compact 1000HP drilling unit on 15 trailers",
+    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-3/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "md-cowan-1000hp-rig-4",
+    "title": "MD Cowan Super Single 1000HP \u2014 ORL Rig 4",
+    "manufacturer": "IDS",
+    "model": "Venture Tech XK-250",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "MD Cowan Super Single \u2014 1000HP AC-SCR-DC Land Drilling Rig",
+    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-4/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "md-cowan-1000hp-rig-4-dubai",
     "title": "MD Cowan 1000HP Super Single Rig #4 (Dubai)",
     "manufacturer": "MD Cowan",
-    "model": "1000HP Super Single Rig #4 (Dubai)",
+    "model": "Rig Tech RT-400BE",
     "horsepower": 1000,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "Dubai",
-    "status": "For Sale",
-    "tagline": "Super Single - AC-SCR-DC - Dubai Located - Ready for Mobilisation",
+    "status": "for sale - land rig - dubai",
     "status_badge": "For Sale - Land Rig - Dubai",
+    "tagline": "Super Single - AC-SCR-DC - Dubai Located - Ready for Mobilisation",
     "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-4-dubai/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "md-cowan-1000hp-rig-5",
+    "title": "MD Cowan Super Single 1000HP \u2014 ORL Rig 5",
+    "manufacturer": "IDS",
+    "model": "Venture Tech XK-250",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "MD Cowan Super Single \u2014 1000HP AC-SCR-DC Land Drilling Rig",
+    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-5/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "mid-continent-1500hp-rig-17",
-    "title": "TDS Drilling Rig 17 — 1,500 HP",
-    "manufacturer": "Mid-Continent",
-    "model": "TDS Drilling Rig 17 — 1,500 HP",
+    "title": "TDS Drilling Rig 17 \u2014 1,500 HP",
+    "manufacturer": "DSI",
+    "model": "Canrig 1250AC",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 contact for details",
+    "status_badge": "Available \u2014 Contact for Details",
+    "tagline": "Fully equipped 1,500 HP AC SCR land rig with triple mud pumps and Canrig top drive \u2014 ready for demanding operations.",
+    "hero_image": "land-drilling-rigs/mid-continent-1500hp-rig-17/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "national-110u-1500hp-rig-6-2024",
+    "title": "National 110U 1500Hp Rig 6 2024",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/national-110u-1500hp-rig-6-2024/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "national-110ue-1500hp-rig-1441",
+    "title": "National 110-UE 1500 HP Land Drilling Rig 1441",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1500,
     "year": null,
     "condition": "Used",
-    "location": "USA",
-    "status": "Available",
-    "tagline": "Fully equipped 1,500 HP AC SCR land rig with triple mud pumps and Canrig top drive — ready for demanding operations.",
-    "status_badge": "Available — Contact for Details",
-    "hero_image": "land-drilling-rigs/mid-continent-1500hp-rig-17/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks Power"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "National 110-UE 1500 HP land rig \u2014 proven North American workhorse.",
+    "hero_image": "land-drilling-rigs/national-110ue-1500hp-rig-1441/images/hero.png",
+    "category": "land"
   },
   {
-    "slug": "national-80ue-1200hp-rig-14",
-    "title": "National 80UE 1200HP Drilling Rig 14",
-    "manufacturer": "National",
-    "model": "80UE 1200HP Drilling Rig 14",
-    "horsepower": 1200,
+    "slug": "national-110ue-1500hp-rig-1450",
+    "title": "National 110-UE 1500 HP Land Drilling Rig 1450",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
     "year": null,
     "condition": "Used",
     "location": "",
-    "status": "Available",
-    "tagline": "National 80UE 1200HP • Certified 2024 • Available for Sale or Lease",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "National 110-UE 1500 HP land rig \u2014 robust workhorse with proven pedigree.",
+    "hero_image": "land-drilling-rigs/national-110ue-1500hp-rig-1450/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "national-1625de-3000hp-rig-16",
+    "title": "Rig 16 \u2014 NOV 1625DE 3000HP",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Rig 16 \u2014 NOV National 1625DE 3000HP with Walking System",
+    "hero_image": "land-drilling-rigs/national-1625de-3000hp-rig-16/images/hero.jpg",
+    "category": "land"
+  },
+  {
+    "slug": "national-2000hp-1320ue",
+    "title": "National 1320UE 2000HP Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "National 1320UE 2000HP land rig \u2014 detailed specs pending photo-only PDF review.",
+    "hero_image": "land-drilling-rigs/national-2000hp-1320ue/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "national-3000hp-1625m-texas",
+    "title": "National 1625M 3000HP Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "National 1625M 3000HP rig in Texas \u2014 SCR-powered deep-well capable unit with DRECO cantilever mast.",
+    "hero_image": "land-drilling-rigs/national-3000hp-1625m-texas/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "national-80ue-1200hp-rig-14",
+    "title": "National 80Ue 1200Hp Rig 14",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
     "hero_image": "land-drilling-rigs/national-80ue-1200hp-rig-14/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1200 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "national-d1000e-1000hp-rig-15",
+    "title": "National D1000E 1000 HP Land Rig 15",
+    "manufacturer": "Warrior",
+    "model": "National DSII",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "1,000 HP National D1000E SCR rig with hydraulic walking system and Warrior top drive \u2014 fully equipped and ready to drill.",
+    "hero_image": "land-drilling-rigs/national-d1000e-1000hp-rig-15/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "national-oilwell-e2000hp-odessa-1990",
+    "title": "National OilWell E-2000 HP Diesel Electric Drilling Rig (Odessa TX)",
+    "manufacturer": "National OilWell",
+    "model": "Canrig 500 Ton",
+    "horsepower": 2000,
+    "year": 1990,
+    "condition": "",
+    "location": "Odessa, TX",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "National OilWell E-2000 HP Diesel Electric \u2014 Certified, Odessa TX",
+    "hero_image": "land-drilling-rigs/national-oilwell-e2000hp-odessa-1990/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "nov-5c-workover-rig",
-    "title": "NOV 5C 104' 250K Mobile Workover Rig — Certified Refurbished",
-    "manufacturer": "NOV",
-    "model": "5C 104' 250K Mobile Workover Rig — Certified Refurbished",
-    "horsepower": 500,
+    "title": "NOV 5C 104&#x27; 250K Mobile Workover Rig \u2014 Certified Refurbished",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
     "year": null,
-    "condition": "Certified Refurbished",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "NOV 5C 104' 250K Mobile Workover Rig — Certified Refurbished, Tier III",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "NOV 5C 104&#x27; 250K Mobile Workover Rig \u2014 Certified Refurbished, Tier III",
     "hero_image": "land-drilling-rigs/nov-5c-workover-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "250K",
-        "label": "Hookload"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
+    "category": "workover"
   },
   {
     "slug": "nov-ideal-1500hp-ac-rig-826",
     "title": "NOV Ideal 1500HP AC Rig #826",
-    "manufacturer": "NOV",
-    "model": "Ideal 1500HP AC Rig #826",
+    "manufacturer": "NOV Ideal",
+    "model": "NOV SSGD-360",
     "horsepower": 1500,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "AC VFD Drilling System • 1,500 HP • 18,000 ft Depth Rating • Available Now",
-    "status_badge": "For Sale • Land Rig • Available",
+    "status": "for sale \u2022 land rig \u2022 available",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 Available",
+    "tagline": "AC VFD Drilling System \u2022 1,500 HP \u2022 18,000 ft Depth Rating \u2022 Available Now",
     "hero_image": "land-drilling-rigs/nov-ideal-1500hp-ac-rig-826/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "nov-ideal-1500hp-rig-10-2011",
+    "title": "Nov Ideal 1500Hp Rig 10 2011",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/nov-ideal-1500hp-rig-10-2011/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "nov-ideal-1500hp-walking-rig-209",
     "title": "NOV Ideal 1500HP Walking Rig #209",
-    "manufacturer": "NOV",
-    "model": "Ideal 1500HP Walking Rig #209",
+    "manufacturer": "NOV Ideal",
+    "model": "NOV JC-50-D",
     "horsepower": 1500,
     "year": null,
     "condition": "Refurbished",
     "location": "Houston, TX",
-    "status": "For Sale",
-    "tagline": "Walking Drilling System • SCR Electric • Refurbished • Houston TX",
-    "status_badge": "For Sale • Land Rig • Houston, TX",
+    "status": "for sale \u2022 land rig \u2022 houston, tx",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 Houston, TX",
+    "tagline": "Walking Drilling System \u2022 SCR Electric \u2022 Refurbished \u2022 Houston TX",
     "hero_image": "land-drilling-rigs/nov-ideal-1500hp-walking-rig-209/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "nov-ideal-1500hp-walking-rig-210",
     "title": "NOV Ideal 1500HP Walking Rig #210",
-    "manufacturer": "NOV",
-    "model": "Ideal 1500HP Walking Rig #210",
+    "manufacturer": "NOV Ideal",
+    "model": "NOV JC-50-D",
     "horsepower": 1500,
     "year": null,
     "condition": "Refurbished",
     "location": "Houston, TX",
-    "status": "For Sale",
-    "tagline": "Walking Drilling System • SCR Electric • Refurbished • Houston TX",
-    "status_badge": "For Sale • Land Rig • Houston, TX",
+    "status": "for sale \u2022 land rig \u2022 houston, tx",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 Houston, TX",
+    "tagline": "Walking Drilling System \u2022 SCR Electric \u2022 Refurbished \u2022 Houston TX",
     "hero_image": "land-drilling-rigs/nov-ideal-1500hp-walking-rig-210/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "nov-national-110ue-1500hp-rig-2",
+    "title": "NOV National 110-UE 1500 HP Land Rig 2 \u2014 Walking System",
+    "manufacturer": "",
+    "model": "Scarbrough 400 gal, 7-Station",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "New Mexico, USA",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "NOV National 110-UE 1500 HP \u2014 Q2 2024 Certified, Walking System, $6M",
+    "hero_image": "land-drilling-rigs/nov-national-110ue-1500hp-rig-2/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "nov-national-110ue-1500hp-rig-7",
+    "title": "NOV National 110-UE 1500 HP Land Rig 7 \u2014 Walking System",
+    "manufacturer": "Superior 142 ft",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "NOV National 110-UE 1500 HP Rig 7 \u2014 Walking System, $5M",
+    "hero_image": "land-drilling-rigs/nov-national-110ue-1500hp-rig-7/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "ocean-greatwhite-semisub-9840ft-2016",
+    "title": "Ocean Greatwhite",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": 2016,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "6th-Gen Ultra-Deepwater Harsh Environment Semisubmersible \u2014 9,840ft WD",
+    "hero_image": "land-drilling-rigs/ocean-greatwhite-semisub-9840ft-2016/images/hero.jpeg",
+    "category": "offshore"
+  },
+  {
+    "slug": "ocean-onyx-semisub-6000ft-2020",
+    "title": "Ocean Onyx",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 0,
+    "year": 2020,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Deepwater Moored Harsh-Environment Semisubmersible \u2014 Enhanced Victory Class, Upgraded 2020",
+    "hero_image": "land-drilling-rigs/ocean-onyx-semisub-6000ft-2020/images/hero.jpeg",
+    "category": "offshore"
+  },
+  {
+    "slug": "oilwell-2000hp-e2000",
+    "title": "Oilwell E-2000 2000HP Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Oilwell E-2000 2000HP land rig \u2014 classic American drawworks, specs pending photo review.",
+    "hero_image": "land-drilling-rigs/oilwell-2000hp-e2000/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "oilwell-760e-1200hp-rig-123",
+    "title": "Oilwell 760-E 1200 HP Land Drilling Rig 123",
+    "manufacturer": "",
+    "model": "Tesco 500 ECI 900",
+    "horsepower": 1200,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Oilwell 760-E 1200 HP skid-mounted rig with Tesco top drive and twin BOMCO mud pumps.",
+    "hero_image": "land-drilling-rigs/oilwell-760e-1200hp-rig-123/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "oilwell-840e-1500hp-rig-1428",
+    "title": "Oilwell 840E 1500 HP Land Drilling Rig 1428",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "Used",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Oilwell 840E 1500 HP land rig \u2014 classic iron with broad parts support.",
+    "hero_image": "land-drilling-rigs/oilwell-840e-1500hp-rig-1428/images/hero.png",
+    "category": "land"
   },
   {
     "slug": "oime-2000-hp-rig-16",
     "title": "OIME 2000 HP Rig #16",
-    "manufacturer": "OIME",
-    "model": "2000 HP Rig #16",
+    "manufacturer": "DSI",
+    "model": "3\u00d7 Weatherford MP-16",
     "horsepower": 2000,
-    "year": 2000,
-    "condition": "Used",
-    "location": "Houston, TX",
-    "status": "Available",
-    "tagline": "Box-on-Box Substructure • DSI Cantilever Mast • NOV TDS-11 Top Drive",
-    "status_badge": "For Sale • Available • Houston, TX",
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "for sale \u2022 available \u2022 houston, tx",
+    "status_badge": "For Sale \u2022 Available \u2022 Houston, TX",
+    "tagline": "Box-on-Box Substructure \u2022 DSI Cantilever Mast \u2022 NOV TDS-11 Top Drive",
     "hero_image": "land-drilling-rigs/oime-2000-hp-rig-16/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "oime-2000hp-rig-16",
+    "title": "Oime 2000Hp Rig 16",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/oime-2000hp-rig-16/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "pac-rim-3000hp-rig-90",
+    "title": "Rig 90 \u2014 3000HP AC Ultra",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 3000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Rig 90 \u2014 3000HP AC Ultra Pad-Drilling Rig with Gardner Denver PZ-2400 Pumps",
+    "hero_image": "land-drilling-rigs/pac-rim-3000hp-rig-90/images/hero.jpg",
+    "category": "land"
   },
   {
     "slug": "rig-1000-1500hp-2011",
-    "title": "Drilling Rig 1000 — 1500HP AC 600K Cantilever Triple with Walking Package",
-    "manufacturer": "Unknown",
-    "model": "Drilling Rig 1000 — 1500HP AC 600K Cantilever Triple with Walking Package",
+    "title": "Drilling Rig 1000 \u2014 1500HP AC 600K Cantilever Triple with Walking Package",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 1500,
     "year": 2011,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "1500HP AC 600K Cantilever Triple — 2011 Build with Walking System",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "1500HP AC 600K Cantilever Triple \u2014 2011 Build with Walking System",
     "hero_image": "land-drilling-rigs/rig-1000-1500hp-2011/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "rof-t750-2200hp-rig-602",
+    "title": "Rig 602 \u2014 ROF T750",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 2200,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Rig 602 \u2014 ROF T750 2200HP Walking Rig with Cameron Automation Package",
+    "hero_image": "land-drilling-rigs/rof-t750-2200hp-rig-602/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "service-king-sk-1000-2007",
     "title": "Service King SK-1000 Trailer-Mounted Drilling Rig (2007)",
     "manufacturer": "Service King",
-    "model": "SK-1000 Trailer-Mounted Drilling Rig (2007)",
-    "horsepower": 1000,
+    "model": "46 x 10 (S/N DW 2387)",
+    "horsepower": 0,
     "year": 2007,
+    "condition": "",
+    "location": "",
+    "status": "for sale \u2022 land rig \u2022 trailer-mounted",
+    "status_badge": "For Sale \u2022 Land Rig \u2022 Trailer-Mounted",
+    "tagline": "SK-1000 Trailer-Mounted \u2022 1,000 HP \u2022 Hydraulic Top Drive \u2022 Fully Kitted",
+    "hero_image": "land-drilling-rigs/service-king-sk-1000-2007/images/hero.jpeg",
+    "category": "land"
+  },
+  {
+    "slug": "service-king-sk1000-trailer-2012",
+    "title": "2012 Service King 1000 HP Trailer-Mounted Drilling Rig",
+    "manufacturer": "",
+    "model": "46 \u00d7 10, S/N DW2387",
+    "horsepower": 1000,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "2012 Service King 1000 HP Trailer-Mounted \u2014 Ready to Drill",
+    "hero_image": "land-drilling-rigs/service-king-sk1000-trailer-2012/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "service-king-sk675hp-workover",
+    "title": "Service King SK-675 Workover Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 675,
+    "year": null,
+    "condition": "New",
+    "location": "",
+    "status": "new \u00b7 $3.6m fob houston",
+    "status_badge": "New \u00b7 $3.6M FOB Houston",
+    "tagline": "New 675 HP Service King mobile workover rig on 6-axle carrier \u2014 ready to drill FOB Houston.",
+    "hero_image": "land-drilling-rigs/service-king-sk675hp-workover/images/hero.png",
+    "category": "workover"
+  },
+  {
+    "slug": "service-king-sk775-workover-rig-12",
+    "title": "Service King SK775 Workover/Drilling Rig 12",
+    "manufacturer": "",
+    "model": "Service King SK775",
+    "horsepower": 775,
+    "year": null,
     "condition": "Used",
     "location": "",
-    "status": "For Sale",
-    "tagline": "SK-1000 Trailer-Mounted • 1,000 HP • Hydraulic Top Drive • Fully Kitted",
-    "status_badge": "For Sale • Land Rig • Trailer-Mounted",
-    "hero_image": "land-drilling-rigs/service-king-sk-1000-2007/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000 HP",
-        "label": "Rated HP"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Service King SK775 Workover/Drilling Rig \u2014 Unit 12",
+    "hero_image": "land-drilling-rigs/service-king-sk775-workover-rig-12/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "service-king-sk775-workover-rig-5",
+    "title": "Service King SK775 Workover/Drilling Rig 5",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 775,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Service King SK775 Workover/Drilling Rig \u2014 Unit 5",
+    "hero_image": "land-drilling-rigs/service-king-sk775-workover-rig-5/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "service-king-sk775hp-workover",
+    "title": "Service King SK-775HP Workover Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 775,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "new / for sale",
+    "status_badge": "New / For Sale",
+    "tagline": "New mobile workover rig with 112-ft mast and 400,000 lb hook load capacity \u2014 priced at $5.9M.",
+    "hero_image": "land-drilling-rigs/service-king-sk775hp-workover/images/hero.jpeg",
+    "category": "workover"
+  },
+  {
+    "slug": "service-king-sk775hp-workover-new",
+    "title": "Service King Sk775Hp Workover New",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 775,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "",
+    "tagline": "",
+    "hero_image": "land-drilling-rigs/service-king-sk775hp-workover-new/images/hero.jpeg",
+    "category": "workover"
   },
   {
     "slug": "tds-1200hp-rig-l1",
     "title": "TDS 1200HP Land Rig L1",
-    "manufacturer": "TDS",
-    "model": "1200HP Land Rig L1",
+    "manufacturer": "TESCO Corporation",
+    "model": "ELECT-500 ECI-90",
     "horsepower": 1200,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "Category IV certified 1200HP land rig with TESCO top drive — ready for immediate deployment.",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Category IV certified 1200HP land rig with TESCO top drive \u2014 ready for immediate deployment.",
     "hero_image": "land-drilling-rigs/tds-1200hp-rig-l1/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1200",
-        "label": "Horsepower"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
+  },
+  {
+    "slug": "tds-1500hp-acvfd-rig-19",
+    "title": "TDS 1500 HP AC-VFD Drilling Rig 19",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available \u2014 poa",
+    "status_badge": "Available \u2014 POA",
+    "tagline": "TDS 1500 HP AC Variable Frequency Drive land drilling rig \u2014 contact Total Drilling Supply for full specifications and availability.",
+    "hero_image": "land-drilling-rigs/tds-1500hp-acvfd-rig-19/images/hero.png",
+    "category": "land"
+  },
+  {
+    "slug": "tds-1500hp-f-rig-17",
+    "title": "TDS 1500 HP F Rig 17 \u2013 SCR Land Drilling Rig",
+    "manufacturer": "",
+    "model": "",
+    "horsepower": 1500,
+    "year": null,
+    "condition": "",
+    "location": "",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "Complete 1500 HP SCR land rig with Canrig top drive, triple CAT power and hydraulic walking system.",
+    "hero_image": "land-drilling-rigs/tds-1500hp-f-rig-17/images/hero.jpeg",
+    "category": "land"
   },
   {
     "slug": "tds-5g-semisub-2009",
@@ -713,29 +1719,10 @@
     "condition": "Used",
     "location": "Available",
     "status": "Available",
-    "tagline": "5th-generation ultra-deepwater moored semisubmersible, 8,000 ft WD rated, 35,000 ft drilling depth.",
     "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/tds-5g-semisub-2009/images/img_001.jpeg",
-    "key_stats": [
-      {
-        "value": "8,000 ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "35,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "1,000 ST",
-        "label": "Hook Load"
-      },
-      {
-        "value": "140 people",
-        "label": "Accommodation"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
+    "tagline": "5th-generation ultra-deepwater moored semisubmersible, 8,000 ft WD rated, 35,000 ft drilling depth.",
+    "hero_image": "land-drilling-rigs/tds-5g-semisub-2009/images/hero.jpeg",
+    "category": "offshore"
   },
   {
     "slug": "tds-6g-semisub-2016",
@@ -747,2794 +1734,54 @@
     "condition": "Used",
     "location": "Available",
     "status": "Available",
+    "status_badge": "Available",
     "tagline": "6th-generation DP/moored ultra-deepwater semisub, 9,840 ft WD, 5,750 HP drawworks, 8x azimuth thrusters.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/tds-6g-semisub-2016/images/img_001.jpeg",
-    "key_stats": [
-      {
-        "value": "9,840 ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "35,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "1,000 ST",
-        "label": "Hook Load"
-      },
-      {
-        "value": "180 people",
-        "label": "Accommodation"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ac-3600hp-land-drilling-rig",
-    "title": "3600 HP AC Land Drilling Rig",
-    "manufacturer": "Unknown",
-    "model": "3600 HP AC Land Drilling Rig",
-    "horsepower": 3600,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "High-horsepower 3600 HP AC land drilling rig — two units available, variable frequency drive.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ac-3600hp-land-drilling-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,600",
-        "label": "Horsepower"
-      },
-      {
-        "value": "2",
-        "label": "Units Available"
-      },
-      {
-        "value": "AC VFD",
-        "label": "Drive System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ac-vfd-3000hp-land-rig-new",
-    "title": "3000HP AC/VFD Drive Land Drilling Rig",
-    "manufacturer": "Unknown",
-    "model": "3000HP AC/VFD Drive Land Drilling Rig",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "New",
-    "tagline": "New 3000HP AC/VFD Land Rig — Full commercial specification with pricing",
-    "status_badge": "New",
-    "hero_image": "land-drilling-rigs/ac-vfd-3000hp-land-rig-new/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "alta-gemini-1500hp-rig-14-2012",
-    "title": "ALTA Gemini 750 1500HP Drilling Rig 14",
-    "manufacturer": "Alta",
-    "model": "ALTA Gemini 750 1500HP Drilling Rig 14",
-    "horsepower": 1500,
-    "year": 2012,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "AC-driven Gemini 750 Series — upgraded 1500HP rig with full component hours logged",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/alta-gemini-1500hp-rig-14-2012/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "3×1476 HP",
-        "label": "Cat 3512 Engines"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "atlantic-7-jackup-300ft-2000hp",
-    "title": "Atlantic 7 Jackup Rig",
-    "manufacturer": "Atlantic",
-    "model": "Atlantic 7 Jackup Rig",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "300ft WD Self-Elevating Jackup Drilling Rig",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/atlantic-7-jackup-300ft-2000hp/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "300ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "Jackup",
-        "label": "Rig Type"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "barge-2000hp-rig-54b",
-    "title": "2000 HP Posted Barge Drilling Rig 54B",
-    "manufacturer": "Unknown",
-    "model": "2000 HP Posted Barge Drilling Rig 54B",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "2000 HP Posted Barge Rig — 25,000 ft Rated, CanRig Top Drive",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/barge-2000hp-rig-54b/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "25,000 ft",
-        "label": "Drill Depth"
-      },
-      {
-        "value": "209 ft",
-        "label": "Barge Length"
-      },
-      {
-        "value": "50 Bunks",
-        "label": "Accommodations"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "barge-3000hp-rig-72b",
-    "title": "3000 HP Posted Barge Drilling Rig 72B",
-    "manufacturer": "Unknown",
-    "model": "3000 HP Posted Barge Drilling Rig 72B",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "3000 HP Posted Barge Rig — 25,000 ft Rated, CanRig 650T Top Drive",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/barge-3000hp-rig-72b/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "25,000 ft",
-        "label": "Drill Depth"
-      },
-      {
-        "value": "214.5 ft",
-        "label": "Barge Length"
-      },
-      {
-        "value": "86 Bunks",
-        "label": "Accommodations"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bomco-1500hp-land-rig",
-    "title": "1500 HP BOMCO Land Rig",
-    "manufacturer": "Bomco",
-    "model": "1500 HP BOMCO Land Rig",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "New",
-    "location": "",
-    "status": "Available",
-    "tagline": "Heavy-duty BOMCO 1500 HP land rig — new build with full API 4F certified mast and 10K BOP package.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/bomco-1500hp-land-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "786,831",
-        "label": "Hook Load (lbs)"
-      },
-      {
-        "value": "147.5&#x27;",
-        "label": "Mast Height"
-      },
-      {
-        "value": "10K",
-        "label": "BOP Rating"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bomco-2000hp-land-rig",
-    "title": "2000 HP BOMCO Land Rig",
-    "manufacturer": "Bomco",
-    "model": "2000 HP BOMCO Land Rig",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "New",
-    "location": "",
-    "status": "Available",
-    "tagline": "High-capacity BOMCO 2000 HP land rig — new build to KOC specification with 2,200 HP pumps and 15K BOP package.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/bomco-2000hp-land-rig/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "1,011,640",
-        "label": "Hook Load (lbs)"
-      },
-      {
-        "value": "152.5&#x27;",
-        "label": "Mast Height"
-      },
-      {
-        "value": "15K",
-        "label": "BOP Rating"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bomco-2000hp-rig-264-2006",
-    "title": "Bomco 2000 HP AC Land Rig 264 (2006)",
-    "manufacturer": "Bomco",
-    "model": "Bomco 2000 HP AC Land Rig 264 (2006)",
-    "horsepower": 2000,
-    "year": 2006,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Full AC 2,000 HP Bomco land rig with NOV TDS-11SA top drive and 4-genset power package — built 2006.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/bomco-2000hp-rig-264-2006/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "1,000K lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "23,000 ft",
-        "label": "Drill Depth"
-      },
-      {
-        "value": "4× Cat 3512-B",
-        "label": "Gensets"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "brewster-n4a-750hp-rig-1",
-    "title": "Brewster N4-A 750HP Drilling Rig 1",
-    "manufacturer": "Brewster",
-    "model": "Brewster N4-A 750HP Drilling Rig 1",
-    "horsepower": 750,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Lease-to-Own",
-    "tagline": "Brewster N4-A 750HP — certified 2024, lease-to-own, two F-1000 triplex pumps",
-    "status_badge": "Lease-to-Own",
-    "hero_image": "land-drilling-rigs/brewster-n4a-750hp-rig-1/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "750 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "300,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "Certified 2024",
-        "label": "Status"
-      },
-      {
-        "value": "$1.5M Down",
-        "label": "Lease-to-Own"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "brewster-n4a-750hp-rig-6",
-    "title": "Brewster N4-A 750 HP Drilling Rig 6",
-    "manufacturer": "Brewster",
-    "model": "Brewster N4-A 750 HP Drilling Rig 6",
-    "horsepower": 750,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Certified 2024 Brewster N4-A — 750 HP trailer-mounted rig available to buy or lease",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/brewster-n4a-750hp-rig-6/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "750 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "275,000 lbs",
-        "label": "Static Hook Load"
-      },
-      {
-        "value": "105 ft",
-        "label": "Derrick Height"
-      },
-      {
-        "value": "Certified 2024",
-        "label": "Recertified"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bucyrus-erie-36l-cable-tool",
-    "title": "Bucyrus Erie 36L Cable Tool Drill Rig",
-    "manufacturer": "Bucyrus Erie",
-    "model": "Bucyrus Erie 36L Cable Tool Drill Rig",
-    "horsepower": null,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — $160,000",
-    "tagline": "Bucyrus Erie 36L Cable Tool — 4-Axle Crane Carrier, Ready to Work",
-    "status_badge": "Available — $160,000",
-    "hero_image": "land-drilling-rigs/bucyrus-erie-36l-cable-tool/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "36L",
-        "label": "Bucyrus Erie Model"
-      },
-      {
-        "value": "$160,000",
-        "label": "Asking Price"
-      },
-      {
-        "value": "Cummins 855",
-        "label": "Engine"
-      },
-      {
-        "value": "3-36\"",
-        "label": "String Range"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bucyrus-erie-60l-cable-tool",
-    "title": "Bucyrus Erie 60L Cable Tool Drill Rig",
-    "manufacturer": "Bucyrus Erie",
-    "model": "Bucyrus Erie 60L Cable Tool Drill Rig",
-    "horsepower": null,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Bucyrus Erie 60L Cable Tool Drill Rig — Truck-Mounted, Ready to Work",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/bucyrus-erie-60l-cable-tool/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "60L",
-        "label": "Bucyrus Erie Model"
-      },
-      {
-        "value": "1999",
-        "label": "Carrier Year"
-      },
-      {
-        "value": "CAT 3406",
-        "label": "Prime Mover"
-      },
-      {
-        "value": "1,000 hrs",
-        "label": "Engine Hours"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "bw-hyduke-600p-rig-4",
-    "title": "BW Hyduke 600P Rig 4",
-    "manufacturer": "BW Hyduke",
-    "model": "BW Hyduke 600P Rig 4",
-    "horsepower": null,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "BW Hyduke 600P used land drilling rig — photo documentation package available.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/bw-hyduke-600p-rig-4/images/hero.png",
-    "key_stats": [
-      {
-        "value": "600P",
-        "label": "Model"
-      },
-      {
-        "value": "Rig 4",
-        "label": "Unit ID"
-      },
-      {
-        "value": "Used",
-        "label": "Condition"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "cardwell-375hp-workover-rig-318",
-    "title": "Cardwell 375 HP Workover Rig 318",
-    "manufacturer": "Cardwell",
-    "model": "Cardwell 375 HP Workover Rig 318",
-    "horsepower": 375,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Cardwell KB-200-C 375 HP Telescopic Workover Unit",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/cardwell-375hp-workover-rig-318/images/hero.png",
-    "key_stats": [
-      {
-        "value": "375",
-        "label": "Horsepower"
-      },
-      {
-        "value": "95 TN",
-        "label": "Pull Capacity"
-      },
-      {
-        "value": "4,500m",
-        "label": "Load Capacity"
-      },
-      {
-        "value": "96 ft",
-        "label": "Mast Height"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "cardwell-375hp-workover-rig-323",
-    "title": "Cardwell 375 HP Workover Rig 323",
-    "manufacturer": "Cardwell",
-    "model": "Cardwell 375 HP Workover Rig 323",
-    "horsepower": 375,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Cardwell KB-200-C 375 HP Telescopic Workover Unit",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/cardwell-375hp-workover-rig-323/images/hero.png",
-    "key_stats": [
-      {
-        "value": "375",
-        "label": "Horsepower"
-      },
-      {
-        "value": "95 TN",
-        "label": "Pull Capacity"
-      },
-      {
-        "value": "4,500m",
-        "label": "Load Capacity"
-      },
-      {
-        "value": "96 ft",
-        "label": "Mast Height"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "cardwell-kb-rig-8-1969",
-    "title": "1969 Cardwell KB Single/Double Rig 8",
-    "manufacturer": "Cardwell",
-    "model": "1969 Cardwell KB Single/Double Rig 8",
-    "horsepower": 450,
-    "year": 1969,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "1969 Cardwell KB single/double carrier rig with freshly rebuilt engine and drawworks (2018).",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/cardwell-kb-rig-8-1969/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1969",
-        "label": "Year Built"
-      },
-      {
-        "value": "69&#x27;",
-        "label": "Mast Height"
-      },
-      {
-        "value": "140,000#",
-        "label": "Max Hook Load"
-      },
-      {
-        "value": "2018",
-        "label": "Rebuilt"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "continental-emsco-1500hp-rig-20",
-    "title": "Continental Emsco C1 1500 HP Drilling Rig 20",
-    "manufacturer": "Continental Emsco",
-    "model": "Continental Emsco C1 1500 HP Drilling Rig 20",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "1500 HP Continental Emsco C1 land rig with DSI 142-ft mast rated to 1,000,000 lb hook load — complete with Canrig 1250AC top drive and full solids-control package.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-20/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "142&#x27;",
-        "label": "DSI Mast"
-      },
-      {
-        "value": "25&#x27;",
-        "label": "Floor Height"
-      },
-      {
-        "value": "1,100 BBL",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "continental-emsco-1500hp-rig-24",
-    "title": "Continental Emsco C1 1500 HP Drilling Rig 24",
-    "manufacturer": "Continental Emsco",
-    "model": "Continental Emsco C1 1500 HP Drilling Rig 24",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "1500 HP Continental Emsco C1 land rig with 30-ft substructure and 1,000,000 lb hook-load mast — equipped with Canrig 1250AC top drive and 7,500 PSI dual mud pump system.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-24/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "142&#x27;",
-        "label": "Mast Height"
-      },
-      {
-        "value": "30&#x27;",
-        "label": "Floor Height"
-      },
-      {
-        "value": "1,100 BBL",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "continental-emsco-1500hp-rig-26",
-    "title": "Continental Emsco C1 1500 HP Drilling Rig 26",
-    "manufacturer": "Continental Emsco",
-    "model": "Continental Emsco C1 1500 HP Drilling Rig 26",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "1500 HP Continental Emsco C1 SCR electric land rig with DSI 142-ft mast — fully equipped with Canrig top drive, catwalk, and complete solids-control package.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/continental-emsco-1500hp-rig-26/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "142&#x27;",
-        "label": "DSI Mast"
-      },
-      {
-        "value": "26.5&#x27;",
-        "label": "Floor Height"
-      },
-      {
-        "value": "1,100 BBL",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "cooper-lt-350hp-rig-1",
-    "title": "Cooper LT 350",
-    "manufacturer": "Cooper",
-    "model": "Cooper LT 350",
-    "horsepower": 350,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Cooper LT 350 — Compact trailer-mounted drilling rig available through TDS",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/cooper-lt-350hp-rig-1/images/hero.png",
-    "key_stats": [
-      {
-        "value": "350",
-        "label": "Horsepower"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "crow-energy-ce1000-1000hp-rig-117",
-    "title": "Crow Energy CE 1000 DD – 1000 HP Drilling Rig 117",
-    "manufacturer": "Crow Energy",
-    "model": "Crow Energy CE 1000 DD – 1000 HP Drilling Rig 117",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Compact Crow Energy CE 1000 double rig with Tesco 250-ton top drive, 118-ft mast and 400,000 lb hook load.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/crow-energy-ce1000-1000hp-rig-117/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 117",
-        "label": "Unit Number"
-      },
-      {
-        "value": "250T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "davis-1500e-rig-11",
-    "title": "Davis 1500E Drilling Rig 11",
-    "manufacturer": "Davis",
-    "model": "Davis 1500E Drilling Rig 11",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Used / Available",
-    "tagline": "1,500 HP Davis 1500-E SCR rig with walking system, 350-ton top drive, and triple Cat 3512C power.",
-    "status_badge": "Used / Available",
-    "hero_image": "land-drilling-rigs/davis-1500e-rig-11/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "768K#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "3×Cat 3512C",
-        "label": "Power Source"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "dreco-emsco-2000hp-rig-425-1981",
-    "title": "Dreco / Emsco C-2 2000 HP Triple Electric Land Drilling Rig 425",
-    "manufacturer": "DRECO",
-    "model": "Dreco / Emsco C-2 2000 HP Triple Electric Land Drilling Rig 425",
-    "horsepower": 2000,
-    "year": 1981,
-    "condition": "Used",
-    "location": "",
-    "status": "Available – Stacked",
-    "tagline": "2000 HP Dreco/Emsco triple electric rig with NOV TDS-11SA top drive, refurbished 2014, stacked in Georgia.",
-    "status_badge": "Available – Stacked",
-    "hero_image": "land-drilling-rigs/dreco-emsco-2000hp-rig-425-1981/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Drawworks HP"
-      },
-      {
-        "value": "142 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "25,000 ft",
-        "label": "Rated Depth"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-2000hp-rig-65",
-    "title": "Drillmec 2000HP Rig 65",
-    "manufacturer": "Drillmec",
-    "model": "Drillmec 2000HP Rig 65",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "High-torque AC/VFD triple with Tesco 500T top drive and five-gen power package.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/drillmec-2000hp-rig-65/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2000 HP",
-        "label": "Power Rating"
-      },
-      {
-        "value": "156 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "1.3M lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "5 × CAT",
-        "label": "Generators"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-2000hp-rig-66",
-    "title": "Drillmec 2000 HP Land Rig 66",
-    "manufacturer": "Drillmec",
-    "model": "Drillmec 2000 HP Land Rig 66",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available · POA",
-    "tagline": "Full-spec 2,000 HP Drillmec triple with Tesco top drive, VFD power, and complete camp.",
-    "status_badge": "Available · POA",
-    "hero_image": "land-drilling-rigs/drillmec-2000hp-rig-66/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "156 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "1,300,000",
-        "label": "Hook Load (lbs)"
-      },
-      {
-        "value": "5 × CAT",
-        "label": "Generators"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-2000hp-t-412-2008",
-    "title": "T-412 2000 HP Electrical DC Heli-Portable Drilling Rig",
-    "manufacturer": "Drillmec",
-    "model": "T-412 2000 HP Electrical DC Heli-Portable Drilling Rig",
-    "horsepower": 2000,
-    "year": 2008,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Heli-portable 2000 HP DC drilling rig built for remote access, featuring a Varco top drive, National 1320-UE drawworks, and triple LEWCO mud pumps.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/drillmec-2000hp-t-412-2008/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "1,000,000",
-        "label": "Hook Load (lbs)"
-      },
-      {
-        "value": "20,000",
-        "label": "Drilling Depth (ft)"
-      },
-      {
-        "value": "2008",
-        "label": "Year Built"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-3000hp-sk801",
-    "title": "DRILLMEC SK801 3000HP Land Drilling Rig",
-    "manufacturer": "Drillmec",
-    "model": "DRILLMEC SK801 3000HP Land Drilling Rig",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "DRILLMEC SK801 3000HP — Italian-engineered land rig built for wells to 7,000m with full API compliance.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/drillmec-3000hp-sk801/images/hero.png",
-    "key_stats": [
-      {
-        "value": "3,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "7,000 m",
-        "label": "Max Well Depth"
-      },
-      {
-        "value": "API",
-        "label": "Standards"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-hh220-1340hp-2015",
-    "title": "2015 Drillmec HH220 1340 HP Land Rig",
-    "manufacturer": "Drillmec",
-    "model": "2015 Drillmec HH220 1340 HP Land Rig",
-    "horsepower": 1340,
-    "year": 2015,
-    "condition": "Used — refurbished 2015",
-    "location": "",
-    "status": "Available",
-    "tagline": "2015 Drillmec HH220 1340 HP SCR — recertified telescopic mast land rig, 440,000 lb hook load",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/drillmec-hh220-1340hp-2015/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,340 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "440,000 lbs",
-        "label": "Mast Rating"
-      },
-      {
-        "value": "2015",
-        "label": "Year Built"
-      },
-      {
-        "value": "SCR",
-        "label": "Drive System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-hh300fa-1500hp-2011",
-    "title": "Drillmec HH-300FA 1500 HP Ram Rig (2011)",
-    "manufacturer": "Drillmec",
-    "model": "Drillmec HH-300FA 1500 HP Ram Rig (2011)",
-    "horsepower": 1500,
-    "year": 2011,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Drillmec HH-300FA hydraulic single-lift ram rig — 1,500 HP, recertified 2022, with full pipe handling automation.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/drillmec-hh300fa-1500hp-2011/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Ram Rig"
-      },
-      {
-        "value": "600K lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "14,765 ft",
-        "label": "Design Depth"
-      },
-      {
-        "value": "2011 / 2022",
-        "label": "Built / Recertified"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "drillmec-mr8000-1000hp-2011",
-    "title": "2011 Drillmec MR-8000 1000HP Land Rig",
-    "manufacturer": "Drillmec",
-    "model": "2011 Drillmec MR-8000 1000HP Land Rig",
-    "horsepower": 1000,
-    "year": 2011,
-    "condition": "Used",
-    "location": "",
-    "status": "Used / Available",
-    "tagline": "2011 Drillmec MR-8000 semitrailer-mounted mechanical rig with 440,000 lb hook load and dual 1000 HP mud pumps.",
-    "status_badge": "Used / Available",
-    "hero_image": "land-drilling-rigs/drillmec-mr8000-1000hp-2011/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1000 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "440,000 lb",
-        "label": "Hook Load"
-      },
-      {
-        "value": "2011",
-        "label": "Year Built"
-      },
-      {
-        "value": "1000 HP×2",
-        "label": "Mud Pumps"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "emsco-2000hp-rig-425-1978",
-    "title": "Emsco C-2 2000HP Rig 425",
-    "manufacturer": "Emsco",
-    "model": "Emsco C-2 2000HP Rig 425",
-    "horsepower": 2000,
-    "year": 1978,
-    "condition": "Used",
-    "location": "",
-    "status": "Stacked — Available",
-    "tagline": "Fully refurbished 2000HP triple electric with NOV top drive — stacked and ready in Georgia.",
-    "status_badge": "Stacked — Available",
-    "hero_image": "land-drilling-rigs/emsco-2000hp-rig-425-1978/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2000 HP",
-        "label": "Power Rating"
-      },
-      {
-        "value": "2014",
-        "label": "Refurbished"
-      },
-      {
-        "value": "25,000 ft",
-        "label": "Rated Depth"
-      },
-      {
-        "value": "Georgia",
-        "label": "Location"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "gardner-denver-3000hp-rig-273",
-    "title": "Gardner Denver 3000 HP Land Rig 273 (GD-3000E)",
-    "manufacturer": "Gardner Denver",
-    "model": "Gardner Denver 3000 HP Land Rig 273 (GD-3000E)",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Gardner Denver GD-3000E 3000 HP Land Rig — Rig 273",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/gardner-denver-3000hp-rig-273/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 273",
-        "label": "Unit ID"
-      },
-      {
-        "value": "Used",
-        "label": "Condition"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "gemini-alta-1200hp-rig-15",
-    "title": "GEMINI 1200HP AC-VFD Drilling Rig — Rig 15",
-    "manufacturer": "Gemini/Alta",
-    "model": "GEMINI 1200HP AC-VFD Drilling Rig — Rig 15",
-    "horsepower": 1200,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "Compact GEMINI 1200HP AC-VFD land rig with walking system, Canrig Rockit top drive, and full solids control.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/gemini-alta-1200hp-rig-15/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,200 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "550,000#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "45 ft",
-        "label": "Walking"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ges-1600hp-ac-rig-161",
-    "title": "GES 1600 HP AC Drilling Rig 161",
-    "manufacturer": "GES",
-    "model": "GES 1600 HP AC Drilling Rig 161",
-    "horsepower": 1600,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "AC drive GES 1600 HP land rig with hydraulic skidding system and full solids-control package.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ges-1600hp-ac-rig-161/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,600 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750K lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "5,000 m",
-        "label": "Drill Depth"
-      },
-      {
-        "value": "3×1,750 KVA",
-        "label": "Generator Sets"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ges-1600hp-rig-163",
-    "title": "GES 1600 HP AC-VFD Drilling Rig 163",
-    "manufacturer": "GES",
-    "model": "GES 1600 HP AC-VFD Drilling Rig 163",
-    "horsepower": 1600,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "GES 1600 HP AC-VFD Electric Walking Rig — Rig 163",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ges-1600hp-rig-163/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,600",
-        "label": "Horsepower"
-      },
-      {
-        "value": "500K lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "3,500m",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "Walking",
-        "label": "System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ges-quicksilver-1600hp-ac-vfd-rig-9",
-    "title": "GES Quicksilver 1600HP AC-VFD Drilling Rig — Rig 9",
-    "manufacturer": "GES",
-    "model": "GES Quicksilver 1600HP AC-VFD Drilling Rig — Rig 9",
-    "horsepower": 1600,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "High-capacity AC-VFD rig with mast-skidding capability and 750,000 lb hookload.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/ges-quicksilver-1600hp-ac-vfd-rig-9/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,600 HP",
-        "label": "Drawworks Rating"
-      },
-      {
-        "value": "750,000#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      },
-      {
-        "value": "25 ft",
-        "label": "Skid Capability"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "gw-903te-1500hp-2015",
-    "title": "GW 903TE 1500-2000HP Super Triple Electric",
-    "manufacturer": "GW",
-    "model": "GW 903TE 1500-2000HP Super Triple Electric",
-    "horsepower": 1500,
-    "year": 2015,
-    "condition": "Used",
-    "location": "Kuwait",
-    "status": "Available",
-    "tagline": "NOV-integrated wheeled STE with Amphion/Cyberbase controls — available in Kuwait.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/gw-903te-1500hp-2015/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2000 HP",
-        "label": "Rated Power"
-      },
-      {
-        "value": "2015",
-        "label": "Year Built"
-      },
-      {
-        "value": "142 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "750K lbs",
-        "label": "Hook Load"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "hh-2000hp-ac-vfd-2016",
-    "title": "HH 2000HP AC/VFD Land Drilling Rig (2016)",
-    "manufacturer": "HH",
-    "model": "HH 2000HP AC/VFD Land Drilling Rig (2016)",
-    "horsepower": 2000,
-    "year": 2016,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "2000HP Honghua AC/VFD land rig — Chinese-built modern drive technology for demanding deep-well programs.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/hh-2000hp-ac-vfd-2016/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "2016",
-        "label": "Year Built"
-      },
-      {
-        "value": "27",
-        "label": "Pages of Specs"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "hp-flexrig-1500hp-flex4s",
-    "title": "H&P FlexRig Flex4S++ 1500HP AC/VFD (Rig 330)",
-    "manufacturer": "H&P",
-    "model": "H&P FlexRig Flex4S++ 1500HP AC/VFD (Rig 330)",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "H&P FlexRig 4S++ 1500HP AC/VFD — advanced super-spec flex rig with integrated top drive and regenerative braking.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/hp-flexrig-1500hp-flex4s/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "AC/VFD Power"
-      },
-      {
-        "value": "500 ton",
-        "label": "Top Drive"
-      },
-      {
-        "value": "Flex4S++",
-        "label": "Rig Model"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "hri-1000e-1000hp-rig-7-2008",
-    "title": "HRI 1000E 1000 HP Workover-Drilling Rig 7",
-    "manufacturer": "DSI",
-    "model": "HRI 1000E 1000 HP Workover-Drilling Rig 7",
-    "horsepower": 1000,
-    "year": 2008,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "2008 DSI HRI-1000E 1000 HP diesel-electric trailer-mounted workover/drilling rig — API 4F Cat IV certified, 425,000 lb hook load, complete inventory package.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/hri-1000e-1000hp-rig-7-2008/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "2008",
-        "label": "Year Built"
-      },
-      {
-        "value": "425,000 lb",
-        "label": "Hook Load"
-      },
-      {
-        "value": "118&#x27;",
-        "label": "Mast Height"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ide-2000hp-rig-4",
-    "title": "IDE 2000HP Land Rig 4",
-    "manufacturer": "IDE",
-    "model": "IDE 2000HP Land Rig 4",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Heavy-duty 2000HP DC land rig with CANRIG top drive and Weatherford triplex pumps",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ide-2000hp-rig-4/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "1,000,000",
-        "label": "Hook Load (lbs)"
-      },
-      {
-        "value": "20,000",
-        "label": "Max Depth (ft)"
-      },
-      {
-        "value": "500T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ids-gemini-1500hp-rig-11-2011",
-    "title": "IDS Gemini 750 1500HP Drilling Rig 11 (Leo)",
-    "manufacturer": "IDS",
-    "model": "IDS Gemini 750 1500HP Drilling Rig 11 (Leo)",
-    "horsepower": 1500,
-    "year": 2011,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Gemini 750 Series AC rig — commissioned 2011, upgraded 1500HP/750K in 2016 with Canrig top drive",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-11-2011/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "4×1470 HP",
-        "label": "Cummins KTA50 DR"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ids-gemini-1500hp-rig-13-2012",
-    "title": "IDS Gemini 750 1500HP Drilling Rig 13",
-    "manufacturer": "IDS",
-    "model": "IDS Gemini 750 1500HP Drilling Rig 13",
-    "horsepower": 1500,
-    "year": 2012,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Gemini 750 Series AC rig — commissioned March 2012, upgraded 1500HP/750K in 2016",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-13-2012/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "4×1470 HP",
-        "label": "Cummins KTA50 DR"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ids-gemini-1500hp-rig-17",
-    "title": "IDS Gemini 750 1500HP Drilling Rig 17",
-    "manufacturer": "IDS",
-    "model": "IDS Gemini 750 1500HP Drilling Rig 17",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Gemini 750 AC Series — hydraulic mast, Canrig Rockit top drive, 12-line rig-up",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ids-gemini-1500hp-rig-17/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "IDS AC Drawworks"
-      },
-      {
-        "value": "750,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "4×1476 HP",
-        "label": "Cat 3512C Engines"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ids-gemini-2000hp-rig-18",
-    "title": "IDS/Gemini 2000HP Rig 18",
-    "manufacturer": "IDS/Gemini",
-    "model": "IDS/Gemini 2000HP Rig 18",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Fully recertified 2000HP AC rig — new motor, new API Cat IV on mast, sub, and top drive.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ids-gemini-2000hp-rig-18/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2000 HP",
-        "label": "IDS Drawworks"
-      },
-      {
-        "value": "850K lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "30,000 ft",
-        "label": "Depth Capacity"
-      },
-      {
-        "value": "4 × CAT",
-        "label": "Generators"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ingersoll-rand-2550-1500hp-rig-107",
-    "title": "1500 HP Land Rig 107 (Ingersoll-Rand 2550)",
-    "manufacturer": "Ingersoll-Rand",
-    "model": "1500 HP Land Rig 107 (Ingersoll-Rand 2550)",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Proven 1,500 HP SCR land rig with IR 2550 drawworks and Lee C. Moore free-standing beam-leg mast.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ingersoll-rand-2550-1500hp-rig-107/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750K lbs",
-        "label": "Max Hook Load"
-      },
-      {
-        "value": "16,800 ft",
-        "label": "Drill Depth"
-      },
-      {
-        "value": "3× Cat 3512A",
-        "label": "Gensets"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ju2000e-highlander-400ft-2015",
-    "title": "Highlander (JU-2000E)",
-    "manufacturer": "Highlander",
-    "model": "Highlander (JU-2000E)",
-    "horsepower": 4600,
-    "year": 2015,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "2015 Friede Goldman JU-2000E Jackup — 400ft Water Depth, Jurong-Built",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ju2000e-highlander-400ft-2015/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "400 ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "30,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "2015",
-        "label": "Year Built"
-      },
-      {
-        "value": "137",
-        "label": "Accommodation"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ksm-550-rig-2-2006",
-    "title": "2006 KSM 550 Rig 2",
-    "manufacturer": "KSM",
-    "model": "2006 KSM 550 Rig 2",
-    "horsepower": 550,
-    "year": 2006,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "Freestanding double service rig with full workover package, rated to 4,200 m.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/ksm-550-rig-2-2006/images/hero.png",
-    "key_stats": [
-      {
-        "value": "550",
-        "label": "Horsepower"
-      },
-      {
-        "value": "4,200 m",
-        "label": "Depth Rating"
-      },
-      {
-        "value": "104 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "2006",
-        "label": "Year"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "loadcraft-1000hp-2014",
-    "title": "2014 Loadcraft 1000 HP Land Drilling Rig",
-    "manufacturer": "Loadcraft",
-    "model": "2014 Loadcraft 1000 HP Land Drilling Rig",
-    "horsepower": 1000,
-    "year": 2014,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "Compact 1,000 HP mechanical rig with hydraulic top drive, triple 1,000 HP pump spread, and full BOPs — field-ready, US-based.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/loadcraft-1000hp-2014/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "118 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "250 Ton",
-        "label": "Top Drive"
-      },
-      {
-        "value": "2014",
-        "label": "Year Built"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "loadcraft-1000hp-lci-1000-br",
-    "title": "LOADCRAFT LCI-1000 1000HP Carrier Rig (Brazil)",
-    "manufacturer": "LOADCRAFT",
-    "model": "LOADCRAFT LCI-1000 1000HP Carrier Rig (Brazil)",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "1000HP carrier-mounted drilling rig — mobile platform built for Latin American field operations.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/loadcraft-1000hp-lci-1000-br/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "114 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "250 ton",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "lti-3000hp-ac-2009",
-    "title": "LTI 3000HP AC Land Drilling Rig (2009/Upgraded 2015)",
-    "manufacturer": "LTI",
-    "model": "LTI 3000HP AC Land Drilling Rig (2009/Upgraded 2015)",
-    "horsepower": 3000,
-    "year": 2009,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "LTI 3000HP AC rig — 25,000ft depth-rated with 1.7M lb hook load, upgraded 2015.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/lti-3000hp-ac-2009/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000 HP",
-        "label": "Nominal Input"
-      },
-      {
-        "value": "1,700,000 lb",
-        "label": "Hook Load"
-      },
-      {
-        "value": "25,000 ft",
-        "label": "Depth Rating"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "md-cowan-1000hp-rig-3",
-    "title": "MD Cowan Super Single 1000HP Drilling Rig 3",
-    "manufacturer": "MD",
-    "model": "MD Cowan Super Single 1000HP Drilling Rig 3",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "MD Cowan Super Single AC-SCR-DC — compact 1000HP drilling unit on 15 trailers",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-3/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,000 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "550,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "3× CAT 3512B",
-        "label": "Prime Movers"
-      },
-      {
-        "value": "12,000 ft",
-        "label": "Nominal Depth"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "md-cowan-1000hp-rig-4",
-    "title": "MD Cowan Super Single 1000HP — ORL Rig 4",
-    "manufacturer": "MD",
-    "model": "MD Cowan Super Single 1000HP — ORL Rig 4",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "MD Cowan Super Single — 1000HP AC-SCR-DC Land Drilling Rig",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-4/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "12,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "550,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "15",
-        "label": "Trailers"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "md-cowan-1000hp-rig-5",
-    "title": "MD Cowan Super Single 1000HP — ORL Rig 5",
-    "manufacturer": "MD",
-    "model": "MD Cowan Super Single 1000HP — ORL Rig 5",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "MD Cowan Super Single — 1000HP AC-SCR-DC Land Drilling Rig",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/md-cowan-1000hp-rig-5/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "12,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "550,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "5",
-        "label": "Trailers"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-110u-1500hp-rig-6-2024",
-    "title": "NOV National 110U 1500HP Rig 6",
-    "manufacturer": "NOV",
-    "model": "NOV National 110U 1500HP Rig 6",
-    "horsepower": 1500,
-    "year": 2024,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "High-spec AC walking rig with 23,000 ft setback and full pump package.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-110u-1500hp-rig-6-2024/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1500 HP",
-        "label": "Power Rating"
-      },
-      {
-        "value": "2024",
-        "label": "Last Active"
-      },
-      {
-        "value": "500 T",
-        "label": "AC Top Drive"
-      },
-      {
-        "value": "3",
-        "label": "Mud Pumps"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-110ue-1500hp-rig-1441",
-    "title": "National 110-UE 1500 HP Land Drilling Rig 1441",
-    "manufacturer": "National",
-    "model": "National 110-UE 1500 HP Land Drilling Rig 1441",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "National 110-UE 1500 HP land rig — proven North American workhorse.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-110ue-1500hp-rig-1441/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 1441",
-        "label": "Unit Number"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-110ue-1500hp-rig-1450",
-    "title": "National 110-UE 1500 HP Land Drilling Rig 1450",
-    "manufacturer": "National",
-    "model": "National 110-UE 1500 HP Land Drilling Rig 1450",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "National 110-UE 1500 HP land rig — robust workhorse with proven pedigree.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-110ue-1500hp-rig-1450/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 1450",
-        "label": "Unit Number"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-1625de-3000hp-rig-16",
-    "title": "Rig 16 — NOV 1625DE 3000HP",
-    "manufacturer": "National",
-    "model": "Rig 16 — NOV 1625DE 3000HP",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Rig 16 — NOV National 1625DE 3000HP with Walking System",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-1625de-3000hp-rig-16/images/hero.jpg",
-    "key_stats": [
-      {
-        "value": "3,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-2000hp-1320ue",
-    "title": "National 1320UE 2000HP Drilling Rig",
-    "manufacturer": "National",
-    "model": "National 1320UE 2000HP Drilling Rig",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "National 1320UE 2000HP land rig — detailed specs pending photo-only PDF review.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-2000hp-1320ue/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "34",
-        "label": "Photos Available"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-3000hp-1625m-texas",
-    "title": "National 1625M 3000HP Drilling Rig",
-    "manufacturer": "National",
-    "model": "National 1625M 3000HP Drilling Rig",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "National 1625M 3000HP rig in Texas — SCR-powered deep-well capable unit with DRECO cantilever mast.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-3000hp-1625m-texas/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "3,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "147 ft",
-        "label": "DRECO Cantilever Mast"
-      },
-      {
-        "value": "Texas",
-        "label": "Current Location"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-d1000e-1000hp-rig-15",
-    "title": "National D1000E 1000 HP Land Rig 15",
-    "manufacturer": "National",
-    "model": "National D1000E 1000 HP Land Rig 15",
-    "horsepower": 1000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "1,000 HP National D1000E SCR rig with hydraulic walking system and Warrior top drive — fully equipped and ready to drill.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-d1000e-1000hp-rig-15/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "550K",
-        "label": "Hook Load"
-      },
-      {
-        "value": "142&#x27;",
-        "label": "Derrick Height"
-      },
-      {
-        "value": "250T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "national-oilwell-e2000hp-odessa-1990",
-    "title": "National OilWell E-2000 HP Diesel Electric Drilling Rig (Odessa TX)",
-    "manufacturer": "National",
-    "model": "National OilWell E-2000 HP Diesel Electric Drilling Rig (Odessa TX)",
-    "horsepower": 2000,
-    "year": 1990,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "National OilWell E-2000 HP Diesel Electric — Certified, Odessa TX",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/national-oilwell-e2000hp-odessa-1990/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "1990",
-        "label": "Year"
-      },
-      {
-        "value": "1,300,000#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "30&#x27;",
-        "label": "Floor Height"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "nov-ideal-1500hp-rig-10-2011",
-    "title": "NOV Ideal 1500HP AC Drilling Rig — Rig 10",
-    "manufacturer": "NOV",
-    "model": "NOV Ideal 1500HP AC Drilling Rig — Rig 10",
-    "horsepower": 1500,
-    "year": 2011,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "NOV Ideal 1500HP walking rig commissioned 2011, fully equipped with Canrig top drive and AC-VFD controls.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/nov-ideal-1500hp-rig-10-2011/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500 HP",
-        "label": "Drawworks"
-      },
-      {
-        "value": "750,000#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "75 ft",
-        "label": "Walking"
-      },
-      {
-        "value": "2011",
-        "label": "Commissioned"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "nov-national-110ue-1500hp-rig-2",
-    "title": "NOV National 110-UE 1500 HP Land Rig 2 — Walking System",
-    "manufacturer": "NOV",
-    "model": "NOV National 110-UE 1500 HP Land Rig 2 — Walking System",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "NOV National 110-UE 1500 HP — Q2 2024 Certified, Walking System, $6M",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/nov-national-110ue-1500hp-rig-2/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 2",
-        "label": "Unit ID"
-      },
-      {
-        "value": "$6M",
-        "label": "Asking Price"
-      },
-      {
-        "value": "Q2 2024",
-        "label": "Certified"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "nov-national-110ue-1500hp-rig-7",
-    "title": "NOV National 110-UE 1500 HP Land Rig 7 — Walking System",
-    "manufacturer": "NOV",
-    "model": "NOV National 110-UE 1500 HP Land Rig 7 — Walking System",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "NOV National 110-UE 1500 HP Rig 7 — Walking System, $5M",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/nov-national-110ue-1500hp-rig-7/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 7",
-        "label": "Unit ID"
-      },
-      {
-        "value": "$5M",
-        "label": "Asking Price"
-      },
-      {
-        "value": "Walking",
-        "label": "System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ocean-greatwhite-semisub-9840ft-2016",
-    "title": "Ocean Greatwhite",
-    "manufacturer": "Ocean",
-    "model": "Ocean Greatwhite",
-    "horsepower": 5750,
-    "year": 2016,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "6th-Gen Ultra-Deepwater Harsh Environment Semisubmersible — 9,840ft WD",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ocean-greatwhite-semisub-9840ft-2016/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "9,840 ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "35,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "2016",
-        "label": "Year in Service"
-      },
-      {
-        "value": "180",
-        "label": "Accommodation"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "ocean-onyx-semisub-6000ft-2020",
-    "title": "Ocean Onyx",
-    "manufacturer": "Ocean",
-    "model": "Ocean Onyx",
-    "horsepower": 1000,
-    "year": 2020,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Deepwater Moored Harsh-Environment Semisubmersible — Enhanced Victory Class, Upgraded 2020",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/ocean-onyx-semisub-6000ft-2020/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "6,000 ft",
-        "label": "Water Depth"
-      },
-      {
-        "value": "30,000 ft",
-        "label": "Drilling Depth"
-      },
-      {
-        "value": "2020",
-        "label": "Major Upgrade"
-      },
-      {
-        "value": "140",
-        "label": "Accommodation"
-      }
-    ],
-    "category": "Offshore",
-    "price_status": "POA"
-  },
-  {
-    "slug": "oilwell-2000hp-e2000",
-    "title": "Oilwell E-2000 2000HP Drilling Rig",
-    "manufacturer": "Oilwell",
-    "model": "Oilwell E-2000 2000HP Drilling Rig",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Oilwell E-2000 2000HP land rig — classic American drawworks, specs pending photo review.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/oilwell-2000hp-e2000/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "5",
-        "label": "Photos Available"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "oilwell-760e-1200hp-rig-123",
-    "title": "Oilwell 760-E 1200 HP Land Drilling Rig 123",
-    "manufacturer": "Oilwell",
-    "model": "Oilwell 760-E 1200 HP Land Drilling Rig 123",
-    "horsepower": 1200,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Oilwell 760-E 1200 HP skid-mounted rig with Tesco top drive and twin BOMCO mud pumps.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/oilwell-760e-1200hp-rig-123/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,200",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 123",
-        "label": "Unit Number"
-      },
-      {
-        "value": "500T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "oilwell-840e-1500hp-rig-1428",
-    "title": "Oilwell 840E 1500 HP Land Drilling Rig 1428",
-    "manufacturer": "Oilwell",
-    "model": "Oilwell 840E 1500 HP Land Drilling Rig 1428",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Oilwell 840E 1500 HP land rig — classic iron with broad parts support.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/oilwell-840e-1500hp-rig-1428/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 1428",
-        "label": "Unit Number"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "oime-2000hp-rig-16",
-    "title": "OIME 2000 HP Rig 16",
-    "manufacturer": "OIME",
-    "model": "OIME 2000 HP Rig 16",
-    "horsepower": 2000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "Heavy-duty 2,000 HP AC/SCR land rig with NOV TDS-11 top drive and walking system — 31-page documented package.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/oime-2000hp-rig-16/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Power Rating"
-      },
-      {
-        "value": "150 ft",
-        "label": "DSI Mast Height"
-      },
-      {
-        "value": "3 × 1365 kW",
-        "label": "Generator Sets"
-      },
-      {
-        "value": "7,500 PSI",
-        "label": "Mud System"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "pac-rim-3000hp-rig-90",
-    "title": "Rig 90 — 3000HP AC Ultra",
-    "manufacturer": "Pac Rim",
-    "model": "Rig 90 — 3000HP AC Ultra",
-    "horsepower": 3000,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Rig 90 — 3000HP AC Ultra Pad-Drilling Rig with Gardner Denver PZ-2400 Pumps",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/pac-rim-3000hp-rig-90/images/hero.jpg",
-    "key_stats": [
-      {
-        "value": "3,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "rof-t750-2200hp-rig-602",
-    "title": "Rig 602 — ROF T750",
-    "manufacturer": "ROF",
-    "model": "Rig 602 — ROF T750",
-    "horsepower": 2200,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Rig 602 — ROF T750 2200HP Walking Rig with Cameron Automation Package",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/rof-t750-2200hp-rig-602/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "2,200",
-        "label": "Horsepower"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk1000-trailer-2012",
-    "title": "2012 Service King 1000 HP Trailer-Mounted Drilling Rig",
-    "manufacturer": "Service King",
-    "model": "2012 Service King 1000 HP Trailer-Mounted Drilling Rig",
-    "horsepower": 1000,
-    "year": 2012,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "2012 Service King 1000 HP Trailer-Mounted — Ready to Drill",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/service-king-sk1000-trailer-2012/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "2012",
-        "label": "Year"
-      },
-      {
-        "value": "450K#",
-        "label": "Hook Load"
-      },
-      {
-        "value": "Ready",
-        "label": "Status"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk675hp-workover",
-    "title": "Service King SK-675 Workover Rig",
-    "manufacturer": "Service King",
-    "model": "Service King SK-675 Workover Rig",
-    "horsepower": 675,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "New · $3.6M FOB Houston",
-    "tagline": "New 675 HP Service King mobile workover rig on 6-axle carrier — ready to drill FOB Houston.",
-    "status_badge": "New · $3.6M FOB Houston",
-    "hero_image": "land-drilling-rigs/service-king-sk675hp-workover/images/hero.png",
-    "key_stats": [
-      {
-        "value": "675",
-        "label": "Horsepower"
-      },
-      {
-        "value": "18,000 ft",
-        "label": "Service Depth"
-      },
-      {
-        "value": "300,000 lbs",
-        "label": "Hook Load"
-      },
-      {
-        "value": "$3.6M",
-        "label": "Price"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk775-workover-rig-12",
-    "title": "Service King SK775 Workover/Drilling Rig 12",
-    "manufacturer": "Service King",
-    "model": "Service King SK775 Workover/Drilling Rig 12",
-    "horsepower": 775,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Service King SK775 Workover/Drilling Rig — Unit 12",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/service-king-sk775-workover-rig-12/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "775",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 12",
-        "label": "Unit Number"
-      },
-      {
-        "value": "Workover",
-        "label": "Rig Type"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk775-workover-rig-5",
-    "title": "Service King SK775 Workover/Drilling Rig 5",
-    "manufacturer": "Service King",
-    "model": "Service King SK775 Workover/Drilling Rig 5",
-    "horsepower": 775,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Service King SK775 Workover/Drilling Rig — Unit 5",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/service-king-sk775-workover-rig-5/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "775",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 5",
-        "label": "Unit Number"
-      },
-      {
-        "value": "Workover",
-        "label": "Rig Type"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk775hp-workover",
-    "title": "Service King SK-775HP Workover Rig",
-    "manufacturer": "Service King",
-    "model": "Service King SK-775HP Workover Rig",
-    "horsepower": 775,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "New / For Sale",
-    "tagline": "New mobile workover rig with 112-ft mast and 400,000 lb hook load capacity — priced at $5.9M.",
-    "status_badge": "New / For Sale",
-    "hero_image": "land-drilling-rigs/service-king-sk775hp-workover/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "775 HP",
-        "label": "Engine Rating"
-      },
-      {
-        "value": "112 ft",
-        "label": "Mast Clear Height"
-      },
-      {
-        "value": "18,000 ft",
-        "label": "Service Depth"
-      },
-      {
-        "value": "$5.9M",
-        "label": "Asking Price"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "service-king-sk775hp-workover-new",
-    "title": "New Service King SK-775HP Workover Rig",
-    "manufacturer": "Service King",
-    "model": "New Service King SK-775HP Workover Rig",
-    "horsepower": 775,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "NEW — Available Now",
-    "tagline": "Brand-new 775 HP carrier-mounted workover rig — deep-service capable to 18,000 ft.",
-    "status_badge": "NEW — Available Now",
-    "hero_image": "land-drilling-rigs/service-king-sk775hp-workover-new/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "775 HP",
-        "label": "Power Rating"
-      },
-      {
-        "value": "18,000&#x27;",
-        "label": "Service Depth"
-      },
-      {
-        "value": "400,000#",
-        "label": "Static Hook Load"
-      },
-      {
-        "value": "$5.9M",
-        "label": "Asking Price"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
-  },
-  {
-    "slug": "tds-1500hp-acvfd-rig-19",
-    "title": "TDS 1500 HP AC-VFD Drilling Rig 19",
-    "manufacturer": "TDS",
-    "model": "TDS 1500 HP AC-VFD Drilling Rig 19",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available — POA",
-    "tagline": "TDS 1500 HP AC Variable Frequency Drive land drilling rig — contact Total Drilling Supply for full specifications and availability.",
-    "status_badge": "Available — POA",
-    "hero_image": "land-drilling-rigs/tds-1500hp-acvfd-rig-19/images/hero.png",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 19",
-        "label": "Unit Number"
-      },
-      {
-        "value": "1-3/8\"",
-        "label": "Drill Line"
-      },
-      {
-        "value": "POA",
-        "label": "Price"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
-  },
-  {
-    "slug": "tds-1500hp-f-rig-17",
-    "title": "TDS 1500 HP F Rig 17 – SCR Land Drilling Rig",
-    "manufacturer": "TDS",
-    "model": "TDS 1500 HP F Rig 17 – SCR Land Drilling Rig",
-    "horsepower": 1500,
-    "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Complete 1500 HP SCR land rig with Canrig top drive, triple CAT power and hydraulic walking system.",
-    "status_badge": "Available",
-    "hero_image": "land-drilling-rigs/tds-1500hp-f-rig-17/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,500",
-        "label": "Drawworks HP"
-      },
-      {
-        "value": "142 ft",
-        "label": "Mast Height"
-      },
-      {
-        "value": "500T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "hero_image": "land-drilling-rigs/tds-6g-semisub-2016/images/hero.jpeg",
+    "category": "offshore"
   },
   {
     "slug": "tesco-1000hp-rig-107",
-    "title": "Tesco 1000 HYD – 1000 HP Hydraulic Drilling Rig 107",
-    "manufacturer": "Tesco",
-    "model": "Tesco 1000 HYD – 1000 HP Hydraulic Drilling Rig 107",
+    "title": "Tesco 1000 HYD \u2013 1000 HP Hydraulic Drilling Rig 107",
+    "manufacturer": "",
+    "model": "Tesco 250-HMI-475",
     "horsepower": 1000,
     "year": null,
-    "condition": "Used",
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "Tesco hydraulic 1000 HP double rig with all-Tesco rotating package and 102-ft swing-up mast.",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Tesco hydraulic 1000 HP double rig with all-Tesco rotating package and 102-ft swing-up mast.",
     "hero_image": "land-drilling-rigs/tesco-1000hp-rig-107/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "1,000",
-        "label": "Horsepower"
-      },
-      {
-        "value": "Rig 107",
-        "label": "Unit Number"
-      },
-      {
-        "value": "500T",
-        "label": "Top Drive"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "unknown-2000hp-ac-vfd-2020",
     "title": "2000HP AC/VFD Land Drilling Rig (2020)",
-    "manufacturer": "Unknown",
-    "model": "2000HP AC/VFD Land Drilling Rig (2020)",
+    "manufacturer": "",
+    "model": "",
     "horsepower": 2000,
-    "year": 2020,
-    "condition": "Used",
+    "year": null,
+    "condition": "",
     "location": "",
-    "status": "Available",
-    "tagline": "2000HP AC/VFD-equipped land drilling rig — modern drive technology for deep-well applications.",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "2000HP AC/VFD-equipped land drilling rig \u2014 modern drive technology for deep-well applications.",
     "hero_image": "land-drilling-rigs/unknown-2000hp-ac-vfd-2020/images/hero.png",
-    "key_stats": [
-      {
-        "value": "2,000 HP",
-        "label": "Drawworks Power"
-      },
-      {
-        "value": "53",
-        "label": "Pages of Specs"
-      },
-      {
-        "value": "2020",
-        "label": "Year"
-      }
-    ],
-    "category": "Land Drilling",
-    "price_status": "POA"
+    "category": "land"
   },
   {
     "slug": "zj30-750hp-workover-rig-iraq",
-    "title": "ZJ30 750HP Truck-Mounted Workover Rig — Iraq",
-    "manufacturer": "ZJ",
-    "model": "ZJ30 750HP Truck-Mounted Workover Rig — Iraq",
+    "title": "ZJ30 750HP Truck-Mounted Workover Rig \u2014 Iraq",
+    "manufacturer": "",
+    "model": "Caterpillar C15",
     "horsepower": 750,
     "year": null,
-    "condition": "Used",
-    "location": "",
-    "status": "Available",
-    "tagline": "Compact CAT-powered truck-mounted ZJ30 drilling/workover rig — rated to 3,000m, ready for Iraq operations.",
+    "condition": "",
+    "location": "Iraq",
+    "status": "available",
     "status_badge": "Available",
+    "tagline": "Compact CAT-powered truck-mounted ZJ30 drilling/workover rig \u2014 rated to 3,000m, ready for Iraq operations.",
     "hero_image": "land-drilling-rigs/zj30-750hp-workover-rig-iraq/images/hero.jpeg",
-    "key_stats": [
-      {
-        "value": "750",
-        "label": "HP"
-      },
-      {
-        "value": "3,000m",
-        "label": "Rated Depth"
-      },
-      {
-        "value": "1,800",
-        "label": "kN"
-      },
-      {
-        "value": "Iraq",
-        "label": "Location"
-      }
-    ],
-    "category": "Mobile & Workover",
-    "price_status": "POA"
+    "category": "workover"
   }
 ]
