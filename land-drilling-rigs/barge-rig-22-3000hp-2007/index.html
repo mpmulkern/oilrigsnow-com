@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="TDS Barge Drilling Rig 22 — 3,000 HP posted barge rig constructed 2007, major upgrade 2011. 35,000 ft rated, CanRig 750 top drive, 2,000,000 lb hook load. 250×70×18 ft SEMCO Marine barge. Contact Total Drilling Supply LLC.">
+<title>TDS Barge Rig 22 — 3,000 HP Posted Barge Drilling Rig | Total Drilling Supply LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --navy: #0F2747;
+  --navy-deep: #081A33;
+  --accent: #C9A45C;
+  --accent-warm: #B8472A;
+  --ink: #1A1A1A;
+  --ink-soft: #4A4A4A;
+  --muted: #7A7A7A;
+  --line: #E5E3DC;
+  --bg: #FAFAF7;
+  --card: #FFFFFF;
+  --warn-bg: #FFF6E5;
+  --warn-line: #F0C674;
+  --warn-ink: #8A4A00;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', -apple-system, system-ui, sans-serif;
+  line-height: 1.55;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration: none; }
+
+/* Top Nav */
+.topnav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--navy);
+  color: white;
+  padding: 14px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
+}
+.topnav-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.topnav-brand .logo-mark {
+  width: 28px;
+  height: 28px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.topnav-actions { display: flex; align-items: center; gap: 18px; font-size: 14px; }
+.topnav-actions a.phone { display: flex; align-items: center; gap: 6px; opacity: 0.9; }
+.topnav-actions .cta-btn {
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 9px 18px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.topnav-actions .cta-btn:hover { transform: translateY(-1px); }
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, var(--navy-deep) 0%, var(--navy) 100%);
+  color: white;
+  padding: 80px 32px 60px;
+  position: relative;
+  overflow: hidden;
+}
+.hero-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; }
+@media (max-width: 900px) { .hero-inner { grid-template-columns: 1fr; gap: 40px; } }
+
+.hero-status {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 18px;
+  border: 1px solid rgba(201, 164, 92, 0.4);
+  padding: 6px 14px;
+  border-radius: 20px;
+}
+.hero h1 {
+  font-family: 'Source Serif 4', Georgia, serif;
+  font-weight: 700;
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+.hero .tagline {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 40px;
+  font-weight: 400;
+}
+
+.hero-stats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 32px; max-width: 540px; }
+.hero-stat { border-left: 2px solid var(--accent); padding-left: 16px; }
+.hero-stat .value {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  color: white;
+}
+.hero-stat .label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-top: 6px;
+}
+.hero-stat .sublabel { font-size: 13px; color: rgba(255, 255, 255, 0.6); margin-top: 4px; }
+
+.hero-image {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+  position: relative;
+  aspect-ratio: 4/3;
+  background: rgba(255,255,255,0.05);
+}
+.hero-image img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.hero-image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 24px;
+  background: linear-gradient(transparent, rgba(0,0,0,0.7));
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+/* Section */
+section.content { padding: 90px 32px; }
+.section-inner { max-width: 1200px; margin: 0 auto; }
+.eyebrow {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent-warm);
+  margin-bottom: 14px;
+}
+.section-title {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(30px, 4vw, 44px);
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  margin-bottom: 56px;
+}
+
+/* Highlight callout */
+.highlight-box {
+  background: var(--navy);
+  color: white;
+  border-radius: 8px;
+  padding: 28px 32px;
+  margin-bottom: 56px;
+  border-left: 4px solid var(--accent);
+}
+.highlight-box h3 { font-family: 'Source Serif 4', serif; font-size: 18px; font-weight: 600; color: var(--accent); margin-bottom: 10px; }
+.highlight-box p { font-size: 14px; line-height: 1.7; color: rgba(255,255,255,0.85); }
+
+/* Equipment cards */
+.equip-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.equip-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 32px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.equip-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(15, 39, 71, 0.08); }
+.equip-card .icon { font-size: 30px; margin-bottom: 16px; }
+.equip-card h3 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -0.01em;
+  margin-bottom: 18px;
+  color: var(--ink);
+}
+.equip-card .spec-list { list-style: none; }
+.equip-card .spec-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 9px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+  gap: 12px;
+}
+.equip-card .spec-list li:last-child { border-bottom: none; }
+.equip-card .spec-list .lab { color: var(--muted); font-weight: 500; }
+.equip-card .spec-list .val { color: var(--ink); font-weight: 600; text-align: right; }
+
+/* Capabilities */
+.cap-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+.cap-card {
+  padding: 32px 28px;
+  border-top: 2px solid var(--accent-warm);
+}
+.cap-card .num {
+  font-family: 'Source Serif 4', serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--accent-warm);
+  margin-bottom: 12px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+.cap-card h3 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.005em;
+  margin-bottom: 12px;
+  color: var(--ink);
+}
+.cap-card p { font-size: 14px; color: var(--ink-soft); line-height: 1.6; }
+
+/* Complete Data Table */
+.data-section { background: var(--card); border-radius: 8px; border: 1px solid var(--line); overflow: hidden; }
+.data-section + .data-section { margin-top: 28px; }
+.data-section h4 {
+  background: var(--navy);
+  color: white;
+  padding: 14px 28px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.data-section table { width: 100%; border-collapse: collapse; }
+.data-section td {
+  padding: 14px 28px;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+.data-section tr:last-child td { border-bottom: none; }
+.data-section td:first-child { width: 40%; color: var(--muted); font-weight: 500; }
+.data-section td:last-child { color: var(--ink); font-weight: 500; }
+.data-section tr:nth-child(even) td { background: #FAFAF6; }
+
+/* Description */
+.description {
+  font-family: 'Source Serif 4', serif;
+  font-size: 21px;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  max-width: 760px;
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* CTA */
+.cta {
+  background: linear-gradient(135deg, var(--navy-deep), var(--navy));
+  color: white;
+  padding: 80px 32px;
+  text-align: center;
+}
+.cta-inner { max-width: 760px; margin: 0 auto; }
+.cta h2 {
+  font-family: 'Source Serif 4', serif;
+  font-weight: 700;
+  font-size: clamp(32px, 4vw, 44px);
+  letter-spacing: -0.015em;
+  margin-bottom: 16px;
+}
+.cta p { color: rgba(255,255,255,0.75); font-size: 17px; margin-bottom: 40px; }
+.cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+.cta-buttons a {
+  background: var(--accent);
+  color: var(--navy-deep);
+  padding: 16px 32px;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: transform 0.2s;
+}
+.cta-buttons a.secondary { background: transparent; color: white; border: 1px solid rgba(255,255,255,0.3); }
+.cta-buttons a:hover { transform: translateY(-2px); }
+
+/* Footer */
+footer {
+  background: var(--navy-deep);
+  color: rgba(255,255,255,0.75);
+  padding: 56px 32px 28px;
+  font-size: 14px;
+}
+.footer-inner { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 40px; padding-bottom: 32px; border-bottom: 1px solid rgba(255,255,255,0.1); }
+@media (max-width: 720px) { .footer-inner { grid-template-columns: 1fr; } }
+.footer-inner h5 { color: white; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 16px; }
+.footer-inner ul { list-style: none; }
+.footer-inner ul li { margin-bottom: 8px; font-size: 14px; }
+.footer-copyright { max-width: 1200px; margin: 28px auto 0; text-align: center; font-size: 12px; color: rgba(255,255,255,0.5); }
+.footer-copyright span { display: block; margin-top: 6px; font-style: italic; }
+</style>
+</head>
+<body>
+
+<nav class="topnav">
+  <a href="#" class="topnav-brand">
+    <span class="logo-mark">T</span>
+    Total Drilling Supply LLC
+  </a>
+  <div class="topnav-actions">
+    <a href="tel:+18606082327" class="phone">📞 1-860-608-2327</a>
+    <a href="#contact" class="cta-btn">Request Quote</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-status">Available</div>
+      <h1>TDS Barge Rig 22 — 3,000 HP</h1>
+      <p class="tagline">24-Hour Posted Barge Drilling Rig — 35,000 ft Rated, CanRig 750 Top Drive, SEMCO Marine Design</p>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="value">3,000</div>
+          <div class="label">Horsepower</div>
+          <div class="sublabel">Continental EMSCO C-3</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">35,000 ft</div>
+          <div class="label">Drill Depth</div>
+          <div class="sublabel">Rated</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">2,000,000</div>
+          <div class="label">Hook Load (lbs)</div>
+          <div class="sublabel">SOMAC 152-ft Mast</div>
+        </div>
+        <div class="hero-stat">
+          <div class="value">250×70 ft</div>
+          <div class="label">Barge Dimensions</div>
+          <div class="sublabel">SEMCO Marine / 18 ft depth</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="images/hero.jpeg" alt="TDS Barge Rig 22 — 3,000 HP posted barge drilling rig on waterway" width="1230" height="922">
+      <div class="hero-image-caption">TDS Barge Rig 22 — 3,000 HP Posted Barge Rig, Constructed 2007, Major Upgrade 2011</div>
+    </div>
+  </div>
+</header>
+
+<section class="content" style="padding-bottom: 0;">
+  <div class="section-inner">
+    <p class="description">TDS Barge Drilling Rig 22 is the most capable barge drilling rig in the Gulf of Mexico Transition Zone — a 24-hour posted barge rig constructed in 2007 by SEMCO Marine, rated to 35,000 feet with a 2,000,000-lb hook load. In 2011, Freeport-McMoRan invested more than $20 million in upgrades enabling Rig 22 to drill into the deepest and toughest formations in the area, including a 20K BOP stack capability.</p>
+
+    <div class="highlight-box">
+      <h3>Premium Asset — Deepest-Capable Barge in the GOM/Transition Zone</h3>
+      <p>Rig 22 drilled exclusively for Freeport-McMoRan Oil &amp; Gas (NYSE: FCX) from 2007 through 2016. FCX invested over $20MM in upgrades in 2011 to handle 20,000 PSI BOP stacks — making this rig uniquely positioned for deep-shelf barge drilling in the U.S. Gulf Coast, West Africa, Southeast Asia, and the Middle East. Current asset cost value: approximately $60 million.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Technical Overview</div>
+    <h2 class="section-title">Key Equipment Specifications</h2>
+    <div class="equip-grid">
+
+      <div class="equip-card">
+        <div class="icon">⚙️</div>
+        <h3>Drawworks &amp; Top Drive</h3>
+        <ul class="spec-list">
+          <li><span class="lab">Make/Model</span><span class="val">Continental EMSCO C-3 Type 2</span></li>
+          <li><span class="lab">HP</span><span class="val">3,000 HP</span></li>
+          <li><span class="lab">Motors</span><span class="val">3 × GE 1100 HP High Torque</span></li>
+          <li><span class="lab">Top Drive</span><span class="val">CanRig 750 Ton</span></li>
+          <li><span class="lab">Rotary Table</span><span class="val">49½" Pin Drive, 1000 Ton</span></li>
+          <li><span class="lab">Iron Roughneck</span><span class="val">NOV IR 3080</span></li>
+        </ul>
+      </div>
+
+      <div class="equip-card">
+        <div class="icon">🚢</div>
+        <h3>Barge Hull</h3>
+        <ul class="spec-list">
+          <li><span class="lab">Design</span><span class="val">SEMCO Marine</span></li>
+          <li><span class="lab">Length</span><span class="val">250 ft</span></li>
+          <li><span class="lab">Beam</span><span class="val">70 ft</span></li>
+          <li><span class="lab">Hull Depth</span><span class="val">18 ft</span></li>
+          <li><span class="lab">Draft</span><span class="val">8 ft 0.5 in</span></li>
+          <li><span class="lab">Type</span><span class="val">24-Hr Posted Barge</span></li>
+          <li><span class="lab">Year Built</span><span class="val">2007 (Major Upgrade 2011)</span></li>
+        </ul>
+      </div>
+
+      <div class="equip-card">
+        <div class="icon">💧</div>
+        <h3>Mud Pumps</h3>
+        <ul class="spec-list">
+          <li><span class="lab">Qty</span><span class="val">3</span></li>
+          <li><span class="lab">Make/Model</span><span class="val">LeTourneau W-2215</span></li>
+          <li><span class="lab">HP</span><span class="val">2,200 HP each</span></li>
+          <li><span class="lab">Motors</span><span class="val">GE High Torque 752</span></li>
+          <li><span class="lab">Discharge</span><span class="val">7,500 PSI</span></li>
+        </ul>
+      </div>
+
+      <div class="equip-card">
+        <div class="icon">⚡</div>
+        <h3>Power System</h3>
+        <ul class="spec-list">
+          <li><span class="lab">Engines</span><span class="val">4 × CAT 3516 Electric (3,500 HP)</span></li>
+          <li><span class="lab">Generators</span><span class="val">4 × KATO 2,000 KW</span></li>
+          <li><span class="lab">Cooling</span><span class="val">4 Cooling Towers</span></li>
+          <li><span class="lab">SCR</span><span class="val">6-SCR panels, 5 generator panels</span></li>
+          <li><span class="lab">Standby</span><span class="val">1 × CAT 350 KW E-Gen</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content" style="background: #F5F3ED;">
+  <div class="section-inner">
+    <div class="eyebrow">Capabilities</div>
+    <h2 class="section-title">Key Advantages</h2>
+    <div class="cap-grid">
+
+      <div class="cap-card">
+        <div class="num">01</div>
+        <h3>Deepest-Rated Barge in the Market</h3>
+        <p>SOMAC 152-ft mast with 2,000,000-lb static hook load, 35-ft bottom spread. Rated to 35,000 ft — one of only a handful of barge rigs capable of performing deep-shelf drilling in the Gulf Coast transition zone.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="num">02</div>
+        <h3>20K BOP Stack Capability</h3>
+        <p>Equipped to handle up to 20,000 PSI BOP stacks with an 18¾" 15K BOP in inventory. CanRig 750-ton top drive, NOV IR 3080 iron roughneck, and Access Back Saver air slips rated at 750 tons.</p>
+      </div>
+
+      <div class="cap-card">
+        <div class="num">03</div>
+        <h3>$20MM+ FCX Upgrade Package</h3>
+        <p>Freeport-McMoRan invested over $20 million in upgrades in 2011, enabling Rig 22 to safely drill into the deepest and toughest formations in the GOM/Transition Zone. Current asset replacement cost exceeds $60 million.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="content">
+  <div class="section-inner">
+    <div class="eyebrow">Complete Data</div>
+    <h2 class="section-title">Full Equipment Specifications</h2>
+
+    <div class="data-section">
+      <h4>Barge Hull</h4>
+      <table>
+        <tr><td>Design</td><td>SEMCO Marine</td></tr>
+        <tr><td>Length</td><td>250 ft</td></tr>
+        <tr><td>Beam</td><td>70 ft</td></tr>
+        <tr><td>Hull Depth</td><td>18 ft</td></tr>
+        <tr><td>Draft</td><td>8 ft 0.5 in</td></tr>
+        <tr><td>Type</td><td>24-Hour Posted Barge</td></tr>
+        <tr><td>Year Constructed</td><td>2007</td></tr>
+        <tr><td>Major Upgrade</td><td>2011 ($20MM+ FCX investment)</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Drawworks</h4>
+      <table>
+        <tr><td>Make/Model</td><td>Continental EMSCO C-3 Type 2</td></tr>
+        <tr><td>HP</td><td>3,000 HP</td></tr>
+        <tr><td>Motors</td><td>3 × GE 1100 HP High Torque</td></tr>
+        <tr><td>Gear Box</td><td>2 Speed, 1-752 GE Electric Motor</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Mast &amp; Rotary</h4>
+      <table>
+        <tr><td>Mast</td><td>SOMAC 152 ft</td></tr>
+        <tr><td>Hook Load</td><td>2,000,000 lbs static</td></tr>
+        <tr><td>Bottom Spread</td><td>35 ft</td></tr>
+        <tr><td>Rotary Table</td><td>49½" Pin Drive, 1,000 Ton</td></tr>
+        <tr><td>Rotary Drive</td><td>2-Speed Gear Box, 1-752 GE Electric</td></tr>
+        <tr><td>Iron Roughneck</td><td>NOV IR 3080</td></tr>
+        <tr><td>Air Slips</td><td>Access Back Saver, Offset for Top Drive, 750 Ton</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Top Drive &amp; BOP</h4>
+      <table>
+        <tr><td>Top Drive</td><td>CanRig 750 Ton</td></tr>
+        <tr><td>Tubular Handling</td><td>NOV IR 3080 Iron Roughneck</td></tr>
+        <tr><td>BOP Capability</td><td>Up to 20,000 PSI BOP stack</td></tr>
+        <tr><td>BOP in Inventory</td><td>18¾" 15K BOP stack</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Mud Pumps</h4>
+      <table>
+        <tr><td>Qty</td><td>3</td></tr>
+        <tr><td>Make/Model</td><td>LeTourneau W-2215</td></tr>
+        <tr><td>HP</td><td>2,200 HP each</td></tr>
+        <tr><td>Motors</td><td>GE High Torque 752</td></tr>
+        <tr><td>Discharge Pressure</td><td>7,500 PSI</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Power &amp; Cranes</h4>
+      <table>
+        <tr><td>Engines</td><td>4 × CAT 3516 Electric Fuel Efficient (3,500 HP)</td></tr>
+        <tr><td>Generators</td><td>4 × KATO 2,000 KW</td></tr>
+        <tr><td>Cooling</td><td>4 Cooling Towers</td></tr>
+        <tr><td>SCR System</td><td>6-SCR panels, 5 generator panels (1 spare, cooling inside SCR house by 20T AC)</td></tr>
+        <tr><td>Standby Generator</td><td>1 × CAT 350 KW E-Gen</td></tr>
+        <tr><td>Drill Floor Crane</td><td>1-30 TON SEATRAX GANTRY TYPE</td></tr>
+        <tr><td>Pipe Rack Crane</td><td>1-30 TON OIL STATE MOD. 60B33A-70</td></tr>
+      </table>
+    </div>
+
+    <div class="data-section">
+      <h4>Notable History</h4>
+      <table>
+        <tr><td>Primary Operator (2007–2016)</td><td>Freeport-McMoRan Oil &amp; Gas (NYSE: FCX)</td></tr>
+        <tr><td>FCX Upgrade Investment (2011)</td><td>$20,000,000+</td></tr>
+        <tr><td>Original Build Cost (2007)</td><td>$30,500,000</td></tr>
+        <tr><td>Current Asset Value</td><td>~$60,090,161</td></tr>
+        <tr><td>Key Markets</td><td>USA Gulf Coast, Nigeria, Ghana, Indonesia, Kuwait, Kazakhstan</td></tr>
+      </table>
+    </div>
+
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="cta-inner">
+    <h2>Interested in This Rig?</h2>
+    <p>Contact Total Drilling Supply LLC for pricing and to arrange inspection.</p>
+    <div class="cta-buttons">
+      <a href="tel:+18606082327">📞 1-860-608-2327</a>
+      <a href="mailto:bob@2tds.com" class="secondary">✉ bob@2tds.com</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h5>Total Drilling Supply LLC</h5>
+      <p>Your trusted source for new and used drilling rigs and equipment. Serving the global oil and gas industry with quality assets from leading manufacturers.</p>
+    </div>
+    <div>
+      <h5>Contact</h5>
+      <ul>
+        <li>1-860-608-2327</li>
+        <li>Bob@2tds.com</li>
+        <li>Bob Neundorf, Chairman</li>
+      </ul>
+    </div>
+    <div>
+      <h5>This Rig</h5>
+      <ul>
+        <li>TDS Barge Rig 22</li>
+        <li>3,000 HP</li>
+        <li>Posted Barge</li>
+        <li>Available</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    © 2026 Total Drilling Supply LLC. All rights reserved.
+    <span>Specifications subject to change. Contact for current availability.</span>
+  </div>
+</footer>
+
+</body>
+</html>
