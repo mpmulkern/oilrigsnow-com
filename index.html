@@ -596,6 +596,100 @@
       gap: 1.5rem;
     }
 
+    /* =============================================
+       Equipment Photo Tiles
+       ============================================= */
+    .equip-photo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+
+    .equip-tile {
+      position: relative;
+      display: block;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      background: var(--navy-deep);
+      border: 1px solid var(--border);
+      text-decoration: none;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .equip-tile:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.5);
+      border-color: rgba(201,164,92,0.4);
+    }
+
+    .equip-tile:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .equip-tile__img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.5s ease, filter 0.3s ease;
+      filter: brightness(0.75);
+    }
+
+    .equip-tile:hover .equip-tile__img {
+      transform: scale(1.06);
+      filter: brightness(0.6);
+    }
+
+    .equip-tile__overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(8,26,51,0.92) 0%, rgba(8,26,51,0.3) 55%, transparent 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 1.25rem 1.125rem 1rem;
+      pointer-events: none;
+    }
+
+    .equip-tile__label {
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.2;
+      margin-bottom: 0.25rem;
+    }
+
+    .equip-tile__cta {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      transition: gap 0.2s ease;
+    }
+
+    .equip-tile:hover .equip-tile__cta {
+      gap: 0.6rem;
+    }
+
+    @media (max-width: 64rem) {
+      .equip-photo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 40rem) {
+      .equip-photo-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
     /* Rig Card */
     .rig-card {
       background: var(--surface-light);
@@ -1566,16 +1660,58 @@
           </a>
         </div>
 
-        <!-- Dynamic featured rigs — loaded from rigs.json -->
-        <div class="rigs-grid" id="featured-rigs-grid" role="list" aria-label="Featured drilling rigs" aria-live="polite">
-          <!-- Skeleton cards while loading -->
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-          <div class="rig-card rig-card--skeleton" aria-hidden="true"><div class="rig-card-image rig-card-image--skel"></div><div class="rig-card-body"><div class="skel-line skel-line--title"></div><div class="skel-line skel-line--sub"></div></div></div>
-        </div><!-- /#featured-rigs-grid -->
+        <!-- Equipment category photo tiles -->
+        <div class="equip-photo-grid">
+
+          <a href="/land-drilling-rigs/" class="equip-tile" aria-label="Browse land drilling rigs for sale">
+            <img class="equip-tile__img" src="/images/land-drilling/homepage-hero-land-drilling-rig.jpg" alt="Land drilling rig" loading="eager" width="800" height="600">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">Land Drilling Rigs</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+          <a href="/mobile-workover-rigs/" class="equip-tile" aria-label="Browse mobile and workover rigs for sale">
+            <img class="equip-tile__img" src="/images/mobile-workover/cabot-750-mobile-drilling-rig-banner.png" alt="Mobile workover rig" loading="lazy" width="800" height="600">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">Mobile &amp; Workover Rigs</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+          <a href="/offshore-rigs/" class="equip-tile" aria-label="Browse offshore jackup and semi-submersible rigs for sale">
+            <img class="equip-tile__img" src="/images/offshore/cp-300-300ft-jackup-rig-photo.jpg" alt="Offshore jackup rig" loading="lazy" width="800" height="600">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">Offshore &amp; Jackup Rigs</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+          <a href="/offshore-rigs/" class="equip-tile" aria-label="Browse inland barge drilling rigs for sale">
+            <img class="equip-tile__img" src="/images/offshore/inland-barge-drilling-rig.png" alt="Inland barge drilling rig" loading="lazy" width="800" height="600">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">Barge Rigs</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+          <a href="/oilfield-equipment/" class="equip-tile" aria-label="Browse top drives and oilfield equipment for sale">
+            <img class="equip-tile__img" src="/images/oilfield-equipment/home-nav-tile-top-drive-tds11sa.png" alt="Top drive TDS-11SA" loading="lazy" width="800" height="600">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">Top Drives</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+          <a href="/oilfield-equipment/" class="equip-tile" aria-label="Browse BOPs and well control equipment for sale">
+            <img class="equip-tile__img" src="/images/oilfield-equipment/bop-photo.jpg" alt="Blowout preventer BOP" loading="lazy" width="800" height="533">
+            <div class="equip-tile__overlay">
+              <div class="equip-tile__label">BOPs &amp; Well Control</div>
+              <div class="equip-tile__cta">Browse Inventory &rarr;</div>
+            </div>
+          </a>
+
+        </div><!-- /.equip-photo-grid -->
       </div>
     </section>
 
@@ -2012,7 +2148,7 @@
   </script>
 
 <script>
-      // ── Dynamic Featured Rigs ────────────────────────────────────────────
+      // ── Dynamic Featured Rigs (disabled — replaced with static photo tiles) ──
       (function() {
         var grid = document.getElementById('featured-rigs-grid');
         if (!grid) return;
