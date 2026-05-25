@@ -1783,5 +1783,35 @@
     "tagline": "Compact CAT-powered truck-mounted ZJ30 drilling/workover rig \u2014 rated to 3,000m, ready for Iraq operations.",
     "hero_image": "land-drilling-rigs/zj30-750hp-workover-rig-iraq/images/hero.jpeg",
     "category": "workover"
+  },
+  {
+    "slug": "barge-rig-21-3000hp-2005",
+    "title": "TDS Barge Rig 21 \u2014 3,000 HP Inland Barge Drilling Rig",
+    "manufacturer": "Continental EMSCO",
+    "model": "C-3 Type 2",
+    "horsepower": 3000,
+    "year": 2005,
+    "condition": "Used",
+    "location": "Gulf Coast, USA",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "24-Hr Inland Bay Barge \u2014 30,000 ft Rated, Canrig 750 Top Drive, 2,000,000 lb Hook Load",
+    "hero_image": "land-drilling-rigs/barge-rig-21-3000hp-2005/images/hero.jpeg",
+    "category": "barge"
+  },
+  {
+    "slug": "barge-rig-22-3000hp-2007",
+    "title": "TDS Barge Rig 22 \u2014 3,000 HP Posted Barge Drilling Rig",
+    "manufacturer": "Continental EMSCO",
+    "model": "C-3 Type 2 / SEMCO Marine",
+    "horsepower": 3000,
+    "year": 2007,
+    "condition": "Used",
+    "location": "Gulf Coast, USA",
+    "status": "available",
+    "status_badge": "Available",
+    "tagline": "35,000 ft Rated Posted Barge \u2014 CanRig 750 Top Drive, 20K BOP Capable, $20MM+ FCX Upgrade",
+    "hero_image": "land-drilling-rigs/barge-rig-22-3000hp-2007/images/hero.jpeg",
+    "category": "barge"
   }
 ]
