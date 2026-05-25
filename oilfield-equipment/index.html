@@ -169,57 +169,6 @@
     }
 
     /* =============================================
-       LANGUAGE BAR
-    ============================================= */
-    .lang-bar {
-      background: var(--navy-deep);
-      border-bottom: 1px solid var(--border);
-      padding: 0.375rem 1rem;
-    }
-
-    .lang-bar__inner {
-      max-width: 90rem;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      gap: 0.625rem;
-      flex-wrap: wrap;
-    }
-
-    .lang-bar__label {
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      margin-right: 0.25rem;
-    }
-
-    .lang-bar__btn {
-      font-size: 0.75rem;
-      font-weight: 500;
-      color: var(--text-muted);
-      padding: 0.125rem 0.5rem;
-      border-radius: 0.25rem;
-      border: 1px solid transparent;
-      background: transparent;
-      transition: color var(--transition), border-color var(--transition), background var(--transition);
-      line-height: 1.5;
-    }
-
-    .lang-bar__btn:hover {
-      color: var(--accent);
-      border-color: var(--border);
-    }
-
-    .lang-bar__btn.active,
-    .lang-bar__btn[aria-current="true"] {
-      color: var(--accent);
-      border-color: rgba(201, 164, 92, 0.4);
-      background: rgba(201, 164, 92, 0.08);
-    }
-
-    /* =============================================
        NAVIGATION
     ============================================= */
     .site-header {
@@ -1409,20 +1358,6 @@
   <!-- Skip to content -->
   <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- ===== LANGUAGE BAR ===== -->
-  <div class="lang-bar" role="navigation" aria-label="Language selection">
-    <div class="lang-bar__inner">
-      <span class="lang-bar__label" aria-hidden="true">Translate</span>
-      <button class="lang-bar__btn active" aria-current="true" data-lang="en" aria-label="English &mdash; currently selected">English</button>
-      <button class="lang-bar__btn" data-lang="es" aria-label="Espa&ntilde;ol">Espa&ntilde;ol</button>
-      <button class="lang-bar__btn" data-lang="fr" aria-label="Fran&ccedil;ais">Fran&ccedil;ais</button>
-      <button class="lang-bar__btn" data-lang="ar" aria-label="&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;" dir="rtl">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</button>
-      <button class="lang-bar__btn" data-lang="pt" aria-label="Portugu&ecirc;s">Portugu&ecirc;s</button>
-      <button class="lang-bar__btn" data-lang="ru" aria-label="&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;">&#x420;&#x443;&#x441;&#x441;&#x43A;&#x438;&#x439;</button>
-      <button class="lang-bar__btn" data-lang="zh" aria-label="&#x4E2D;&#x6587;">&#x4E2D;&#x6587;</button>
-    </div>
-  </div>
-
   <!-- ===== NAVIGATION ===== -->
   <header class="site-header" role="banner">
     <nav class="nav-inner" aria-label="Main navigation">
@@ -1729,20 +1664,6 @@
     (function () {
       'use strict';
 
-      // ---- Language bar ----
-      var langBtns = document.querySelectorAll('.lang-bar__btn');
-      langBtns.forEach(function (btn) {
-        btn.addEventListener('click', function () {
-          langBtns.forEach(function (b) {
-            b.classList.remove('active');
-            b.removeAttribute('aria-current');
-          });
-          btn.classList.add('active');
-          btn.setAttribute('aria-current', 'true');
-          document.documentElement.setAttribute('data-lang', btn.getAttribute('data-lang'));
-        });
-      });
-
       // ---- Hamburger / mobile nav ----
       var hamburger = document.getElementById('hamburger-btn');
       var mobileNav = document.getElementById('mobile-nav');
@@ -1863,6 +1784,5 @@
 
 
 
-  <script src="/i18n/translations.js"></script>
 </body>
 </html>
