@@ -61,15 +61,6 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 .footer-bottom p{font-size:12px;color:var(--text-muted);}
 @media(max-width:768px){.site-header{padding:0 20px;}.header-nav{display:none;}.page-header{padding:40px 20px 32px;}.legal-body{padding:32px 20px 60px;}.site-footer{padding:40px 20px 24px;}.footer-grid{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;align-items:flex-start;}.cookie-table{display:block;overflow-x:auto;}}
 
-    .lang-bar{background:var(--navy-deep);border-bottom:1px solid rgba(201,164,92,0.1);padding:0 40px;}
-    .lang-bar__inner{max-width:900px;margin:0 auto;display:flex;align-items:center;gap:4px;height:34px;overflow-x:auto;scrollbar-width:none;}
-    .lang-bar__inner::-webkit-scrollbar{display:none;}
-    .lang-bar__label{font-size:10px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted);margin-right:8px;white-space:nowrap;flex-shrink:0;}
-    .lang-bar__btn{background:none;border:none;color:var(--text-muted);font-size:12px;font-family:inherit;font-weight:500;padding:3px 9px;border-radius:4px;cursor:pointer;white-space:nowrap;flex-shrink:0;transition:color .15s,background .15s;}
-    .lang-bar__btn:hover{color:var(--text);background:rgba(255,255,255,.05);}
-    .lang-bar__btn.active{color:var(--accent);font-weight:600;background:rgba(201,164,92,.08);}
-    .lang-bar__btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px;border-radius:3px;}
-    @media(max-width:768px){.lang-bar{padding:0 20px;}}
 </style>
   <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
@@ -81,18 +72,6 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
   </script>
 </head>
 <body>
-  <div class="lang-bar" role="navigation" aria-label="Language selection">
-    <div class="lang-bar__inner">
-      <span class="lang-bar__label" aria-hidden="true">Translate</span>
-      <button class="lang-bar__btn active" aria-current="true" data-lang="en" aria-label="English — currently selected">English</button>
-      <button class="lang-bar__btn" data-lang="es" aria-label="Español">Español</button>
-      <button class="lang-bar__btn" data-lang="fr" aria-label="Français">Français</button>
-      <button class="lang-bar__btn" data-lang="ar" aria-label="العربية" dir="rtl">العربية</button>
-      <button class="lang-bar__btn" data-lang="pt" aria-label="Português">Português</button>
-      <button class="lang-bar__btn" data-lang="ru" aria-label="Русский">Русский</button>
-      <button class="lang-bar__btn" data-lang="zh" aria-label="中文">中文</button>
-    </div>
-  </div>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header" role="banner">
   <a href="/" class="logo" aria-label="Oil Rigs Now — Home"><img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;"></a>
@@ -158,13 +137,6 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
           <td>Analytics</td>
           <td>Throttles request rate to limit data collection on high-traffic sites.</td>
           <td>1 minute</td>
-        </tr>
-        <tr>
-          <td><code>orn_lang</code></td>
-          <td>Oil Rigs Now</td>
-          <td>Functional</td>
-          <td>Stores your language preference so the site displays in your chosen language on return visits.</td>
-          <td>1 year</td>
         </tr>
         <tr>
           <td><code>orn_consent</code></td>
@@ -268,22 +240,5 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
     </div>
   </div>
 </footer>
-<script>
-  (function(){
-    var saved=localStorage.getItem('orn_lang')||'en';
-    var btns=document.querySelectorAll('.lang-bar__btn');
-    btns.forEach(function(btn){
-      if(btn.dataset.lang===saved){btn.classList.add('active');btn.setAttribute('aria-current','true');document.documentElement.setAttribute('data-lang',saved);}
-      btn.addEventListener('click',function(){
-        btns.forEach(function(b){b.classList.remove('active');b.removeAttribute('aria-current');});
-        btn.classList.add('active');btn.setAttribute('aria-current','true');
-        document.documentElement.setAttribute('data-lang',btn.dataset.lang);
-        localStorage.setItem('orn_lang',btn.dataset.lang);
-      });
-    });
-  })();
-</script>
-
-  <script src="/i18n/translations.js"></script>
 </body>
 </html>
