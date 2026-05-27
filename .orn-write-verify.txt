@@ -1,3 +1,0 @@
-ORN GitHub Committer write-scope verification.
-Run: 2026-05-25 (retry after PAT verification)
-This file is deleted in the immediately following commit.
