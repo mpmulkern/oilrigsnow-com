@@ -21,14 +21,148 @@ import json
 import shutil
 from pathlib import Path
 
+# ── SEO constants ────────────────────────────────────────────────────────────
+SITE_BASE_URL = "https://tds-worldwide.oilrigsnow.com"
+
+CATEGORY_PATH_MAP = {
+    "land drilling": "land-drilling-rigs",
+    "land rig":      "land-drilling-rigs",
+    "offshore":      "offshore-rigs",
+    "marine":        "offshore-rigs",
+    "workover":      "mobile-workover-rigs",
+    "well service":  "mobile-workover-rigs",
+    "mobile":        "mobile-workover-rigs",
+}
+
+
+def get_category_path(record):
+    """Map record category string → URL folder name."""
+    cat = record.get("category", "").lower()
+    for key, path in CATEGORY_PATH_MAP.items():
+        if key in cat:
+            return path
+    return "equipment"
+
+
+def render_seo_extras(record, slug, category_path, base_url):
+    """
+    Return (seo_extras_html, meta_description, page_title).
+
+    seo_extras_html contains:
+      - <link rel="canonical">
+      - OpenGraph meta tags
+      - Product JSON-LD (schema.org)
+      - BreadcrumbList JSON-LD
+    """
+    name        = record["name"]
+    hp          = record.get("horsepower", "")
+    condition   = record.get("condition", "Used")
+    location    = record.get("location", "")
+    tagline     = record.get("tagline", "")
+    description = record.get("description", tagline)
+
+    page_url  = f"{base_url}/{category_path}/{slug}/"
+    cat_url   = f"{base_url}/{category_path}/"
+    cat_label = category_path.replace("-", " ").title()
+
+    hero_ext  = Path(record["hero_image"]).suffix.lower().lstrip(".")
+    hero_url  = f"{page_url}images/hero.{hero_ext}"
+
+    # Page title (≤60 chars preferred)
+    page_title = f"{name} for Sale | Oil Rigs Now"
+
+    # Meta description (≤160 chars)
+    meta_desc_raw = (
+        f"{name} for sale. {tagline}. "
+        f"Contact Oil Rigs Now / TDS: info@oilrigsnow.com · +1-713-565-0747."
+    )
+    meta_description = meta_desc_raw if len(meta_desc_raw) <= 160 else meta_desc_raw[:157] + "..."
+
+    # ── Product schema ───────────────────────────────────────────────────────
+    additional_props = []
+    if hp:
+        additional_props.append({"@type": "PropertyValue", "name": "Horsepower", "value": str(hp)})
+    # Detect drive type from rig name
+    name_lower = name.lower()
+    if "scr" in name_lower:
+        drive = "SCR"
+    elif "ac/vfd" in name_lower or " ac " in name_lower or "ac-" in name_lower:
+        drive = "AC/VFD"
+    elif " dc " in name_lower:
+        drive = "DC"
+    else:
+        drive = ""
+    if drive:
+        additional_props.append({"@type": "PropertyValue", "name": "Drive Type", "value": drive})
+    if condition:
+        additional_props.append({"@type": "PropertyValue", "name": "Condition", "value": condition})
+    if location:
+        additional_props.append({"@type": "PropertyValue", "name": "Location", "value": location})
+
+    product_schema = {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": name,
+        "description": (description or tagline)[:500],
+        "category": cat_label,
+        "url": page_url,
+        "image": hero_url,
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+                "@type": "Organization",
+                "name": "Total Drilling Supply LLC / Oil Rigs Now",
+                "url": base_url,
+            },
+            "priceCurrency": "USD",
+        },
+    }
+    if additional_props:
+        product_schema["additionalProperty"] = additional_props
+
+    # ── BreadcrumbList schema ────────────────────────────────────────────────
+    breadcrumb_schema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Oil Rigs Now", "item": base_url + "/"},
+            {"@type": "ListItem", "position": 2, "name": cat_label,      "item": cat_url},
+            {"@type": "ListItem", "position": 3, "name": name,           "item": page_url},
+        ],
+    }
+
+    product_ld    = json.dumps(product_schema,    indent=2, ensure_ascii=False)
+    breadcrumb_ld = json.dumps(breadcrumb_schema, indent=2, ensure_ascii=False)
+
+    og_title = html.escape(page_title)
+    og_desc  = html.escape(meta_description)
+
+    seo_extras = f"""<link rel="canonical" href="{page_url}">
+<meta property="og:type"        content="product">
+<meta property="og:title"       content="{og_title}">
+<meta property="og:description" content="{og_desc}">
+<meta property="og:url"         content="{page_url}">
+<meta property="og:image"       content="{hero_url}">
+<meta property="og:site_name"   content="Oil Rigs Now">
+<script type="application/ld+json">
+{product_ld}
+</script>
+<script type="application/ld+json">
+{breadcrumb_ld}
+</script>"""
+
+    return seo_extras, meta_description, page_title
+
 
 HTML_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="{name} — {tagline}. Total Drilling Supply LLC.">
-<title>{name} | Total Drilling Supply LLC</title>
+<meta name="description" content="{meta_description}">
+<title>{page_title}</title>
+{seo_extras}
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
@@ -409,7 +543,7 @@ footer {{
       </div>
     </div>
     <div class="hero-image">
-      <img src="{hero_image}" alt="{name}">
+      <img src="{hero_image}" alt="{name} for sale — Oil Rigs Now">
       <div class="hero-image-caption">{hero_caption}</div>
     </div>
   </div>
@@ -587,7 +721,9 @@ def render_warning(record):
     return ""
 
 
-def build_page(record_path: Path, output_root: Path):
+def build_page(record_path: Path, output_root: Path,
+               site_url: str = SITE_BASE_URL,
+               category_path_override: str = ""):
     record = json.loads(record_path.read_text())
     src_dir = record_path.parent
 
@@ -614,8 +750,14 @@ def build_page(record_path: Path, output_root: Path):
         shutil.copy(src, img_out / dest_name)
         gallery_web.append({"file": f"images/{dest_name}", "caption": g.get("caption", "")})
 
-    # Hero caption (use status badge as a fallback)
+    # Hero caption
     hero_caption = record.get("tagline", record["name"])
+
+    # SEO extras
+    cat_path = category_path_override or get_category_path(record)
+    seo_extras, meta_description, page_title = render_seo_extras(
+        record, slug, cat_path, site_url
+    )
 
     html_out = HTML_TEMPLATE.format(
         name=html.escape(record["name"]),
@@ -633,6 +775,10 @@ def build_page(record_path: Path, output_root: Path):
         horsepower=record["horsepower"],
         condition=html.escape(record.get("condition", "")),
         location=html.escape(record.get("location", "")),
+        # SEO additions
+        page_title=html.escape(page_title),
+        meta_description=html.escape(meta_description),
+        seo_extras=seo_extras,
     )
 
     (out_dir / "index.html").write_text(html_out, encoding="utf-8")
@@ -641,10 +787,21 @@ def build_page(record_path: Path, output_root: Path):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--record", required=True)
-    ap.add_argument("--out", required=True)
+    ap.add_argument("--record",        required=True,
+                    help="Path to equipment_record.json")
+    ap.add_argument("--out",           required=True,
+                    help="Output root directory")
+    ap.add_argument("--site-url",      default=SITE_BASE_URL,
+                    help="Base URL for canonical/schema (default: tds-worldwide.oilrigsnow.com)")
+    ap.add_argument("--category-path", default="",
+                    help="URL folder name, e.g. land-drilling-rigs (auto-detected if omitted)")
     args = ap.parse_args()
-    out = build_page(Path(args.record), Path(args.out))
+    out = build_page(
+        Path(args.record),
+        Path(args.out),
+        site_url=args.site_url,
+        category_path_override=args.category_path,
+    )
     print(f"✓ Built page: {out}")
 
 
