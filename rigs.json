@@ -39,7 +39,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "Texas",
     "directory": "land-drilling-rigs"
@@ -489,7 +489,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -729,7 +729,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -744,7 +744,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -789,7 +789,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -1149,7 +1149,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "Texas",
     "directory": "land-drilling-rigs"
@@ -1164,7 +1164,7 @@
     "rig_type": "Land Rig",
     "status": "For Sale",
     "status_badge": "For Sale",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "Dubai",
     "directory": "land-drilling-rigs"
@@ -1269,7 +1269,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -1479,7 +1479,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
@@ -1704,7 +1704,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
