@@ -555,36 +555,6 @@
     "directory": "land-drilling-rigs"
   },
   {
-    "slug": "drillmec-2000hp-rig-65",
-    "title": "Drillmec 2000HP Rig 65",
-    "tagline": "High-torque AC/VFD triple with Tesco 500T top drive and five-gen power package",
-    "horsepower": 2000,
-    "year": 2000,
-    "manufacturer": "Drillmec",
-    "rig_type": "Land Rig",
-    "status": "Available",
-    "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
-    "condition": "Used",
-    "location": null,
-    "directory": "land-drilling-rigs"
-  },
-  {
-    "slug": "drillmec-2000hp-rig-66",
-    "title": "Drillmec 2000 HP Land Rig 66",
-    "tagline": "Full-spec 2,000 HP Drillmec triple with Tesco top drive, VFD power, and complete camp",
-    "horsepower": 2000,
-    "year": 2000,
-    "manufacturer": "Drillmec",
-    "rig_type": "Land Rig",
-    "status": "Available",
-    "status_badge": "Available",
-    "hero_image": "images/hero.png",
-    "condition": "Used",
-    "location": null,
-    "directory": "land-drilling-rigs"
-  },
-  {
     "slug": "drillmec-2000hp-t-412-2008",
     "title": "T-412 2000 HP Electrical DC Heli-Portable Drilling Rig",
     "tagline": "Heli-portable 2000 HP DC drilling rig built for remote access, featuring a Varco top drive, National 1320-UE drawworks, ",
@@ -996,13 +966,14 @@
     "horsepower": 2200,
     "year": 2015,
     "manufacturer": null,
-    "rig_type": "Land Rig",
+    "rig_type": "Jack-Up Rig",
     "status": "Available",
     "status_badge": "Available",
     "hero_image": "images/hero.jpeg",
     "condition": "Used",
     "location": null,
-    "directory": "land-drilling-rigs"
+    "directory": "offshore-rigs",
+    "category": "offshore"
   },
   {
     "slug": "ksm-550-rig-2-2006",
