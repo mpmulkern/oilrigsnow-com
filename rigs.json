@@ -519,7 +519,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": "USA",
     "directory": "land-drilling-rigs"
@@ -804,7 +804,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "Kuwait",
     "directory": "land-drilling-rigs"
@@ -819,7 +819,7 @@
     "rig_type": "Land Rig",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "Kuwait",
     "directory": "land-drilling-rigs"
