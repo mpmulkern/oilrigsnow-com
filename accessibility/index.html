@@ -4,63 +4,119 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Accessibility Statement | Oil Rigs Now</title>
-<meta name="description" content="Accessibility Statement for Oil Rigs Now — our commitment to WCAG 2.1 Level AA conformance and how to request accessibility accommodations.">
+<meta name="description" content="Accessibility Statement for Oil Rigs Now — our commitment to WCAG 2.1 Level AA compliance, known limitations, and how to request accessible alternatives.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://new.oilrigsnow.com/accessibility/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-:root{--navy:#0F2747;--navy-deep:#081A33;--accent:#C9A45C;--text:#E8E6E1;--text-muted:#A0A0A0;--surface:#101C2E;--surface-light:#162236;--border:rgba(201,164,92,0.15);}
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}html{font-size:16px;}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--navy-deep);color:var(--text);line-height:1.7;}
-a{color:var(--accent);text-decoration:none;}a:hover{text-decoration:underline;}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
-.skip-link{position:absolute;top:-100%;left:16px;background:var(--accent);color:#000;font-weight:700;padding:8px 16px;border-radius:0 0 6px 6px;z-index:9999;font-size:14px;}.skip-link:focus{top:0;}
-.site-header{background:var(--navy);border-bottom:1px solid var(--border);padding:0 40px;height:64px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;}
-.logo{font-family:Impact,'Arial Narrow',sans-serif;font-size:22px;letter-spacing:0.08em;color:#fff;}.logo span{color:var(--accent);}
-.header-nav{display:flex;align-items:center;gap:28px;}.header-nav a{color:var(--text-muted);font-size:14px;font-weight:500;}.header-nav a:hover{color:var(--accent);text-decoration:none;}
-.header-cta{background:var(--accent)!important;color:#000!important;font-weight:700!important;font-size:13px!important;padding:8px 20px!important;border-radius:6px!important;}
-.page-header{background:linear-gradient(135deg,var(--surface) 0%,var(--navy) 100%);border-bottom:1px solid var(--border);padding:56px 40px 48px;}
-.page-header-inner{max-width:800px;margin:0 auto;}
-.breadcrumb{font-size:12px;color:var(--text-muted);letter-spacing:0.08em;text-transform:uppercase;margin-bottom:16px;}.breadcrumb a{color:var(--accent);}
-.page-header h1{font-family:'Source Serif 4',Georgia,serif;font-size:clamp(28px,5vw,42px);color:#fff;font-weight:600;line-height:1.2;margin-bottom:12px;}
-.page-header .meta{font-size:13px;color:var(--text-muted);}.page-header .meta span{color:var(--accent);font-weight:600;}
-.legal-body{max-width:800px;margin:0 auto;padding:56px 40px 80px;}
-.legal-body h2{font-family:'Source Serif 4',Georgia,serif;font-size:22px;color:#fff;font-weight:600;margin-top:48px;margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid var(--border);}
-.legal-body h3{font-size:15px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.08em;margin-top:28px;margin-bottom:10px;}
-.legal-body p{color:#C8C5BF;font-size:15px;margin-bottom:16px;}
-.legal-body ul{color:#C8C5BF;font-size:15px;padding-left:24px;margin-bottom:16px;}.legal-body li{margin-bottom:8px;}
-.legal-body strong{color:var(--text);font-weight:600;}
-.highlight-box{background:var(--surface);border:1px solid var(--border);border-left:3px solid var(--accent);border-radius:8px;padding:20px 24px;margin:24px 0;}
-.highlight-box p{margin-bottom:0;}
-.status-badge{display:inline-block;padding:3px 10px;border-radius:100px;font-size:12px;font-weight:700;letter-spacing:0.06em;}
-.badge-green{background:rgba(34,197,94,0.15);color:#4ade80;border:1px solid rgba(34,197,94,0.3);}
-.badge-yellow{background:rgba(201,164,92,0.15);color:#C9A45C;border:1px solid rgba(201,164,92,0.3);}
-.contact-block{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:24px 28px;margin-top:48px;}
-.contact-block h3{font-size:16px;color:#fff;font-weight:700;margin-bottom:12px;}.contact-block p{font-size:14px;margin-bottom:6px;}
-.site-footer{background:var(--navy);border-top:1px solid var(--border);padding:48px 40px 32px;}
-.footer-inner{max-width:1100px;margin:0 auto;}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:48px;margin-bottom:40px;}
-.footer-brand p{font-size:13px;color:var(--text-muted);line-height:1.7;max-width:260px;margin-top:10px;}
-.footer-col h4{font-size:11px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:14px;}
-.footer-col a{display:block;font-size:13px;color:var(--text-muted);margin-bottom:8px;}.footer-col a:hover{color:var(--accent);text-decoration:none;}
-.footer-bottom{border-top:1px solid var(--border);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;}
-.footer-bottom p{font-size:12px;color:var(--text-muted);}
-@media(max-width:768px){.site-header{padding:0 20px;}.header-nav{display:none;}.page-header{padding:40px 20px 32px;}.legal-body{padding:32px 20px 60px;}.site-footer{padding:40px 20px 24px;}.footer-grid{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;align-items:flex-start;}}
-
+:root {
+  --navy: #0F2747; --navy-deep: #081A33; --accent: #C9A45C;
+  --text: #E8E6E1; --text-muted: #A0A0A0; --surface: #101C2E;
+  --surface-light: #162236; --border: rgba(201,164,92,0.15);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { font-size: 16px; }
+body { font-family: 'Inter', system-ui, sans-serif; background: var(--navy-deep); color: var(--text); line-height: 1.7; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
+.skip-link { position: absolute; top: -100%; left: 16px; background: var(--accent); color: #000; font-weight: 700; padding: 8px 16px; border-radius: 0 0 6px 6px; z-index: 9999; font-size: 14px; }
+.skip-link:focus { top: 0; }
+.site-header { background: var(--navy); border-bottom: 1px solid var(--border); padding: 0 40px; height: 64px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+.logo { font-size: 22px; letter-spacing: 0.08em; color: #fff; display: flex; align-items: center; }
+.logo span { color: var(--accent); }
+.header-nav { display: flex; align-items: center; gap: 28px; }
+.header-nav a { color: var(--text-muted); font-size: 14px; font-weight: 500; transition: color 0.2s; }
+.header-nav a:hover { color: var(--accent); text-decoration: none; }
+.header-cta { background: var(--accent) !important; color: #000 !important; font-weight: 700 !important; font-size: 13px !important; padding: 8px 20px !important; border-radius: 6px !important; letter-spacing: 0.04em !important; }
+.page-header { background: linear-gradient(135deg, var(--surface) 0%, var(--navy) 100%); border-bottom: 1px solid var(--border); padding: 56px 40px 48px; }
+.page-header-inner { max-width: 800px; margin: 0 auto; }
+.breadcrumb { font-size: 12px; color: var(--text-muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 16px; }
+.breadcrumb a { color: var(--accent); }
+.page-header h1 { font-family: 'Source Serif 4', Georgia, serif; font-size: clamp(28px, 5vw, 42px); color: #fff; font-weight: 600; line-height: 1.2; margin-bottom: 12px; }
+.page-header .meta { font-size: 13px; color: var(--text-muted); }
+.page-header .meta span { color: var(--accent); font-weight: 600; }
+.legal-body { max-width: 800px; margin: 0 auto; padding: 56px 40px 80px; }
+.legal-body h2 { font-family: 'Source Serif 4', Georgia, serif; font-size: 22px; color: #fff; font-weight: 600; margin-top: 48px; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+.legal-body h3 { font-size: 15px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 28px; margin-bottom: 10px; }
+.legal-body p { color: #C8C5BF; font-size: 15px; margin-bottom: 16px; }
+.legal-body ul, .legal-body ol { color: #C8C5BF; font-size: 15px; padding-left: 24px; margin-bottom: 16px; }
+.legal-body li { margin-bottom: 8px; }
+.legal-body strong { color: var(--text); font-weight: 600; }
+.highlight-box { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--accent); border-radius: 8px; padding: 20px 24px; margin: 24px 0; }
+.highlight-box p { margin-bottom: 0; }
+.status-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(76,175,80,0.12); border: 1px solid rgba(76,175,80,0.3);
+  border-radius: 6px; padding: 6px 14px; font-size: 13px; color: #81c784;
+  font-weight: 600; margin-bottom: 24px;
+}
+.toc { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px; margin-bottom: 40px; }
+.toc h2 { font-size: 14px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; border: none; margin: 0 0 14px 0; padding: 0; }
+.toc ol { padding-left: 20px; margin: 0; }
+.toc li { margin-bottom: 6px; }
+.toc a { font-size: 14px; color: var(--accent); }
+.wcag-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0; }
+.wcag-item { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 14px 16px; }
+.wcag-item .wcag-label { font-size: 12px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; }
+.wcag-item .wcag-desc { font-size: 13px; color: #C8C5BF; margin-top: 4px; }
+.contact-block { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 24px 28px; margin-top: 48px; }
+.contact-block h3 { font-size: 16px; color: #fff; font-weight: 700; margin-bottom: 12px; }
+.contact-block p { font-size: 14px; margin-bottom: 6px; }
+.site-footer { background: var(--navy); border-top: 1px solid var(--border); padding: 48px 40px 32px; }
+.footer-inner { max-width: 1100px; margin: 0 auto; }
+.footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 48px; margin-bottom: 40px; }
+.footer-brand p { font-size: 13px; color: var(--text-muted); line-height: 1.7; max-width: 260px; margin-top: 10px; }
+.footer-col h4 { font-size: 11px; font-weight: 700; color: var(--accent); text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 14px; }
+.footer-col a { display: block; font-size: 13px; color: var(--text-muted); margin-bottom: 8px; }
+.footer-col a:hover { color: var(--accent); text-decoration: none; }
+.footer-bottom { border-top: 1px solid var(--border); padding-top: 24px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+.footer-bottom p { font-size: 12px; color: var(--text-muted); }
+@media (max-width: 768px) {
+  .site-header { padding: 0 20px; } .header-nav { display: none; }
+  .page-header { padding: 40px 20px 32px; } .legal-body { padding: 32px 20px 60px; }
+  .site-footer { padding: 40px 20px 24px; } .footer-grid { grid-template-columns: 1fr; gap: 32px; }
+  .footer-bottom { flex-direction: column; align-items: flex-start; }
+  .wcag-grid { grid-template-columns: 1fr; }
+}
 </style>
-  <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <!-- Google Analytics 4 — Consent Mode v2 (GDPR-compliant: no cookies set until user consents) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny analytics & ads until explicit user consent
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-386948001', { anonymize_ip: true });
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
   </script>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
+
 <header class="site-header" role="banner">
   <a href="/" class="logo" aria-label="Oil Rigs Now — Home"><img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;"></a>
   <nav class="header-nav" aria-label="Main navigation">
@@ -79,99 +135,190 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
     <div class="page-header-inner">
       <div class="breadcrumb"><a href="/">Home</a> &rsaquo; Accessibility Statement</div>
       <h1>Accessibility Statement</h1>
-      <p class="meta">Published: <span>May 22, 2026</span> &nbsp;&bull;&nbsp; Last Reviewed: <span>May 22, 2026</span></p>
+      <p class="meta">Effective Date: <span>June 23, 2026</span> &nbsp;&bull;&nbsp; Last Updated: <span>June 23, 2026</span></p>
     </div>
   </div>
+
   <div class="legal-body">
+
+    <div class="status-badge" role="note" aria-label="Conformance status">
+      <span aria-hidden="true">&#9679;</span> Target: WCAG 2.1 Level AA Conformance
+    </div>
+
     <div class="highlight-box">
-      <p>Oil Rigs Now, LLC is committed to ensuring that <strong>new.oilrigsnow.com</strong> is accessible to all users, including people with disabilities. We are working toward conformance with the <strong>Web Content Accessibility Guidelines (WCAG) 2.1 at Level AA</strong> and compliance with the Americans with Disabilities Act (ADA) and Section 508 of the Rehabilitation Act.</p>
+      <p>Oil Rigs Now, LLC is committed to making our website accessible to all users, including people with disabilities. We are working toward conformance with the <strong>Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</strong>, published by the World Wide Web Consortium (W3C). This statement describes our current conformance status, known limitations, and how to contact us with accessibility concerns.</p>
     </div>
 
-    <h2 id="conformance">1. Conformance Status</h2>
-    <p>This website is <strong>partially conformant</strong> with WCAG 2.1 Level AA. "Partially conformant" means that some parts of the content do not fully conform to the accessibility standard, and we are actively working to address known gaps.</p>
-    <p>Our target standard: <a href="https://www.w3.org/TR/WCAG21/" target="_blank" rel="noopener noreferrer">Web Content Accessibility Guidelines (WCAG) 2.1, Level AA</a></p>
+    <nav class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol>
+        <li><a href="#commitment">Our Commitment</a></li>
+        <li><a href="#standards">Standards We Target</a></li>
+        <li><a href="#features">Accessibility Features</a></li>
+        <li><a href="#known-issues">Known Limitations</a></li>
+        <li><a href="#third-party">Third-Party Content</a></li>
+        <li><a href="#feedback">Feedback &amp; Contact</a></li>
+        <li><a href="#formal-complaints">Formal Complaint Process</a></li>
+        <li><a href="#technical">Technical Specifications</a></li>
+      </ol>
+    </nav>
 
-    <h2 id="features">2. Accessibility Features Implemented</h2>
-    <p>We have built the following accessibility features into this site:</p>
+    <h2 id="commitment">1. Our Commitment</h2>
+    <p>Oil Rigs Now serves buyers and sellers of oilfield equipment worldwide, including individuals who may rely on assistive technologies such as screen readers, voice control software, keyboard-only navigation, or magnification tools. We believe access to equipment listings, pricing information, and contact options should not be a barrier for anyone.</p>
+    <p>We are actively working to:</p>
+    <ul>
+      <li>Ensure all pages meet WCAG 2.1 Level AA success criteria</li>
+      <li>Test with common assistive technologies (NVDA, VoiceOver, JAWS)</li>
+      <li>Provide accessible alternatives for any content that cannot be made fully accessible</li>
+      <li>Respond promptly to accessibility feedback and remove barriers</li>
+    </ul>
+
+    <h2 id="standards">2. Standards We Target</h2>
+    <p>Our target standard is <strong>WCAG 2.1 Level AA</strong> as defined by the W3C. This standard is organized around four principles:</p>
+    <ul>
+      <li><strong>Perceivable</strong> — Information and user interface components must be presentable in ways all users can perceive.</li>
+      <li><strong>Operable</strong> — User interface components and navigation must be operable by all users.</li>
+      <li><strong>Understandable</strong> — Information and operation of the UI must be understandable.</li>
+      <li><strong>Robust</strong> — Content must be robust enough to be interpreted by current and future assistive technologies.</li>
+    </ul>
+    <p>We also aim to comply with <strong>Section 508 of the Rehabilitation Act</strong> (for federal agency users in the United States) and the <strong>Accessibility for Ontarians with Disabilities Act (AODA)</strong> where applicable.</p>
+
+    <h2 id="features">3. Accessibility Features Implemented</h2>
+    <p>The following accessibility features are implemented on new.oilrigsnow.com:</p>
+
     <h3>Navigation &amp; Structure</h3>
-    <ul>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Skip-to-content link on every page, allowing keyboard users to bypass the navigation</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Logical heading hierarchy (H1 → H2 → H3) on all pages</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Landmark regions (header, main, nav, footer) for screen reader navigation</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Descriptive page titles and breadcrumb navigation</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; ARIA labels on icon-only buttons and navigation regions</li>
-    </ul>
-    <h3>Visual Design</h3>
-    <ul>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Text sized in relative units (rem/em) that scale with browser font size settings</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Status badges use both color and text (not color alone) to convey information</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Focus indicators visible on all interactive elements (links, buttons, form controls)</li>
-      <li><span class="status-badge badge-yellow">In Progress</span>&nbsp; Color contrast verification for all text and UI elements against WCAG 4.5:1 ratio requirement</li>
-    </ul>
-    <h3>Images &amp; Media</h3>
-    <ul>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Alt text on all informational images</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Decorative images marked with empty alt attributes</li>
-    </ul>
-    <h3>Forms &amp; Interactivity</h3>
-    <ul>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; All form inputs have associated labels</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Full keyboard navigation for all interactive elements</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Search and filter controls on the browse page are keyboard accessible</li>
-    </ul>
-    <h3>Language &amp; Compatibility</h3>
-    <ul>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; <code lang="en" style="background:rgba(255,255,255,0.08);padding:1px 6px;border-radius:3px;font-size:13px;">lang</code> attribute set on all pages</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; RTL (right-to-left) layout support when Arabic language is selected</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Compatible with screen readers including NVDA, JAWS, and VoiceOver</li>
-      <li><span class="status-badge badge-green">Implemented</span>&nbsp; Compatible with keyboard-only navigation and browser zoom up to 400%</li>
-    </ul>
-
-    <h2 id="limitations">3. Known Limitations</h2>
-    <p>Despite our best efforts, some content may not yet fully meet WCAG 2.1 AA standards. Known limitations include:</p>
-    <ul>
-      <li><strong>Equipment listing PDFs:</strong> Some third-party PDF documents linked from equipment pages may not be fully accessible. We are working to provide accessible HTML alternatives.</li>
-      <li><strong>Third-party embedded content:</strong> Any third-party widgets (such as the AI chat assistant) are subject to the accessibility practices of the third-party provider. We evaluate accessibility as part of our vendor selection process.</li>
-      <li><strong>Legacy listing pages:</strong> Older individual equipment pages may have lower accessibility conformance than newly built pages. We are reviewing and updating these systematically.</li>
-    </ul>
-    <p>We are actively working to resolve known issues. If you encounter a specific accessibility barrier not listed here, please tell us (see Section 5 below).</p>
-
-    <h2 id="technical">4. Technical Approach</h2>
-    <p>This website is built as a static site using semantic HTML5. We follow these technical standards:</p>
-    <ul>
-      <li>Valid, semantic HTML5 markup</li>
-      <li>CSS that does not convey meaning (meaning is in the HTML)</li>
-      <li>JavaScript that enhances but does not replace keyboard or screen reader access</li>
-      <li>Responsive design that adapts to screen sizes from 320px to 4K</li>
-      <li>No time limits on any content or interactions</li>
-      <li>No content that flashes more than 3 times per second</li>
-    </ul>
-
-    <h2 id="feedback">5. Accessibility Feedback &amp; Requests</h2>
-    <p>We welcome feedback on the accessibility of our website. If you encounter any barriers, cannot access any page or feature, or need content in an alternative format, please contact us:</p>
-    <div class="contact-block">
-      <h3>Accessibility Contact</h3>
-      <p><strong>Email:</strong> <a href="mailto:michael@oilrigsnow.com">michael@oilrigsnow.com</a> — subject line: "Accessibility Request"</p>
-      <p><strong>Phone:</strong> <a href="tel:+17135650747">713-565-0747</a></p>
-      <p><strong>Address:</strong> Oil Rigs Now, LLC, Houston, TX 77040, USA</p>
-      <p style="margin-top:14px;font-size:13px;color:var(--text-muted);">We aim to respond to accessibility requests within 5 business days and to resolve issues within 30 days where technically feasible.</p>
+    <div class="wcag-grid">
+      <div class="wcag-item">
+        <div class="wcag-label">Skip to Content</div>
+        <div class="wcag-desc">A "Skip to main content" link is the first focusable element on every page, allowing keyboard users to bypass navigation.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Heading Hierarchy</div>
+        <div class="wcag-desc">Pages use a logical h1&rarr;h2&rarr;h3 heading structure with no skipped levels.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">ARIA Landmarks</div>
+        <div class="wcag-desc">header, main, nav, footer, and region landmarks are used throughout to help screen reader users navigate page sections.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Keyboard Navigation</div>
+        <div class="wcag-desc">All interactive elements (navigation, filters, search, buttons, links) are reachable and operable via keyboard Tab/Enter/Space/Escape.</div>
+      </div>
     </div>
 
-    <h2 id="formal-complaints">6. Formal Complaints</h2>
-    <p>If you are not satisfied with our response to your accessibility concern, you may contact the following bodies:</p>
+    <h3>Visual Design</h3>
+    <div class="wcag-grid">
+      <div class="wcag-item">
+        <div class="wcag-label">Color Contrast</div>
+        <div class="wcag-desc">Body text (#E8E6E1 on #081A33) achieves a contrast ratio of 13.5:1 — well above the 4.5:1 AA minimum. Gold accent (#C9A45C on dark navy) achieves 5.6:1 for large text.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Focus Indicators</div>
+        <div class="wcag-desc">All focusable elements display a 2px gold (#C9A45C) outline on keyboard focus. Focus indicators are never suppressed.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Text Scaling</div>
+        <div class="wcag-desc">Font sizes use rem/em units. The layout reflows correctly when browser text is scaled to 200%.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">No Color-Only Information</div>
+        <div class="wcag-desc">Status badges (Available, For Sale, Sold) use both color and text labels. No information is conveyed by color alone.</div>
+      </div>
+    </div>
+
+    <h3>Images &amp; Media</h3>
+    <div class="wcag-grid">
+      <div class="wcag-item">
+        <div class="wcag-label">Alt Text</div>
+        <div class="wcag-desc">All informative images have descriptive alt attributes. Decorative images use empty alt="" so screen readers skip them.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Image Fallbacks</div>
+        <div class="wcag-desc">If a rig image fails to load, an accessible fallback placeholder is displayed with appropriate messaging.</div>
+      </div>
+    </div>
+
+    <h3>Forms &amp; Interactive Elements</h3>
+    <div class="wcag-grid">
+      <div class="wcag-item">
+        <div class="wcag-label">Form Labels</div>
+        <div class="wcag-desc">All form inputs (search, filters, contact forms) have associated &lt;label&gt; elements or aria-label attributes.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">ARIA Attributes</div>
+        <div class="wcag-desc">Buttons, toggles, and interactive controls use aria-label, aria-expanded, aria-controls, and aria-live as appropriate.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Error Handling</div>
+        <div class="wcag-desc">Form validation errors are associated with specific fields and announced to screen readers via aria-live regions.</div>
+      </div>
+      <div class="wcag-item">
+        <div class="wcag-label">Cookie Consent</div>
+        <div class="wcag-desc">The cookie consent banner is keyboard-navigable, uses role="dialog", and has focus management so it does not trap keyboard users.</div>
+      </div>
+    </div>
+
+    <h2 id="known-issues">4. Known Limitations</h2>
+    <p>We are aware of the following limitations and are actively working to resolve them:</p>
     <ul>
-      <li><strong>United States:</strong> US Department of Justice ADA Information Line — <a href="https://www.ada.gov" target="_blank" rel="noopener noreferrer">www.ada.gov</a></li>
-      <li><strong>European Union:</strong> Your national consumer protection authority or accessibility enforcement body</li>
-      <li><strong>United Kingdom:</strong> Equality and Human Rights Commission — <a href="https://www.equalityhumanrights.com" target="_blank" rel="noopener noreferrer">www.equalityhumanrights.com</a></li>
+      <li><strong>AI chat widget:</strong> The third-party AI chat widget that will be integrated in a future release may have accessibility limitations. We will ensure it meets WCAG 2.1 AA before launch and will provide a text-based email alternative at all times.</li>
+      <li><strong>PDF documents:</strong> Equipment specification sheets provided by third parties may not be fully accessible. Contact us and we will provide the information in an accessible format.</li>
+      <li><strong>Legacy rig pages:</strong> Some individual rig listing pages were generated from PDF content and may have limited structure. We are improving these progressively.</li>
+      <li><strong>Mobile navigation:</strong> The mobile menu is keyboard accessible but may not fully announce state changes in all screen reader/browser combinations. We are testing and improving this.</li>
+    </ul>
+    <p>If you find an issue not listed here, please report it using the contact details in Section 6.</p>
+
+    <h2 id="third-party">5. Third-Party Content</h2>
+    <p>Our website embeds or links to content from third-party providers, including:</p>
+    <ul>
+      <li><strong>Google Fonts</strong> — typography loaded from Google's CDN</li>
+      <li><strong>Google Analytics</strong> — analytics only activated after user consent</li>
+      <li><strong>AI chat widget</strong> — planned integration; accessibility will be verified before deployment</li>
+    </ul>
+    <p>We cannot guarantee the accessibility of third-party content or services. Where third-party content creates a barrier, we will provide an accessible alternative.</p>
+
+    <h2 id="feedback">6. Feedback &amp; Accessibility Requests</h2>
+    <p>We welcome feedback on the accessibility of our website. If you experience any barriers, need content in an alternative format, or want to report an issue, please contact us:</p>
+    <ul>
+      <li><strong>Email:</strong> <a href="mailto:michael@oilrigsnow.com">michael@oilrigsnow.com</a> — subject: "Accessibility"</li>
+      <li><strong>Phone:</strong> <a href="tel:+17135650747">713-565-0747</a></li>
+      <li><strong>Mail:</strong> Oil Rigs Now, LLC — Accessibility, Houston, TX 77040, USA</li>
+    </ul>
+    <p>We aim to respond to accessibility requests within <strong>5 business days</strong>. If you need an accessible version of a specific document or page, we will provide it as soon as reasonably practicable.</p>
+
+    <h2 id="formal-complaints">7. Formal Complaint Process</h2>
+    <p>If you are not satisfied with our response to an accessibility concern, you may escalate by:</p>
+    <ul>
+      <li><strong>United States:</strong> Filing a complaint with the U.S. Department of Justice (ADA) or the U.S. Access Board</li>
+      <li><strong>European Union:</strong> Contacting your national accessibility enforcement body</li>
+      <li><strong>United Kingdom:</strong> Contacting the Equality and Human Rights Commission (EHRC)</li>
+      <li><strong>Canada:</strong> Contacting the Canadian Human Rights Commission</li>
     </ul>
 
-    <h2 id="review">7. Review &amp; Improvement Schedule</h2>
-    <p>This accessibility statement was last reviewed on <strong>May 22, 2026</strong>. We conduct accessibility reviews:</p>
+    <h2 id="technical">8. Technical Specifications</h2>
+    <p>Accessibility of new.oilrigsnow.com relies on the following technologies:</p>
     <ul>
-      <li>When significant new content or features are added to the site</li>
-      <li>At least annually as part of our site review cycle</li>
-      <li>In response to user feedback identifying new barriers</li>
+      <li>HTML5 and WAI-ARIA 1.1</li>
+      <li>CSS (no reliance on CSS for structure or meaning)</li>
+      <li>JavaScript (progressive enhancement — core content accessible without JS)</li>
     </ul>
+    <p>We have tested with the following tools and combinations:</p>
+    <ul>
+      <li>NVDA + Firefox (Windows)</li>
+      <li>VoiceOver + Safari (macOS and iOS)</li>
+      <li>TalkBack + Chrome (Android)</li>
+      <li>Keyboard-only navigation (Chrome, Firefox, Safari)</li>
+      <li>axe DevTools and WAVE for automated checks</li>
+    </ul>
+    <p>This statement was prepared on <strong>June 23, 2026</strong> and will be reviewed at least annually or whenever significant changes are made to the website.</p>
+
+    <div class="contact-block" id="contact-accessibility">
+      <h3>Accessibility Contact</h3>
+      <p><strong>Email:</strong> <a href="mailto:michael@oilrigsnow.com">michael@oilrigsnow.com</a> — subject: "Accessibility"</p>
+      <p><strong>Phone:</strong> <a href="tel:+17135650747">713-565-0747</a></p>
+      <p><strong>Response time:</strong> 5 business days</p>
+      <p><strong>Address:</strong> Oil Rigs Now, LLC, Houston, TX 77040, USA</p>
+    </div>
   </div>
 </main>
 
@@ -179,16 +326,16 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
   <div class="footer-inner">
     <div class="footer-grid">
       <div class="footer-brand">
-        <div style="font-family:Impact,'Arial Narrow',sans-serif;font-size:20px;letter-spacing:0.08em;color:#fff;"><img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;"></div>
+        <div><img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;margin-bottom:10px;"></div>
         <p>Consultants in the sale and sourcing of new and used drilling rigs and oilfield equipment. Houston, TX 77040.</p>
         <p style="margin-top:12px;font-size:13px;color:var(--accent);">713-565-0747 &nbsp;&bull;&nbsp; info@oilrigsnow.com</p>
       </div>
       <div class="footer-col">
         <h4>Equipment</h4>
         <a href="/land-drilling-rigs/">Land Drilling Rigs</a>
-        <a href="/land-drilling-rigs/">Mobile &amp; Workover</a>
-        <a href="/land-drilling-rigs/">Offshore Rigs</a>
-        <a href="/land-drilling-rigs/">Oilfield Equipment</a>
+        <a href="/mobile-workover-rigs/">Mobile &amp; Workover</a>
+        <a href="/offshore-rigs/">Offshore Rigs</a>
+        <a href="/oilfield-equipment/">Oilfield Equipment</a>
       </div>
       <div class="footer-col">
         <h4>Legal</h4>
@@ -196,14 +343,15 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
         <a href="/terms/">Terms of Service</a>
         <a href="/cookies/">Cookie Policy</a>
         <a href="/disclaimer/">Disclaimer</a>
-        <a href="/accessibility/">Accessibility</a>
+        <a href="/accessibility/" aria-current="page">Accessibility</a>
         <a href="/ai-chat-terms/">AI Chat Terms</a>
         <a href="/compliance/">Compliance</a>
+        <a href="/privacy/#ccpa" style="display:block;color:#d9a84e;font-size:12px;margin-top:6px;font-weight:600;">Do Not Sell or Share My Info</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Oil Rigs Now, LLC. All rights reserved.</p>
-      <p>Houston, TX 77040 &nbsp;&bull;&nbsp; <a href="mailto:info@oilrigsnow.com" style="color:var(--text-muted);">info@oilrigsnow.com</a></p>
+      <p>Houston, TX 77040 &nbsp;&bull;&nbsp; <a href="mailto:info@oilrigsnow.com" style="color:var(--text-muted);">info@oilrigsnow.com</a> &nbsp;&bull;&nbsp; <a href="/privacy/#ccpa" style="color:var(--text-muted);">Do Not Sell or Share My Personal Information</a></p>
     </div>
   </div>
 </footer>

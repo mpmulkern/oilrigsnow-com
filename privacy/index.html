@@ -73,13 +73,38 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 }
 
 </style>
-  <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <!-- Google Analytics 4 — Consent Mode v2 (GDPR-compliant: no cookies set until user consents) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny analytics & ads until explicit user consent
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-386948001', { anonymize_ip: true });
+    // Restore consent from stored preferences on page load
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          // Legacy: honour old binary 'accepted' consent
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
   </script>
 </head>
 <body>
@@ -103,7 +128,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
     <div class="page-header-inner">
       <div class="breadcrumb"><a href="/">Home</a> &rsaquo; Privacy Policy</div>
       <h1>Privacy Policy</h1>
-      <p class="meta">Effective Date: <span>May 22, 2026</span> &nbsp;&bull;&nbsp; Last Updated: <span>May 22, 2026</span></p>
+      <p class="meta">Effective Date: <span>May 22, 2026</span> &nbsp;&bull;&nbsp; Last Updated: <span>June 23, 2026</span></p>
     </div>
   </div>
 
@@ -225,6 +250,22 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
     </ul>
     <p>See our <a href="/ai-chat-terms/">AI Chat Terms</a> for full details.</p>
 
+    
+    <h2 id="cipa">14. California Invasion of Privacy Act (CIPA)</h2>
+    <p>Under the California Invasion of Privacy Act (Penal Code &sect;&sect;&nbsp;630&ndash;637.9), Oil Rigs Now provides the following specific disclosures:</p>
+
+    <h3>Google Analytics</h3>
+    <p>Our website uses Google Analytics, a web analytics service provided by Google LLC. Google Analytics receives certain technical data about your visit (including IP address, browser type, pages viewed, and time on site) and processes this data on Google's servers. <strong>We use Google Analytics Consent Mode v2, which means Google Analytics does not set cookies or transmit tracking data until you have expressly consented to analytics cookies</strong> via the cookie preferences banner on this site. If you decline analytics cookies, Google Analytics operates in a "cookieless" modeling-only mode that does not identify you individually.</p>
+
+    <h3>AI Chat Interceptions</h3>
+    <p>If you use the AI-powered chat widget on this website, your messages are transmitted to a third-party AI service provider. This constitutes an electronic communication processed by a third party. <strong>You are presented with a disclosure before initiating a chat session, and by sending your first message you expressly consent to this transmission</strong>, as required by California Penal Code &sect;&nbsp;631. If you do not consent, you may contact us by phone (713-565-0747) or email (info@oilrigsnow.com) instead.</p>
+
+    <h3>No Session Replay or Keystroke Capture</h3>
+    <p>Oil Rigs Now does not use session replay tools, keystroke loggers, mouse-tracking software, or any other technology designed to intercept or record your interactions with this website beyond standard analytics (with consent) and AI chat (with disclosure and consent).</p>
+
+    <h3>Your Rights Under CIPA</h3>
+    <p>California residents who believe their electronic communications have been intercepted without lawful consent may contact our Privacy Officer at <a href="mailto:michael@oilrigsnow.com">michael@oilrigsnow.com</a> or by phone at <a href="tel:+17135650747">713-565-0747</a>.</p>
+
     <h2 id="changes">13. Changes to This Policy</h2>
     <p>We may update this policy at any time. Material changes will be noted by updating the "Last Updated" date and posting a notice on the site for 30 days. Continued use of the site after changes constitutes acceptance.</p>
 
@@ -261,11 +302,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
         <a href="/accessibility/">Accessibility</a>
         <a href="/ai-chat-terms/">AI Chat Terms</a>
         <a href="/compliance/">Compliance</a>
+        <a href="/privacy/#ccpa" style="display:block;color:#d9a84e;font-size:12px;margin-top:6px;font-weight:600;">Do Not Sell or Share My Info</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Oil Rigs Now, LLC. All rights reserved.</p>
       <p>Houston, TX 77040 &nbsp;&bull;&nbsp; <a href="mailto:info@oilrigsnow.com" style="color:var(--text-muted);">info@oilrigsnow.com</a></p>
+      <p style="font-size:12px;"><a href="/privacy/#ccpa" style="color:var(--text-muted);">Do Not Sell or Share My Personal Information</a></p>
     </div>
   </div>
 </footer>

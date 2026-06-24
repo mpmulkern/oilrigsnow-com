@@ -50,13 +50,38 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 @media(max-width:768px){.site-header{padding:0 20px;}.header-nav{display:none;}.page-header{padding:40px 20px 32px;}.legal-body{padding:32px 20px 60px;}.site-footer{padding:40px 20px 24px;}.footer-grid{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;align-items:flex-start;}}
 
 </style>
-  <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <!-- Google Analytics 4 — Consent Mode v2 (GDPR-compliant: no cookies set until user consents) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny analytics & ads until explicit user consent
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-386948001', { anonymize_ip: true });
+    // Restore consent from stored preferences on page load
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          // Legacy: honour old binary 'accepted' consent
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
   </script>
 </head>
 <body>
@@ -79,7 +104,7 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
     <div class="page-header-inner">
       <div class="breadcrumb"><a href="/">Home</a> &rsaquo; AI Chat Terms &amp; Disclosure</div>
       <h1>AI Chat Terms &amp; Disclosure</h1>
-      <p class="meta">Effective Date: <span>May 22, 2026</span> &nbsp;&bull;&nbsp; Last Updated: <span>May 22, 2026</span></p>
+      <p class="meta">Effective Date: <span>May 22, 2026</span> &nbsp;&bull;&nbsp; Last Updated: <span>June 23, 2026</span></p>
     </div>
   </div>
   <div class="legal-body">
@@ -153,7 +178,21 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
     </ul>
     <p>We reserve the right to terminate chat sessions and block users who misuse the chat feature.</p>
 
-    <h2 id="changes">7. Changes to This Disclosure</h2>
+    
+    <h2 id="cipa">8. California Invasion of Privacy Act (CIPA) Disclosure</h2>
+    <p>California Penal Code &sect;&nbsp;631 prohibits the intentional interception or recording of electronic communications without the consent of all parties. Oil Rigs Now provides the following disclosure in compliance with this law:</p>
+    <div class="highlight-box">
+      <p><strong>By sending your first message in the AI chat widget, you expressly consent to the transmission of your chat messages to our third-party AI service provider.</strong> This consent satisfies the requirement of California Penal Code &sect;&nbsp;631 that all parties to a communication consent to its interception or recording.</p>
+    </div>
+    <ul>
+      <li>The AI chat widget transmits your messages to an external AI service provider in real time.</li>
+      <li>You are notified that you are communicating with an AI system before sending any message (via the badge and this disclosure page).</li>
+      <li>If you do not consent to this transmission, do not use the chat widget. Contact us instead at <a href="tel:+17135650747">713-565-0747</a> or <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a>.</li>
+      <li>Conversation data is handled as described in Section 4 above and in our <a href="/privacy/">Privacy Policy</a>.</li>
+    </ul>
+    <p>This disclosure applies to all visitors, including California residents. Non-California residents should be aware that similar laws may apply in their jurisdictions.</p>
+
+  <h2 id="changes">7. Changes to This Disclosure</h2>
     <p>We may update this disclosure when we change AI providers, update the assistant's capabilities, or change how conversation data is handled. Material changes will be reflected by updating the "Last Updated" date on this page.</p>
 
     <div class="contact-block">
@@ -190,11 +229,13 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
         <a href="/accessibility/">Accessibility</a>
         <a href="/ai-chat-terms/">AI Chat Terms</a>
         <a href="/compliance/">Compliance</a>
+        <a href="/privacy/#ccpa" style="display:block;color:#d9a84e;font-size:12px;margin-top:6px;font-weight:600;">Do Not Sell or Share My Info</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Oil Rigs Now, LLC. All rights reserved.</p>
       <p>Houston, TX 77040 &nbsp;&bull;&nbsp; <a href="mailto:info@oilrigsnow.com" style="color:var(--text-muted);">info@oilrigsnow.com</a></p>
+      <p style="font-size:12px;"><a href="/privacy/#ccpa" style="color:var(--text-muted);">Do Not Sell or Share My Personal Information</a></p>
     </div>
   </div>
 </footer>

@@ -49,13 +49,38 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
 @media(max-width:768px){.site-header{padding:0 20px;}.header-nav{display:none;}.page-header{padding:40px 20px 32px;}.legal-body{padding:32px 20px 60px;}.site-footer{padding:40px 20px 24px;}.footer-grid{grid-template-columns:1fr;gap:32px;}.footer-bottom{flex-direction:column;align-items:flex-start;}}
 
 </style>
-  <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <!-- Google Analytics 4 — Consent Mode v2 (GDPR-compliant: no cookies set until user consents) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny analytics & ads until explicit user consent
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-386948001', { anonymize_ip: true });
+    // Restore consent from stored preferences on page load
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          // Legacy: honour old binary 'accepted' consent
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
   </script>
 </head>
 <body>
@@ -175,11 +200,13 @@ a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius
         <a href="/accessibility/">Accessibility</a>
         <a href="/ai-chat-terms/">AI Chat Terms</a>
         <a href="/compliance/">Compliance</a>
+        <a href="/privacy/#ccpa" style="display:block;color:#d9a84e;font-size:12px;margin-top:6px;font-weight:600;">Do Not Sell or Share My Info</a>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2026 Oil Rigs Now, LLC. All rights reserved.</p>
       <p>Houston, TX 77040 &nbsp;&bull;&nbsp; <a href="mailto:info@oilrigsnow.com" style="color:var(--text-muted);">info@oilrigsnow.com</a></p>
+      <p style="font-size:12px;"><a href="/privacy/#ccpa" style="color:var(--text-muted);">Do Not Sell or Share My Personal Information</a></p>
     </div>
   </div>
 </footer>

@@ -1450,7 +1450,67 @@
     }
   
     /* ── Language Bar ─────────────────────────────────────────────────── */
-    </style>
+    
+    /* Cookie Consent Banner — Consent Mode v2 */
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #0d1f37;
+      border-top: 2px solid var(--accent);
+      z-index: 9000;
+      padding: 1.25rem 1.5rem;
+      transform: translateY(100%);
+      transition: transform 0.35s cubic-bezier(0.4,0,0.2,1);
+      box-shadow: 0 -8px 32px rgba(0,0,0,0.5);
+    }
+    .cookie-banner.visible { transform: translateY(0); }
+    .cookie-inner { max-width: 960px; margin: 0 auto; }
+    .cookie-header { margin-bottom: 0.875rem; font-size: 0.9rem; color: var(--text); line-height: 1.5; }
+    .cookie-categories { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .cookie-cat {
+      display: flex; align-items: center; gap: 0.75rem;
+      background: rgba(255,255,255,0.04); border: 1px solid var(--border);
+      border-radius: 6px; padding: 0.625rem 0.875rem; flex: 1 1 200px; cursor: pointer;
+    }
+    .cookie-cat-info { flex: 1; }
+    .cookie-cat-info strong { display: block; font-size: 0.8125rem; color: var(--text); font-weight: 600; }
+    .cookie-cat-info span { font-size: 0.75rem; color: var(--text-muted); line-height: 1.4; }
+    .cookie-always-on { font-size: 0.7rem; font-weight: 700; color: #4caf50; letter-spacing: 0.05em; text-transform: uppercase; white-space: nowrap; }
+    .cookie-checkbox { display: none; }
+    .cookie-toggle-wrap {
+      display: inline-block; width: 36px; height: 20px; border-radius: 10px;
+      background: rgba(255,255,255,0.15); position: relative; flex-shrink: 0;
+      transition: background 0.2s;
+    }
+    .cookie-toggle-wrap::after {
+      content: ''; position: absolute; top: 3px; left: 3px; width: 14px; height: 14px;
+      border-radius: 50%; background: #fff; transition: transform 0.2s;
+    }
+    .cookie-checkbox:checked + .cookie-toggle-wrap { background: var(--accent); }
+    .cookie-checkbox:checked + .cookie-toggle-wrap::after { transform: translateX(16px); }
+    .cookie-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-bottom: 0.625rem; }
+    .cookie-btn {
+      font-family: var(--font-sans); font-size: 0.875rem; font-weight: 600;
+      padding: 0.5rem 1.125rem; border-radius: var(--radius); border: 2px solid transparent;
+      cursor: pointer; transition: all 0.2s; white-space: nowrap;
+    }
+    .cookie-reject  { background: transparent; color: var(--text-muted); border-color: rgba(255,255,255,0.2); }
+    .cookie-reject:hover { border-color: rgba(255,255,255,0.5); color: var(--text); }
+    .cookie-custom  { background: rgba(201,164,92,0.15); color: var(--accent); border-color: rgba(201,164,92,0.4); }
+    .cookie-custom:hover { background: rgba(201,164,92,0.25); }
+    .cookie-accept  { background: var(--accent); color: var(--navy-deep); border-color: var(--accent); }
+    .cookie-accept:hover { background: #d9b46c; }
+    .cookie-legal-note { font-size: 0.75rem; color: var(--text-muted); }
+    .cookie-legal-note a { color: var(--accent); }
+    @media (max-width: 600px) {
+      .cookie-cat { flex: 1 1 100%; }
+      .cookie-actions { flex-direction: column; }
+      .cookie-btn { width: 100%; text-align: center; }
+    }
+
+  </style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -1529,13 +1589,38 @@
   ]
 }
 </script>
-  <!-- Google Analytics 4 — replace G-386948001 with your Measurement ID -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <!-- Google Analytics 4 — Consent Mode v2 (GDPR-compliant: no cookies set until user consents) -->
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    // Default: deny analytics & ads until explicit user consent
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
     gtag('js', new Date());
     gtag('config', 'G-386948001', { anonymize_ip: true });
+    // Restore consent from stored preferences on page load
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          // Legacy: honour old binary 'accepted' consent
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
   </script>
 </head>
 <body>
@@ -2005,6 +2090,7 @@
             <li><a href="/accessibility/">Accessibility</a></li>
             <li><a href="/ai-chat-terms/">AI Chat Terms</a></li>
             <li><a href="/compliance/">Compliance</a></li>
+            <li><a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a></li>
           </ul>
         </div>
 
@@ -2020,6 +2106,7 @@
           <a href="/accessibility/">Accessibility</a>
           <a href="/ai-chat-terms/">AI Chat Terms</a>
           <a href="/compliance/">Compliance</a>
+          <a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a>
         </nav>
         <p class="footer-copyright">&copy; 2026 Oil Rigs Now, LLC. All rights reserved.</p>
       </div>
@@ -2028,27 +2115,44 @@
   </footer>
 
   <!-- =============================================
-       COOKIE CONSENT BANNER
+       COOKIE CONSENT BANNER — GDPR Consent Mode v2
        ============================================= -->
-  <div
-    class="cookie-banner"
-    id="cookie-banner"
-    role="region"
-    aria-label="Cookie consent"
-    aria-live="polite"
-  >
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-modal="false" aria-label="Cookie preferences" aria-live="polite">
     <div class="cookie-inner">
-      <p class="cookie-text">
-        We use cookies to improve your experience and analyze site traffic. By clicking "Accept", you consent to our use of cookies as described in our <a href="/cookies/">Cookie Policy</a>. You may decline non-essential cookies.
-      </p>
-      <div class="cookie-actions">
-        <button class="cookie-decline" onclick="handleCookieChoice(false)" aria-label="Decline non-essential cookies">
-          Decline
-        </button>
-        <button class="cookie-accept" onclick="handleCookieChoice(true)" aria-label="Accept all cookies">
-          Accept All
-        </button>
+      <div class="cookie-header">
+        <p><strong>Cookie Preferences</strong> &mdash; We use cookies to keep the site working and to understand how visitors use it. Choose your preferences below.</p>
       </div>
+      <div class="cookie-categories">
+        <div class="cookie-cat">
+          <div class="cookie-cat-info">
+            <strong>Strictly Necessary</strong>
+            <span>Required for the site to function (session, consent memory). Cannot be disabled.</span>
+          </div>
+          <span class="cookie-always-on">Always On</span>
+        </div>
+        <label class="cookie-cat" for="consent-analytics">
+          <div class="cookie-cat-info">
+            <strong>Analytics</strong>
+            <span>Google Analytics — helps us understand site traffic. No personal profiles built.</span>
+          </div>
+          <input type="checkbox" id="consent-analytics" class="cookie-checkbox" aria-label="Enable analytics cookies">
+          <span class="cookie-toggle-wrap" aria-hidden="true"></span>
+        </label>
+        <label class="cookie-cat" for="consent-marketing">
+          <div class="cookie-cat-info">
+            <strong>Marketing</strong>
+            <span>Not currently in use. May be enabled for future advertising.</span>
+          </div>
+          <input type="checkbox" id="consent-marketing" class="cookie-checkbox" aria-label="Enable marketing cookies" disabled>
+          <span class="cookie-toggle-wrap" aria-hidden="true"></span>
+        </label>
+      </div>
+      <div class="cookie-actions">
+        <button class="cookie-btn cookie-reject" onclick="saveCookiePrefs('reject')" aria-label="Reject all non-essential cookies">Reject All</button>
+        <button class="cookie-btn cookie-custom" onclick="saveCookiePrefs('custom')" aria-label="Save my selected cookie preferences">Save Preferences</button>
+        <button class="cookie-btn cookie-accept" onclick="saveCookiePrefs('accept')" aria-label="Accept all cookies">Accept All</button>
+      </div>
+      <p class="cookie-legal-note">By continuing you agree to our <a href="/cookies/">Cookie Policy</a> &amp; <a href="/privacy/">Privacy Policy</a>. &nbsp;&bull;&nbsp; <a href="/privacy/#ccpa">Do Not Sell or Share My Personal Information</a></p>
     </div>
   </div>
 
@@ -2101,34 +2205,69 @@
     }
 
     /* --------------------------------------------------
-       Cookie Consent
+       Cookie Consent — Consent Mode v2
        -------------------------------------------------- */
-    var CONSENT_KEY = 'orn_consent';
+    var CONSENT_KEY     = 'orn_consent';       // legacy key
+    var CONSENT_PREFS   = 'orn_consent_prefs'; // new granular key
+    var CONSENT_VERSION = '2';
 
     function initCookieBanner() {
-      var existing = localStorage.getItem(CONSENT_KEY);
-      if (!existing) {
-        var banner = document.getElementById('cookie-banner');
-        banner.classList.add('visible');
+      var prefs = null;
+      try { prefs = JSON.parse(localStorage.getItem(CONSENT_PREFS) || 'null'); } catch(e) {}
+      var legacy = localStorage.getItem(CONSENT_KEY);
+
+      if (!prefs && !legacy) {
+        // No stored consent — show the banner
+        document.getElementById('cookie-banner').classList.add('visible');
+      } else if (!prefs && legacy) {
+        // Migrate legacy binary consent
+        var analyticsGranted = (legacy === 'accepted');
+        localStorage.setItem(CONSENT_PREFS, JSON.stringify({ analytics: analyticsGranted, marketing: false, v: CONSENT_VERSION }));
+        if (analyticsGranted && typeof gtag !== 'undefined') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+      } else if (prefs) {
+        // Restore saved granular consent
+        if (prefs.analytics && typeof gtag !== 'undefined') {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        }
+        // Pre-check the analytics toggle to match stored pref
+        var el = document.getElementById('consent-analytics');
+        if (el && prefs.analytics) el.checked = true;
       }
     }
 
-    function handleCookieChoice(accepted) {
-      var value = accepted ? 'accepted' : 'declined';
-      localStorage.setItem(CONSENT_KEY, value);
+    function saveCookiePrefs(mode) {
+      var analyticsOn = false;
+      var marketingOn = false;
 
-      var banner = document.getElementById('cookie-banner');
-      banner.classList.remove('visible');
-
-      // If accepted, you could initialize analytics here
-      if (accepted) {
-        // e.g. initGoogleAnalytics();
+      if (mode === 'accept') {
+        analyticsOn = true;
+      } else if (mode === 'custom') {
+        var el = document.getElementById('consent-analytics');
+        analyticsOn = el ? el.checked : false;
       }
+      // 'reject' leaves both false
+
+      var prefs = { analytics: analyticsOn, marketing: marketingOn, v: CONSENT_VERSION };
+      localStorage.setItem(CONSENT_PREFS, JSON.stringify(prefs));
+      localStorage.setItem(CONSENT_KEY, analyticsOn ? 'accepted' : 'declined'); // legacy compat
+
+      // Update GA Consent Mode
+      if (typeof gtag !== 'undefined') {
+        gtag('consent', 'update', {
+          'analytics_storage': analyticsOn ? 'granted' : 'denied',
+          'ad_storage': 'denied',
+          'ad_user_data': 'denied',
+          'ad_personalization': 'denied'
+        });
+      }
+
+      document.getElementById('cookie-banner').classList.remove('visible');
     }
 
     /* --------------------------------------------------
        Init
-       -------------------------------------------------- */
     document.addEventListener('DOMContentLoaded', function () {
       initCookieBanner();
     });
