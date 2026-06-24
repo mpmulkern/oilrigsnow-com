@@ -183,13 +183,13 @@
       g.innerHTML=filtered.map(r=>{
         const dir=r.directory||DIR;
         const url=`${TDS}/${dir}/${r.slug}/`;
-        const img=`${TDS}/${dir}/${r.slug}/${r.hero_image||'images/hero.jpeg'}`;
+        const img=r.hero_image?`${TDS}/${dir}/${r.slug}/${r.hero_image}`:'/logo.png';
         const hp=r.horsepower?r.horsepower.toLocaleString()+' HP':'';
         const sc=r.status==='Available'?'avail':'forsale';
         const metas=[r.manufacturer,r.year,r.condition,r.location].filter(Boolean);
         return `<article class="rig-card" role="listitem">
           <a href="${url}" class="card-img" tabindex="-1" aria-hidden="true">
-            <img src="${img}" alt="${r.title}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=\'no-img\'>No image</div>'">
+            <img src="${img}" alt="${r.title}" loading="lazy" onerror="this.src='/logo.png'">
             <span class="status-pill ${sc}">${r.status}</span>
             ${hp?`<span class="hp-badge">${hp}</span>`:''}
           </a>
