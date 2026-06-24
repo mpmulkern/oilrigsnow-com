@@ -324,7 +324,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -339,7 +339,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -354,7 +354,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -819,7 +819,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": "USA",
     "directory": "mobile-workover-rigs"
@@ -1315,7 +1315,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "Used",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -1600,7 +1600,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.png",
+    "hero_image": null,
     "condition": "New",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -1645,7 +1645,7 @@
     "rig_type": "Workover",
     "status": "For Sale",
     "status_badge": "For Sale",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "New",
     "location": null,
     "directory": "mobile-workover-rigs"
@@ -1660,7 +1660,7 @@
     "rig_type": "Workover",
     "status": "Available",
     "status_badge": "Available",
-    "hero_image": "images/hero.jpeg",
+    "hero_image": null,
     "condition": "New",
     "location": null,
     "directory": "mobile-workover-rigs"
