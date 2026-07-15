@@ -112,7 +112,7 @@ def render_seo_extras(record, slug, category_path, base_url):
             "availability": "https://schema.org/InStock",
             "seller": {
                 "@type": "Organization",
-                "name": "Total Drilling Supply / Oil Rigs Now",
+                "name": "Total Drilling Supply LLC / Oil Rigs Now",
                 "url": base_url,
             },
             "priceCurrency": "USD",
@@ -524,7 +524,7 @@ footer {{
 <nav class="topnav">
   <a href="#" class="topnav-brand">
     <span class="logo-mark">T</span>
-    Total Drilling Supply
+    Total Drilling Supply LLC
   </a>
   <div class="topnav-actions">
     <a href="tel:+18606082327" class="phone">📞 1-860-608-2327</a>
@@ -590,7 +590,7 @@ footer {{
 <section class="cta" id="contact">
   <div class="cta-inner">
     <h2>Interested in This Rig?</h2>
-    <p>Contact Total Drilling Supply for pricing and to arrange inspection.</p>
+    <p>Contact Total Drilling Supply LLC for pricing and to arrange inspection.</p>
     <div class="cta-buttons">
       <a href="tel:+18606082327">📞 1-860-608-2327</a>
       <a href="mailto:bob@2tds.com" class="secondary">✉ bob@2tds.com</a>
@@ -601,7 +601,7 @@ footer {{
 <footer>
   <div class="footer-inner">
     <div>
-      <h5>Total Drilling Supply</h5>
+      <h5>Total Drilling Supply LLC</h5>
       <p>Your trusted source for new and used drilling rigs and equipment. Serving the global oil and gas industry with quality assets from leading manufacturers.</p>
     </div>
     <div>
@@ -623,7 +623,7 @@ footer {{
     </div>
   </div>
   <div class="footer-copyright">
-    © 2026 Total Drilling Supply. All rights reserved.
+    © 2026 Total Drilling Supply LLC. All rights reserved.
     <span>Specifications subject to change. Contact for current availability.</span>
   </div>
 </footer>
