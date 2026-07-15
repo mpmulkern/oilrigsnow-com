@@ -63,10 +63,149 @@ class BackBarInjector {
   }
 }
 
+// ---- RFQ form handler -----------------------------------------------------
+// Advanced-mode Pages: _worker.js is the sole entry point and the functions/
+// directory is ignored, so the /api/rfq endpoint lives here. Accepts a POST
+// from the /quote/ form, emails the RFQ to Michael via Resend, returns JSON.
+const RFQ_FIELDS = [
+  ['inquiry_type', 'Inquiry type'],
+  ['equipment_category', 'Equipment category'],
+  ['capacity', 'Horsepower / capacity'],
+  ['condition', 'Condition preference'],
+  ['quantity', 'Quantity'],
+  ['region', 'Operating region / location'],
+  ['timeframe', 'Target timeframe'],
+  ['budget', 'Budget / price expectation'],
+  ['name', 'Full name'],
+  ['company', 'Company'],
+  ['email', 'Email'],
+  ['phone', 'Phone'],
+  ['country', 'Country / region'],
+  ['message', 'Message / specifications'],
+];
+
+function jsonResponse(obj, status) {
+  return new Response(JSON.stringify(obj), {
+    status,
+    headers: { 'content-type': 'application/json; charset=utf-8' },
+  });
+}
+
+function escapeHtml(s) {
+  return String(s == null ? '' : s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
+
+async function handleRfq(request, env) {
+  if (request.method !== 'POST') {
+    return jsonResponse({ error: 'Method not allowed' }, 405);
+  }
+  if (!env.RESEND_API_KEY) {
+    return jsonResponse(
+      { error: 'Email service is not configured. Please email info@oilrigsnow.com directly.' },
+      500,
+    );
+  }
+
+  // Parse either form-encoded or JSON bodies.
+  let data = {};
+  const ct = request.headers.get('content-type') || '';
+  try {
+    if (ct.includes('application/json')) {
+      data = await request.json();
+    } else {
+      const form = await request.formData();
+      for (const [k, v] of form.entries()) data[k] = v;
+    }
+  } catch (e) {
+    return jsonResponse({ error: 'Could not read the submission. Please try again.' }, 400);
+  }
+
+  const name = (data.name || '').toString().trim();
+  const email = (data.email || '').toString().trim();
+  const message = (data.message || '').toString().trim();
+
+  // Minimal required-field + email validation.
+  if (!name || !email || !message) {
+    return jsonResponse({ error: 'Please fill in your name, email, and message.' }, 400);
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    return jsonResponse({ error: 'Please enter a valid email address.' }, 400);
+  }
+
+  // Build the email bodies from every known field that was supplied.
+  const rows = [];
+  const textLines = [];
+  for (const [key, label] of RFQ_FIELDS) {
+    const raw = data[key];
+    if (raw == null || raw.toString().trim() === '') continue;
+    const val = raw.toString().trim();
+    rows.push(
+      `<tr><td style="padding:6px 12px;font-weight:600;background:#f4f6f8;border:1px solid #e2e6ea;vertical-align:top;">${escapeHtml(
+        label,
+      )}</td><td style="padding:6px 12px;border:1px solid #e2e6ea;white-space:pre-wrap;">${escapeHtml(
+        val,
+      )}</td></tr>`,
+    );
+    textLines.push(`${label}: ${val}`);
+  }
+
+  const html = `<div style="font-family:Inter,Arial,sans-serif;font-size:14px;color:#1a1a1a;">
+    <h2 style="margin:0 0 12px;">New RFQ from ${escapeHtml(name)}</h2>
+    <table style="border-collapse:collapse;width:100%;max-width:640px;">${rows.join('')}</table>
+    <p style="margin-top:16px;color:#666;font-size:12px;">Submitted via the oilrigsnow.com RFQ form.</p>
+  </div>`;
+
+  const payload = {
+    from: 'Oil Rigs Now RFQ <info@mail.oilrigsnow.com>',
+    to: ['michael@oilrigsnow.com'],
+    reply_to: email,
+    subject: `New RFQ from ${name}`,
+    html,
+    text: textLines.join('\n'),
+  };
+
+  try {
+    const resendRes = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        Authorization: `Bearer ${env.RESEND_API_KEY}`,
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    });
+
+    if (!resendRes.ok) {
+      const detail = await resendRes.text();
+      console.log('Resend error', resendRes.status, detail);
+      return jsonResponse(
+        { error: 'We could not send your request right now. Please email info@oilrigsnow.com directly.' },
+        502,
+      );
+    }
+  } catch (e) {
+    console.log('Resend fetch failed', e && e.message);
+    return jsonResponse(
+      { error: 'We could not send your request right now. Please email info@oilrigsnow.com directly.' },
+      502,
+    );
+  }
+
+  return jsonResponse({ success: true }, 200);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     const path = url.pathname;
+
+    // RFQ API endpoint — handle before serving static assets.
+    if (path === '/api/rfq') {
+      return handleRfq(request, env);
+    }
 
     const response = await env.ASSETS.fetch(request);
 

@@ -1474,7 +1474,7 @@
           <p class="section__subtitle">All fields marked with an asterisk are required. For sensitive transactions, an NCNDA can be sent on request.</p>
         </header>
 
-        <form class="quote-form" action="mailto:info@oilrigsnow.com" method="post" enctype="text/plain" aria-labelledby="form-heading">
+        <form class="quote-form" id="rfq-form" action="/api/rfq" method="post" aria-labelledby="form-heading">
 
           <fieldset class="form-fieldset">
             <legend class="form-legend">Inquiry Type</legend>
@@ -1608,9 +1608,17 @@
           </fieldset>
 
           <div class="form-actions">
-            <button type="submit" class="btn btn--primary btn--lg">Submit RFQ</button>
+            <button type="submit" id="rfq-submit" class="btn btn--primary btn--lg">Submit RFQ</button>
             <p class="form-hint">Or email <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a> directly. Phone: <a href="tel:+17135650747">713-565-0747</a>.</p>
           </div>
+
+          <div
+            id="rfq-status"
+            role="status"
+            aria-live="polite"
+            hidden
+            style="margin-top:16px;padding:14px 18px;border-radius:8px;font-size:15px;line-height:1.5;"
+          ></div>
 
         </form>
       </div>
@@ -1831,6 +1839,75 @@
       }
       if (declineBtn) {
         declineBtn.addEventListener('click', function () { dismissBanner(false); });
+      }
+
+      // ---- RFQ form submit (fetch -> /api/rfq, no page reload) ----
+      var rfqForm = document.getElementById('rfq-form');
+      var rfqStatus = document.getElementById('rfq-status');
+      var rfqSubmit = document.getElementById('rfq-submit');
+
+      function showRfqStatus(kind, msg) {
+        if (!rfqStatus) return;
+        rfqStatus.hidden = false;
+        rfqStatus.textContent = msg;
+        if (kind === 'success') {
+          rfqStatus.style.background = '#e7f6ec';
+          rfqStatus.style.border = '1px solid #9dd3b0';
+          rfqStatus.style.color = '#1c5b34';
+        } else if (kind === 'error') {
+          rfqStatus.style.background = '#fdecec';
+          rfqStatus.style.border = '1px solid #e6a3a3';
+          rfqStatus.style.color = '#8a2020';
+        } else {
+          rfqStatus.style.background = '#f4f6f8';
+          rfqStatus.style.border = '1px solid #d6dbe0';
+          rfqStatus.style.color = '#333';
+        }
+      }
+
+      if (rfqForm) {
+        rfqForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          if (typeof rfqForm.checkValidity === 'function' && !rfqForm.checkValidity()) {
+            if (typeof rfqForm.reportValidity === 'function') rfqForm.reportValidity();
+            return;
+          }
+
+          var original = rfqSubmit ? rfqSubmit.textContent : '';
+          if (rfqSubmit) {
+            rfqSubmit.disabled = true;
+            rfqSubmit.textContent = 'Sending\u2026';
+          }
+          showRfqStatus('info', 'Sending your request\u2026');
+
+          fetch('/api/rfq', {
+            method: 'POST',
+            headers: { 'Accept': 'application/json' },
+            body: new FormData(rfqForm)
+          }).then(function (res) {
+            return res.json().catch(function () { return {}; }).then(function (body) {
+              return { ok: res.ok, body: body };
+            });
+          }).then(function (result) {
+            if (result.ok && result.body && result.body.success) {
+              rfqForm.reset();
+              showRfqStatus('success', 'Thank you \u2014 your RFQ has been sent. Our team will be in touch shortly. For urgent matters, call 713-565-0747.');
+            } else {
+              var msg = (result.body && result.body.error)
+                ? result.body.error
+                : 'Something went wrong. Please email info@oilrigsnow.com directly.';
+              showRfqStatus('error', msg);
+            }
+          }).catch(function () {
+            showRfqStatus('error', 'Network error. Please check your connection, or email info@oilrigsnow.com directly.');
+          }).then(function () {
+            if (rfqSubmit) {
+              rfqSubmit.disabled = false;
+              rfqSubmit.textContent = original;
+            }
+          });
+        });
       }
 
     })();
