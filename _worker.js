@@ -160,8 +160,12 @@ async function handleRfq(request, env) {
   </div>`;
 
   const payload = {
+    // NOTE: michael@oilrigsnow.com is on Resend's suppression list (prior hard
+    // bounce via the Cloudflare->Gmail forward), so Resend accepts the API call
+    // but silently drops delivery. Send to the Gmail box directly — the org
+    // standard for all ORN notifications — which tests as reliably delivered.
     from: 'Oil Rigs Now RFQ <info@mail.oilrigsnow.com>',
-    to: ['michael@oilrigsnow.com'],
+    to: ['mpmulkern@gmail.com'],
     reply_to: email,
     subject: `New RFQ from ${name}`,
     html,
