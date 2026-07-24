@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tools for Oil &amp; Gas Professionals | Oil Rigs Now</title>
-  <meta name="description" content="Practical digital tools built for oil and gas professionals. Daily Drilling Report Generator, Rig Cost Tracker, NPT Logger — each $19, one-time payment.">
+  <meta name="description" content="Practical digital tools built for oilfield professionals. Daily Drilling Report Generator, Rig Cost Tracker, NPT Logger — each $19, one-time payment.">
   <link rel="canonical" href="https://oilrigsnow.com/tools/">
-  <meta property="og:title" content="Tools for Oil &amp; Gas Professionals | Oil Rigs Now">
-  <meta property="og:description" content="Practical digital tools built for oil and gas professionals. Daily Drilling Report Generator, Rig Cost Tracker, NPT Logger — each $19, one-time payment.">
-  <meta property="og:url" content="https://oilrigsnow.com/tools/">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://oilrigsnow.com/tools/">
+  <meta property="og:title" content="Tools for Oil &amp; Gas Professionals | Oil Rigs Now">
+  <meta property="og:description" content="Practical digital tools built for oilfield professionals. Daily Drilling Report Generator, Rig Cost Tracker, NPT Logger — each $19, one-time payment.">
+  <meta property="og:site_name" content="Oil Rigs Now">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet">
 
   <!-- Schema -->
   <script type="application/ld+json">
@@ -44,7 +49,7 @@
         "item": {
           "@type": "Product",
           "name": "Daily Rig Cost Tracker",
-          "description": "Track rig operating costs daily against AFE budget to catch overruns before they escalate.",
+          "description": "Track daily rig operating costs with automatic AFE variance calculations.",
           "offers": {
             "@type": "Offer",
             "price": "19.00",
@@ -60,7 +65,7 @@
         "item": {
           "@type": "Product",
           "name": "NPT Logger",
-          "description": "Log and categorise non-productive time events on the rig to identify patterns and reduce downtime.",
+          "description": "Log and categorize non-productive time events with exportable reports.",
           "offers": {
             "@type": "Offer",
             "price": "19.00",
@@ -74,7 +79,62 @@
   }
   </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Oil Rigs Now",
+        "item": "https://oilrigsnow.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Tools",
+        "item": "https://oilrigsnow.com/tools/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Analytics 4 — Consent Mode v2 -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('consent', 'default', {
+      'analytics_storage': 'denied',
+      'ad_storage': 'denied',
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'wait_for_update': 500
+    });
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-386948001"></script>
+  <script>
+    gtag('js', new Date());
+    gtag('config', 'G-386948001', { anonymize_ip: true });
+    (function(){
+      try {
+        var prefs = JSON.parse(localStorage.getItem('orn_consent_prefs') || 'null');
+        if (prefs && prefs.analytics) {
+          gtag('consent', 'update', { 'analytics_storage': 'granted' });
+        } else {
+          var legacy = localStorage.getItem('orn_consent');
+          if (!prefs && legacy === 'accepted') {
+            gtag('consent', 'update', { 'analytics_storage': 'granted' });
+          }
+        }
+      } catch(e) {}
+    })();
+  </script>
+
   <style>
+    /* =============================================
+       CSS Custom Properties
+       ============================================= */
     :root {
       --navy: #0F2747;
       --navy-deep: #081A33;
@@ -84,11 +144,25 @@
       --text-muted: #A0A0A0;
       --surface: #101C2E;
       --surface-light: #162236;
-      --border: rgba(201,164,92,0.15);
-      --border-bright: rgba(201,164,92,0.35);
+      --border: rgba(201, 164, 92, 0.15);
+      --border-solid: rgba(201, 164, 92, 0.25);
+      --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+      --font-serif: 'Source Serif 4', Georgia, serif;
+      --radius: 4px;
+      --radius-md: 8px;
+      --shadow-card: 0 4px 24px rgba(0,0,0,0.35);
+      --shadow-hover: 0 12px 40px rgba(0,0,0,0.5);
+      --transition: 0.2s ease;
     }
 
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    /* =============================================
+       Reset & Base
+       ============================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
     html {
       scroll-behavior: smooth;
@@ -96,610 +170,863 @@
     }
 
     body {
-      background: var(--navy-deep);
+      background-color: var(--navy-deep);
       color: var(--text);
-      font-family: 'Inter', sans-serif;
+      font-family: var(--font-sans);
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
 
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { color: #dbb96e; }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
 
-    /* ─── SKIP LINK ─── */
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    ul { list-style: none; }
+
+    /* =============================================
+       Skip Link
+       ============================================= */
     .skip-link {
       position: absolute;
-      top: -100px;
+      top: -100%;
       left: 1rem;
-      background: var(--accent);
-      color: var(--navy-deep);
-      padding: 0.5rem 1rem;
-      font-weight: 600;
-      z-index: 9999;
-      border-radius: 0 0 4px 4px;
-      transition: top 0.2s;
-    }
-    .skip-link:focus { top: 0; color: var(--navy-deep); }
-
-    /* ─── NAV ─── */
-    nav {
-      background: var(--navy);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      padding: 0 2rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 68px;
-    }
-    .nav-logo {
-      display: flex;
-      flex-direction: column;
-      line-height: 1.1;
-    }
-    .nav-logo .wordmark {
-      font-family: 'Source Serif 4', serif;
-      font-size: 1.15rem;
-      font-weight: 600;
-      color: var(--text);
-      letter-spacing: 0.01em;
-    }
-    .nav-logo .sub {
-      font-size: 0.65rem;
-      font-weight: 500;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-    }
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 0.25rem;
-      list-style: none;
-    }
-    .nav-links a {
-      color: var(--text-muted);
-      font-size: 0.85rem;
-      font-weight: 500;
-      letter-spacing: 0.04em;
-      padding: 0.4rem 0.75rem;
-      border-radius: 4px;
-      transition: all 0.2s;
-    }
-    .nav-links a:hover,
-    .nav-links a.active {
-      color: var(--accent);
-      background: rgba(201,164,92,0.08);
-    }
-    .nav-phone {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--accent);
-      padding: 0.4rem 0.75rem;
-      border: 1px solid var(--border-bright);
-      border-radius: 4px;
-      transition: all 0.2s;
-    }
-    .nav-phone:hover {
-      background: rgba(201,164,92,0.1);
-      color: var(--accent);
-    }
-    .hamburger {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0.5rem;
-      color: var(--text);
-    }
-
-    /* ─── PAGE HERO ─── */
-    .page-hero {
-      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 60%, #050e1a 100%);
-      border-bottom: 1px solid var(--border);
-      padding: 4rem 2rem 3.5rem;
-      position: relative;
-      overflow: hidden;
-    }
-    .page-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(201,164,92,0.06) 0%, transparent 70%),
-        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(15,39,71,0.8) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .page-hero-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      position: relative;
-    }
-    .hero-eyebrow {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 1.25rem;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-    }
-    .hero-eyebrow::before {
-      content: '';
-      display: block;
-      width: 2rem;
-      height: 1px;
-      background: var(--accent);
-    }
-    .page-hero h1 {
-      font-family: 'Source Serif 4', serif;
-      font-size: clamp(2rem, 4.5vw, 3.2rem);
-      font-weight: 300;
-      line-height: 1.15;
-      color: var(--text);
-      margin-bottom: 1.25rem;
-      max-width: 700px;
-    }
-    .page-hero p {
-      font-size: 1.05rem;
-      color: var(--text-muted);
-      max-width: 580px;
-      line-height: 1.7;
-    }
-
-    /* ─── BREADCRUMB ─── */
-    .breadcrumb {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 0.6rem 2rem;
-    }
-    .breadcrumb-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-    }
-    .breadcrumb-inner a { color: var(--text-muted); }
-    .breadcrumb-inner a:hover { color: var(--accent); }
-    .breadcrumb-sep { color: var(--border-bright); }
-    .breadcrumb-current { color: var(--accent); font-weight: 500; }
-
-    /* ─── TOOLS SECTION ─── */
-    .tools-section {
-      padding: 4rem 2rem 5rem;
-      background: var(--navy-deep);
-    }
-    .tools-inner {
-      max-width: 1280px;
-      margin: 0 auto;
-    }
-
-    /* ─── CARD GRID ─── */
-    .tools-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 2rem;
-      margin-bottom: 2.5rem;
-    }
-
-    .tool-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0;
-      transition: all 0.25s;
-      position: relative;
-      overflow: hidden;
-    }
-    .tool-card::after {
-      content: '';
-      position: absolute;
-      bottom: 0; left: 0; right: 0;
-      height: 2px;
-      background: var(--accent);
-      transform: scaleX(0);
-      transform-origin: left;
-      transition: transform 0.3s ease;
-    }
-    .tool-card:hover {
-      border-color: var(--border-bright);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 32px rgba(0,0,0,0.35);
-    }
-    .tool-card:hover::after { transform: scaleX(1); }
-
-    .tool-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: rgba(201,164,92,0.1);
-      border: 1px solid var(--border-bright);
-      color: var(--accent);
-      font-size: 0.65rem;
-      font-weight: 700;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      padding: 0.25rem 0.65rem;
-      border-radius: 3px;
-      margin-bottom: 1.25rem;
-      width: fit-content;
-    }
-
-    .tool-name {
-      font-family: 'Source Serif 4', serif;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: var(--text);
-      margin-bottom: 0.6rem;
-      line-height: 1.2;
-    }
-
-    .tool-desc {
-      font-size: 0.92rem;
-      color: var(--text-muted);
-      line-height: 1.65;
-      margin-bottom: 1.5rem;
-      flex: 1;
-    }
-
-    .tool-price-row {
-      display: flex;
-      align-items: baseline;
-      gap: 0.4rem;
-      margin-bottom: 1.5rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--border);
-    }
-    .tool-price {
-      font-family: 'Source Serif 4', serif;
-      font-size: 2rem;
-      font-weight: 600;
-      color: var(--accent);
-      line-height: 1;
-    }
-    .tool-price-period {
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      font-weight: 500;
-    }
-
-    .tool-actions {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .btn-primary {
       background: var(--accent);
       color: var(--navy-deep);
       font-weight: 700;
       font-size: 0.875rem;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      padding: 0.85rem 1.5rem;
-      border-radius: 4px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.2s;
-      display: inline-block;
-      text-align: center;
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius);
+      z-index: 9999;
+      transition: top 0.2s;
+      text-decoration: none;
     }
-    .btn-primary:hover {
-      background: #dbb96e;
-      color: var(--navy-deep);
-      transform: translateY(-1px);
-      box-shadow: 0 4px 16px rgba(201,164,92,0.3);
-    }
+    .skip-link:focus { top: 1rem; outline: 3px solid var(--accent); outline-offset: 2px; }
 
-    /* ─── MORE TOOLS NOTE ─── */
-    .more-tools-note {
-      text-align: center;
-      padding: 2rem;
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      color: var(--text-muted);
-      font-size: 0.9rem;
-    }
-    .more-tools-note strong {
-      color: var(--accent);
-      font-weight: 600;
-    }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 2px; }
 
-    /* ─── FOOTER ─── */
-    footer {
-      background: var(--navy-deep);
-      border-top: 1px solid var(--border);
-      padding: 3rem 2rem 2rem;
-    }
-    .footer-inner {
+    /* =============================================
+       Container
+       ============================================= */
+    .container {
       max-width: 1280px;
       margin: 0 auto;
+      padding: 0 1.5rem;
     }
-    .footer-top {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
+
+    /* =============================================
+       Header
+       ============================================= */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      height: 64px;
+      background: rgba(8, 26, 51, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
     }
-    .footer-brand .wordmark {
-      font-family: 'Source Serif 4', serif;
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: var(--text);
-      display: block;
-      margin-bottom: 0.25rem;
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      gap: 1rem;
     }
-    .footer-brand .sub {
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
+
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 1.25rem;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: var(--accent);
-      display: block;
-      margin-bottom: 1rem;
+      color: var(--text);
+      white-space: nowrap;
+      flex-shrink: 0;
     }
-    .footer-brand p {
-      font-size: 0.82rem;
+
+    .primary-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .primary-nav a {
+      font-size: 0.875rem;
+      font-weight: 500;
       color: var(--text-muted);
-      line-height: 1.6;
-      max-width: 300px;
+      padding: 0.375rem 0.75rem;
+      border-radius: var(--radius);
+      transition: color var(--transition), background var(--transition);
+      white-space: nowrap;
     }
-    .footer-col h4 {
-      font-size: 0.7rem;
+
+    .primary-nav a:hover,
+    .primary-nav a[aria-current="page"] {
+      color: var(--text);
+      background: rgba(255,255,255,0.06);
+    }
+
+    .header-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: var(--navy-deep);
+      font-weight: 700;
+      font-size: 0.875rem;
+      padding: 0.5rem 1.125rem;
+      border-radius: var(--radius);
+      border: none;
+      cursor: pointer;
+      transition: background var(--transition), transform var(--transition);
+      white-space: nowrap;
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+
+    .header-cta:hover { background: #d9b46c; transform: translateY(-1px); }
+
+    .mobile-menu-btn {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 28px;
+      height: 20px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      gap: 5px;
+    }
+
+    .mobile-menu-btn span {
+      display: block;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(2) { opacity: 0; }
+    .mobile-menu-btn[aria-expanded="true"] span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--navy-deep);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem 1.5rem;
+      z-index: 999;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+
+    .mobile-nav.open { display: flex; }
+
+    .mobile-nav a {
+      font-size: 1rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      transition: color var(--transition);
+    }
+
+    .mobile-nav a:last-child { border-bottom: none; }
+    .mobile-nav a:hover { color: var(--accent); }
+
+    .mobile-nav .mobile-cta {
+      margin-top: 0.75rem;
+      background: var(--accent);
+      color: var(--navy-deep);
+      font-weight: 700;
+      text-align: center;
+      padding: 0.75rem;
+      border-radius: var(--radius);
+      border-bottom: none;
+    }
+
+    .mobile-nav .mobile-cta:hover { color: var(--navy-deep); background: #d9b46c; }
+
+    /* =============================================
+       Eyebrow
+       ============================================= */
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--accent);
-      margin-bottom: 1rem;
     }
-    .footer-col ul {
-      list-style: none;
+
+    .eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 24px;
+      height: 2px;
+      background: var(--accent);
+      border-radius: 1px;
+    }
+
+    /* =============================================
+       Page Hero (compact)
+       ============================================= */
+    .page-hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #0d2040 60%, var(--navy) 100%);
+      position: relative;
+      overflow: hidden;
+      padding: 4rem 0 3.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(201,164,92,0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(201,164,92,0.03) 1px, transparent 1px);
+      background-size: 60px 60px;
+      pointer-events: none;
+    }
+
+    .page-hero::after {
+      content: '';
+      position: absolute;
+      top: -20%;
+      right: -10%;
+      width: 55%;
+      height: 80%;
+      background: radial-gradient(ellipse at center, rgba(201,164,92,0.05) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .page-hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+
+    .page-hero h1 em {
+      font-style: italic;
+      color: var(--accent);
+    }
+
+    .page-hero-sub {
+      font-size: 1.0625rem;
+      color: var(--text-muted);
+      max-width: 56ch;
+      line-height: 1.65;
+    }
+
+    /* =============================================
+       Section
+       ============================================= */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-header {
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
+      margin-bottom: 3rem;
     }
-    .footer-col ul li a {
-      font-size: 0.82rem;
-      color: var(--text-muted);
-      transition: color 0.2s;
+
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.5rem, 2.5vw, 2rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.2;
+      margin-top: 0.375rem;
     }
-    .footer-col ul li a:hover { color: var(--accent); }
-    .footer-bottom {
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      font-size: 0.78rem;
-      color: var(--text-muted);
+
+    /* =============================================
+       App Cards
+       ============================================= */
+    .tools-section {
+      background: var(--surface);
     }
-    .footer-bottom a { color: var(--text-muted); }
-    .footer-bottom a:hover { color: var(--accent); }
-    .footer-legal-links {
-      display: flex;
+
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.5rem;
+    }
+
+    .tool-card {
+      background: var(--surface-light);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem 1.75rem 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+    }
+
+    .tool-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), rgba(201,164,92,0.2));
+    }
+
+    .tool-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--border-solid);
+    }
+
+    .tool-card-icon {
+      width: 48px;
+      height: 48px;
+      background: rgba(201, 164, 92, 0.08);
+      border: 1px solid var(--border-solid);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .tool-card-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--accent);
+      fill: none;
+    }
+
+    .tool-card-name {
+      font-family: var(--font-serif);
+      font-size: 1.1875rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.25;
+    }
+
+    .tool-card-desc {
+      font-size: 0.9375rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      flex: 1;
+    }
+
+    .tool-card-price {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8125rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .tool-card-price::before {
+      content: '';
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .tool-card-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: var(--accent);
+      color: var(--navy-deep);
+      font-family: var(--font-sans);
+      font-weight: 700;
+      font-size: 0.9375rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: var(--radius);
+      border: 2px solid var(--accent);
+      cursor: pointer;
+      transition: all var(--transition);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      white-space: nowrap;
+    }
+
+    .tool-card-btn:hover {
+      background: #d9b46c;
+      border-color: #d9b46c;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(201, 164, 92, 0.3);
+    }
+
+    /* =============================================
+       Gold Divider
+       ============================================= */
+    .gold-divider {
+      width: 48px;
+      height: 3px;
+      background: linear-gradient(90deg, var(--accent), rgba(201,164,92,0.2));
+      border-radius: 2px;
+      margin: 0.5rem 0 0;
+    }
+
+    /* =============================================
+       Footer
+       ============================================= */
+    .site-footer {
+      background: var(--navy-deep);
+      border-top: 1px solid var(--border);
+      padding: 4rem 0 0;
+    }
+
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.5fr;
+      gap: 3rem;
+      padding-bottom: 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .footer-brand .site-logo {
+      font-size: 1.125rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-brand p {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      max-width: 38ch;
+    }
+
+    .footer-brand p + p { margin-top: 0.625rem; }
+
+    .footer-col h4 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-col ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.625rem;
+    }
+
+    .footer-col ul a {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      transition: color var(--transition);
+    }
+
+    .footer-col ul a:hover { color: var(--text); }
+
+    .footer-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.25rem 0 1.5rem;
+      gap: 1rem;
       flex-wrap: wrap;
     }
 
-    /* ─── RESPONSIVE ─── */
-    @media (max-width: 900px) {
-      .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
-      .tools-grid { grid-template-columns: 1fr; }
+    .footer-legal {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem 1rem;
     }
-    @media (max-width: 640px) {
-      .tools-section { padding: 3rem 1.25rem 4rem; }
-      .nav-links { display: none; }
-      .nav-phone { display: none; }
-      .hamburger { display: block; }
-      .footer-top { grid-template-columns: 1fr; }
-      .page-hero { padding: 3rem 1.25rem 2.5rem; }
-      .breadcrumb { padding: 0.6rem 1.25rem; }
+
+    .footer-legal a {
+      font-size: 0.75rem;
+      color: #666;
+      transition: color var(--transition);
+    }
+
+    .footer-legal a:hover { color: var(--text-muted); }
+
+    .footer-copyright { font-size: 0.75rem; color: #555; }
+
+    /* =============================================
+       Responsive
+       ============================================= */
+    @media (max-width: 1024px) {
+      .tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+      }
+
+      .footer-brand {
+        grid-column: 1 / -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .primary-nav,
+      .header-cta {
+        display: none;
+      }
+
+      .mobile-menu-btn { display: flex; }
+
+      .tools-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .footer-brand { grid-column: auto; }
+
+      .footer-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .section { padding: 3.5rem 0; }
+    }
+
+    @media (max-width: 480px) {
+      .page-hero { padding: 2.5rem 0 2.5rem; }
     }
   </style>
 </head>
 <body>
-  <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <!-- Navigation -->
-  <nav aria-label="Main navigation">
-    <div class="nav-inner">
-      <a href="/" class="nav-logo" aria-label="Oil Rigs Now — Home">
-        <span class="wordmark">Oil Rigs Now</span>
-        <span class="sub">Global Drilling Equipment</span>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- =============================================
+       STICKY HEADER
+       ============================================= -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/" class="site-logo" aria-label="Oil Rigs Now — Home">
+        <img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;">
       </a>
-      <ul class="nav-links" role="list">
-        <li><a href="/land-drilling-rigs/">Equipment</a></li>
-        <li><a href="/mobile-workover-rigs/">Workover Rigs</a></li>
-        <li><a href="/offshore-rigs/">Offshore</a></li>
-        <li><a href="/tools/" class="active">Tools</a></li>
-        <li><a href="/contact/">Contact</a></li>
-      </ul>
-      <a href="tel:+17135650747" class="nav-phone" aria-label="Call Oil Rigs Now: 713-565-0747">713-565-0747</a>
-      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
-        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
-          <rect y="0" width="22" height="2" rx="1" fill="currentColor"/>
-          <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
-          <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+
+      <nav class="primary-nav" role="navigation" aria-label="Primary navigation">
+        <a href="/">Home</a>
+        <a href="/land-drilling-rigs/">Land Rigs</a>
+        <a href="/mobile-workover-rigs/">Mobile &amp; Workover</a>
+        <a href="/offshore-rigs/">Offshore</a>
+        <a href="/oilfield-equipment/">Equipment</a>
+        <a href="/about/">About</a>
+        <a href="/tools/" aria-current="page">Tools</a>
+        <a href="/quote/">Quote / RFQ</a>
+      </nav>
+
+      <a href="tel:+17135650747" class="header-cta" aria-label="Call Oil Rigs Now at 713-565-0747">
+        <svg width="14" height="14" viewBox="0 0 24 24" stroke="currentColor" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.07 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 21 16v.92z"/>
         </svg>
+        713-565-0747
+      </a>
+
+      <button
+        class="mobile-menu-btn"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        onclick="toggleMobileMenu(this)"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
       </button>
     </div>
-  </nav>
+  </header>
 
-  <!-- Breadcrumb -->
-  <nav class="breadcrumb" aria-label="Breadcrumb">
-    <div class="breadcrumb-inner">
-      <a href="/">Home</a>
-      <span class="breadcrumb-sep" aria-hidden="true">›</span>
-      <span class="breadcrumb-current">Tools</span>
-    </div>
+  <!-- Mobile Navigation Drawer -->
+  <nav class="mobile-nav" id="mobile-nav" role="navigation" aria-label="Mobile navigation">
+    <a href="/">Home</a>
+    <a href="/land-drilling-rigs/">Land Rigs</a>
+    <a href="/mobile-workover-rigs/">Mobile &amp; Workover</a>
+    <a href="/offshore-rigs/">Offshore</a>
+    <a href="/oilfield-equipment/">Equipment</a>
+    <a href="/about/">About</a>
+    <a href="/tools/" aria-current="page">Tools</a>
+    <a href="/quote/">Quote / RFQ</a>
+    <a href="tel:+17135650747" class="mobile-cta">Call 713-565-0747</a>
   </nav>
 
   <main id="main-content">
 
-    <!-- Page Hero -->
-    <section class="page-hero" aria-labelledby="tools-heading">
-      <div class="page-hero-inner">
-        <p class="hero-eyebrow">Oil &amp; Gas Productivity</p>
-        <h1 id="tools-heading">Tools for Oil &amp; Gas Professionals</h1>
-        <p>Practical digital tools built for the field and the office — affordable, fast to start, and designed for how the industry actually works.</p>
+    <!-- =============================================
+         PAGE HERO
+         ============================================= -->
+    <section class="page-hero" aria-label="Tools for oil and gas professionals">
+      <div class="container">
+        <div class="page-hero-inner">
+          <span class="eyebrow">Oilfield Software</span>
+          <h1>Tools Built for the <em>Wellsite</em></h1>
+          <p class="page-hero-sub">
+            Practical digital tools designed for drilling engineers, rig managers, and company men. No subscriptions — one-time purchase, immediate access.
+          </p>
+        </div>
       </div>
     </section>
 
-    <!-- Tools Grid -->
-    <section class="tools-section" aria-labelledby="apps-heading">
-      <div class="tools-inner">
-        <h2 id="apps-heading" style="font-family:'Source Serif 4',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:var(--text);margin-bottom:2.5rem;line-height:1.2;">
-          Available Now
-        </h2>
+    <!-- =============================================
+         TOOLS GRID
+         ============================================= -->
+    <section class="section tools-section" aria-labelledby="tools-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">All Tools</span>
+          <h2 class="section-title" id="tools-heading">Oil &amp; Gas Field Tools</h2>
+          <div class="gold-divider" aria-hidden="true"></div>
+        </div>
 
         <div class="tools-grid">
 
-          <!-- Wellsite DDR -->
-          <article class="tool-card" aria-labelledby="ddr-name">
-            <div class="tool-badge">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                <circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/>
-                <circle cx="5" cy="5" r="1.5" fill="currentColor"/>
+          <!-- Wellsite Daily Drilling Report Generator -->
+          <article class="tool-card">
+            <div class="tool-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+                <polyline points="10 9 9 9 8 9"/>
               </svg>
-              Drilling Operations
             </div>
-            <h3 class="tool-name" id="ddr-name">Wellsite Daily Drilling Report Generator</h3>
-            <p class="tool-desc">Daily drilling reports take 30+ minutes to write by hand — and still end up missing critical fields before they hit the client's inbox.</p>
-            <div class="tool-price-row">
-              <span class="tool-price">$19</span>
-              <span class="tool-price-period">one-time</span>
-            </div>
-            <div class="tool-actions">
-              <a href="https://buy.stripe.com/bJe7sL83PdfE3eAfIJ3VC0O" class="btn-primary" target="_blank" rel="noopener">Buy Now &rarr; $19</a>
-            </div>
+            <h3 class="tool-card-name">Wellsite Daily Drilling Report Generator</h3>
+            <p class="tool-card-desc">
+              Generate structured, field-ready daily drilling reports in seconds — formatted for rig supervisors, company men, and operations teams. Input your data once; get a professional DDR ready to send or file.
+            </p>
+            <div class="tool-card-price">$19 — One-time payment</div>
+            <a
+              href="https://mini-apps-437.pages.dev/apps/wellsite-ddr/landing"
+              class="tool-card-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Learn more about the Wellsite Daily Drilling Report Generator"
+            >
+              Learn More &rarr;
+            </a>
           </article>
 
-          <!-- Rig Cost Tracker -->
-          <article class="tool-card" aria-labelledby="rct-name">
-            <div class="tool-badge">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                <rect x="1" y="1" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M3 5h4M5 3v4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+          <!-- Daily Rig Cost Tracker -->
+          <article class="tool-card">
+            <div class="tool-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="12" y1="1" x2="12" y2="23"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
               </svg>
-              Cost Management
             </div>
-            <h3 class="tool-name" id="rct-name">Daily Rig Cost Tracker</h3>
-            <p class="tool-desc">Cost overruns go unnoticed when rig expenses aren't logged and compared to AFE daily — by the time someone catches it, you're already over budget.</p>
-            <div class="tool-price-row">
-              <span class="tool-price">$19</span>
-              <span class="tool-price-period">one-time</span>
-            </div>
-            <div class="tool-actions">
-              <a href="https://buy.stripe.com/8x200j4RDdfEbL6cwx3VC0P" class="btn-primary" target="_blank" rel="noopener">Buy Now &rarr; $19</a>
-            </div>
+            <h3 class="tool-card-name">Daily Rig Cost Tracker</h3>
+            <p class="tool-card-desc">
+              Track daily rig operating costs in real time with automatic AFE variance calculations and cost-per-foot breakdowns. Designed for drilling engineers and rig managers who need clear cost visibility on every tour.
+            </p>
+            <div class="tool-card-price">$19 — One-time payment</div>
+            <a
+              href="https://mini-apps-437.pages.dev/apps/rig-cost-tracker/landing"
+              class="tool-card-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Learn more about the Daily Rig Cost Tracker"
+            >
+              Learn More &rarr;
+            </a>
           </article>
 
           <!-- NPT Logger -->
-          <article class="tool-card" aria-labelledby="npt-name">
-            <div class="tool-badge">
-              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
-                <circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/>
-                <path d="M5 3v2.5l1.5 1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          <article class="tool-card">
+            <div class="tool-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
               </svg>
-              Downtime Tracking
             </div>
-            <h3 class="tool-name" id="npt-name">NPT Logger</h3>
-            <p class="tool-desc">Non-productive time costs thousands per hour — but scattered, handwritten logs make it nearly impossible to spot the patterns and stop it happening again.</p>
-            <div class="tool-price-row">
-              <span class="tool-price">$19</span>
-              <span class="tool-price-period">one-time</span>
-            </div>
-            <div class="tool-actions">
-              <a href="https://buy.stripe.com/8x2aEXck55Nc2awfIJ3VC0Q" class="btn-primary" target="_blank" rel="noopener">Buy Now &rarr; $19</a>
-            </div>
+            <h3 class="tool-card-name">NPT Logger</h3>
+            <p class="tool-card-desc">
+              Log and categorize non-productive time events as they happen, with automatic totals and exportable reports for post-well analysis. Built to make every delay visible, accountable, and easier to prevent next time.
+            </p>
+            <div class="tool-card-price">$19 — One-time payment</div>
+            <a
+              href="https://mini-apps-437.pages.dev/apps/npt-logger/landing"
+              class="tool-card-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Learn more about the NPT Logger"
+            >
+              Learn More &rarr;
+            </a>
           </article>
 
         </div>
-
-        <!-- More tools note -->
-        <div class="more-tools-note" role="note">
-          <strong>New tools added regularly</strong> — bookmark this page.
-        </div>
-
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
-  <footer>
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
-      <div class="footer-top">
+      <div class="footer-grid">
+
+        <!-- Brand Column -->
         <div class="footer-brand">
-          <span class="wordmark">Oil Rigs Now</span>
-          <span class="sub">Global Drilling Equipment</span>
-          <p>Broker of new and used land drilling rigs, workover rigs, offshore equipment, and oilfield components. Trusted consultant since 2011.</p>
-          <p style="margin-top:0.75rem; font-size:0.78rem; color: var(--text-muted);">
-            7814 Stoneyway Dr, Houston, TX 77040<br>
-            <a href="tel:+17135650747">713-565-0747</a> &nbsp;·&nbsp; <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a>
+          <a href="/" class="site-logo" aria-label="Oil Rigs Now — Home" style="display:inline-flex;margin-bottom:1.25rem;">
+            <img src="/logo.png" alt="Oil Rigs Now" height="56" style="display:block;height:56px;width:auto;">
+          </a>
+          <p>Consultants in the sale and sourcing of new and used drilling rigs and oilfield equipment. Buyers, sellers, and financing &mdash; worldwide.</p>
+          <p style="margin-top:0.5rem;">17454 Northwest Fwy, Ste A, Houston, TX 77040</p>
+          <p>
+            <a href="tel:+17135650747" style="color:var(--accent);">713-565-0747</a>
+            &nbsp;&middot;&nbsp;
+            <a href="mailto:info@oilrigsnow.com" style="color:var(--accent);">info@oilrigsnow.com</a>
           </p>
         </div>
+
+        <!-- Equipment Column -->
         <div class="footer-col">
           <h4>Equipment</h4>
           <ul>
             <li><a href="/land-drilling-rigs/">Land Drilling Rigs</a></li>
-            <li><a href="/offshore-rigs/">Offshore Equipment</a></li>
-            <li><a href="/mobile-workover-rigs/">Workover Rigs</a></li>
-            <li><a href="/water-well-rigs/">Water Well Drilling</a></li>
-            <li><a href="/contact/">Components &amp; Parts</a></li>
+            <li><a href="/land-drilling-rigs/?category=workover">Mobile &amp; Workover</a></li>
+            <li><a href="/land-drilling-rigs/?category=offshore">Offshore Rigs</a></li>
+            <li><a href="/oilfield-equipment/">Oilfield Equipment</a></li>
+            <li><a href="/land-drilling-rigs/">All Listings</a></li>
           </ul>
         </div>
+
+        <!-- Legal Column -->
         <div class="footer-col">
-          <h4>Company</h4>
+          <h4>Legal &amp; Company</h4>
           <ul>
-            <li><a href="/#about">About Us</a></li>
-            <li><a href="/#services">Services</a></li>
-            <li><a href="/tools/">Tools</a></li>
-            <li><a href="/contact/">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>Legal</h4>
-          <ul>
+            <li><a href="/about/">About Oil Rigs Now</a></li>
+            <li><a href="/contact/">Contact Us</a></li>
             <li><a href="/privacy/">Privacy Policy</a></li>
             <li><a href="/terms/">Terms of Service</a></li>
+            <li><a href="/cookies/">Cookie Policy</a></li>
             <li><a href="/disclaimer/">Disclaimer</a></li>
             <li><a href="/accessibility/">Accessibility</a></li>
-            <li><a href="/compliance/">Anti-Bribery &amp; Sanctions</a></li>
+            <li><a href="/ai-chat-terms/">AI Chat Terms</a></li>
+            <li><a href="/compliance/">Compliance</a></li>
             <li><a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a></li>
           </ul>
         </div>
+
       </div>
+
+      <!-- Footer Bottom -->
       <div class="footer-bottom">
-        <span>&copy; 2026 Oil Rigs Now &middot; oilrigsnow.com/tools &middot; No refunds. All sales are final.</span>
-        <div class="footer-legal-links">
-          <a href="/privacy/">Privacy</a>
-          <a href="/terms/">Terms</a>
+        <nav class="footer-legal" aria-label="Legal pages">
+          <a href="/privacy/">Privacy Policy</a>
+          <a href="/terms/">Terms of Service</a>
+          <a href="/cookies/">Cookie Policy</a>
+          <a href="/disclaimer/">Disclaimer</a>
           <a href="/accessibility/">Accessibility</a>
+          <a href="/ai-chat-terms/">AI Chat Terms</a>
           <a href="/compliance/">Compliance</a>
           <a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a>
-        </div>
+        </nav>
+        <p class="footer-copyright">&copy; 2026 Oil Rigs Now. All rights reserved.</p>
       </div>
+
     </div>
   </footer>
+
+  <script>
+    function toggleMobileMenu(btn) {
+      var nav = document.getElementById('mobile-nav');
+      var isOpen = nav.classList.toggle('open');
+      btn.setAttribute('aria-expanded', isOpen.toString());
+      if (isOpen) {
+        document.addEventListener('keydown', handleMenuKeydown);
+        document.addEventListener('click', handleOutsideClick);
+      } else {
+        document.removeEventListener('keydown', handleMenuKeydown);
+        document.removeEventListener('click', handleOutsideClick);
+      }
+    }
+
+    function handleMenuKeydown(e) {
+      if (e.key === 'Escape') closeMobileMenu();
+    }
+
+    function handleOutsideClick(e) {
+      var nav = document.getElementById('mobile-nav');
+      var btn = document.querySelector('.mobile-menu-btn');
+      if (!nav.contains(e.target) && !btn.contains(e.target)) closeMobileMenu();
+    }
+
+    function closeMobileMenu() {
+      var nav = document.getElementById('mobile-nav');
+      var btn = document.querySelector('.mobile-menu-btn');
+      nav.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      document.removeEventListener('keydown', handleMenuKeydown);
+      document.removeEventListener('click', handleOutsideClick);
+    }
+
+    document.querySelector('.skip-link').addEventListener('click', function(e) {
+      e.preventDefault();
+      var target = document.getElementById('main-content');
+      if (target) {
+        target.setAttribute('tabindex', '-1');
+        target.focus();
+        target.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  </script>
 
 </body>
 </html>
