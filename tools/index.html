@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tools for Oil &amp; Gas Professionals | Oil Rigs Now</title>
+  <meta name="description" content="Practical digital tools built for oil and gas professionals. Wellsite Daily Drilling Report Generator ($19) — generate structured daily drilling reports in seconds. Try free before you buy.">
+  <link rel="canonical" href="https://oilrigsnow.com/tools/">
+  <meta property="og:title" content="Tools for Oil &amp; Gas Professionals | Oil Rigs Now">
+  <meta property="og:description" content="Practical digital tools built for oil and gas professionals. Try free before you buy.">
+  <meta property="og:url" content="https://oilrigsnow.com/tools/">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Tools for Oil & Gas Professionals",
+    "url": "https://oilrigsnow.com/tools/",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "Product",
+          "name": "Wellsite Daily Drilling Report Generator",
+          "description": "Generate structured, professional daily drilling reports in seconds.",
+          "offers": {
+            "@type": "Offer",
+            "price": "19.00",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "url": "https://mini-apps-437.pages.dev/apps/wellsite-ddr/landing"
+          }
+        }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    :root {
+      --navy: #0F2747;
+      --navy-deep: #081A33;
+      --accent: #C9A45C;
+      --accent-warm: #B8472A;
+      --text: #E8E6E1;
+      --text-muted: #A0A0A0;
+      --surface: #101C2E;
+      --surface-light: #162236;
+      --border: rgba(201,164,92,0.15);
+      --border-bright: rgba(201,164,92,0.35);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--navy-deep);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { color: #dbb96e; }
+
+    /* ─── SKIP LINK ─── */
+    .skip-link {
+      position: absolute;
+      top: -100px;
+      left: 1rem;
+      background: var(--accent);
+      color: var(--navy-deep);
+      padding: 0.5rem 1rem;
+      font-weight: 600;
+      z-index: 9999;
+      border-radius: 0 0 4px 4px;
+      transition: top 0.2s;
+    }
+    .skip-link:focus { top: 0; color: var(--navy-deep); }
+
+    /* ─── NAV ─── */
+    nav {
+      background: var(--navy);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      line-height: 1.1;
+    }
+    .nav-logo .wordmark {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      letter-spacing: 0.01em;
+    }
+    .nav-logo .sub {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      padding: 0.4rem 0.75rem;
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: var(--accent);
+      background: rgba(201,164,92,0.08);
+    }
+    .nav-phone {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--accent);
+      padding: 0.4rem 0.75rem;
+      border: 1px solid var(--border-bright);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+    .nav-phone:hover {
+      background: rgba(201,164,92,0.1);
+      color: var(--accent);
+    }
+    .hamburger {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      color: var(--text);
+    }
+
+    /* ─── PAGE HERO ─── */
+    .page-hero {
+      background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 60%, #050e1a 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 2rem 3.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 80% 50%, rgba(201,164,92,0.06) 0%, transparent 70%),
+        radial-gradient(ellipse 40% 60% at 10% 80%, rgba(15,39,71,0.8) 0%, transparent 60%);
+      pointer-events: none;
+    }
+    .page-hero-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .hero-eyebrow::before {
+      content: '';
+      display: block;
+      width: 2rem;
+      height: 1px;
+      background: var(--accent);
+    }
+    .page-hero h1 {
+      font-family: 'Source Serif 4', serif;
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 300;
+      line-height: 1.15;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+      max-width: 700px;
+    }
+    .page-hero p {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 580px;
+      line-height: 1.7;
+    }
+
+    /* ─── BREADCRUMB ─── */
+    .breadcrumb {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      padding: 0.6rem 2rem;
+    }
+    .breadcrumb-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumb-inner a { color: var(--text-muted); }
+    .breadcrumb-inner a:hover { color: var(--accent); }
+    .breadcrumb-sep { color: var(--border-bright); }
+    .breadcrumb-current { color: var(--accent); font-weight: 500; }
+
+    /* ─── TOOLS SECTION ─── */
+    .tools-section {
+      padding: 4rem 2rem 5rem;
+      background: var(--navy-deep);
+    }
+    .tools-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* ─── CARD GRID ─── */
+    .tools-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .tool-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      transition: all 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+    .tool-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+    .tool-card:hover {
+      border-color: var(--border-bright);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.35);
+    }
+    .tool-card:hover::after { transform: scaleX(1); }
+
+    .tool-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: rgba(201,164,92,0.1);
+      border: 1px solid var(--border-bright);
+      color: var(--accent);
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.65rem;
+      border-radius: 3px;
+      margin-bottom: 1.25rem;
+      width: fit-content;
+    }
+
+    .tool-name {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 0.6rem;
+      line-height: 1.2;
+    }
+
+    .tool-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      flex: 1;
+    }
+
+    .tool-price-row {
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .tool-price {
+      font-family: 'Source Serif 4', serif;
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--accent);
+      line-height: 1;
+    }
+    .tool-price-period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .tool-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: var(--navy-deep);
+      font-weight: 700;
+      font-size: 0.875rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 0.85rem 1.5rem;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-block;
+      text-align: center;
+    }
+    .btn-primary:hover {
+      background: #dbb96e;
+      color: var(--navy-deep);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(201,164,92,0.3);
+    }
+
+    .btn-try {
+      display: inline-block;
+      text-align: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      padding: 0.6rem 1.5rem;
+      border: 1px solid rgba(232,230,225,0.2);
+      border-radius: 4px;
+      transition: all 0.2s;
+      letter-spacing: 0.03em;
+    }
+    .btn-try:hover {
+      color: var(--accent);
+      border-color: var(--border-bright);
+      background: rgba(201,164,92,0.05);
+    }
+
+    /* ─── MORE TOOLS NOTE ─── */
+    .more-tools-note {
+      text-align: center;
+      padding: 2rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+    .more-tools-note strong {
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* ─── FOOTER ─── */
+    footer {
+      background: var(--navy-deep);
+      border-top: 1px solid var(--border);
+      padding: 3rem 2rem 2rem;
+    }
+    .footer-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand .wordmark {
+      font-family: 'Source Serif 4', serif;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--text);
+      display: block;
+      margin-bottom: 0.25rem;
+    }
+    .footer-brand .sub {
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .footer-brand p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      max-width: 300px;
+    }
+    .footer-col h4 {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    .footer-col ul li a {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+    .footer-col ul li a:hover { color: var(--accent); }
+    .footer-bottom {
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+    .footer-bottom a { color: var(--text-muted); }
+    .footer-bottom a:hover { color: var(--accent); }
+    .footer-legal-links {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+
+    /* ─── RESPONSIVE ─── */
+    @media (max-width: 900px) {
+      .footer-top { grid-template-columns: 1fr 1fr; gap: 2rem; }
+      .tools-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 640px) {
+      .tools-section { padding: 3rem 1.25rem 4rem; }
+      .nav-links { display: none; }
+      .nav-phone { display: none; }
+      .hamburger { display: block; }
+      .footer-top { grid-template-columns: 1fr; }
+      .page-hero { padding: 3rem 1.25rem 2.5rem; }
+      .breadcrumb { padding: 0.6rem 1.25rem; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Navigation -->
+  <nav aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="Oil Rigs Now — Home">
+        <span class="wordmark">Oil Rigs Now</span>
+        <span class="sub">Global Drilling Equipment</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="/land-drilling-rigs/">Equipment</a></li>
+        <li><a href="/mobile-workover-rigs/">Workover Rigs</a></li>
+        <li><a href="/offshore-rigs/">Offshore</a></li>
+        <li><a href="/tools/" class="active">Tools</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+      <a href="tel:+17135650747" class="nav-phone" aria-label="Call Oil Rigs Now: 713-565-0747">713-565-0747</a>
+      <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+        <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
+          <rect y="0" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="7" width="22" height="2" rx="1" fill="currentColor"/>
+          <rect y="14" width="22" height="2" rx="1" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Breadcrumb -->
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <div class="breadcrumb-inner">
+      <a href="/">Home</a>
+      <span class="breadcrumb-sep" aria-hidden="true">›</span>
+      <span class="breadcrumb-current">Tools</span>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- Page Hero -->
+    <section class="page-hero" aria-labelledby="tools-heading">
+      <div class="page-hero-inner">
+        <p class="hero-eyebrow">Oil &amp; Gas Productivity</p>
+        <h1 id="tools-heading">Tools for Oil &amp; Gas Professionals</h1>
+        <p>Practical digital tools built for the field and the office — affordable, fast to start, and designed for how the industry actually works.</p>
+      </div>
+    </section>
+
+    <!-- Tools Grid -->
+    <section class="tools-section" aria-labelledby="apps-heading">
+      <div class="tools-inner">
+        <h2 id="apps-heading" style="font-family:'Source Serif 4',serif;font-size:clamp(1.4rem,2.5vw,2rem);font-weight:300;color:var(--text);margin-bottom:2.5rem;line-height:1.2;">
+          Available Now
+        </h2>
+
+        <div class="tools-grid">
+
+          <!-- Wellsite DDR -->
+          <article class="tool-card" aria-labelledby="ddr-name">
+            <div class="tool-badge">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+                <circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/>
+                <circle cx="5" cy="5" r="1.5" fill="currentColor"/>
+              </svg>
+              Drilling Operations
+            </div>
+            <h3 class="tool-name" id="ddr-name">Wellsite Daily Drilling Report Generator</h3>
+            <p class="tool-desc">Generate structured, professional daily drilling reports in seconds — complete, consistent, and ready to send to your team or client.</p>
+            <div class="tool-price-row">
+              <span class="tool-price">$19</span>
+              <span class="tool-price-period">one-time</span>
+            </div>
+            <div class="tool-actions">
+              <a href="https://buy.stripe.com/bJe7sL83PdfE3eAfIJ3VC0O" class="btn-primary" target="_blank" rel="noopener">Buy Now — $19</a>
+              <a href="https://mini-apps-437.pages.dev/apps/wellsite-ddr/landing" class="btn-try" target="_blank" rel="noopener">Try it free →</a>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- More tools note -->
+        <div class="more-tools-note" role="note">
+          <strong>More tools added regularly.</strong> We're building a growing suite of tools for oil and gas professionals — from wellsite operations to business development. Check back soon.
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="wordmark">Oil Rigs Now</span>
+          <span class="sub">Global Drilling Equipment</span>
+          <p>Broker of new and used land drilling rigs, workover rigs, offshore equipment, and oilfield components. Trusted consultant since 2011.</p>
+          <p style="margin-top:0.75rem; font-size:0.78rem; color: var(--text-muted);">
+            7814 Stoneyway Dr, Houston, TX 77040<br>
+            <a href="tel:+17135650747">713-565-0747</a> &nbsp;·&nbsp; <a href="mailto:info@oilrigsnow.com">info@oilrigsnow.com</a>
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Equipment</h4>
+          <ul>
+            <li><a href="/land-drilling-rigs/">Land Drilling Rigs</a></li>
+            <li><a href="/offshore-rigs/">Offshore Equipment</a></li>
+            <li><a href="/mobile-workover-rigs/">Workover Rigs</a></li>
+            <li><a href="/water-well-rigs/">Water Well Drilling</a></li>
+            <li><a href="/contact/">Components &amp; Parts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/#about">About Us</a></li>
+            <li><a href="/#services">Services</a></li>
+            <li><a href="/tools/">Tools</a></li>
+            <li><a href="/contact/">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy/">Privacy Policy</a></li>
+            <li><a href="/terms/">Terms of Service</a></li>
+            <li><a href="/disclaimer/">Disclaimer</a></li>
+            <li><a href="/accessibility/">Accessibility</a></li>
+            <li><a href="/compliance/">Anti-Bribery &amp; Sanctions</a></li>
+            <li><a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; <span id="yr"></span> Oil Rigs Now. All rights reserved.</span>
+        <div class="footer-legal-links">
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/accessibility/">Accessibility</a>
+          <a href="/compliance/">Compliance</a>
+          <a href="/privacy/#ccpa" style="color:#d9a84e;font-size:12px;font-weight:600;">Do Not Sell or Share My Info</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
+
