@@ -45,7 +45,7 @@ const BACK_BAR_HTML = `
   <span style="color:rgba(201,164,92,0.3);">|</span>
   <a href="/quote/" style="color:#a0a0a0;text-decoration:none;font-weight:500;" onmouseover="this.style.color='#C9A45C'" onmouseout="this.style.color='#a0a0a0'">Request a Quote</a>
   <span style="color:rgba(201,164,92,0.3);">|</span>
-  <a href="tel:+17135650747" style="color:#a0a0a0;text-decoration:none;font-weight:500;" onmouseover="this.style.color='#C9A45C'" onmouseout="this.style.color='#a0a0a0'">713-565-0747</a>
+  <a href="tel:+18329125843" style="color:#a0a0a0;text-decoration:none;font-weight:500;" onmouseover="this.style.color='#C9A45C'" onmouseout="this.style.color='#a0a0a0'">832-912-5843</a>
 </div>
 `;
 
