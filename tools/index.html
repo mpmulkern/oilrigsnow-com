@@ -13,6 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <!-- No-flash theme init -->
+  <script>try{var t=localStorage.getItem('orn_tools_theme');if(t==='light')document.documentElement.classList.add('light');}catch(e){}</script>
 
   <script type="application/ld+json">
   {
@@ -33,6 +35,7 @@
   </script>
 
   <style>
+    /* ─── DARK (default) ─── */
     :root {
       --navy:          #0F2747;
       --navy-deep:     #081A33;
@@ -46,6 +49,29 @@
       --border:        rgba(201,164,92,0.15);
       --border-bright: rgba(201,164,92,0.35);
     }
+    /* ─── LIGHT override ─── */
+    html.light {
+      --navy:          #d4e3f5;
+      --navy-deep:     #f0f4fa;
+      --accent:        #9a6f2a;
+      --accent-hover:  #b8872e;
+      --text:          #0f1f3a;
+      --text-muted:    #4a5568;
+      --surface:       #e8eef7;
+      --surface-light: #dde6f2;
+      --border:        rgba(154,111,42,0.2);
+      --border-bright: rgba(154,111,42,0.45);
+    }
+    /* ─── THEME TOGGLE BUTTON ─── */
+    .theme-btn {
+      background: none; border: 1px solid var(--border-bright);
+      color: var(--text-muted); cursor: pointer;
+      border-radius: 4px; padding: 0.35rem 0.65rem;
+      font-size: 1rem; line-height: 1; transition: all 0.2s;
+      display: flex; align-items: center; gap: 0.35rem;
+    }
+    .theme-btn:hover { border-color: var(--accent); color: var(--accent); }
+    .theme-btn .lbl { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; font-size: 16px; }
@@ -396,7 +422,12 @@
         <li><a href="/tools/" class="active" aria-current="page">Tools</a></li>
         <li><a href="/contact/">Contact</a></li>
       </ul>
-      <a href="tel:+17135650747" class="nav-phone" aria-label="Call Oil Rigs Now: 713-565-0747">713-565-0747</a>
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <button class="theme-btn" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light/dark theme">
+          <span id="theme-icon">☀️</span><span class="lbl" id="theme-lbl">Light</span>
+        </button>
+        <a href="tel:+17135650747" class="nav-phone" aria-label="Call Oil Rigs Now: 713-565-0747">713-565-0747</a>
+      </div>
       <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
         <svg width="22" height="16" viewBox="0 0 22 16" fill="none" aria-hidden="true">
           <rect y="0" width="22" height="2" rx="1" fill="currentColor"/>
@@ -652,5 +683,21 @@
     </div>
   </footer>
 
+  <script>
+    function toggleTheme() {
+      var isLight = document.documentElement.classList.toggle('light');
+      try { localStorage.setItem('orn_tools_theme', isLight ? 'light' : 'dark'); } catch(e){}
+      document.getElementById('theme-icon').textContent = isLight ? '🌙' : '☀️';
+      document.getElementById('theme-lbl').textContent  = isLight ? 'Dark'  : 'Light';
+    }
+    // Set correct icon on load
+    (function(){
+      var isLight = document.documentElement.classList.contains('light');
+      var icon = document.getElementById('theme-icon');
+      var lbl  = document.getElementById('theme-lbl');
+      if(icon) icon.textContent = isLight ? '🌙' : '☀️';
+      if(lbl)  lbl.textContent  = isLight ? 'Dark' : 'Light';
+    })();
+  </script>
 </body>
 </html>
