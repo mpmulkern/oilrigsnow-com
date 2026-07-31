@@ -71,6 +71,11 @@
     .footer-brand{color:var(--text-muted);font-size:.9rem;}
     .footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
     .footer-links a{font-size:.8rem;color:var(--text-muted);}.footer-links a:hover{color:var(--accent);}
+  
+    .partner-disclosure{background:var(--surface);border:1px solid var(--border-bright);border-radius:8px;padding:1rem 1.25rem;margin:0 auto 1.5rem;max-width:1400px;color:var(--text-muted);font-size:.85rem;line-height:1.6;}
+    .partner-disclosure strong{color:var(--accent);}
+    .partner-disclosure a{color:var(--accent);}
+    .partner-label{font-size:.7rem;color:var(--text-muted);font-style:italic;margin-bottom:.6rem;line-height:1.4;}
   </style>
 </head>
 <body>
@@ -99,6 +104,10 @@
       <div class="count-badge" id="count-badge"><span id="count-text">11 offshore rigs listed</span></div>
     </div>
   </header>
+
+  <div class="partner-disclosure" role="note">
+    <p>Listings marked <strong>&ldquo;Partner listing&rdquo;</strong> are held by our partner companies. Full specifications and enquiries for those rigs are handled on the partner&rsquo;s site. Oil Rigs Now brokers its own listed inventory directly &mdash; call <a href="tel:+18329125843">832-912-5843</a>.</p>
+  </div>
 
   <div class="controls" role="search">
     <div class="controls-inner">
@@ -184,17 +193,18 @@
         const sc=r.status==='Available'?'avail':'forsale';
         const metas=[r.manufacturer,r.year,r.condition,r.location].filter(Boolean);
         return `<article class="rig-card" role="listitem">
-          <a href="${url}" class="card-img" tabindex="-1" aria-hidden="true">
+          <a href="${url}" class="card-img" tabindex="-1" aria-hidden="true" rel="noopener" target="_blank">
             <img src="${img}" alt="${r.title}" loading="lazy" onerror="this.src='/logo.png'">
             <span class="status-pill ${sc}">${r.status}</span>
             ${hp?`<span class="hp-badge">${hp}</span>`:''}
           </a>
           <div class="card-body">
             <div class="card-type">${r.rig_type}</div>
-            <h2 class="card-title"><a href="${url}" style="color:inherit;">${r.title}</a></h2>
+            <h2 class="card-title"><a href="${url}" style="color:inherit;" rel="noopener" target="_blank">${r.title}</a></h2>
             ${r.tagline?`<p class="card-tagline">${r.tagline}</p>`:''}
             ${metas.length?`<div class="card-meta">${metas.map(m=>`<span class="meta-tag">${m}</span>`).join('')}</div>`:''}
-            <a href="${url}" class="card-link">Full Listing →</a>
+            <div class="partner-label">Partner listing — full details and enquiries at Total Drilling Supply</div>
+            <a href="${url}" class="card-link" rel="noopener" target="_blank">View at Total Drilling Supply →</a>
           </div>
         </article>`;
       }).join('');
