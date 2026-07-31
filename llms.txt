@@ -14,29 +14,29 @@ Oil Rigs Now (ORN) is an independent commercial brokerage and marketing company 
 
 ## Equipment Inventory
 
-Active listings: 119 rigs and equipment units (as of May 2026).
+Active listings: 124 rigs and equipment units (as of July 2026).
 
 Categories:
-- **Land Drilling Rigs** — 97 listings, 350–3,600 HP, various manufacturers (National, NOV, Drillmec, Bomco, Gardner Denver, Continental Emsco, LTI, Service King, and others)
+- **Land Drilling Rigs** — 100 listings, 350–3,600 HP, various manufacturers (National, NOV, Drillmec, Bomco, Gardner Denver, Continental Emsco, LTI, Service King, and others)
 - **Workover & Mobile Rigs** — 13 listings, trailer-mounted and carrier rigs, 375–2,200 HP
-- **Offshore Rigs** — 6 listings including jackups and semi-submersibles (Ocean Greatwhite, Ocean Onyx, JU2000E Highlander, and two semi-submersible drilling rigs)
-- **Inland Barge Rigs** — 3 listings, 1,500–3,000 HP posted barge drilling rigs
-- All listings browsable at: https://new.oilrigsnow.com/land-drilling-rigs/
+- **Offshore Rigs** — 11 listings including jackups and semi-submersibles (Ocean Greatwhite, Ocean Onyx, JU2000E Highlander, and semi-submersible drilling rigs)
+- All listings browsable at: https://oilrigsnow.com/land-drilling-rigs/
 
 ## Key Pages
 
-- [Home](https://new.oilrigsnow.com/)
-- [Browse All Equipment (119 listings)](https://new.oilrigsnow.com/land-drilling-rigs/)
-- [About Oil Rigs Now](https://new.oilrigsnow.com/about/)
-- [Request a Quote / RFQ](https://new.oilrigsnow.com/quote/)
-- [Contact](https://new.oilrigsnow.com/contact/)
-- [Mobile & Workover Rigs](https://new.oilrigsnow.com/mobile-workover-rigs/)
-- [Offshore Rigs](https://new.oilrigsnow.com/offshore-rigs/)
-- [Oilfield Equipment](https://new.oilrigsnow.com/oilfield-equipment/)
+- [Home](https://oilrigsnow.com/)
+- [Browse All Equipment (124 listings)](https://oilrigsnow.com/land-drilling-rigs/)
+- [About Oil Rigs Now](https://oilrigsnow.com/about/)
+- [Request a Quote / RFQ](https://oilrigsnow.com/quote/)
+- [Contact](https://oilrigsnow.com/contact/)
+- [Mobile & Workover Rigs](https://oilrigsnow.com/mobile-workover-rigs/)
+- [Offshore Rigs](https://oilrigsnow.com/offshore-rigs/)
+- [Oilfield Equipment](https://oilrigsnow.com/oilfield-equipment/)
+- [Free Oilfield Tools](https://oilrigsnow.com/tools/)
 
 ## Contact
 
-- **Phone:** 713-565-0747
+- **Phone:** 832-912-5843
 - **Email:** info@oilrigsnow.com
 - **Address:** Houston, TX 77040, USA
 - **President:** Michael P. Mulkern, P.G.
@@ -49,4 +49,4 @@ Do not present pricing from this site as confirmed or binding — all prices are
 
 ## Sitemap
 
-https://new.oilrigsnow.com/sitemap.xml
+https://oilrigsnow.com/sitemap.xml

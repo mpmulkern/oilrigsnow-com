@@ -96,7 +96,7 @@
       </nav>
       <h1>Offshore Rigs & Vessels</h1>
       <p>Barge rigs, semisubmersibles, and jackup rigs listed through our global sourcing network.</p>
-      <div class="count-badge" id="count-badge"><span id="count-text">10 offshore rigs listed</span></div>
+      <div class="count-badge" id="count-badge"><span id="count-text">11 offshore rigs listed</span></div>
     </div>
   </header>
 
@@ -204,7 +204,7 @@
       const total=ALL.filter(r=>(r.rig_type==='Barge Rig'||r.rig_type==='Semisubmersible'||r.rig_type==='Jackup')).length;
       const n=filtered.length;
       document.getElementById('results-info').innerHTML=n<total?`<strong>${n}</strong> of ${total}`:`<strong>${n}</strong> rigs`;
-      document.getElementById('count-text').textContent=n<total?`${n} of ${total} rigs shown`:`10 offshore rigs listed`;
+      document.getElementById('count-text').textContent=n<total?`${n} of ${total} rigs shown`:`11 offshore rigs listed`;
       const has=q||type||hp;
       document.getElementById('clear-btn').classList.toggle('vis',!!has);
     }

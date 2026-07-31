@@ -24,4 +24,4 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
-Sitemap: https://new.oilrigsnow.com/sitemap.xml
+Sitemap: https://oilrigsnow.com/sitemap.xml

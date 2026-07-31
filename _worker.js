@@ -63,6 +63,68 @@ class BackBarInjector {
   }
 }
 
+// ---- Legacy URL redirects ---------------------------------------------
+// The pre-migration site used a different URL structure. Those URLs still
+// rank for core commercial queries and currently 404. 301 (permanent),
+// single-hop, to the closest live equivalent. Never redirect to the
+// homepage (soft-404 territory). Specific rules are checked before the
+// wildcard catch-alls at the end of each family.
+// Source: SEO audit 2026-07-31 (Suki) -- see artefacts/orn/01-redirect-map.md
+// This list is a SERP-sampled subset, not a full inventory of the old
+// site (which predates this repo and has no git history here). Wildcard
+// catch-alls exist so unlisted legacy paths in these families don't 404.
+const EXACT_REDIRECTS = {
+  // ---- Category level ----
+  '/land-rigs-for-sale/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/amp/': '/land-drilling-rigs/',
+  '/drilling-rigs-for-sale/': '/land-drilling-rigs/',
+  '/mobile-rigs-for-sale/': '/mobile-workover-rigs/',
+  '/offshore-rigs-for-sale/': '/offshore-rigs/',
+  '/drilling-equipment/': '/oilfield-equipment/',
+
+  // ---- Offshore sub-types ----
+  '/offshore-rigs-for-sale/used-offshore-drilling-rigs/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/barge-rigs/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/semi-submersibles/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/3-legged-jack-up-offshore-drilling-rig/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/jack-rig-200-foot-wd/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/jack-rig-400-foot-wd/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/jack-up-rigs-350-foot-wd/': '/offshore-rigs/',
+  '/offshore-rigs-for-sale/dsj-300-jackup/': '/offshore-rigs/',
+
+  // ---- HP landing pages (interim; re-point when HP pages exist) ----
+  '/land-rigs-for-sale/1500-hp/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/2000-hp/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/3000-hp/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/1000-hp/': '/land-drilling-rigs/',
+
+  // ---- Individual rig pages (interim; re-point to detail pages when they exist) ----
+  '/land-rigs-for-sale/1300-hp-drilling-rig/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/1500-hp-land-scr-drilling-rig/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/2000-hp-land-scr-drilling-rig/': '/land-drilling-rigs/',
+  '/land-rigs-for-sale/drillmec-1500-hp-land-rig-package/': '/land-drilling-rigs/',
+
+  // ---- Company pages ----
+  '/about-us/': '/about/',
+  '/financing/': '/about/',
+  '/downstream/': '/oilfield-equipment/',
+};
+
+// Prefix (wildcard) catch-alls -- checked after EXACT_REDIRECTS.
+const PREFIX_REDIRECTS = [
+  ['/offshore-rigs-for-sale/', '/offshore-rigs/'],
+  ['/land-rigs-for-sale/', '/land-drilling-rigs/'],
+];
+
+function legacyRedirectTarget(pathname) {
+  if (EXACT_REDIRECTS[pathname]) return EXACT_REDIRECTS[pathname];
+  for (const [prefix, target] of PREFIX_REDIRECTS) {
+    if (pathname.startsWith(prefix)) return target;
+  }
+  return null;
+}
+
 // ---- RFQ form handler -----------------------------------------------------
 // Advanced-mode Pages: _worker.js is the sole entry point and the functions/
 // directory is ignored, so the /api/rfq endpoint lives here. Accepts a POST
@@ -211,6 +273,14 @@ export default {
       return handleRfq(request, env);
     }
 
+    // Legacy URL redirects — handle before serving static assets.
+    const legacyTarget = legacyRedirectTarget(path);
+    if (legacyTarget) {
+      const dest = new URL(legacyTarget, url.origin);
+      dest.search = ''; // legacy redirects never carry query params through
+      return Response.redirect(dest.toString(), 301);
+    }
+
     const response = await env.ASSETS.fetch(request);
 
     // Only transform HTML responses
@@ -240,3 +310,4 @@ export default {
     return rewriter.transform(response);
   }
 };
+
