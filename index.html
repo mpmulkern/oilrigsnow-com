@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oil Rigs Now | Drilling Rig Sales &amp; Sourcing | Houston, TX</title>
-  <meta name="description" content="Oil Rigs Now connects buyers and sellers of land rigs, offshore rigs, and oilfield equipment worldwide. 124 active listings. Call 832-912-5843.">
+  <meta name="description" content="Oil Rigs Now connects buyers and sellers of land rigs, offshore rigs, and oilfield equipment worldwide. 121 active listings. Call 832-912-5843.">
   <link rel="canonical" href="https://oilrigsnow.com/">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://oilrigsnow.com/">
   <meta property="og:title" content="Oil Rigs Now | Drilling Rig Sales &amp; Sourcing | Houston, TX">
-  <meta property="og:description" content="Consultants in the sale and sourcing of new and used land drilling rigs, offshore rigs, and oilfield equipment. 124 active listings worldwide.">
+  <meta property="og:description" content="Consultants in the sale and sourcing of new and used land drilling rigs, offshore rigs, and oilfield equipment. 121 active listings worldwide.">
   <meta property="og:image" content="https://oilrigsnow.com/og-image.svg">
   <meta property="og:site_name" content="Oil Rigs Now">
 
@@ -1714,7 +1714,7 @@
         <h1>Source the <em>World's Best</em> Drilling Rigs</h1>
 
         <p class="hero-subhead">
-          Oil Rigs Now connects buyers and sellers of land rigs, offshore rigs, and oilfield equipment across 6 continents. 119 listings active. Expert consultants with decades of field and market experience.
+          Oil Rigs Now connects buyers and sellers of land rigs, offshore rigs, and oilfield equipment across 6 continents. <span id="hero-listings-count">121</span> listings active. Expert consultants with decades of field and market experience.
         </p>
 
         <div class="hero-actions">
@@ -1731,7 +1731,7 @@
       <div class="hero-stats" role="region" aria-label="Key statistics">
         <div class="stats-inner">
           <div class="stat-item">
-            <span class="stat-number">124+</span>
+            <span class="stat-number" id="stat-active-listings">121</span>
             <span class="stat-label">Active Listings</span>
           </div>
           <div class="stat-item">
@@ -1760,8 +1760,8 @@
             <span class="eyebrow">Current Inventory</span>
             <h2 class="section-title" id="featured-rigs-heading"><span>Featured Equipment</span></h2>
           </div>
-          <a href="/land-drilling-rigs/" class="section-link" aria-label="Browse all 124 drilling rig listings">
-            Browse All 124 Rigs
+          <a href="/land-drilling-rigs/" class="section-link" aria-label="Browse all 121 drilling rig listings">
+            Browse All 121 Rigs
           </a>
         </div>
 
@@ -2416,11 +2416,17 @@
 
             grid.innerHTML = sorted.map(card).join('');
 
-            // Update the "Browse All X Rigs" count
+            // Update the "Browse All X Rigs" count (source of truth for total listing count)
             var countLink = document.querySelector('[aria-label*="Browse all"]');
             if(countLink) countLink.setAttribute('aria-label','Browse all '+rigs.length+' drilling rig listings');
             var countText = document.querySelector('.section-link');
             if(countText) countText.textContent = 'Browse All '+rigs.length+' Rigs';
+
+            // Update the hero paragraph and stats-bar listing counts from the same live count
+            var heroCount = document.getElementById('hero-listings-count');
+            if(heroCount) heroCount.textContent = rigs.length;
+            var statCount = document.getElementById('stat-active-listings');
+            if(statCount) statCount.textContent = rigs.length;
 
             // Update the "Barge Rigs" category card count from live data
             var bargeCount = rigs.filter(function(r){
