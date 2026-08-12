@@ -1885,7 +1885,7 @@
           </a>
 
           <!-- Barge Rigs -->
-          <a href="/offshore-rigs/" class="category-card" aria-label="Browse 5 inland barge drilling rig listings">
+          <a href="/offshore-rigs/" class="category-card" id="barge-category-card" aria-label="Browse 2 inland barge drilling rig listings">
             <div class="category-icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
                 <rect x="2" y="14" width="20" height="5" rx="2"/>
@@ -1897,7 +1897,7 @@
               </svg>
             </div>
             <div class="category-title"><span>Barge Rigs</span></div>
-            <div class="category-meta">Inland &amp; posted barge drilling units &middot; 5 listings</div>
+            <div class="category-meta" id="barge-category-meta">Inland &amp; posted barge drilling units &middot; 2 listings</div>
             <span class="category-arrow" aria-hidden="true">Explore &rarr;</span>
           </a>
 
@@ -2421,6 +2421,15 @@
             if(countLink) countLink.setAttribute('aria-label','Browse all '+rigs.length+' drilling rig listings');
             var countText = document.querySelector('.section-link');
             if(countText) countText.textContent = 'Browse All '+rigs.length+' Rigs';
+
+            // Update the "Barge Rigs" category card count from live data
+            var bargeCount = rigs.filter(function(r){
+              return (r.rig_type||'').toLowerCase().indexOf('barge') !== -1;
+            }).length;
+            var bargeCard = document.getElementById('barge-category-card');
+            var bargeMeta = document.getElementById('barge-category-meta');
+            if(bargeCard) bargeCard.setAttribute('aria-label','Browse '+bargeCount+' inland barge drilling rig listing'+(bargeCount===1?'':'s'));
+            if(bargeMeta) bargeMeta.textContent = 'Inland & posted barge drilling units \u00b7 '+bargeCount+' listing'+(bargeCount===1?'':'s');
           })
           .catch(function(){
             // On error, show a fallback message
