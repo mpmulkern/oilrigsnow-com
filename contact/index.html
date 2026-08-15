@@ -1746,6 +1746,17 @@
         declineBtn.addEventListener('click', function () { dismissBanner(false); });
       }
 
+      // ---- UTM forwarding: carry attribution params from this hub through to /quote/ ----
+      // SEO pages land here with ?utm_source=trafficforge_seo&utm_medium=referral&utm_campaign=proof_flywheel&utm_content=<slug>.
+      // This page has no JS-driven form of its own, so we just re-point the outbound
+      // /quote/ links (RFQ CTA + contact-grid RFQ card) to carry the same query string forward.
+      var utmQuery = window.location.search;
+      if (utmQuery) {
+        document.querySelectorAll('a[href="/quote/"]').forEach(function (a) {
+          a.setAttribute('href', '/quote/' + utmQuery);
+        });
+      }
+
     })();
   </script>
 

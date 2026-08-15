@@ -1478,6 +1478,13 @@
 
         <form class="quote-form" id="rfq-form" action="/api/rfq" method="post" aria-labelledby="form-heading">
 
+          <!-- UTM attribution: populated from the URL query string on load (see script below).
+               Hidden so they submit silently with the rest of the form. -->
+          <input type="hidden" name="utm_source" id="utm_source">
+          <input type="hidden" name="utm_medium" id="utm_medium">
+          <input type="hidden" name="utm_campaign" id="utm_campaign">
+          <input type="hidden" name="utm_content" id="utm_content">
+
           <fieldset class="form-fieldset">
             <legend class="form-legend">Inquiry Type</legend>
             <div class="form-radio-row">
@@ -1843,6 +1850,21 @@
       if (declineBtn) {
         declineBtn.addEventListener('click', function () { dismissBanner(false); });
       }
+
+      // ---- UTM attribution: read from the URL on load, fill the hidden fields ----
+      // If the operator arrived via a TrafficForge SEO page (or the contact hub
+      // forwarding its own query string), the params are on this URL already.
+      // No sessionStorage/cookie persistence -- direct-landing-to-submit only, by design.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (key) {
+          var val = params.get(key);
+          if (val) {
+            var field = document.getElementById(key);
+            if (field) field.value = val;
+          }
+        });
+      })();
 
       // ---- RFQ form submit (fetch -> /api/rfq, no page reload) ----
       var rfqForm = document.getElementById('rfq-form');

@@ -144,6 +144,15 @@ const RFQ_FIELDS = [
   ['phone', 'Phone'],
   ['country', 'Country / region'],
   ['message', 'Message / specifications'],
+  // UTM attribution -- populated client-side from the URL query string by the
+  // /quote/ form's hidden fields (see quote/index.html). Included here so they
+  // survive into the Resend email to Michael; Watcher's Gmail parser then lifts
+  // them back out into the CRM (contacts.tags, not contacts.source -- that
+  // column has a hard CHECK constraint, see tf-marketing's Step 2 brief).
+  ['utm_source', 'UTM source'],
+  ['utm_medium', 'UTM medium'],
+  ['utm_campaign', 'UTM campaign'],
+  ['utm_content', 'UTM content (slug)'],
 ];
 
 function jsonResponse(obj, status) {
