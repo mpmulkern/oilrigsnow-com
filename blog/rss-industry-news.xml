@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Oil Rigs Now Blog — Industry News</title>
+    <link>https://oilrigsnow.com/blog/</link>
+    <description>Drilling rig and oilfield equipment market insights from Oil Rigs Now.</description>
+    <language>en-us</language>
+    <atom:link href="https://oilrigsnow.com/blog/rss-industry-news.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Fri, 07 Aug 2026 00:00:00 +0000</lastBuildDate>
+    <item>
+      <title>Global Drilling Rig Market Trends: What Buyers and Sellers Need to Know</title>
+      <link>https://oilrigsnow.com/blog/global-drilling-rig-market-trends-2026/</link>
+      <guid isPermaLink="true">https://oilrigsnow.com/blog/global-drilling-rig-market-trends-2026/</guid>
+      <description>Where the US and offshore rig counts stand right now, why land activity has cooled while offshore holds steadier, and what the shift means if you're buying or selling equipment this year.</description>
+      <category>industry-news</category>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+    <item>
+      <title>Buying a Used Drilling Rig: A Practical Inspection and Due-Diligence Guide</title>
+      <link>https://oilrigsnow.com/blog/used-drilling-rig-buying-guide/</link>
+      <guid isPermaLink="true">https://oilrigsnow.com/blog/used-drilling-rig-buying-guide/</guid>
+      <description>What to actually check before you commit to a used land rig or workover unit — from mechanical and structural inspection points to the paperwork that protects the deal.</description>
+      <category>industry-news</category>
+      <pubDate>Fri, 07 Aug 2026 00:00:00 +0000</pubDate>
+    </item>
+  </channel>
+</rss>

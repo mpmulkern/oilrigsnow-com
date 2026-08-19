@@ -6,6 +6,9 @@
   <meta name="description" content="Insights on drilling rigs, oilfield equipment, and the global drilling market from Oil Rigs Now — independent marketing platform for drilling rigs and oilfield equipment.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://oilrigsnow.com/blog/">
+  <link rel="alternate" type="application/rss+xml" title="Oil Rigs Now Blog — All Posts" href="https://oilrigsnow.com/blog/rss.xml">
+  <link rel="alternate" type="application/rss+xml" title="Oil Rigs Now Blog — Market Watch" href="https://oilrigsnow.com/blog/rss-market-watch.xml">
+  <link rel="alternate" type="application/rss+xml" title="Oil Rigs Now Blog — Industry News" href="https://oilrigsnow.com/blog/rss-industry-news.xml">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -68,7 +71,9 @@
     "@type": "Organization",
     "name": "Oil Rigs Now",
     "url": "https://oilrigsnow.com"
-  }
+  },
+  "mainEntityOfPage": "https://oilrigsnow.com/blog/",
+  "sameAs": ["https://oilrigsnow.com/blog/rss.xml"]
 }
   </script>
   <script type="application/ld+json">
@@ -182,8 +187,26 @@
     .section__title em { font-style: italic; color: var(--accent); }
     .section__subtitle { font-size: 1rem; color: var(--text-muted); max-width: 40rem; margin-top: 0.75rem; line-height: 1.65; }
 
+    /* TAG FILTER */
+    .tag-filter { display: flex; flex-wrap: wrap; gap: 0.625rem; margin-bottom: 2rem; }
+    .tag-filter__btn { font-size: 0.8125rem; font-weight: 600; letter-spacing: 0.02em; padding: 0.5rem 1rem; border-radius: 999px; border: 1px solid var(--border); background: rgba(255,255,255,0.03); color: var(--text-muted); transition: color var(--transition), background var(--transition), border-color var(--transition); }
+    .tag-filter__btn:hover { color: var(--text); border-color: var(--border-hover); }
+    .tag-filter__btn.active { background: var(--accent); color: var(--navy-deep); border-color: var(--accent); }
+    .tag-filter__rss { margin-left: auto; display: inline-flex; align-items: center; gap: 0.375rem; font-size: 0.75rem; font-weight: 600; color: var(--text-muted); }
+    .tag-filter__rss a { color: var(--accent); text-decoration: none; }
+    .tag-filter__rss a:hover { color: #d8b56e; text-decoration: underline; }
+
+    /* POST TAG BADGE */
+    .post-card__tag { display: inline-block; font-size: 0.6875rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 0.1875rem 0.5rem; border-radius: 0.25rem; }
+    .post-card__tag--market-watch { background: rgba(184, 71, 42, 0.18); color: #e2926f; }
+    .post-card__tag--industry-news { background: rgba(201, 164, 92, 0.18); color: var(--accent); }
+
     /* POSTS GRID */
     .posts-grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; }
+    .posts-grid[hidden] { display: none; }
+    /* JS-driven filter: cards default visible (no-JS fallback shows everything);
+       .tag-hidden is applied by script only when a filter excludes a card. */
+    .post-card.tag-hidden { display: none; }
     .post-card { background: var(--surface-light); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 1.75rem; display: flex; flex-direction: column; gap: 0.875rem; transition: border-color var(--transition), box-shadow var(--transition), transform var(--transition); text-decoration: none; color: inherit; }
     .post-card:hover { border-color: rgba(201, 164, 92, 0.4); box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.4), 0 0 0 1px rgba(201,164,92,0.08); transform: translateY(-0.125rem); }
     .post-card__meta { display: flex; align-items: center; gap: 0.625rem; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; color: var(--accent); }
@@ -321,23 +344,37 @@
         <header class="section__header">
           <p class="section__eyebrow" aria-hidden="true">Latest</p>
           <h2 class="section__title" id="posts-heading">Recent <em>posts</em></h2>
+          <p class="section__subtitle">Two tracks: <strong>Market Watch</strong> covers newly available rig &amp; equipment inventory (posted only when something genuinely new comes up &mdash; no fixed schedule). <strong>Industry News</strong> is a monthly roundup of rig counts, equipment sales, and market conditions.</p>
         </header>
 
-        <div class="posts-grid">
-          <a href="/blog/global-drilling-rig-market-trends-2026/" class="post-card">
-            <div class="post-card__meta"><span>Market Trends</span><time datetime="2026-08-07">Aug 7, 2026</time></div>
+        <nav class="tag-filter" role="tablist" aria-label="Filter posts by category">
+          <button type="button" class="tag-filter__btn active" data-filter="all" role="tab" aria-selected="true">All Posts</button>
+          <button type="button" class="tag-filter__btn" data-filter="market-watch" role="tab" aria-selected="false">Market Watch</button>
+          <button type="button" class="tag-filter__btn" data-filter="industry-news" role="tab" aria-selected="false">Industry News</button>
+          <span class="tag-filter__rss">RSS: <a href="/blog/rss.xml">All</a> &middot; <a href="/blog/rss-market-watch.xml">Market Watch</a> &middot; <a href="/blog/rss-industry-news.xml">Industry News</a></span>
+        </nav>
+
+        <!--
+          BLOG-POSTS-GRID: auto-generated from blog/posts.json by
+          _tools/blog_build.py. Do not hand-edit the cards below; edit
+          posts.json and re-run the build. See blog/PUBLISHING.md.
+        -->
+        <div class="posts-grid" id="posts-grid">
+          <a href="/blog/global-drilling-rig-market-trends-2026/" class="post-card" data-tags="industry-news">
+            <div class="post-card__meta"><span class="post-card__tag post-card__tag--industry-news">Industry News</span><time datetime="2026-08-07">Aug 7, 2026</time></div>
             <h3 class="post-card__title">Global Drilling Rig Market Trends: What Buyers and Sellers Need to Know</h3>
             <p class="post-card__desc">Where the US and offshore rig counts stand right now, why land activity has cooled while offshore holds steadier, and what the shift means if you're buying or selling equipment this year.</p>
             <span class="post-card__link">Read the article &rarr;</span>
           </a>
 
-          <a href="/blog/used-drilling-rig-buying-guide/" class="post-card">
-            <div class="post-card__meta"><span>Buying Guide</span><time datetime="2026-08-07">Aug 7, 2026</time></div>
+          <a href="/blog/used-drilling-rig-buying-guide/" class="post-card" data-tags="industry-news">
+            <div class="post-card__meta"><span class="post-card__tag post-card__tag--industry-news">Industry News</span><time datetime="2026-08-07">Aug 7, 2026</time></div>
             <h3 class="post-card__title">Buying a Used Drilling Rig: A Practical Inspection and Due-Diligence Guide</h3>
             <p class="post-card__desc">What to actually check before you commit to a used land rig or workover unit &mdash; from mechanical and structural inspection points to the paperwork that protects the deal.</p>
             <span class="post-card__link">Read the article &rarr;</span>
           </a>
         </div>
+        <p id="posts-empty" class="section__subtitle" hidden>No posts in this category yet &mdash; check back soon, or <a href="/blog/rss.xml" style="color:var(--accent);">subscribe via RSS</a> to get notified.</p>
       </div>
     </section>
 
@@ -519,6 +556,37 @@
       if (declineBtn) {
         declineBtn.addEventListener('click', function () { dismissBanner(false); });
       }
+
+      // ---- Tag filter (Market Watch / Industry News) ----
+      var filterBtns = document.querySelectorAll('.tag-filter__btn');
+      var postCards = document.querySelectorAll('.post-card[data-tags]');
+      var emptyMsg = document.getElementById('posts-empty');
+
+      function applyFilter(tag) {
+        var visibleCount = 0;
+        postCards.forEach(function (card) {
+          var tags = (card.getAttribute('data-tags') || '').split(' ');
+          var show = tag === 'all' || tags.indexOf(tag) !== -1;
+          card.classList.toggle('tag-hidden', !show);
+          if (show) visibleCount++;
+        });
+        if (emptyMsg) emptyMsg.hidden = visibleCount > 0;
+      }
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          filterBtns.forEach(function (b) {
+            b.classList.remove('active');
+            b.setAttribute('aria-selected', 'false');
+          });
+          btn.classList.add('active');
+          btn.setAttribute('aria-selected', 'true');
+          applyFilter(btn.getAttribute('data-filter'));
+        });
+      });
+
+      // Initial state: show all (matches default "All Posts" active button)
+      applyFilter('all');
 
     })();
   </script>
