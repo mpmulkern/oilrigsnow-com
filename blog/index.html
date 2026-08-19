@@ -389,6 +389,150 @@
 
   </main>
 
+  <!-- ===== MARKET WATCH OPT-IN ===== -->
+<section class="mw-optin" aria-labelledby="mw-optin-heading">
+  <div class="mw-optin__inner">
+    <h2 class="mw-optin__headline" id="mw-optin-heading">Get notified when rigs become available</h2>
+    <p class="mw-optin__copy">
+      We publish a Market Watch update whenever genuinely new drilling rig or
+      equipment availability comes across our desk — no fixed schedule, no filler.
+      Leave your email and we will let you know when one goes up.
+    </p>
+
+    <form class="mw-optin__form" id="mw-optin-form" action="/api/subscribe" method="post">
+      <label class="mw-optin__label" for="mw-name">Name <span>(optional)</span></label>
+      <input class="mw-optin__input" type="text" id="mw-name" name="name" autocomplete="name" maxlength="120">
+
+      <label class="mw-optin__label" for="mw-email">Email address</label>
+      <input class="mw-optin__input" type="email" id="mw-email" name="email" required autocomplete="email" maxlength="254" placeholder="you@company.com">
+
+      <!-- honeypot: hidden from humans, irresistible to bots -->
+      <div class="mw-optin__hp" aria-hidden="true">
+        <label for="mw-company-website">Company website</label>
+        <input type="text" id="mw-company-website" name="company_website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button class="mw-optin__button" type="submit">Notify me</button>
+
+      <p class="mw-optin__status" id="mw-optin-status" role="status" aria-live="polite"></p>
+      <p class="mw-optin__fineprint">
+        Availability notifications only. No newsletter, no sharing your address.
+        Unsubscribe from any email in one click.
+      </p>
+    </form>
+  </div>
+</section>
+
+<style>
+  .mw-optin {
+    background: #0a1727;
+    border-top: 1px solid rgba(201, 164, 92, 0.2);
+    border-bottom: 1px solid rgba(201, 164, 92, 0.2);
+    padding: 56px 24px;
+    font-family: Inter, system-ui, sans-serif;
+  }
+  .mw-optin__inner { max-width: 560px; margin: 0 auto; }
+  .mw-optin__headline {
+    color: #fff; font-size: 26px; line-height: 1.25;
+    margin: 0 0 12px; font-weight: 700;
+  }
+  .mw-optin__copy {
+    color: #a0a0a0; font-size: 15px; line-height: 1.6; margin: 0 0 24px;
+  }
+  .mw-optin__label {
+    display: block; color: #C9A45C; font-size: 13px;
+    font-weight: 600; margin: 0 0 6px;
+  }
+  .mw-optin__label span { color: #6b7280; font-weight: 400; }
+  .mw-optin__input {
+    width: 100%; box-sizing: border-box;
+    background: #0d1c30; color: #fff;
+    border: 1px solid rgba(201, 164, 92, 0.25);
+    border-radius: 6px; padding: 11px 13px;
+    font-size: 15px; margin: 0 0 18px;
+    font-family: inherit;
+  }
+  .mw-optin__input:focus {
+    outline: none; border-color: #C9A45C;
+    box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.15);
+  }
+  .mw-optin__hp {
+    position: absolute; left: -9999px;
+    width: 1px; height: 1px; overflow: hidden;
+  }
+  .mw-optin__button {
+    background: #C9A45C; color: #0a1727;
+    border: 0; border-radius: 6px;
+    padding: 12px 26px; font-size: 15px; font-weight: 700;
+    cursor: pointer; font-family: inherit;
+  }
+  .mw-optin__button:hover { background: #d8b36c; }
+  .mw-optin__button[disabled] { opacity: 0.6; cursor: default; }
+  .mw-optin__status { font-size: 14px; margin: 14px 0 0; min-height: 1em; }
+  .mw-optin__status--ok { color: #4ade80; }
+  .mw-optin__status--err { color: #f87171; }
+  .mw-optin__fineprint {
+    color: #6b7280; font-size: 12px; line-height: 1.5; margin: 14px 0 0;
+  }
+  @media (max-width: 480px) {
+    .mw-optin { padding: 40px 18px; }
+    .mw-optin__headline { font-size: 22px; }
+    .mw-optin__button { width: 100%; }
+  }
+</style>
+
+<script>
+  (function () {
+    var form = document.getElementById('mw-optin-form');
+    if (!form) return;
+    var status = document.getElementById('mw-optin-status');
+    var button = form.querySelector('.mw-optin__button');
+
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      status.textContent = '';
+      status.className = 'mw-optin__status';
+      button.disabled = true;
+      button.textContent = 'Signing you up\u2026';
+
+      var payload = {
+        name: form.elements.name.value,
+        email: form.elements.email.value,
+        company_website: form.elements.company_website.value
+      };
+
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) {
+          return res.json().then(function (body) {
+            return { ok: res.ok, body: body };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.body.success) {
+            status.textContent = 'You are on the list. We will email you when new availability goes up.';
+            status.className = 'mw-optin__status mw-optin__status--ok';
+            form.reset();
+          } else {
+            status.textContent = result.body.error || 'Something went wrong. Please email info@oilrigsnow.com.';
+            status.className = 'mw-optin__status mw-optin__status--err';
+          }
+        })
+        .catch(function () {
+          status.textContent = 'Something went wrong. Please email info@oilrigsnow.com.';
+          status.className = 'mw-optin__status mw-optin__status--err';
+        })
+        .then(function () {
+          button.disabled = false;
+          button.textContent = 'Notify me';
+        });
+    });
+  })();
+</script>
+
   <!-- ===== FOOTER ===== -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner">
