@@ -129,7 +129,7 @@
     "rig_type": "Land Rig",
     "status": "For Sale",
     "status_badge": "For Sale",
-    "hero_image": null,
+    "hero_image": "images/hero.png",
     "condition": "Used",
     "location": null,
     "directory": "land-drilling-rigs"
