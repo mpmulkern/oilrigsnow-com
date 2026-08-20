@@ -263,6 +263,96 @@ async function handleRfq(request, env) {
   return jsonResponse({ success: true }, 200);
 }
 
+// ---- Market Watch opt-in handler -----------------------------------------
+//
+// Rig-availability notifications. Writes to the Resend Audience, which owns
+// the subscriber list AND the one-click unsubscribe link every notification
+// carries. A nightly sync mirrors the audience into the ORN CRM (tagged
+// market-watch-optin) so subscribers are visible alongside every other lead.
+const MW_AUDIENCE_ID = '0c2877c2-ebab-4f71-b1f1-fe49595cc11f';
+
+async function handleSubscribe(request, env) {
+  if (request.method !== 'POST') {
+    return jsonResponse({ error: 'Method not allowed' }, 405);
+  }
+  if (!env.RESEND_API_KEY) {
+    return jsonResponse(
+      { error: 'Signup is not available right now. Please email info@oilrigsnow.com.' },
+      500,
+    );
+  }
+
+  let data = {};
+  const ct = request.headers.get('content-type') || '';
+  try {
+    if (ct.includes('application/json')) {
+      data = await request.json();
+    } else {
+      const form = await request.formData();
+      for (const [k, v] of form.entries()) data[k] = v;
+    }
+  } catch (e) {
+    return jsonResponse({ error: 'Could not read the submission. Please try again.' }, 400);
+  }
+
+  // Honeypot: a bot fills every field it finds. Humans never see this one.
+  // Return success so the bot does not learn it was rejected.
+  if ((data.company_website || '').toString().trim() !== '') {
+    return jsonResponse({ success: true }, 200);
+  }
+
+  const email = (data.email || '').toString().trim();
+  const name = (data.name || '').toString().trim();
+
+  if (!email) {
+    return jsonResponse({ error: 'Please enter your email address.' }, 400);
+  }
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 254) {
+    return jsonResponse({ error: 'Please enter a valid email address.' }, 400);
+  }
+
+  const firstName = name ? name.split(/\s+/)[0].slice(0, 80) : '';
+  const lastName = name ? name.split(/\s+/).slice(1).join(' ').slice(0, 80) : '';
+
+  try {
+    const res = await fetch(
+      `https://api.resend.com/audiences/${MW_AUDIENCE_ID}/contacts`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${env.RESEND_API_KEY}`,
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          first_name: firstName,
+          last_name: lastName,
+          unsubscribed: false,
+        }),
+      },
+    );
+
+    // Resend treats a repeat email as a successful upsert, so a double
+    // signup is not an error the visitor should ever see.
+    if (!res.ok) {
+      const detail = await res.text();
+      console.log('Resend audience error', res.status, detail);
+      return jsonResponse(
+        { error: 'We could not complete your signup. Please email info@oilrigsnow.com.' },
+        502,
+      );
+    }
+  } catch (e) {
+    console.log('Resend audience fetch failed', e && e.message);
+    return jsonResponse(
+      { error: 'We could not complete your signup. Please email info@oilrigsnow.com.' },
+      502,
+    );
+  }
+
+  return jsonResponse({ success: true }, 200);
+}
+
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
@@ -271,6 +361,11 @@ export default {
     // RFQ API endpoint — handle before serving static assets.
     if (path === '/api/rfq') {
       return handleRfq(request, env);
+    }
+
+    // Market Watch opt-in endpoint — handle before serving static assets.
+    if (path === '/api/subscribe') {
+      return handleSubscribe(request, env);
     }
 
     // Legacy URL redirects — handle before serving static assets.
