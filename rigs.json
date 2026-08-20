@@ -121,11 +121,11 @@
   },
   {
     "slug": "basin-2000hp-rig-101",
-    "title": "Basin Drilling 2000HP Walking Rig #101",
+    "title": "2000HP Walking Rig #101",
     "tagline": "2,000 HP Walking Rig - CANRIG AC Top Drive - 1M lb Hook Load - For Sale",
     "horsepower": 2000,
     "year": null,
-    "manufacturer": "Basin",
+    "manufacturer": null,
     "rig_type": "Land Rig",
     "status": "For Sale",
     "status_badge": "For Sale",
